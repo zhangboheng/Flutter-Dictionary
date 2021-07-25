@@ -19,6 +19,14 @@ class _MyStatefulWidgetState extends State<IconItems> {
         child: SingleChildScrollView(
             child: Column(children: const <Widget>[
           Accordion(
+              'ClipRect',
+              'A widget that clips its child using a rectangle.\nClipRect({Key? key, CustomClipper<Rect>? clipper, Clip clipBehavior, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/ClipRect-class.html'),
+          Accordion(
+              'ClipRRect',
+              'A widget that clips its child using a rounded rectangle.\nClipRRect({Key? key, BorderRadius? borderRadius, CustomClipper<RRect>? clipper, Clip clipBehavior, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/ClipRRect-class.html'),
+          Accordion(
               'Icon',
               'A graphical icon widget drawn with a glyph from a font described in an IconData such as material\'s predefined IconDatas in Icons.\nIcon(IconData? icon, {Key? key, double? size, Color? color, String? semanticLabel, TextDirection? textDirection})',
               'https://api.flutter.dev/flutter/material/Icons-class.html'),

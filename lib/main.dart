@@ -136,6 +136,101 @@ class _HomePageState extends State<HomePage> {
         'SizedBox',
         'A box with a specified size.\nSizedBox({Key? key, double? width, double? height, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/SizedBox-class.html'),
+    'floatingActionButton': Accordion(
+        'FloatingActionButton',
+        'A material design floating action button.\nFloatingActionButton({Key? key, Widget? child, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag, double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback? onPressed, MouseCursor? mouseCursor, bool mini, ShapeBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, MaterialTapTargetSize? materialTapTargetSize, bool isExtended})\nFloatingActionButton.extended({Key? key, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Object? heroTag, double? elevation, double? focusElevation, double? hoverElevation, Color? splashColor, double? highlightElevation, double? disabledElevation, required VoidCallback? onPressed, MouseCursor? mouseCursor, ShapeBorder? shape, bool isExtended, MaterialTapTargetSize? materialTapTargetSize, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Widget? icon, required Widget label})',
+        'https://api.flutter.dev/flutter/material/FloatingActionButton-class.html'),
+    'snackbar': Accordion(
+        'SnackBar',
+        'A lightweight message with an optional action which briefly displays at the bottom of the screen.\nSnackBar({Key? key, required Widget content, Color? backgroundColor, double? elevation, EdgeInsetsGeometry? margin, EdgeInsetsGeometry? padding, double? width, ShapeBorder? shape, SnackBarBehavior? behavior, SnackBarAction? action, Duration duration, Animation<double>? animation, VoidCallback? onVisible})',
+        'https://api.flutter.dev/flutter/material/SnackBar-class.html'),
+    'card': Accordion(
+        'Center',
+        'A widget that centers its child within itself.\nCenter({Key? key, double? widthFactor, double? heightFactor, Widget? child})',
+        'https://api.flutter.dev/flutter/material/Card-class.html'),
+    'textfiled': Accordion(
+        'TextFiled',
+        'A material design text field.\nTextField({Key? key, TextEditingController? controller, FocusNode? focusNode, InputDecoration? decoration, TextInputType? keyboardType, TextInputAction? textInputAction, TextCapitalization textCapitalization, TextStyle? style, StrutStyle? strutStyle, TextAlign textAlign, TextAlignVertical? textAlignVertical, TextDirection? textDirection, bool readOnly, ToolbarOptions? toolbarOptions, bool? showCursor, bool autofocus, String obscuringCharacter, bool obscureText, bool autocorrect, SmartDashesType? smartDashesType, SmartQuotesType? smartQuotesType, bool enableSuggestions, int? maxLines, int? minLines, bool expands, int? maxLength, @Deprecated(\'Use maxLengthEnforcement parameter which provides more specific '
+            'behavior related to the maxLength limit. '
+            'This feature was deprecated after v1.25.0-5.0.pre.\') bool maxLengthEnforced, MaxLengthEnforcement? maxLengthEnforcement, ValueChanged<String>? onChanged, VoidCallback? onEditingComplete, ValueChanged<String>? onSubmitted, AppPrivateCommandCallback? onAppPrivateCommand, List<TextInputFormatter>? inputFormatters, bool? enabled, double cursorWidth, double? cursorHeight, Radius? cursorRadius, Color? cursorColor, BoxHeightStyle selectionHeightStyle, BoxWidthStyle selectionWidthStyle, Brightness? keyboardAppearance, EdgeInsets scrollPadding, DragStartBehavior dragStartBehavior, bool enableInteractiveSelection, TextSelectionControls? selectionControls, GestureTapCallback? onTap, MouseCursor? mouseCursor, InputCounterWidgetBuilder? buildCounter, ScrollController? scrollController, ScrollPhysics? scrollPhysics, Iterable<String>? autofillHints, String? restorationId})',
+        'https://api.flutter.dev/flutter/material/TextField-class.html'),
+    'textformfiled': Accordion(
+        'TextFormField',
+        'A material design text field.\nTextField({Key? key, TextEditingController? controller, FocusNode? focusNode, InputDecoration? decoration, TextInputType? keyboardType, TextInputAction? textInputAction, TextCapitalization textCapitalization, TextStyle? style, StrutStyle? strutStyle, TextAlign textAlign, TextAlignVertical? textAlignVertical, TextDirection? textDirection, bool readOnly, ToolbarOptions? toolbarOptions, bool? showCursor, bool autofocus, String obscuringCharacter, bool obscureText, bool autocorrect, SmartDashesType? smartDashesType, SmartQuotesType? smartQuotesType, bool enableSuggestions, int? maxLines, int? minLines, bool expands, int? maxLength, @Deprecated(\'Use maxLengthEnforcement parameter which provides more specific \' \'behavior related to the maxLength limit. \' \'This feature was deprecated after v1.25.0-5.0.pre.\') bool maxLengthEnforced, MaxLengthEnforcement? maxLengthEnforcement, ValueChanged<String>? onChanged, VoidCallback? onEditingComplete, ValueChanged<String>? onSubmitted, AppPrivateCommandCallback? onAppPrivateCommand, List<TextInputFormatter>? inputFormatters, bool? enabled, double cursorWidth, double? cursorHeight, Radius? cursorRadius, Color? cursorColor, BoxHeightStyle selectionHeightStyle, BoxWidthStyle selectionWidthStyle, Brightness? keyboardAppearance, EdgeInsets scrollPadding, DragStartBehavior dragStartBehavior, bool enableInteractiveSelection, TextSelectionControls? selectionControls, GestureTapCallback? onTap, MouseCursor? mouseCursor, InputCounterWidgetBuilder? buildCounter, ScrollController? scrollController, ScrollPhysics? scrollPhysics, Iterable<String>? autofillHints, String? restorationId})',
+        'https://api.flutter.dev/flutter/painting/TextSpan-class.html'),
+    'gradient': Accordion(
+        'Gradient',
+        'This is an interface that allows LinearGradient, RadialGradient, and SweepGradient classes to be used interchangeably in BoxDecorations.\nGradient({required List<Color> colors, List<double>? stops, GradientTransform? transform})',
+        'https://api.flutter.dev/flutter/painting/Gradient-class.html'),
+    'color': Accordion(
+        'Color',
+        'An immutable 32 bit color value in ARGB format.\nColor(0xFF42A5F5);\nColor.fromARGB(0xFF, 0x42, 0xA5, 0xF5);\nColor.fromARGB(255, 66, 165, 245);\nColor.fromRGBO(66, 165, 245, 1.0);',
+        'https://api.flutter.dev/flutter/dart-ui/Color-class.html'),
+    'popupMenuButton': Accordion(
+        'PopupMenuButton',
+        'Displays a menu when pressed and calls onSelected when the menu is dismissed because an item was selected. The value passed to onSelected is the value of the selected menu item.\nPopupMenuButton({Key? key, required PopupMenuItemBuilder<T> itemBuilder, T? initialValue, PopupMenuItemSelected<T>? onSelected, PopupMenuCanceled? onCanceled, String? tooltip, double? elevation, EdgeInsetsGeometry padding, Widget? child, Widget? icon, double? iconSize, Offset offset, bool enabled, ShapeBorder? shape, Color? color, bool? enableFeedback})',
+        'https://api.flutter.dev/flutter/material/PopupMenuButton-class.html'),
+    'checkbox': Accordion(
+        'CheckBox',
+        'A material design checkbox.\nCheckbox({Key? key, required bool? value, bool tristate, required ValueChanged<bool?>? onChanged, MouseCursor? mouseCursor, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? checkColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus, OutlinedBorder? shape, BorderSide? side})',
+        'https://api.flutter.dev/flutter/material/Checkbox-class.html'),
+    'slider': Accordion(
+        'Slider',
+        'A Material Design slider.\nSlider({Key? key, required double value, required ValueChanged<double>? onChanged, ValueChanged<double>? onChangeStart, ValueChanged<double>? onChangeEnd, double min, double max, int? divisions, String? label, Color? activeColor, Color? inactiveColor, MouseCursor? mouseCursor, SemanticFormatterCallback? semanticFormatterCallback, FocusNode? focusNode, bool autofocus})',
+        'https://api.flutter.dev/flutter/material/Slider-class.html'),
+    'switchListTile': Accordion(
+        'SwitchListTile',
+        'A ListTile with a Switch. In other words, a switch with a label.\nSwitchListTile({Key? key, required bool value, required ValueChanged<bool>? onChanged, Color? tileColor, Color? activeColor, Color? activeTrackColor, Color? inactiveThumbColor, Color? inactiveTrackColor, ImageProvider<Object>? activeThumbImage, ImageProvider<Object>? inactiveThumbImage, Widget? title, Widget? subtitle, bool isThreeLine, bool? dense, EdgeInsetsGeometry? contentPadding, Widget? secondary, bool selected, bool autofocus, ListTileControlAffinity controlAffinity, ShapeBorder? shape, Color? selectedTileColor})',
+        'https://api.flutter.dev/flutter/material/SwitchListTile-class.html'),
+    'navigationrail': Accordion(
+        'NavigationRail',
+        'A material widget that is meant to be displayed at the left or right of an app to navigate between a small number of views, typically between three and five.\nNavigationRail({Key? key, Color? backgroundColor, bool extended, Widget? leading, Widget? trailing, required List<NavigationRailDestination> destinations, required int selectedIndex, ValueChanged<int>? onDestinationSelected, double? elevation, double? groupAlignment, NavigationRailLabelType? labelType, TextStyle? unselectedLabelTextStyle, TextStyle? selectedLabelTextStyle, IconThemeData? unselectedIconTheme, IconThemeData? selectedIconTheme, double? minWidth, double? minExtendedWidth}))',
+        'https://api.flutter.dev/flutter/material/NavigationRail-class.html'),
+    'wrap': Accordion(
+        'Wrap',
+        'A widget that displays its children in multiple horizontal or vertical runs.\nWrap({Key? key, Axis direction, WrapAlignment alignment, double spacing, WrapAlignment runAlignment, double runSpacing, WrapCrossAlignment crossAxisAlignment, TextDirection? textDirection, VerticalDirection verticalDirection, Clip clipBehavior, List<Widget> children = const <Widget>[]})',
+        'https://api.flutter.dev/flutter/widgets/Wrap-class.html'),
+    'stack': Accordion(
+        'Stack',
+        'A widget that positions its children relative to the edges of its box.\nStack({Key? key, AlignmentGeometry alignment, TextDirection? textDirection, StackFit fit, @Deprecated(\'Use clipBehavior instead. See the migration guide in flutter.dev/go/clip-behavior. '
+            'This feature was deprecated after v1.22.0-12.0.pre.\') Overflow overflow, Clip clipBehavior, List<Widget> children = const <Widget>[]})',
+        'https://api.flutter.dev/flutter/widgets/Stack-class.html'),
+    'showmodalbottomSheet': Accordion(
+        'showModalBottomSheet',
+        'Shows a modal material design bottom sheet.\n{required BuildContext context, required WidgetBuilder builder, Color? backgroundColor, double? elevation, ShapeBorder? shape, Clip? clipBehavior, Color? barrierColor, bool isScrollControlled = false, bool useRootNavigator = false, bool isDismissible = true, bool enableDrag = true, RouteSettings? routeSettings, AnimationController? transitionAnimationController}',
+        'https://api.flutter.dev/flutter/material/SnackBar-class.html'),
+    'actionchip': Accordion(
+        'ActionChip',
+        'A material design action chip.\nActionChip({Key? key, Widget? avatar, required Widget label, TextStyle? labelStyle, EdgeInsetsGeometry? labelPadding, required VoidCallback onPressed, double? pressElevation, String? tooltip, BorderSide? side, OutlinedBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Color? backgroundColor, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, MaterialTapTargetSize? materialTapTargetSize, double? elevation, Color? shadowColor})',
+        'https://api.flutter.dev/flutter/material/ActionChip-class.html'),
+    'aboutdialog': Accordion(
+        'AboutDialog',
+        'An about box. This is a dialog box with the application\'s icon, name, version number, and copyright, plus a button to show licenses for software used by the application.\nAboutDialog({Key? key, String? applicationName, String? applicationVersion, Widget? applicationIcon, String? applicationLegalese, List<Widget>? children})',
+        'https://api.flutter.dev/flutter/material/AboutDialog-class.html'),
+    'listtile': Accordion(
+        'ListTile',
+        'A single fixed-height row that typically contains some text as well as a leading or trailing icon.\nListTile({Key? key, Widget? leading, Widget? title, Widget? subtitle, Widget? trailing, bool isThreeLine, bool? dense, VisualDensity? visualDensity, ShapeBorder? shape, EdgeInsetsGeometry? contentPadding, bool enabled, GestureTapCallback? onTap, GestureLongPressCallback? onLongPress, MouseCursor? mouseCursor, bool selected, Color? focusColor, Color? hoverColor, FocusNode? focusNode, bool autofocus, Color? tileColor, Color? selectedTileColor, bool? enableFeedback, double? horizontalTitleGap, double? minVerticalPadding, double? minLeadingWidth})',
+        'https://api.flutter.dev/flutter/material/ListTile-class.html'),
+    'aboutlisttile': Accordion(
+        'AboutListTile',
+        'This widget is often added to an app\'s Drawer. When tapped it shows an about box dialog with showAboutDialog.\nAboutListTile({Key? key, Widget? icon, Widget? child, String? applicationName, String? applicationVersion, Widget? applicationIcon, String? applicationLegalese, List<Widget>? aboutBoxChildren, bool? dense})',
+        'https://api.flutter.dev/flutter/material/AboutListTile-class.html'),
+    'absorbpointer': Accordion(
+        'AbsorbPointer',
+        'A widget that absorbs pointers during hit testing.\nAbsorbPointer({Key? key, bool absorbing, Widget? child, bool? ignoringSemantics})',
+        'https://api.flutter.dev/flutter/widgets/AbsorbPointer-class.html'),
+    'ignorepointer': Accordion(
+        'AbsorbPointer',
+        'A widget that absorbs pointers during hit testing.\nAbsorbPointer({Key? key, bool absorbing, Widget? child, bool? ignoringSemantics})',
+        'https://api.flutter.dev/flutter/widgets/AbsorbPointer-class.html'),
+    'cliprrect': Accordion(
+        'ClipRRect',
+        'A widget that clips its child using a rounded rectangle.\nClipRRect({Key? key, BorderRadius? borderRadius, CustomClipper<RRect>? clipper, Clip clipBehavior, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/ClipRRect-class.html'),
+    'cliprect': Accordion(
+        'ClipRect',
+        'A widget that clips its child using a rectangle.\nClipRect({Key? key, CustomClipper<Rect>? clipper, Clip clipBehavior, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/ClipRect-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -277,6 +372,30 @@ class _HomePageState extends State<HomePage> {
               },
             ),
             ListTile(
+              leading: Icon(Icons.color_lens_outlined),
+              title: Text('Color'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ColorItems(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.change_circle_outlined),
+              title: Text('Functions'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FunctionItems(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
               leading: Icon(Icons.settings),
               title: Text('Icon'),
               onTap: () {
@@ -296,6 +415,18 @@ class _HomePageState extends State<HomePage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Layouts(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.list_alt_outlined),
+              title: Text('Listtile'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ListTileItems(),
                   ),
                 );
               },
@@ -326,32 +457,30 @@ class _HomePageState extends State<HomePage> {
             ),
             Divider(color: Colors.grey, indent: 20, endIndent: 20),
             TextButton(
-              child: Text(
-                'About',
-                style: TextStyle(
-                    color: MyApp.themeNotifier.value == ThemeMode.light
-                        ? Colors.black
-                        : Colors.white),
-              ),
-              onPressed: () {
-                showAboutDialog(
-                  context: context,
-                  applicationIcon: FlutterLogo(),
-                  applicationName: 'Flutter Dictionary',
-                  applicationVersion: '0.0.1',
-                  applicationLegalese: '©2021 luckydesigner.space',
-                  children: <Widget>[
-                    Padding(
-                        padding: EdgeInsets.only(top: 15),
-                        child:
-                            Text('This is a simple dictionary about Flutter')),
-                    Padding(
-                        padding: EdgeInsets.only(top: 15),
-                        child: Text('Telegram Group:t.me/Luckydesignerspace',
-                            style: TextStyle(fontSize: 12))),
-                  ],
-                );
-              },
+              child: ActionChip(
+                  label: Text('About'),
+                  avatar: Icon(Icons.message_outlined, size: 18),
+                  onPressed: () {
+                    showAboutDialog(
+                      context: context,
+                      applicationIcon: FlutterLogo(),
+                      applicationName: 'Flutter Dictionary',
+                      applicationVersion: '0.0.1',
+                      applicationLegalese: '©2021 luckydesigner.space',
+                      children: <Widget>[
+                        Padding(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Text(
+                                'This is a simple dictionary about Flutter')),
+                        Padding(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Text(
+                                'Telegram Group:t.me/Luckydesignerspace',
+                                style: TextStyle(fontSize: 12))),
+                      ],
+                    );
+                  }),
+              onPressed: () {},
             ),
           ],
         ),
