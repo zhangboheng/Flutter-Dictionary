@@ -4,6 +4,7 @@ import 'dart:collection';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(const MyApp());
@@ -231,6 +232,30 @@ class _HomePageState extends State<HomePage> {
         'ClipRect',
         'A widget that clips its child using a rectangle.\nClipRect({Key? key, CustomClipper<Rect>? clipper, Clip clipBehavior, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/ClipRect-class.html'),
+    'buttonbar': Accordion(
+        'ButtonBar',
+        'An end-aligned row of buttons, laying out into a column if there is not enough horizontal space.\nButtonBar({Key? key, MainAxisAlignment? alignment, MainAxisSize? mainAxisSize, ButtonTextTheme? buttonTextTheme, double? buttonMinWidth, double? buttonHeight, EdgeInsetsGeometry? buttonPadding, bool? buttonAlignedDropdown, ButtonBarLayoutBehavior? layoutBehavior, VerticalDirection? overflowDirection, double? overflowButtonSpacing, List<Widget> children})',
+        'https://api.flutter.dev/flutter/material/ButtonBar-class.html'),
+    'appbar': Accordion(
+        'AppBar',
+        'A material design app bar.\nAppBar({Key? key, Widget? leading, bool automaticallyImplyLeading, Widget? title, List<Widget>? actions, Widget? flexibleSpace, PreferredSizeWidget? bottom, double? elevation, Color? shadowColor, ShapeBorder? shape, Color? backgroundColor, Color? foregroundColor, Brightness? brightness, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, TextTheme? textTheme, bool primary, bool? centerTitle, bool excludeHeaderSemantics, double? titleSpacing, double toolbarOpacity, double bottomOpacity, double? toolbarHeight, double? leadingWidth, bool? backwardsCompatibility, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle})',
+        'https://api.flutter.dev/flutter/material/AppBar-class.html'),
+    'step': Accordion(
+        'Step',
+        'A material step used in Stepper. The step can have a title and subtitle, an icon within its circle, some content and a state that governs its styling.\nStep({required Widget title, Widget? subtitle, required Widget content, StepState state, bool isActive})',
+        'https://api.flutter.dev/flutter/material/Step-class.html'),
+    'checkboxlisttile': Accordion(
+        'CheckboxListTile',
+        'A ListTile with a Checkbox. In other words, a checkbox with a label.\nCheckboxListTile({Key? key, required bool? value, required ValueChanged<bool?>? onChanged, Color? activeColor, Color? checkColor, Color? tileColor, Widget? title, Widget? subtitle, bool isThreeLine, bool? dense, Widget? secondary, bool selected, ListTileControlAffinity controlAffinity, bool autofocus, EdgeInsetsGeometry? contentPadding, bool tristate, ShapeBorder? shape, Color? selectedTileColor})',
+        'https://api.flutter.dev/flutter/material/CheckboxListTile-class.html'),
+    'radio': Accordion(
+        'Radio',
+        'A material design radio button.\nRadio({Key? key, required T value, required T? groupValue, required ValueChanged<T?>? onChanged, MouseCursor? mouseCursor, bool toggleable, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus})',
+        'https://api.flutter.dev/flutter/material/Radio-class.html'),
+    'radiolisttile': Accordion(
+        'RadioListTile',
+        'A ListTile with a Radio. In other words, a radio button with a label.\nRadioListTile({Key? key, required T value, required T? groupValue, required ValueChanged<T?>? onChanged, bool toggleable, Color? activeColor, Widget? title, Widget? subtitle, bool isThreeLine, bool? dense, Widget? secondary, bool selected, ListTileControlAffinity controlAffinity, bool autofocus, EdgeInsetsGeometry? contentPadding, ShapeBorder? shape, Color? tileColor, Color? selectedTileColor})',
+        'https://api.flutter.dev/flutter/material/RadioListTile-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -456,10 +481,48 @@ class _HomePageState extends State<HomePage> {
               },
             ),
             Divider(color: Colors.grey, indent: 20, endIndent: 20),
-            TextButton(
-              child: ActionChip(
-                  label: Text('About'),
-                  avatar: Icon(Icons.message_outlined, size: 18),
+            Wrap(children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(left: 20.0),
+              ),
+              ActionChip(
+                  label: Text('Package', style: TextStyle(fontSize: 12)),
+                  avatar: Icon(
+                    Icons.library_add_check_outlined,
+                    size: 18,
+                    color: MyApp.themeNotifier.value == ThemeMode.light
+                        ? Colors.black54
+                        : Colors.white,
+                  ),
+                  onPressed: () {}),
+              Padding(
+                padding: EdgeInsets.only(left: 5.0),
+              ),
+              ActionChip(
+                  label: Text('More', style: TextStyle(fontSize: 12)),
+                  avatar: Icon(
+                    Icons.code,
+                    size: 18,
+                    color: MyApp.themeNotifier.value == ThemeMode.light
+                        ? Colors.black54
+                        : Colors.white,
+                  ),
+                  onPressed: () {
+                    var link = 'https://github.com/search?q=flutter';
+                    launch(link, forceSafariVC: false);
+                  }),
+              Padding(
+                padding: EdgeInsets.only(left: 5.0),
+              ),
+              ActionChip(
+                  label: Text('About', style: TextStyle(fontSize: 12)),
+                  avatar: Icon(
+                    Icons.message_outlined,
+                    size: 18,
+                    color: MyApp.themeNotifier.value == ThemeMode.light
+                        ? Colors.black54
+                        : Colors.white,
+                  ),
                   onPressed: () {
                     showAboutDialog(
                       context: context,
@@ -480,8 +543,7 @@ class _HomePageState extends State<HomePage> {
                       ],
                     );
                   }),
-              onPressed: () {},
-            ),
+            ]),
           ],
         ),
       ),

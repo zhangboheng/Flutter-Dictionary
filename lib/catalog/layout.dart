@@ -23,16 +23,16 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'A widget that aligns its child within itself and optionally sizes itself based on the child\'s size.\nAlign({Key? key, AlignmentGeometry alignment, double? widthFactor, double? heightFactor, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/Align-class.html'),
           Accordion(
+              'AppBar',
+              'A material design app bar.\nAppBar({Key? key, Widget? leading, bool automaticallyImplyLeading, Widget? title, List<Widget>? actions, Widget? flexibleSpace, PreferredSizeWidget? bottom, double? elevation, Color? shadowColor, ShapeBorder? shape, Color? backgroundColor, Color? foregroundColor, Brightness? brightness, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, TextTheme? textTheme, bool primary, bool? centerTitle, bool excludeHeaderSemantics, double? titleSpacing, double toolbarOpacity, double bottomOpacity, double? toolbarHeight, double? leadingWidth, bool? backwardsCompatibility, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle})',
+              'https://api.flutter.dev/flutter/material/AppBar-class.html'),
+          Accordion(
               'AspectRatio',
               'A widget that attempts to size the child to a specific aspect ratio.\nAspectRatio({Key? key, required double aspectRatio, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/AspectRatio-class.html'),
           Accordion(
               'Baseline',
               'A widget that positions its child according to the child\'s baseline.\nBaseline({Key? key, required double baseline, required TextBaseline baselineType, Widget? child})',
-              'https://api.flutter.dev/flutter/widgets/Baseline-class.html'),
-          Accordion(
-              'Card',
-              'A material design card: a panel with slightly rounded corners and an elevation shadow.\nCard({Key? key, Color? color, Color? shadowColor, double? elevation, ShapeBorder? shape, bool borderOnForeground, EdgeInsetsGeometry? margin, Clip? clipBehavior, Widget? child, bool semanticContainer})',
               'https://api.flutter.dev/flutter/widgets/Baseline-class.html'),
           Accordion(
               'Center',
