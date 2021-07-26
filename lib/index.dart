@@ -5,5 +5,6 @@ export 'catalog/functionitems.dart';
 export 'catalog/iconitems.dart';
 export 'catalog/layout.dart';
 export 'catalog/listtile.dart';
+export 'catalog/packageitems.dart';
 export 'catalog/popup.dart';
 export 'catalog/textitems.dart';

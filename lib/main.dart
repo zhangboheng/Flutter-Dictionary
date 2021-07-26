@@ -256,6 +256,10 @@ class _HomePageState extends State<HomePage> {
         'RadioListTile',
         'A ListTile with a Radio. In other words, a radio button with a label.\nRadioListTile({Key? key, required T value, required T? groupValue, required ValueChanged<T?>? onChanged, bool toggleable, Color? activeColor, Widget? title, Widget? subtitle, bool isThreeLine, bool? dense, Widget? secondary, bool selected, ListTileControlAffinity controlAffinity, bool autofocus, EdgeInsetsGeometry? contentPadding, ShapeBorder? shape, Color? tileColor, Color? selectedTileColor})',
         'https://api.flutter.dev/flutter/material/RadioListTile-class.html'),
+    'clipoval': Accordion(
+        'ClipOval',
+        'A widget that clips its child using an oval.\nClipOval({Key? key, CustomClipper<Rect>? clipper, Clip clipBehavior, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/ClipOval-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -494,7 +498,10 @@ class _HomePageState extends State<HomePage> {
                         ? Colors.black54
                         : Colors.white,
                   ),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => PackageScreen()));
+                  }),
               Padding(
                 padding: EdgeInsets.only(left: 5.0),
               ),
