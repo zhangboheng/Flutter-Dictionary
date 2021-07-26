@@ -1,18 +1,18 @@
 // ignore_for_file: use_key_in_widget_constructors
-import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-class Accordion extends StatefulWidget {
+import 'package:flutter/material.dart';
+import '../packages/introduce.dart';
+
+class DetailCard extends StatefulWidget {
   final String title;
   final String content;
-  final String link;
-  const Accordion(this.title, this.content, this.link);
+  const DetailCard(this.title, this.content);
 
   @override
-  _AccordionState createState() => _AccordionState();
+  _DetailCardState createState() => _DetailCardState();
 }
 
-class _AccordionState extends State<Accordion> {
+class _DetailCardState extends State<DetailCard> {
   bool _showContent = false;
   @override
   Widget build(BuildContext context) {
@@ -30,14 +30,16 @@ class _AccordionState extends State<Accordion> {
                 });
               },
             ),
-            onTap: () async {
-              var link = widget.link;
-              if (await canLaunch(link)) {
-                await launch(link, forceSafariVC: false);
-              } else {
-                throw 'Could not launch $link';
-              }
-            }),
+            onTap: () => {
+                  if (widget.title == 'url_launcher')
+                    {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const LauncherWeb()))
+                    }else if(widget.title == 'flutter_markdown'){
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const MarkdownWeb()))                      
+                    }
+                }),
         _showContent
             ? Container(
                 padding:

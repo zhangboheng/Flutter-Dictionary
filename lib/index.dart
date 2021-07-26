@@ -1,5 +1,6 @@
 export 'catalog/accordion.dart';
 export 'catalog/buttonitems.dart';
+export 'catalog/codedetail.dart';
 export 'catalog/coloritems.dart';
 export 'catalog/functionitems.dart';
 export 'catalog/iconitems.dart';

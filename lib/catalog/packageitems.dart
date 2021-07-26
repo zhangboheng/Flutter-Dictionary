@@ -12,10 +12,10 @@ class PackageScreen extends StatefulWidget {
 
 class _HomePageState extends State<PackageScreen> {
   final _array = {
-    'urllauncher': Accordion(
-        'url_launcher',
-        'A graphical icon widget drawn with a glyph from a font described in an IconData such as material\'s predefined IconDatas in Icons.\nIcon(IconData? icon, {Key? key, double? size, Color? color, String? semanticLabel, TextDirection? textDirection})',
-        'https://api.flutter.dev/flutter/material/Icons-class.html'),
+    'url_launcher': DetailCard('url_launcher',
+        'A Flutter plugin for launching a URL. Supports iOS, Android, web, Windows, macOS, and Linux.'),
+    'flutter_markdown': DetailCard('flutter_markdown',
+        'A markdown renderer for Flutter. It supports the original format, but no inline HTML. Supports iOS, Android, web, Windows, macOS, and Linux.'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
