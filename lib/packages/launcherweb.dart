@@ -19,7 +19,8 @@ class _MyStatefulWidgetState extends State<LauncherWeb> {
         body: WidgetWithCodeView(
           child: SomeWidget(),
           sourceFilePath: 'lib/url_launcher.dart',
-          codeLinkPrefix: 'https://google.com?q=',
+          codeLinkPrefix:
+              'https://github.com/zhangboheng/Flutter-Dictionary/tree/main/assets/',
         ));
   }
 }
