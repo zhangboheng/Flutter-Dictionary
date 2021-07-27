@@ -260,6 +260,42 @@ class _HomePageState extends State<HomePage> {
         'ClipOval',
         'A widget that clips its child using an oval.\nClipOval({Key? key, CustomClipper<Rect>? clipper, Clip clipBehavior, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/ClipOval-class.html'),
+    'circularProgressIndicator': Accordion(
+        'CircularProgressIndicator',
+        'A material design circular progress indicator, which spins to indicate that the application is busy.\nCircularProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double strokeWidth, String? semanticsLabel, String? semanticsValue})',
+        'https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html'),
+    'linearProgressIndicator': Accordion(
+        'LinearProgressIndicator',
+        'A material design linear progress indicator, also known as a progress bar.\nLinearProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double? minHeight, String? semanticsLabel, String? semanticsValue})',
+        'https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html'),
+    'bottomnavigationbar': Accordion(
+        'BottomNavigationBar',
+        'A material widget that\'s displayed at the bottom of an app for selecting among a small number of views, typically between three and five.\nBottomNavigationBar({Key? key, required List<BottomNavigationBarItem> items, ValueChanged<int>? onTap, int currentIndex, double? elevation, BottomNavigationBarType? type, Color? fixedColor, Color? backgroundColor, double iconSize, Color? selectedItemColor, Color? unselectedItemColor, IconThemeData? selectedIconTheme, IconThemeData? unselectedIconTheme, double selectedFontSize, double unselectedFontSize, TextStyle? selectedLabelStyle, TextStyle? unselectedLabelStyle, bool? showSelectedLabels, bool? showUnselectedLabels, MouseCursor? mouseCursor, bool? enableFeedback})',
+        'https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html'),
+    'drawer': Accordion(
+        'Drawer',
+        'A material design panel that slides in horizontally from the edge of a Scaffold to show navigation links in an application.\nDrawer({Key? key, double elevation, Widget? child, String? semanticLabel})',
+        'https://api.flutter.dev/flutter/material/Drawer-class.html'),
+    'enddrawer': Accordion(
+        'endDrawer',
+        'A panel displayed to the side of the body, often hidden on mobile devices. Swipes in from right-to-left (TextDirection.ltr) or left-to-right (TextDirection.rtl).\nendDrawer: Drawer()',
+        'https://api.flutter.dev/flutter/material/Scaffold/endDrawer.html'),
+    'rotatedbox': Accordion(
+        'RotatedBox',
+        'A widget that rotates its child by a integral number of quarter turns.\nRotatedBox({Key? key, required int quarterTurns, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/RotatedBox-class.html'),
+    'simpledialog': Accordion(
+        'SimpleDialog',
+        'A simple material design dialog.\nSimpleDialog({Key? key, Widget? title, EdgeInsetsGeometry titlePadding, TextStyle? titleTextStyle, List<Widget>? children, EdgeInsetsGeometry contentPadding, Color? backgroundColor, double? elevation, String? semanticLabel, EdgeInsets insetPadding, Clip clipBehavior, ShapeBorder? shape})',
+        'https://api.flutter.dev/flutter/material/SimpleDialog-class.html'),
+    'expanded': Accordion(
+        'Expanded',
+        'A widget that expands a child of a Row, Column, or Flex so that the child fills the available space.\nExpanded({Key? key, int flex = 1, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/Expanded-class.html'),
+    'defaulttabcontroller': Accordion(
+        'DefaultTabController',
+        'he TabController for descendant widgets that don\'t specify one explicitly.\nDefaultTabController({Key? key, required int length, int initialIndex, required Widget child})',
+        'https://api.flutter.dev/flutter/material/DefaultTabController-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -388,6 +424,18 @@ class _HomePageState extends State<HomePage> {
                       Text('Flutter Dictionary  ',
                           style: TextStyle(fontSize: 24, color: Colors.white)),
                     ])),
+            ListTile(
+              leading: Icon(Icons.animation_outlined),
+              title: Text('Animation'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnimationItems(),
+                  ),
+                );
+              },
+            ),
             ListTile(
               leading: Icon(Icons.smart_button),
               title: Text('Button'),

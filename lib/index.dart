@@ -1,4 +1,5 @@
 export 'catalog/accordion.dart';
+export 'catalog/animationitems.dart';
 export 'catalog/buttonitems.dart';
 export 'catalog/codedetail.dart';
 export 'catalog/coloritems.dart';

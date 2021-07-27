@@ -51,6 +51,22 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'A convenience widget that combines common painting, positioning, and sizing widgets.\nContainer({Key? key, AlignmentGeometry? alignment, EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, Decoration? foregroundDecoration, double? width, double? height, BoxConstraints? constraints, EdgeInsetsGeometry? margin, Matrix4? transform, AlignmentGeometry? transformAlignment, Widget? child, Clip clipBehavior})',
               'https://api.flutter.dev/flutter/widgets/Container-class.html'),
           Accordion(
+              'DefaultTabController',
+              'he TabController for descendant widgets that don\'t specify one explicitly.\nDefaultTabController({Key? key, required int length, int initialIndex, required Widget child})',
+              'https://api.flutter.dev/flutter/material/DefaultTabController-class.html'),
+          Accordion(
+              'Drawer',
+              'A material design panel that slides in horizontally from the edge of a Scaffold to show navigation links in an application.\nDrawer({Key? key, double elevation, Widget? child, String? semanticLabel})',
+              'https://api.flutter.dev/flutter/material/Drawer-class.html'),
+          Accordion(
+              'endDrawer',
+              'A panel displayed to the side of the body, often hidden on mobile devices. Swipes in from right-to-left (TextDirection.ltr) or left-to-right (TextDirection.rtl).\nendDrawer: Drawer()',
+              'https://api.flutter.dev/flutter/material/Scaffold/endDrawer.html'),
+          Accordion(
+              'Expanded',
+              'A widget that expands a child of a Row, Column, or Flex so that the child fills the available space.\nExpanded({Key? key, int flex = 1, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/Expanded-class.html'),
+          Accordion(
               'ListView',
               'A scrollable list of widgets arranged linearly.\nListView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, List<Widget> children = const <Widget>[], int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})',
               'https://api.flutter.dev/flutter/widgets/ListView-class.html'),
@@ -62,6 +78,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'Padding',
               'A widget that insets its child by the given padding.\nPadding({Key? key, required EdgeInsetsGeometry padding, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/Padding-class.html'),
+          Accordion(
+              'RotatedBox',
+              'A widget that rotates its child by a integral number of quarter turns.\nRotatedBox({Key? key, required int quarterTurns, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/RotatedBox-class.html'),
           Accordion(
               'Row',
               'A widget that displays its children in a horizontal array.\nRow({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, MainAxisSize mainAxisSize = MainAxisSize.max, CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, TextBaseline? textBaseline, List<Widget> children = const <Widget>[]})',
