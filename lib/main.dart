@@ -296,6 +296,14 @@ class _HomePageState extends State<HomePage> {
         'DefaultTabController',
         'he TabController for descendant widgets that don\'t specify one explicitly.\nDefaultTabController({Key? key, required int length, int initialIndex, required Widget child})',
         'https://api.flutter.dev/flutter/material/DefaultTabController-class.html'),
+    'colortween': Accordion(
+        'ColorTween',
+        'An interpolation between two colors.\nColorTween({Color? begin, Color? end})',
+        'https://api.flutter.dev/flutter/animation/ColorTween-class.html'),
+    'inkwell': Accordion(
+        'InkWell',
+        'A rectangular area of a Material that responds to touch.\nInkWell({Key? key, Widget? child, GestureTapCallback? onTap, GestureTapCallback? onDoubleTap, GestureLongPressCallback? onLongPress, GestureTapDownCallback? onTapDown, GestureTapCancelCallback? onTapCancel, ValueChanged<bool>? onHighlightChanged, ValueChanged<bool>? onHover, MouseCursor? mouseCursor, Color? focusColor, Color? hoverColor, Color? highlightColor, MaterialStateProperty<Color?>? overlayColor, Color? splashColor, InteractiveInkFeatureFactory? splashFactory, double? radius, BorderRadius? borderRadius, ShapeBorder? customBorder, bool? enableFeedback = true, bool excludeFromSemantics = false, FocusNode? focusNode, bool canRequestFocus = true, ValueChanged<bool>? onFocusChange, bool autofocus = false})',
+        'https://api.flutter.dev/flutter/material/InkWell-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -407,8 +415,9 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
+          child: SingleChildScrollView(
+        padding: EdgeInsets.zero,
+        child: Column(
           children: <Widget>[
             DrawerHeader(
                 decoration: BoxDecoration(
@@ -535,7 +544,7 @@ class _HomePageState extends State<HomePage> {
             Divider(color: Colors.grey, indent: 20, endIndent: 20),
             Wrap(children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(left: 20.0),
+                padding: EdgeInsets.only(left: 5.0),
               ),
               ActionChip(
                   label: Text('Package', style: TextStyle(fontSize: 12)),
@@ -601,7 +610,7 @@ class _HomePageState extends State<HomePage> {
             ]),
           ],
         ),
-      ),
+      )),
       body: SingleChildScrollView(
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

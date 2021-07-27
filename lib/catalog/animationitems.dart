@@ -23,6 +23,10 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
               'A material design circular progress indicator, which spins to indicate that the application is busy.\nCircularProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double strokeWidth, String? semanticsLabel, String? semanticsValue})',
               'https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html'),
           Accordion(
+              'ColorTween',
+              'An interpolation between two colors.\nColorTween({Color? begin, Color? end})',
+              'https://api.flutter.dev/flutter/animation/ColorTween-class.html'),
+          Accordion(
               'LinearProgressIndicator',
               'A material design linear progress indicator, also known as a progress bar.\nLinearProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double? minHeight, String? semanticsLabel, String? semanticsValue})',
               'https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html'),
