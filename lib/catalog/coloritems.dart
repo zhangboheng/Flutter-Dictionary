@@ -26,6 +26,14 @@ class _MyStatefulWidgetState extends State<ColorItems> {
               'Gradient',
               'This is an interface that allows LinearGradient, RadialGradient, and SweepGradient classes to be used interchangeably in BoxDecorations.\nGradient({required List<Color> colors, List<double>? stops, GradientTransform? transform})',
               'https://api.flutter.dev/flutter/painting/Gradient-class.html'),
+          Accordion(
+              'HSLColor',
+              'A color represented using alpha, hue, saturation, and lightness.\nHSLColor.fromAHSL(double alpha, double hue, double saturation, double lightness)',
+              'https://api.flutter.dev/flutter/painting/HSLColor-class.html'),
+          Accordion(
+              'HSVColor',
+              'A color represented using alpha, hue, saturation, and value.\nHSVColor.fromAHSV(double alpha, double hue, double saturation, double value)',
+              'https://api.flutter.dev/flutter/painting/HSVColor-class.html'),
         ])),
       ),
     );

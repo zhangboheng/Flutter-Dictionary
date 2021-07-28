@@ -9,4 +9,5 @@ export 'catalog/layout.dart';
 export 'catalog/listtile.dart';
 export 'catalog/packageitems.dart';
 export 'catalog/popup.dart';
+export 'catalog/styleitems.dart';
 export 'catalog/textitems.dart';

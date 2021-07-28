@@ -1,4 +1,6 @@
 // ignore_for_file: prefer_const_constructors, unused_import
+import 'package:my_app/catalog/styleitems.dart';
+
 import 'index.dart';
 import 'dart:collection';
 import 'package:flutter/foundation.dart';
@@ -304,6 +306,78 @@ class _HomePageState extends State<HomePage> {
         'InkWell',
         'A rectangular area of a Material that responds to touch.\nInkWell({Key? key, Widget? child, GestureTapCallback? onTap, GestureTapCallback? onDoubleTap, GestureLongPressCallback? onLongPress, GestureTapDownCallback? onTapDown, GestureTapCancelCallback? onTapCancel, ValueChanged<bool>? onHighlightChanged, ValueChanged<bool>? onHover, MouseCursor? mouseCursor, Color? focusColor, Color? hoverColor, Color? highlightColor, MaterialStateProperty<Color?>? overlayColor, Color? splashColor, InteractiveInkFeatureFactory? splashFactory, double? radius, BorderRadius? borderRadius, ShapeBorder? customBorder, bool? enableFeedback = true, bool excludeFromSemantics = false, FocusNode? focusNode, bool canRequestFocus = true, ValueChanged<bool>? onFocusChange, bool autofocus = false})',
         'https://api.flutter.dev/flutter/material/InkWell-class.html'),
+    'hslcolor': Accordion(
+        'HSLColor',
+        'A color represented using alpha, hue, saturation, and lightness.\nHSLColor.fromAHSL(double alpha, double hue, double saturation, double lightness)',
+        'https://api.flutter.dev/flutter/painting/HSLColor-class.html'),
+    'hsvcolor': Accordion(
+        'HSVColor',
+        'A color represented using alpha, hue, saturation, and value.\nHSVColor.fromAHSV(double alpha, double hue, double saturation, double value)',
+        'https://api.flutter.dev/flutter/painting/HSVColor-class.html'),
+    'canvas': Accordion(
+        'Canvas',
+        'An interface for recording graphical operations.\nCanvas(PictureRecorder recorder, [Rect? cullRect])',
+        'https://api.flutter.dev/flutter/dart-ui/Canvas-class.html'),
+    'directionality': Accordion(
+        'Directionality',
+        'A widget that determines the ambient directionality of text and text-direction-sensitive render objects.\nDirectionality({Key? key, required TextDirection textDirection, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/Directionality-class.html'),
+    'gesturedetector': Accordion(
+        'GestureDetector',
+        'A widget that detects gestures.\nGestureDetector({Key? key, Widget? child, GestureTapDownCallback? onTapDown, GestureTapUpCallback? onTapUp, GestureTapCallback? onTap, GestureTapCancelCallback? onTapCancel, GestureTapCallback? onSecondaryTap, GestureTapDownCallback? onSecondaryTapDown, GestureTapUpCallback? onSecondaryTapUp, GestureTapCancelCallback? onSecondaryTapCancel, GestureTapDownCallback? onTertiaryTapDown, GestureTapUpCallback? onTertiaryTapUp, GestureTapCancelCallback? onTertiaryTapCancel, GestureTapDownCallback? onDoubleTapDown, GestureTapCallback? onDoubleTap, GestureTapCancelCallback? onDoubleTapCancel, GestureLongPressCallback? onLongPress, GestureLongPressStartCallback? onLongPressStart, GestureLongPressMoveUpdateCallback? onLongPressMoveUpdate, GestureLongPressUpCallback? onLongPressUp, GestureLongPressEndCallback? onLongPressEnd, GestureLongPressCallback? onSecondaryLongPress, GestureLongPressStartCallback? onSecondaryLongPressStart, GestureLongPressMoveUpdateCallback? onSecondaryLongPressMoveUpdate, GestureLongPressUpCallback? onSecondaryLongPressUp, GestureLongPressEndCallback? onSecondaryLongPressEnd, GestureDragDownCallback? onVerticalDragDown, GestureDragStartCallback? onVerticalDragStart, GestureDragUpdateCallback? onVerticalDragUpdate, GestureDragEndCallback? onVerticalDragEnd, GestureDragCancelCallback? onVerticalDragCancel, GestureDragDownCallback? onHorizontalDragDown, GestureDragStartCallback? onHorizontalDragStart, GestureDragUpdateCallback? onHorizontalDragUpdate, GestureDragEndCallback? onHorizontalDragEnd, GestureDragCancelCallback? onHorizontalDragCancel, GestureForcePressStartCallback? onForcePressStart, GestureForcePressPeakCallback? onForcePressPeak, GestureForcePressUpdateCallback? onForcePressUpdate, GestureForcePressEndCallback? onForcePressEnd, GestureDragDownCallback? onPanDown, GestureDragStartCallback? onPanStart, GestureDragUpdateCallback? onPanUpdate, GestureDragEndCallback? onPanEnd, GestureDragCancelCallback? onPanCancel, GestureScaleStartCallback? onScaleStart, GestureScaleUpdateCallback? onScaleUpdate, GestureScaleEndCallback? onScaleEnd, HitTestBehavior? behavior, bool excludeFromSemantics, DragStartBehavior dragStartBehavior})',
+        'https://api.flutter.dev/flutter/widgets/GestureDetector-class.html'),
+    'visibility': Accordion(
+        'Visibility',
+        'Whether to show or hide a child.\nVisibility({Key? key, required Widget child, Widget replacement, bool visible, bool maintainState, bool maintainAnimation, bool maintainSize, bool maintainSemantics, bool maintainInteractivity})',
+        'https://api.flutter.dev/flutter/widgets/Visibility-class.html'),
+    'customscrollview': Accordion(
+        'CustomScrollView',
+        'A ScrollView that creates custom scroll effects using slivers.\nCustomScrollView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, ScrollBehavior? scrollBehavior, bool shrinkWrap = false, Key? center, double anchor = 0.0, double? cacheExtent, List<Widget> slivers, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})',
+        'https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html'),
+    'animatedlist': Accordion(
+        'AnimatedList',
+        'A scrolling container that animates items when they are inserted or removed.\nAnimatedList({Key? key, required AnimatedListItemBuilder itemBuilder, int initialItemCount, Axis scrollDirection, bool reverse, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap, EdgeInsetsGeometry? padding, Clip clipBehavior})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedList-class.html'),
+    'sliverappbar': Accordion(
+        'SliverAppBar',
+        'A material design app bar that integrates with a CustomScrollView.\nSliverAppBar({Key? key, Widget? leading, bool automaticallyImplyLeading, Widget? title, List<Widget>? actions, Widget? flexibleSpace, PreferredSizeWidget? bottom, double? elevation, Color? shadowColor, bool forceElevated, Color? backgroundColor, Color? foregroundColor, Brightness? brightness, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, TextTheme? textTheme, bool primary, bool? centerTitle, bool excludeHeaderSemantics, double? titleSpacing, double? collapsedHeight, double? expandedHeight, bool floating, bool pinned, bool snap, bool stretch, double stretchTriggerOffset, AsyncCallback? onStretchTrigger, ShapeBorder? shape, double toolbarHeight, double? leadingWidth, bool? backwardsCompatibility, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle})',
+        'https://api.flutter.dev/flutter/material/SliverAppBar-class.html'),
+    'bottomappbar': Accordion(
+        'BottomAppBar',
+        'A container that is typically used with Scaffold.bottomNavigationBar, and can have a notch along the top that makes room for an overlapping FloatingActionButton.\nBottomAppBar({Key? key, Color? color, double? elevation, NotchedShape? shape, Clip clipBehavior, double notchMargin, Widget? child})',
+        'https://api.flutter.dev/flutter/material/BottomAppBar-class.html'),
+    'appbartheme': Accordion(
+        'AppBarTheme',
+        'Overrides the default values of visual properties for descendant AppBar widgets.\nAppBarTheme({Brightness? brightness, Color? color, Color? backgroundColor, Color? foregroundColor, double? elevation, Color? shadowColor, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, TextTheme? textTheme, bool? centerTitle, double? titleSpacing, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle, bool? backwardsCompatibility})',
+        'https://api.flutter.dev/flutter/material/AppBarTheme-class.html'),
+    'slivergrid': Accordion(
+        'SliverGrid',
+        'A sliver that places multiple box children in a two dimensional arrangement.\nSliverGrid({Key? key, required SliverChildDelegate delegate, required SliverGridDelegate gridDelegate})',
+        'https://api.flutter.dev/flutter/widgets/SliverGrid-class.html'),
+    'sliverlist': Accordion(
+        'SliverList',
+        'A sliver that places multiple box children in a linear array along the main axis.\nSliverList({Key? key, required SliverChildDelegate delegate})',
+        'https://api.flutter.dev/flutter/widgets/SliverList-class.html'),
+    'banner': Accordion(
+        'Banner',
+        'Displays a diagonal message above the corner of another widget.\nBanner({Key? key, Widget? child, required String message, TextDirection? textDirection, required BannerLocation location, TextDirection? layoutDirection, Color color, TextStyle textStyle})',
+        'https://api.flutter.dev/flutter/widgets/Banner-class.html'),
+    'materia': Accordion(
+        'Material',
+        'A piece of material.\nMaterial({Key? key, MaterialType type, double elevation, Color? color, Color? shadowColor, TextStyle? textStyle, BorderRadiusGeometry? borderRadius, ShapeBorder? shape, bool borderOnForeground, Clip clipBehavior, Duration animationDuration, Widget? child})',
+        'https://api.flutter.dev/flutter/material/Material-class.html'),
+    'materialbanner': Accordion(
+        'MaterialBanner',
+        'A Material Design banner.\nMaterialBanner({Key? key, required Widget content, TextStyle? contentTextStyle, required List<Widget> actions, Widget? leading, Color? backgroundColor, EdgeInsetsGeometry? padding, EdgeInsetsGeometry? leadingPadding, bool forceActionsBelow, OverflowBarAlignment overflowAlignment})',
+        'https://api.flutter.dev/flutter/material/MaterialBanner-class.html'),
+    'tabbar': Accordion(
+        'TabBar',
+        'A material design widget that displays a horizontal row of tabs.\nTabBar({Key? key, required List<Widget> tabs, TabController? controller, bool isScrollable, Color? indicatorColor, bool automaticIndicatorColorAdjustment, double indicatorWeight, EdgeInsetsGeometry indicatorPadding, Decoration? indicator, TabBarIndicatorSize? indicatorSize, Color? labelColor, TextStyle? labelStyle, EdgeInsetsGeometry? labelPadding, Color? unselectedLabelColor, TextStyle? unselectedLabelStyle, DragStartBehavior dragStartBehavior, MaterialStateProperty<Color?>? overlayColor, MouseCursor? mouseCursor, bool? enableFeedback, ValueChanged<int>? onTap, ScrollPhysics? physics})',
+        'https://api.flutter.dev/flutter/material/TabBar-class.html'),
+    'tabbarview': Accordion(
+        'TabBarView',
+        'A page view that displays the widget which corresponds to the currently selected tab.\nTabBarView({Key? key, required List<Widget> children, TabController? controller, ScrollPhysics? physics, DragStartBehavior dragStartBehavior})',
+        'https://api.flutter.dev/flutter/material/TabBarView-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -525,6 +599,18 @@ class _HomePageState extends State<HomePage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Popup(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.style_outlined),
+              title: Text('Style'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => StyleItems(),
                   ),
                 );
               },

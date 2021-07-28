@@ -19,6 +19,14 @@ class _MyStatefulWidgetState extends State<TextItems> {
         child: SingleChildScrollView(
             child: Column(children: const <Widget>[
           Accordion(
+              'Directionality',
+              'A widget that determines the ambient directionality of text and text-direction-sensitive render objects.\nDirectionality({Key? key, required TextDirection textDirection, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/Directionality-class.html'),
+          Accordion(
+              'RichText',
+              'A paragraph of rich text.\nRichText({Key? key, required InlineSpan text, TextAlign textAlign, TextDirection? textDirection, bool softWrap, TextOverflow overflow, double textScaleFactor, int? maxLines, Locale? locale, StrutStyle? strutStyle, TextWidthBasis textWidthBasis, TextHeightBehavior? textHeightBehavior})',
+              'https://api.flutter.dev/flutter/widgets/RichText-class.html'),
+          Accordion(
               'Text',
               'A run of text with a single style.\nText(String data, {Key? key, TextStyle? style, StrutStyle? strutStyle, TextAlign? textAlign, TextDirection? textDirection, Locale? locale, bool? softWrap, TextOverflow? overflow, double? textScaleFactor, int? maxLines, String? semanticsLabel, TextWidthBasis? textWidthBasis, TextHeightBehavior? textHeightBehavior})',
               'https://api.flutter.dev/flutter/widgets/Text-class.html'),
@@ -36,10 +44,6 @@ class _MyStatefulWidgetState extends State<TextItems> {
               'TextSpan',
               'An immutable span of text.\nTextSpan({String? text, List<InlineSpan>? children, TextStyle? style, GestureRecognizer? recognizer, MouseCursor? mouseCursor, PointerEnterEventListener? onEnter, PointerExitEventListener? onExit, String? semanticsLabel})',
               'https://api.flutter.dev/flutter/painting/TextSpan-class.html'),
-          Accordion(
-              'RichText',
-              'A paragraph of rich text.\nRichText({Key? key, required InlineSpan text, TextAlign textAlign, TextDirection? textDirection, bool softWrap, TextOverflow overflow, double textScaleFactor, int? maxLines, Locale? locale, StrutStyle? strutStyle, TextWidthBasis textWidthBasis, TextHeightBehavior? textHeightBehavior})',
-              'https://api.flutter.dev/flutter/widgets/RichText-class.html'),
         ])),
       ),
     );
