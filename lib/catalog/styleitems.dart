@@ -23,6 +23,10 @@ class _MyStatefulWidgetState extends State<StyleItems> {
               'Overrides the default values of visual properties for descendant AppBar widgets.\nAppBarTheme({Brightness? brightness, Color? color, Color? backgroundColor, Color? foregroundColor, double? elevation, Color? shadowColor, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, TextTheme? textTheme, bool? centerTitle, double? titleSpacing, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle, bool? backwardsCompatibility})',
               'https://api.flutter.dev/flutter/material/AppBarTheme-class.html'),
           Accordion(
+              'Theme',
+              'Applies a theme to descendant widgets.\nTheme({Key? key, required ThemeData data, required Widget child})',
+              'https://api.flutter.dev/flutter/material/Theme-class.html'),
+          Accordion(
               'Visibility',
               'Whether to show or hide a child.\nVisibility({Key? key, required Widget child, Widget replacement, bool visible, bool maintainState, bool maintainAnimation, bool maintainSize, bool maintainSemantics, bool maintainInteractivity})',
               'https://api.flutter.dev/flutter/widgets/Visibility-class.html'),

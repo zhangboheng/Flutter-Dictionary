@@ -103,6 +103,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'A widget that insets its child by the given padding.\nPadding({Key? key, required EdgeInsetsGeometry padding, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/Padding-class.html'),
           Accordion(
+              'Placeholder',
+              'A widget that draws a box that represents where other widgets will one day be added.\nPlaceholder({Key? key, Color color, double strokeWidth, double fallbackWidth, double fallbackHeight})',
+              'https://api.flutter.dev/flutter/widgets/Placeholder-class.html'),
+          Accordion(
               'RotatedBox',
               'A widget that rotates its child by a integral number of quarter turns.\nRotatedBox({Key? key, required int quarterTurns, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/RotatedBox-class.html'),
@@ -111,13 +115,17 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'A widget that displays its children in a horizontal array.\nRow({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, MainAxisSize mainAxisSize = MainAxisSize.max, CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, TextBaseline? textBaseline, List<Widget> children = const <Widget>[]})',
               'https://api.flutter.dev/flutter/widgets/Row-class.html'),
           Accordion(
-              'SizedBox',
-              'A box with a specified size.\nSizedBox({Key? key, double? width, double? height, Widget? child})',
-              'https://api.flutter.dev/flutter/widgets/SizedBox-class.html'),
+              'SafeArea',
+              'A widget that insets its child by sufficient padding to avoid intrusions by the operating system.\nSafeArea({Key? key, bool left, bool top, bool right, bool bottom, EdgeInsets minimum, bool maintainBottomViewPadding, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/SafeArea-class.html'),
           Accordion(
               'Scrollbar',
               'A Material Design scrollbar.\nScrollbar({Key? key, required Widget child, ScrollController? controller, bool? isAlwaysShown, bool? showTrackOnHover, double? hoverThickness, double? thickness, Radius? radius, ScrollNotificationPredicate? notificationPredicate, bool? interactive})',
               'https://api.flutter.dev/flutter/material/Scrollbar-class.html'),
+          Accordion(
+              'SizedBox',
+              'A box with a specified size.\nSizedBox({Key? key, double? width, double? height, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/SizedBox-class.html'),
           Accordion(
               'SliverAppBar',
               'A material design app bar that integrates with a CustomScrollView.\nSliverAppBar({Key? key, Widget? leading, bool automaticallyImplyLeading, Widget? title, List<Widget>? actions, Widget? flexibleSpace, PreferredSizeWidget? bottom, double? elevation, Color? shadowColor, bool forceElevated, Color? backgroundColor, Color? foregroundColor, Brightness? brightness, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, TextTheme? textTheme, bool primary, bool? centerTitle, bool excludeHeaderSemantics, double? titleSpacing, double? collapsedHeight, double? expandedHeight, bool floating, bool pinned, bool snap, bool stretch, double stretchTriggerOffset, AsyncCallback? onStretchTrigger, ShapeBorder? shape, double toolbarHeight, double? leadingWidth, bool? backwardsCompatibility, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle})',
@@ -130,6 +138,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'SliverList',
               'A sliver that places multiple box children in a linear array along the main axis.\nSliverList({Key? key, required SliverChildDelegate delegate})',
               'https://api.flutter.dev/flutter/widgets/SliverList-class.html'),
+          Accordion(
+              'SliverSafeArea',
+              'A sliver that insets another sliver by sufficient padding to avoid intrusions by the operating system.\nSliverSafeArea({Key? key, bool left, bool top, bool right, bool bottom, EdgeInsets minimum, required Widget sliver})',
+              'https://api.flutter.dev/flutter/widgets/SliverSafeArea-class.html'),
           Accordion(
               'Spacer',
               'Spacer creates an adjustable, empty spacer that can be used to tune the spacing between widgets in a Flex container, like Row or Column.\nSpacer({Key? key, int flex})',

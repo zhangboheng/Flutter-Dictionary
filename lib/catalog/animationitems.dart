@@ -19,6 +19,22 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
         child: SingleChildScrollView(
             child: Column(children: const <Widget>[
           Accordion(
+              'AnimatedAlign',
+              'Animated version of Align which automatically transitions the child\'s position over a given duration whenever the given alignment changes.\nAnimatedAlign({Key? key, required AlignmentGeometry alignment, Widget? child, double? heightFactor, double? widthFactor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedAlign-class.html'),
+          Accordion(
+              'AnimatedContainer',
+              'Animated version of Container that gradually changes its values over a period of time.\nAnimatedContainer({Key? key, AlignmentGeometry? alignment, EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, Decoration? foregroundDecoration, double? width, double? height, BoxConstraints? constraints, EdgeInsetsGeometry? margin, Matrix4? transform, AlignmentGeometry? transformAlignment, Widget? child, Clip clipBehavior, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html'),
+          Accordion(
+              'AnimatedCrossFade',
+              'A widget that cross-fades between two given children and animates itself between their sizes.\nAnimatedCrossFade({Key? key, required Widget firstChild, required Widget secondChild, Curve firstCurve, Curve secondCurve, Curve sizeCurve, AlignmentGeometry alignment, required CrossFadeState crossFadeState, required Duration duration, Duration? reverseDuration, AnimatedCrossFadeBuilder layoutBuilder})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedCrossFade-class.html'),
+          Accordion(
+              'AnimatedDefaultTextStyle',
+              'Animated version of DefaultTextStyle which automatically transitions the default text style (the text style to apply to descendant Text widgets without explicit style) over a given duration whenever the given style changes.\nAnimatedDefaultTextStyle({Key? key, required Widget child, required TextStyle style, TextAlign? textAlign, bool softWrap, TextOverflow overflow, int? maxLines, TextWidthBasis textWidthBasis, TextHeightBehavior? textHeightBehavior, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html'),
+          Accordion(
               'CircularProgressIndicator',
               'A material design circular progress indicator, which spins to indicate that the application is busy.\nCircularProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double strokeWidth, String? semanticsLabel, String? semanticsValue})',
               'https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html'),

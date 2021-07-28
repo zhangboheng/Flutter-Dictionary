@@ -378,6 +378,50 @@ class _HomePageState extends State<HomePage> {
         'TabBarView',
         'A page view that displays the widget which corresponds to the currently selected tab.\nTabBarView({Key? key, required List<Widget> children, TabController? controller, ScrollPhysics? physics, DragStartBehavior dragStartBehavior})',
         'https://api.flutter.dev/flutter/material/TabBarView-class.html'),
+    'safearea': Accordion(
+        'SafeArea',
+        'A widget that insets its child by sufficient padding to avoid intrusions by the operating system.\nSafeArea({Key? key, bool left, bool top, bool right, bool bottom, EdgeInsets minimum, bool maintainBottomViewPadding, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/SafeArea-class.html'),
+    'sliversafearea': Accordion(
+        'SliverSafeArea',
+        'A sliver that insets another sliver by sufficient padding to avoid intrusions by the operating system.\nSliverSafeArea({Key? key, bool left, bool top, bool right, bool bottom, EdgeInsets minimum, required Widget sliver})',
+        'https://api.flutter.dev/flutter/widgets/SliverSafeArea-class.html'),
+    'placeholder': Accordion(
+        'Placeholder',
+        'A widget that draws a box that represents where other widgets will one day be added.\nPlaceholder({Key? key, Color color, double strokeWidth, double fallbackWidth, double fallbackHeight})',
+        'https://api.flutter.dev/flutter/widgets/Placeholder-class.html'),
+    'rawimage': Accordion(
+        'RawImage',
+        'A widget that displays a dart:ui.Image directly.\nRawImage({Key? key, Image? image, String? debugImageLabel, double? width, double? height, double scale, Color? color, BlendMode? colorBlendMode, BoxFit? fit, AlignmentGeometry alignment, ImageRepeat repeat, Rect? centerSlice, bool matchTextDirection, bool invertColors, FilterQuality filterQuality, bool isAntiAlias})',
+        'https://api.flutter.dev/flutter/widgets/RawImage-class.html'),
+    'rawkeyboardlistener': Accordion(
+        'RawKeyboardListener',
+        'A widget that calls a callback whenever the user presses or releases a key on a keyboard.\nRawKeyboardListener({Key? key, required FocusNode focusNode, bool autofocus, bool includeSemantics, ValueChanged<RawKeyEvent>? onKey, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/RawKeyboardListener-class.html'),
+    'futurebuilder': Accordion(
+        'FutureBuilder',
+        'Widget that builds itself based on the latest snapshot of interaction with a Future.\nFutureBuilder({Key? key, Future<T>? future, T? initialData, required AsyncWidgetBuilder<T> builder})',
+        'https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html'),
+    'animatedalign': Accordion(
+        'AnimatedAlign',
+        'Animated version of Align which automatically transitions the child\'s position over a given duration whenever the given alignment changes.\nAnimatedAlign({Key? key, required AlignmentGeometry alignment, Widget? child, double? heightFactor, double? widthFactor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedAlign-class.html'),
+    'animatedbuilder': Accordion(
+        'AnimatedBuilder',
+        'A general-purpose widget for building animations.\nAnimatedBuilder({Key? key, required Listenable animation, required TransitionBuilder builder, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html'),
+    'animatedcontainer': Accordion(
+        'AnimatedContainer',
+        'Animated version of Container that gradually changes its values over a period of time.\nAnimatedContainer({Key? key, AlignmentGeometry? alignment, EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, Decoration? foregroundDecoration, double? width, double? height, BoxConstraints? constraints, EdgeInsetsGeometry? margin, Matrix4? transform, AlignmentGeometry? transformAlignment, Widget? child, Clip clipBehavior, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html'),
+    'animatedcrossfade': Accordion(
+        'AnimatedCrossFade',
+        'A widget that cross-fades between two given children and animates itself between their sizes.\nAnimatedCrossFade({Key? key, required Widget firstChild, required Widget secondChild, Curve firstCurve, Curve secondCurve, Curve sizeCurve, AlignmentGeometry alignment, required CrossFadeState crossFadeState, required Duration duration, Duration? reverseDuration, AnimatedCrossFadeBuilder layoutBuilder})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedCrossFade-class.html'),
+    'animateddefaulttextstyle': Accordion(
+        'AnimatedDefaultTextStyle',
+        'Animated version of DefaultTextStyle which automatically transitions the default text style (the text style to apply to descendant Text widgets without explicit style) over a given duration whenever the given style changes.\nAnimatedDefaultTextStyle({Key? key, required Widget child, required TextStyle style, TextAlign? textAlign, bool softWrap, TextOverflow overflow, int? maxLines, TextWidthBasis textWidthBasis, TextHeightBehavior? textHeightBehavior, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
