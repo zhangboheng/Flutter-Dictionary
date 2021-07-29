@@ -462,6 +462,26 @@ class _HomePageState extends State<HomePage> {
         'ScaleTransition',
         'Animates its own size and clips and aligns its child.\nSizeTransition({Key? key, Axis axis, required Animation<double> sizeFactor, double axisAlignment, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/SizeTransition-class.html'),
+    'rotationtransition': Accordion(
+        'RotationTransition',
+        'Animates the rotation of a widget.\nRotationTransition({Key? key, required Animation<double> turns, Alignment alignment, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/RotationTransition-class.html'),
+    'positionedtransition': Accordion(
+        'PositionedTransition',
+        'Animated version of Positioned which takes a specific Animation<RelativeRect> to transition the child\'s position from a start position to an end position over the lifetime of the animation.\nPositionedTransition({Key? key, required Animation<RelativeRect> rect, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/PositionedTransition-class.html'),
+    'hero': Accordion(
+        'Hero',
+        'A widget that marks its child as being a candidate for hero animations.\nHero({Key? key, required Object tag, CreateRectTween? createRectTween, HeroFlightShuttleBuilder? flightShuttleBuilder, HeroPlaceholderBuilder? placeholderBuilder, bool transitionOnUserGestures, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/Hero-class.html'),
+    'fadetransition': Accordion(
+        'FadeTransition',
+        'Animates the opacity of a widget.\nFadeTransition({Key? key, required Animation<double> opacity, bool alwaysIncludeSemantics, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/FadeTransition-class.html'),
+    'decoratedboxtransition': Accordion(
+        'DecoratedBoxTransition',
+        'Animated version of a DecoratedBox that animates the different properties of its Decoration.\nDecoratedBoxTransition({Key? key, required Animation<Decoration> decoration, DecorationPosition position, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/DecoratedBoxTransition-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

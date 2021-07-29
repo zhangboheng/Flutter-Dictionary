@@ -63,9 +63,29 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
               'An interpolation between two colors.\nColorTween({Color? begin, Color? end})',
               'https://api.flutter.dev/flutter/animation/ColorTween-class.html'),
           Accordion(
+              'DecoratedBoxTransition',
+              'Animated version of a DecoratedBox that animates the different properties of its Decoration.\nDecoratedBoxTransition({Key? key, required Animation<Decoration> decoration, DecorationPosition position, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/DecoratedBoxTransition-class.html'),
+          Accordion(
+              'FadeTransition',
+              'Animates the opacity of a widget.\nFadeTransition({Key? key, required Animation<double> opacity, bool alwaysIncludeSemantics, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/FadeTransition-class.html'),
+          Accordion(
+              'Hero',
+              'A widget that marks its child as being a candidate for hero animations.\nHero({Key? key, required Object tag, CreateRectTween? createRectTween, HeroFlightShuttleBuilder? flightShuttleBuilder, HeroPlaceholderBuilder? placeholderBuilder, bool transitionOnUserGestures, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/Hero-class.html'),
+          Accordion(
               'LinearProgressIndicator',
               'A material design linear progress indicator, also known as a progress bar.\nLinearProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double? minHeight, String? semanticsLabel, String? semanticsValue})',
               'https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html'),
+          Accordion(
+              'PositionedTransition',
+              'Animated version of Positioned which takes a specific Animation<RelativeRect> to transition the child\'s position from a start position to an end position over the lifetime of the animation.\nPositionedTransition({Key? key, required Animation<RelativeRect> rect, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/PositionedTransition-class.html'),
+          Accordion(
+              'RotationTransition',
+              'Animates the rotation of a widget.\nRotationTransition({Key? key, required Animation<double> turns, Alignment alignment, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/RotationTransition-class.html'),
           Accordion(
               'SlideTransition',
               'Animates the position of a widget relative to its normal position.\nSlideTransition({Key? key, required Animation<Offset> position, bool transformHitTests, TextDirection? textDirection, Widget? child})',
