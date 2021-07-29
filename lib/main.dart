@@ -422,6 +422,46 @@ class _HomePageState extends State<HomePage> {
         'AnimatedDefaultTextStyle',
         'Animated version of DefaultTextStyle which automatically transitions the default text style (the text style to apply to descendant Text widgets without explicit style) over a given duration whenever the given style changes.\nAnimatedDefaultTextStyle({Key? key, required Widget child, required TextStyle style, TextAlign? textAlign, bool softWrap, TextOverflow overflow, int? maxLines, TextWidthBasis textWidthBasis, TextHeightBehavior? textHeightBehavior, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
         'https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html'),
+    'animatedliststate': Accordion(
+        'AnimatedListState',
+        'The state for a scrolling container that animates items when they are inserted or removed.\nAnimatedListState()',
+        'https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html'),
+    'animatedmodalbarrier': Accordion(
+        'AnimatedModalBarrier',
+        'A widget that prevents the user from interacting with widgets behind itself, and can be configured with an animated color value.\nAnimatedModalBarrier({Key? key, required Animation<Color?> color, bool dismissible, String? semanticsLabel, bool? barrierSemanticsDismissible})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedModalBarrier-class.html'),
+    'animatedopacity': Accordion(
+        'AnimatedOpacity',
+        'Animated version of Opacity which automatically transitions the child\'s opacity over a given duration whenever the given opacity changes.\nAnimatedOpacity({Key? key, Widget? child, required double opacity, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd, bool alwaysIncludeSemantics})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html'),
+    'animatedphysicalmodel': Accordion(
+        'AnimatedPhysicalModel',
+        'Animated version of PhysicalModel.\nAnimatedPhysicalModel({Key? key, required Widget child, required BoxShape shape, Clip clipBehavior, BorderRadius borderRadius, required double elevation, required Color color, bool animateColor, required Color shadowColor, bool animateShadowColor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedPhysicalModel-class.html'),
+    'animatedpositioned': Accordion(
+        'AnimatedPositioned',
+        'Animated version of Positioned which automatically transitions the child\'s position over a given duration whenever the given position changes.\nAnimatedPositioned({Key? key, required Widget child, double? left, double? top, double? right, double? bottom, double? width, double? height, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})\nOnly works if it\'s the child of a Stack.',
+        'https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html'),
+    'animatedsize': Accordion(
+        'AnimatedSize',
+        'Animated widget that automatically transitions its size over a given duration whenever the given child\'s size changes.\nAnimatedSize({Key? key, Widget? child, AlignmentGeometry alignment, Curve curve, required Duration duration, Duration? reverseDuration, required TickerProvider vsync, Clip clipBehavior})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedSize-class.html'),
+    'animatedwidget': Accordion(
+        'AnimatedWidget',
+        'A widget that rebuilds when the given Listenable changes value.\nAnimatedWidget({Key? key, required Listenable listenable})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html'),
+    'slidetransition': Accordion(
+        'SlideTransition',
+        'Animates the position of a widget relative to its normal position.\nSlideTransition({Key? key, required Animation<Offset> position, bool transformHitTests, TextDirection? textDirection, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/SlideTransition-class.html'),
+    'sizetransition': Accordion(
+        'SizeTransition',
+        'Animates its own size and clips and aligns its child.\nSizeTransition({Key? key, Axis axis, required Animation<double> sizeFactor, double axisAlignment, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/SizeTransition-class.html'),
+    'scaletransition': Accordion(
+        'ScaleTransition',
+        'Animates its own size and clips and aligns its child.\nSizeTransition({Key? key, Axis axis, required Animation<double> sizeFactor, double axisAlignment, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/SizeTransition-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

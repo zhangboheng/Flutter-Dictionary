@@ -35,6 +35,26 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
               'Animated version of DefaultTextStyle which automatically transitions the default text style (the text style to apply to descendant Text widgets without explicit style) over a given duration whenever the given style changes.\nAnimatedDefaultTextStyle({Key? key, required Widget child, required TextStyle style, TextAlign? textAlign, bool softWrap, TextOverflow overflow, int? maxLines, TextWidthBasis textWidthBasis, TextHeightBehavior? textHeightBehavior, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
               'https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html'),
           Accordion(
+              'AnimatedOpacity',
+              'Animated version of Opacity which automatically transitions the child\'s opacity over a given duration whenever the given opacity changes.\nAnimatedOpacity({Key? key, Widget? child, required double opacity, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd, bool alwaysIncludeSemantics})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html'),
+          Accordion(
+              'AnimatedPhysicalModel',
+              'Animated version of PhysicalModel.\nAnimatedPhysicalModel({Key? key, required Widget child, required BoxShape shape, Clip clipBehavior, BorderRadius borderRadius, required double elevation, required Color color, bool animateColor, required Color shadowColor, bool animateShadowColor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedPhysicalModel-class.html'),
+          Accordion(
+              'AnimatedPositioned',
+              'Animated version of Positioned which automatically transitions the child\'s position over a given duration whenever the given position changes.\nAnimatedPositioned({Key? key, required Widget child, double? left, double? top, double? right, double? bottom, double? width, double? height, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})\nOnly works if it\'s the child of a Stack.',
+              'https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html'),
+          Accordion(
+              'AnimatedSize',
+              'Animated widget that automatically transitions its size over a given duration whenever the given child\'s size changes.\nAnimatedSize({Key? key, Widget? child, AlignmentGeometry alignment, Curve curve, required Duration duration, Duration? reverseDuration, required TickerProvider vsync, Clip clipBehavior})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedSize-class.html'),
+          Accordion(
+              'AnimatedWidget',
+              'A widget that rebuilds when the given Listenable changes value.\nAnimatedWidget({Key? key, required Listenable listenable})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html'),
+          Accordion(
               'CircularProgressIndicator',
               'A material design circular progress indicator, which spins to indicate that the application is busy.\nCircularProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double strokeWidth, String? semanticsLabel, String? semanticsValue})',
               'https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html'),
@@ -46,6 +66,18 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
               'LinearProgressIndicator',
               'A material design linear progress indicator, also known as a progress bar.\nLinearProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double? minHeight, String? semanticsLabel, String? semanticsValue})',
               'https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html'),
+          Accordion(
+              'SlideTransition',
+              'Animates the position of a widget relative to its normal position.\nSlideTransition({Key? key, required Animation<Offset> position, bool transformHitTests, TextDirection? textDirection, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/SlideTransition-class.html'),
+          Accordion(
+              'SizeTransition',
+              'Animates its own size and clips and aligns its child.\nSizeTransition({Key? key, Axis axis, required Animation<double> sizeFactor, double axisAlignment, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/SizeTransition-class.html'),
+          Accordion(
+              'ScaleTransition',
+              'Animates its own size and clips and aligns its child.\nSizeTransition({Key? key, Axis axis, required Animation<double> sizeFactor, double axisAlignment, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/SizeTransition-class.html'),
         ])),
       ),
     );

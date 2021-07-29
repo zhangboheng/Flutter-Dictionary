@@ -27,6 +27,14 @@ class _MyStatefulWidgetState extends State<FunctionItems> {
               'A general-purpose widget for building animations.\nAnimatedBuilder({Key? key, required Listenable animation, required TransitionBuilder builder, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html'),
           Accordion(
+              'AnimatedListState',
+              'The state for a scrolling container that animates items when they are inserted or removed.\nAnimatedListState()',
+              'https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html'),
+          Accordion(
+              'AnimatedModalBarrier',
+              'A widget that prevents the user from interacting with widgets behind itself, and can be configured with an animated color value.\nAnimatedModalBarrier({Key? key, required Animation<Color?> color, bool dismissible, String? semanticsLabel, bool? barrierSemanticsDismissible})',
+              'https://api.flutter.dev/flutter/widgets/AnimatedModalBarrier-class.html'),
+          Accordion(
               'Autocomplete',
               'A widget for helping the user make a selection by entering some text and choosing from among a list of options.\nAutocomplete({Key? key, required AutocompleteOptionsBuilder<T> optionsBuilder, AutocompleteOptionToString<T> displayStringForOption, AutocompleteFieldViewBuilder fieldViewBuilder, AutocompleteOnSelected<T>? onSelected, AutocompleteOptionsViewBuilder<T>? optionsViewBuilder})',
               'https://api.flutter.dev/flutter/material/Autocomplete-class.html'),
