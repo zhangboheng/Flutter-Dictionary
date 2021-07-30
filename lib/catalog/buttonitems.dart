@@ -33,7 +33,7 @@ class _MyStatefulWidgetState extends State<ButtonItems> {
           Accordion(
               'Card',
               'A material design card: a panel with slightly rounded corners and an elevation shadow.\nCard({Key? key, Color? color, Color? shadowColor, double? elevation, ShapeBorder? shape, bool borderOnForeground, EdgeInsetsGeometry? margin, Clip? clipBehavior, Widget? child, bool semanticContainer})',
-              'https://api.flutter.dev/flutter/widgets/Baseline-class.html'),
+              'https://api.flutter.dev/flutter/material/Card-class.html'),
           Accordion(
               'CheckBox',
               'A material design checkbox.\nCheckbox({Key? key, required bool? value, bool tristate, required ValueChanged<bool?>? onChanged, MouseCursor? mouseCursor, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? checkColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus, OutlinedBorder? shape, BorderSide? side})',
@@ -42,6 +42,14 @@ class _MyStatefulWidgetState extends State<ButtonItems> {
               'CupertinoButton',
               'An iOS-style button.\n({Key? key, required Widget child, EdgeInsetsGeometry? padding, Color? color, Color disabledColor, double? minSize, double? pressedOpacity, BorderRadius? borderRadius, AlignmentGeometry alignment, required VoidCallback? onPressed})',
               'https://api.flutter.dev/flutter/cupertino/CupertinoButton-class.html'),
+          Accordion(
+              'Chip',
+              'A material design chip.\nChip({Key? key, Widget? avatar, required Widget label, TextStyle? labelStyle, EdgeInsetsGeometry? labelPadding, Widget? deleteIcon, VoidCallback? onDeleted, Color? deleteIconColor, bool useDeleteButtonTooltip, String? deleteButtonTooltipMessage, BorderSide? side, OutlinedBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Color? backgroundColor, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, MaterialTapTargetSize? materialTapTargetSize, double? elevation, Color? shadowColor})',
+              'https://api.flutter.dev/flutter/material/Chip-class.html'),
+          Accordion(
+              'DropdownButton',
+              'A material design button for selecting from a list of items.\nDropdownButton({Key? key, required List<DropdownMenuItem<T>>? items, DropdownButtonBuilder? selectedItemBuilder, T? value, Widget? hint, Widget? disabledHint, ValueChanged<T?>? onChanged, VoidCallback? onTap, int elevation, TextStyle? style, Widget? underline, Widget? icon, Color? iconDisabledColor, Color? iconEnabledColor, double iconSize, bool isDense, bool isExpanded, double? itemHeight, Color? focusColor, FocusNode? focusNode, bool autofocus, Color? dropdownColor, double? menuMaxHeight})',
+              'https://api.flutter.dev/flutter/material/DropdownButton-class.html'),
           Accordion(
               'ElevatedButton',
               'A Material Design "elevated button".\n{Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip clipBehavior = Clip.none, required Widget? child})',
@@ -71,9 +79,13 @@ class _MyStatefulWidgetState extends State<ButtonItems> {
               'A material design radio button.\nRadio({Key? key, required T value, required T? groupValue, required ValueChanged<T?>? onChanged, MouseCursor? mouseCursor, bool toggleable, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus})',
               'https://api.flutter.dev/flutter/material/Radio-class.html'),
           Accordion(
-              'Slider',
-              'A Material Design slider.\nSlider({Key? key, required double value, required ValueChanged<double>? onChanged, ValueChanged<double>? onChangeStart, ValueChanged<double>? onChangeEnd, double min, double max, int? divisions, String? label, Color? activeColor, Color? inactiveColor, MouseCursor? mouseCursor, SemanticFormatterCallback? semanticFormatterCallback, FocusNode? focusNode, bool autofocus})',
-              'https://api.flutter.dev/flutter/material/Slider-class.html'),
+              'Radio',
+              'A material design radio button.\nRadio({Key? key, required T value, required T? groupValue, required ValueChanged<T?>? onChanged, MouseCursor? mouseCursor, bool toggleable, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus})',
+              'https://api.flutter.dev/flutter/material/Radio-class.html'),
+          Accordion(
+              'showDatePicker',
+              'Shows a dialog containing a Material Design date picker.\nFuture<DateTime?> showDatePicker( {required BuildContext context, required DateTime initialDate, required DateTime firstDate, required DateTime lastDate, DateTime? currentDate, DatePickerEntryMode initialEntryMode = DatePickerEntryMode.calendar, SelectableDayPredicate? selectableDayPredicate, String? helpText, String? cancelText, String? confirmText, Locale? locale, bool useRootNavigator = true, RouteSettings? routeSettings, TextDirection? textDirection, TransitionBuilder? builder, DatePickerMode initialDatePickerMode = DatePickerMode.day, String? errorFormatText, String? errorInvalidText, String? fieldHintText, String? fieldLabelText} )',
+              'https://api.flutter.dev/flutter/material/showDatePicker.html'),
           Accordion(
               'Step',
               'A material step used in Stepper. The step can have a title and subtitle, an icon within its circle, some content and a state that governs its styling.\nStep({required Widget title, Widget? subtitle, required Widget content, StepState state, bool isActive})',

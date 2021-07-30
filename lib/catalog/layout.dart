@@ -45,7 +45,7 @@ class _MyStatefulWidgetState extends State<Layouts> {
           Accordion(
               'Center',
               'A widget that centers its child within itself.\nCenter({Key? key, double? widthFactor, double? heightFactor, Widget? child})',
-              'https://api.flutter.dev/flutter/material/Card-class.html'),
+              'https://api.flutter.dev/flutter/widgets/Center-class.html'),
           Accordion(
               'Column',
               'A widget that displays its children in a vertical array.\nColumn({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, MainAxisSize mainAxisSize = MainAxisSize.max, CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, TextBaseline? textBaseline, List<Widget> children = const <Widget>[]})',
@@ -62,6 +62,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'CustomScrollView',
               'A ScrollView that creates custom scroll effects using slivers.\nCustomScrollView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, ScrollBehavior? scrollBehavior, bool shrinkWrap = false, Key? center, double anchor = 0.0, double? cacheExtent, List<Widget> slivers, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})',
               'https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html'),
+          Accordion(
+              'DataTable',
+              'A material design data table.\nDataTable({Key? key, required List<DataColumn> columns, int? sortColumnIndex, bool sortAscending, ValueSetter<bool?>? onSelectAll, Decoration? decoration, MaterialStateProperty<Color?>? dataRowColor, double? dataRowHeight, TextStyle? dataTextStyle, MaterialStateProperty<Color?>? headingRowColor, double? headingRowHeight, TextStyle? headingTextStyle, double? horizontalMargin, double? columnSpacing, bool showCheckboxColumn, bool showBottomBorder, double? dividerThickness, required List<DataRow> rows, double? checkboxHorizontalMargin})',
+              'https://api.flutter.dev/flutter/material/DataTable-class.html'),
           Accordion(
               'DefaultTabController',
               'he TabController for descendant widgets that don\'t specify one explicitly.\nDefaultTabController({Key? key, required int length, int initialIndex, required Widget child})',
@@ -159,6 +163,18 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'TabBarView',
               'A page view that displays the widget which corresponds to the currently selected tab.\nTabBarView({Key? key, required List<Widget> children, TabController? controller, ScrollPhysics? physics, DragStartBehavior dragStartBehavior})',
               'https://api.flutter.dev/flutter/material/TabBarView-class.html'),
+          Accordion(
+              'TabController',
+              'Coordinates tab selection between a TabBar and a TabBarView.\nTabController({int initialIndex = 0, required int length, required TickerProvider vsync})',
+              'https://api.flutter.dev/flutter/material/TabController-class.html'),
+          Accordion(
+              'TabPageSelector',
+              'Displays a row of small circular indicators, one per tab.\nTabPageSelector({Key? key, TabController? controller, double indicatorSize, Color? color, Color? selectedColor})',
+              'https://api.flutter.dev/flutter/material/TabPageSelector-class.html'),
+          Accordion(
+              'WidgetsApp',
+              'A convenience widget that wraps a number of widgets that are commonly required for an application.\nWidgetsApp({Key? key, GlobalKey<NavigatorState>? navigatorKey, RouteFactory? onGenerateRoute, InitialRouteListFactory? onGenerateInitialRoutes, RouteFactory? onUnknownRoute, List<NavigatorObserver> navigatorObservers, String? initialRoute, PageRouteFactory? pageRouteBuilder, Widget? home, Map<String, WidgetBuilder> routes, TransitionBuilder? builder, String title, GenerateAppTitle? onGenerateTitle, TextStyle? textStyle, required Color color, Locale? locale, Iterable<LocalizationsDelegate>? localizationsDelegates, LocaleListResolutionCallback? localeListResolutionCallback, LocaleResolutionCallback? localeResolutionCallback, Iterable<Locale> supportedLocales, bool showPerformanceOverlay, bool checkerboardRasterCacheImages, bool checkerboardOffscreenLayers, bool showSemanticsDebugger, bool debugShowWidgetInspector, bool debugShowCheckedModeBanner, InspectorSelectButtonBuilder? inspectorSelectButtonBuilder, Map<LogicalKeySet, Intent>? shortcuts, Map<Type, Action<Intent>>? actions, String? restorationScopeId})',
+              'https://api.flutter.dev/flutter/widgets/WidgetsApp-class.html'),
           Accordion(
               'Wrap',
               'A widget that displays its children in multiple horizontal or vertical runs.\nWrap({Key? key, Axis direction, WrapAlignment alignment, double spacing, WrapAlignment runAlignment, double runSpacing, WrapCrossAlignment crossAxisAlignment, TextDirection? textDirection, VerticalDirection verticalDirection, Clip clipBehavior, List<Widget> children = const <Widget>[]})',

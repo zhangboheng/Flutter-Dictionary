@@ -482,6 +482,62 @@ class _HomePageState extends State<HomePage> {
         'DecoratedBoxTransition',
         'Animated version of a DecoratedBox that animates the different properties of its Decoration.\nDecoratedBoxTransition({Key? key, required Animation<Decoration> decoration, DecorationPosition position, required Widget child})',
         'https://api.flutter.dev/flutter/widgets/DecoratedBoxTransition-class.html'),
+    'backdropfilter': Accordion(
+        'BackdropFilter',
+        'A widget that applies a filter to the existing painted content and then paints child.\nBackdropFilter({Key? key, required ImageFilter filter, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/BackdropFilter-class.html'),
+    'custompaint': Accordion(
+        'CustomPaint',
+        'A widget that provides a canvas on which to draw during the paint phase.\nCustomPaint({Key? key, CustomPainter? painter, CustomPainter? foregroundPainter, Size size, bool isComplex, bool willChange, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/CustomPaint-class.html'),
+    'decoratedbox': Accordion(
+        'DecoratedBox',
+        'A widget that paints a Decoration either before or after its child paints.\nDecoratedBox({Key? key, required Decoration decoration, DecorationPosition position, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/DecoratedBox-class.html'),
+    'fractionaltranslation': Accordion(
+        'FractionalTranslation',
+        'Applies a translation transformation before painting its child.\nFractionalTranslation({Key? key, required Offset translation, bool transformHitTests, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/FractionalTranslation-class.html'),
+    'transform': Accordion(
+        'Transform',
+        'A widget that applies a transformation before painting its child.\nTransform({Key? key, required Matrix4 transform, Offset? origin, AlignmentGeometry? alignment, bool transformHitTests, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/Transform-class.html'),
+    'tabcontroller': Accordion(
+        'TabController',
+        'Coordinates tab selection between a TabBar and a TabBarView.\nTabController({int initialIndex = 0, required int length, required TickerProvider vsync})',
+        'https://api.flutter.dev/flutter/material/TabController-class.html'),
+    'tabpageselector': Accordion(
+        'TabPageSelector',
+        'Displays a row of small circular indicators, one per tab.\nTabPageSelector({Key? key, TabController? controller, double indicatorSize, Color? color, Color? selectedColor})',
+        'https://api.flutter.dev/flutter/material/TabPageSelector-class.html'),
+    'widgetsapp': Accordion(
+        'WidgetsApp',
+        'A convenience widget that wraps a number of widgets that are commonly required for an application.\nWidgetsApp({Key? key, GlobalKey<NavigatorState>? navigatorKey, RouteFactory? onGenerateRoute, InitialRouteListFactory? onGenerateInitialRoutes, RouteFactory? onUnknownRoute, List<NavigatorObserver> navigatorObservers, String? initialRoute, PageRouteFactory? pageRouteBuilder, Widget? home, Map<String, WidgetBuilder> routes, TransitionBuilder? builder, String title, GenerateAppTitle? onGenerateTitle, TextStyle? textStyle, required Color color, Locale? locale, Iterable<LocalizationsDelegate>? localizationsDelegates, LocaleListResolutionCallback? localeListResolutionCallback, LocaleResolutionCallback? localeResolutionCallback, Iterable<Locale> supportedLocales, bool showPerformanceOverlay, bool checkerboardRasterCacheImages, bool checkerboardOffscreenLayers, bool showSemanticsDebugger, bool debugShowWidgetInspector, bool debugShowCheckedModeBanner, InspectorSelectButtonBuilder? inspectorSelectButtonBuilder, Map<LogicalKeySet, Intent>? shortcuts, Map<Type, Action<Intent>>? actions, String? restorationScopeId})',
+        'https://api.flutter.dev/flutter/widgets/WidgetsApp-class.html'),
+    'dropdownbutton': Accordion(
+        'DropdownButton',
+        'A material design button for selecting from a list of items.\nDropdownButton({Key? key, required List<DropdownMenuItem<T>>? items, DropdownButtonBuilder? selectedItemBuilder, T? value, Widget? hint, Widget? disabledHint, ValueChanged<T?>? onChanged, VoidCallback? onTap, int elevation, TextStyle? style, Widget? underline, Widget? icon, Color? iconDisabledColor, Color? iconEnabledColor, double iconSize, bool isDense, bool isExpanded, double? itemHeight, Color? focusColor, FocusNode? focusNode, bool autofocus, Color? dropdownColor, double? menuMaxHeight})',
+        'https://api.flutter.dev/flutter/material/DropdownButton-class.html'),
+    'showdatepicker': Accordion(
+        'showDatePicker',
+        'Shows a dialog containing a Material Design date picker.\nFuture<DateTime?> showDatePicker( {required BuildContext context, required DateTime initialDate, required DateTime firstDate, required DateTime lastDate, DateTime? currentDate, DatePickerEntryMode initialEntryMode = DatePickerEntryMode.calendar, SelectableDayPredicate? selectableDayPredicate, String? helpText, String? cancelText, String? confirmText, Locale? locale, bool useRootNavigator = true, RouteSettings? routeSettings, TextDirection? textDirection, TransitionBuilder? builder, DatePickerMode initialDatePickerMode = DatePickerMode.day, String? errorFormatText, String? errorInvalidText, String? fieldHintText, String? fieldLabelText} )',
+        'https://api.flutter.dev/flutter/material/showDatePicker.html'),
+    'bottomsheet': Accordion(
+        'BottomSheet',
+        'A material design bottom sheet.\nBottomSheet({Key? key, AnimationController? animationController, bool enableDrag, BottomSheetDragStartHandler? onDragStart, BottomSheetDragEndHandler? onDragEnd, Color? backgroundColor, double? elevation, ShapeBorder? shape, Clip? clipBehavior, required VoidCallback onClosing, required WidgetBuilder builder})',
+        'https://api.flutter.dev/flutter/material/BottomSheet-class.html'),
+    'expansionpanel': Accordion(
+        'ExpansionPanel',
+        'A material expansion panel. It has a header and a body and can be either expanded or collapsed. The body of the panel is only visible when it is expanded.\nExpansionPanel({required ExpansionPanelHeaderBuilder headerBuilder, required Widget body, bool isExpanded, bool canTapOnHeader, Color? backgroundColor})',
+        'https://api.flutter.dev/flutter/material/ExpansionPanel-class.html'),
+    'chip': Accordion(
+        'Chip',
+        'A material design chip.\nChip({Key? key, Widget? avatar, required Widget label, TextStyle? labelStyle, EdgeInsetsGeometry? labelPadding, Widget? deleteIcon, VoidCallback? onDeleted, Color? deleteIconColor, bool useDeleteButtonTooltip, String? deleteButtonTooltipMessage, BorderSide? side, OutlinedBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Color? backgroundColor, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, MaterialTapTargetSize? materialTapTargetSize, double? elevation, Color? shadowColor})',
+        'https://api.flutter.dev/flutter/material/Chip-class.html'),
+    'datatable': Accordion(
+        'DataTable',
+        'A material design data table.\nDataTable({Key? key, required List<DataColumn> columns, int? sortColumnIndex, bool sortAscending, ValueSetter<bool?>? onSelectAll, Decoration? decoration, MaterialStateProperty<Color?>? dataRowColor, double? dataRowHeight, TextStyle? dataTextStyle, MaterialStateProperty<Color?>? headingRowColor, double? headingRowHeight, TextStyle? headingTextStyle, double? horizontalMargin, double? columnSpacing, bool showCheckboxColumn, bool showBottomBorder, double? dividerThickness, required List<DataRow> rows, double? checkboxHorizontalMargin})',
+        'https://api.flutter.dev/flutter/material/DataTable-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
