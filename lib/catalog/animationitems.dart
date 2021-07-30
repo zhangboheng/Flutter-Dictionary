@@ -67,6 +67,10 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
               'Animated version of a DecoratedBox that animates the different properties of its Decoration.\nDecoratedBoxTransition({Key? key, required Animation<Decoration> decoration, DecorationPosition position, required Widget child})',
               'https://api.flutter.dev/flutter/widgets/DecoratedBoxTransition-class.html'),
           Accordion(
+              'Dismissible',
+              'A widget that can be dismissed by dragging in the indicated direction.\nDismissible({required Key key, required Widget child, Widget? background, Widget? secondaryBackground, ConfirmDismissCallback? confirmDismiss, VoidCallback? onResize, DismissDirectionCallback? onDismissed, DismissDirection direction, Duration? resizeDuration, Map<DismissDirection, double> dismissThresholds, Duration movementDuration, double crossAxisEndOffset, DragStartBehavior dragStartBehavior, HitTestBehavior behavior})',
+              'https://api.flutter.dev/flutter/widgets/Dismissible-class.html'),
+          Accordion(
               'FadeTransition',
               'Animates the opacity of a widget.\nFadeTransition({Key? key, required Animation<double> opacity, bool alwaysIncludeSemantics, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/FadeTransition-class.html'),

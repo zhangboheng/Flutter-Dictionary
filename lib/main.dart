@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unused_import
-import 'package:my_app/catalog/styleitems.dart';
-
 import 'index.dart';
+import 'dart:math';
+import 'dart:async';
 import 'dart:collection';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -42,6 +42,72 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _rotate = 0;
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+      const Duration(seconds: 3),
+      () {
+        Navigator.pushReplacement<void, void>(
+          context,
+          MaterialPageRoute<dynamic>(
+              builder: (BuildContext context) => const SecondScreen()),
+        );
+        setState(() {
+          _rotate++;
+        });
+      },
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        color: Colors.white,
+        child: Align(
+          widthFactor: 0.8,
+          alignment: Alignment.center,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Transform.rotate(
+                angle: pi * _rotate,
+                child: FlutterLogo(size: 102),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10.0),
+              ),
+              Text('Flutter Dictionary',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 24,
+                    decoration: TextDecoration.none,
+                  )),
+              Padding(
+                padding: EdgeInsets.only(top: 10.0),
+              ),
+              Text('V0.01',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16,
+                    decoration: TextDecoration.none,
+                  )),
+            ],
+          ),
+        ));
+  }
+}
+
+class SecondScreen extends StatefulWidget {
+  const SecondScreen({Key? key}) : super(key: key);
+
+  @override
+  State<SecondScreen> createState() => _SecondScreenState();
+}
+
+class _SecondScreenState extends State<SecondScreen> {
   final _array = {
     'icon': Accordion(
         'Icon',
@@ -538,6 +604,10 @@ class _HomePageState extends State<HomePage> {
         'DataTable',
         'A material design data table.\nDataTable({Key? key, required List<DataColumn> columns, int? sortColumnIndex, bool sortAscending, ValueSetter<bool?>? onSelectAll, Decoration? decoration, MaterialStateProperty<Color?>? dataRowColor, double? dataRowHeight, TextStyle? dataTextStyle, MaterialStateProperty<Color?>? headingRowColor, double? headingRowHeight, TextStyle? headingTextStyle, double? horizontalMargin, double? columnSpacing, bool showCheckboxColumn, bool showBottomBorder, double? dividerThickness, required List<DataRow> rows, double? checkboxHorizontalMargin})',
         'https://api.flutter.dev/flutter/material/DataTable-class.html'),
+    'dismissible': Accordion(
+        'Dismissible',
+        'A widget that can be dismissed by dragging in the indicated direction.\nDismissible({required Key key, required Widget child, Widget? background, Widget? secondaryBackground, ConfirmDismissCallback? confirmDismiss, VoidCallback? onResize, DismissDirectionCallback? onDismissed, DismissDirection direction, Duration? resizeDuration, Map<DismissDirection, double> dismissThresholds, Duration movementDuration, double crossAxisEndOffset, DragStartBehavior dragStartBehavior, HitTestBehavior behavior})',
+        'https://api.flutter.dev/flutter/widgets/Dismissible-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
