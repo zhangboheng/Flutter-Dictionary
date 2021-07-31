@@ -618,6 +618,29 @@ class _SecondScreenState extends State<SecondScreen> {
         'PageRouteBuilder',
         'A utility class for defining one-off page routes in terms of callbacks.\nPageRouteBuilder({RouteSettings? settings, required RoutePageBuilder pageBuilder, RouteTransitionsBuilder transitionsBuilder, Duration transitionDuration, Duration reverseTransitionDuration, bool opaque, bool barrierDismissible, Color? barrierColor, String? barrierLabel, bool maintainState, bool fullscreenDialog = false})',
         'https://api.flutter.dev/flutter/widgets/PageRouteBuilder-class.html'),
+    'backbutton': Accordion(
+        'BackButton',
+        'A material design back button.\nBackButton({Key? key, Color? color, VoidCallback? onPressed})',
+        'https://api.flutter.dev/flutter/material/BackButton-class.html'),
+    'materialapp': Accordion(
+        'MaterialApp',
+        'An application that uses material design.\nMaterialApp({Key? key, GlobalKey<NavigatorState>? navigatorKey, GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey, Widget? home, Map<String, WidgetBuilder> routes, String? initialRoute, RouteFactory? onGenerateRoute, InitialRouteListFactory? onGenerateInitialRoutes, RouteFactory? onUnknownRoute, List<NavigatorObserver> navigatorObservers, TransitionBuilder? builder, String title, GenerateAppTitle? onGenerateTitle, Color? color, ThemeData? theme, ThemeData? darkTheme, ThemeData? highContrastTheme, ThemeData? highContrastDarkTheme, ThemeMode? themeMode, Locale? locale, Iterable<LocalizationsDelegate>? localizationsDelegates, LocaleListResolutionCallback? localeListResolutionCallback, LocaleResolutionCallback? localeResolutionCallback, Iterable<Locale> supportedLocales, bool debugShowMaterialGrid, bool showPerformanceOverlay, bool checkerboardRasterCacheImages, bool checkerboardOffscreenLayers, bool showSemanticsDebugger, bool debugShowCheckedModeBanner, Map<LogicalKeySet, Intent>? shortcuts, Map<Type, Action<Intent>>? actions, String? restorationScopeId, ScrollBehavior? scrollBehavior})',
+        'https://api.flutter.dev/flutter/material/MaterialApp-class.html'),
+    'widgetspan': Accordion(
+        'WidgetSpan',
+        'An immutable widget that is embedded inline within text.\nWidgetSpan({required Widget child, PlaceholderAlignment alignment = ui.PlaceholderAlignment.bottom, TextBaseline? baseline, TextStyle? style})',
+        'https://api.flutter.dev/flutter/widgets/WidgetSpan-class.html'),
+    'draggable': Accordion(
+        'Draggable',
+        'A widget that can be dragged from to a DragTarget.\nDraggable({Key? key, required Widget child, required Widget feedback, T? data, Axis? axis, Widget? childWhenDragging, Offset feedbackOffset, @Deprecated(\'Use dragAnchorStrategy instead. '
+            'Replace "dragAnchor: DragAnchor.child" with "dragAnchorStrategy: childDragAnchorStrategy". '
+            'Replace "dragAnchor: DragAnchor.pointer" with "dragAnchorStrategy: pointerDragAnchorStrategy". '
+            'This feature was deprecated after v2.1.0-10.0.pre.\') DragAnchor dragAnchor, DragAnchorStrategy? dragAnchorStrategy, Axis? affinity, int? maxSimultaneousDrags, VoidCallback? onDragStarted, DragUpdateCallback? onDragUpdate, DraggableCanceledCallback? onDraggableCanceled, DragEndCallback? onDragEnd, VoidCallback? onDragCompleted, bool ignoringFeedbackSemantics, bool rootOverlay, HitTestBehavior hitTestBehavior})',
+        'https://api.flutter.dev/flutter/widgets/Draggable-class.html'),
+    'fadeimage': Accordion(
+        'FadeInImage',
+        'An image that shows a placeholder image while the target image is loading, then fades in the new image when it loads.\nFadeInImage({Key? key, required ImageProvider<Object> placeholder, ImageErrorWidgetBuilder? placeholderErrorBuilder, required ImageProvider<Object> image, ImageErrorWidgetBuilder? imageErrorBuilder, bool excludeFromSemantics, String? imageSemanticLabel, Duration fadeOutDuration, Curve fadeOutCurve, Duration fadeInDuration, Curve fadeInCurve, double? width, double? height, BoxFit? fit, AlignmentGeometry alignment, ImageRepeat repeat, bool matchTextDirection})',
+        'https://api.flutter.dev/flutter/widgets/FadeInImage-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

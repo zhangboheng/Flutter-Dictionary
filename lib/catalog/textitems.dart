@@ -44,6 +44,10 @@ class _MyStatefulWidgetState extends State<TextItems> {
               'TextSpan',
               'An immutable span of text.\nTextSpan({String? text, List<InlineSpan>? children, TextStyle? style, GestureRecognizer? recognizer, MouseCursor? mouseCursor, PointerEnterEventListener? onEnter, PointerExitEventListener? onExit, String? semanticsLabel})',
               'https://api.flutter.dev/flutter/painting/TextSpan-class.html'),
+          Accordion(
+              'WidgetSpan',
+              'An immutable widget that is embedded inline within text.\nWidgetSpan({required Widget child, PlaceholderAlignment alignment = ui.PlaceholderAlignment.bottom, TextBaseline? baseline, TextStyle? style})',
+              'https://api.flutter.dev/flutter/widgets/WidgetSpan-class.html'),
         ])),
       ),
     );

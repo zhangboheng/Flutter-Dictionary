@@ -39,6 +39,13 @@ class _MyStatefulWidgetState extends State<FunctionItems> {
               'A widget for helping the user make a selection by entering some text and choosing from among a list of options.\nAutocomplete({Key? key, required AutocompleteOptionsBuilder<T> optionsBuilder, AutocompleteOptionToString<T> displayStringForOption, AutocompleteFieldViewBuilder fieldViewBuilder, AutocompleteOnSelected<T>? onSelected, AutocompleteOptionsViewBuilder<T>? optionsViewBuilder})',
               'https://api.flutter.dev/flutter/material/Autocomplete-class.html'),
           Accordion(
+              'Draggable',
+              'A widget that can be dragged from to a DragTarget.\nDraggable({Key? key, required Widget child, required Widget feedback, T? data, Axis? axis, Widget? childWhenDragging, Offset feedbackOffset, @Deprecated(\'Use dragAnchorStrategy instead. '
+                  'Replace "dragAnchor: DragAnchor.child" with "dragAnchorStrategy: childDragAnchorStrategy". '
+                  'Replace "dragAnchor: DragAnchor.pointer" with "dragAnchorStrategy: pointerDragAnchorStrategy". '
+                  'This feature was deprecated after v2.1.0-10.0.pre.\') DragAnchor dragAnchor, DragAnchorStrategy? dragAnchorStrategy, Axis? affinity, int? maxSimultaneousDrags, VoidCallback? onDragStarted, DragUpdateCallback? onDragUpdate, DraggableCanceledCallback? onDraggableCanceled, DragEndCallback? onDragEnd, VoidCallback? onDragCompleted, bool ignoringFeedbackSemantics, bool rootOverlay, HitTestBehavior hitTestBehavior})',
+              'https://api.flutter.dev/flutter/widgets/Draggable-class.html'),
+          Accordion(
               'FutureBuilder',
               'Widget that builds itself based on the latest snapshot of interaction with a Future.\nFutureBuilder({Key? key, Future<T>? future, T? initialData, required AsyncWidgetBuilder<T> builder})',
               'https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html'),
