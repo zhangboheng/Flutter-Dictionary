@@ -41,11 +41,14 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
-  int _rotate = 0;
+class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
+  late AnimationController oneSecondController;
   @override
   void initState() {
     super.initState();
+    oneSecondController =
+        AnimationController(vsync: this, duration: const Duration(seconds: 1))
+          ..repeat(reverse: true);
     Timer(
       const Duration(seconds: 3),
       () {
@@ -54,9 +57,6 @@ class _HomePageState extends State<HomePage> {
           MaterialPageRoute<dynamic>(
               builder: (BuildContext context) => const SecondScreen()),
         );
-        setState(() {
-          _rotate++;
-        });
       },
     );
   }
@@ -72,9 +72,9 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Transform.rotate(
-                angle: pi * _rotate,
-                child: FlutterLogo(size: 102),
+              RotationTransition(
+                turns: oneSecondController,
+                child: FlutterLogo(size: 100),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 10.0),
@@ -97,6 +97,12 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ));
+  }
+
+  @override
+  void dispose() {
+    oneSecondController.dispose();
+    super.dispose();
   }
 }
 
@@ -608,6 +614,10 @@ class _SecondScreenState extends State<SecondScreen> {
         'Dismissible',
         'A widget that can be dismissed by dragging in the indicated direction.\nDismissible({required Key key, required Widget child, Widget? background, Widget? secondaryBackground, ConfirmDismissCallback? confirmDismiss, VoidCallback? onResize, DismissDirectionCallback? onDismissed, DismissDirection direction, Duration? resizeDuration, Map<DismissDirection, double> dismissThresholds, Duration movementDuration, double crossAxisEndOffset, DragStartBehavior dragStartBehavior, HitTestBehavior behavior})',
         'https://api.flutter.dev/flutter/widgets/Dismissible-class.html'),
+    'pageroutebuilder': Accordion(
+        'PageRouteBuilder',
+        'A utility class for defining one-off page routes in terms of callbacks.\nPageRouteBuilder({RouteSettings? settings, required RoutePageBuilder pageBuilder, RouteTransitionsBuilder transitionsBuilder, Duration transitionDuration, Duration reverseTransitionDuration, bool opaque, bool barrierDismissible, Color? barrierColor, String? barrierLabel, bool maintainState, bool fullscreenDialog = false})',
+        'https://api.flutter.dev/flutter/widgets/PageRouteBuilder-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -651,8 +661,6 @@ class _SecondScreenState extends State<SecondScreen> {
           .map((item) => _array[item])
           .toList()
           .cast<Widget>();
-      // we use the toLowerCase() method to make it case-insensitive
-
     }
     // Refresh the UI
     setState(() {
@@ -867,9 +875,6 @@ class _SecondScreenState extends State<SecondScreen> {
                   avatar: Icon(
                     Icons.library_add_check_outlined,
                     size: 18,
-                    color: MyApp.themeNotifier.value == ThemeMode.light
-                        ? Colors.black54
-                        : Colors.white,
                   ),
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -883,9 +888,6 @@ class _SecondScreenState extends State<SecondScreen> {
                   avatar: Icon(
                     Icons.code,
                     size: 18,
-                    color: MyApp.themeNotifier.value == ThemeMode.light
-                        ? Colors.black54
-                        : Colors.white,
                   ),
                   onPressed: () {
                     var link = 'https://github.com/search?q=flutter';
@@ -899,9 +901,6 @@ class _SecondScreenState extends State<SecondScreen> {
                   avatar: Icon(
                     Icons.message_outlined,
                     size: 18,
-                    color: MyApp.themeNotifier.value == ThemeMode.light
-                        ? Colors.black54
-                        : Colors.white,
                   ),
                   onPressed: () {
                     showAboutDialog(

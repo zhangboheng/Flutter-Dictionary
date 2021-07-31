@@ -39,13 +39,17 @@ class _MyStatefulWidgetState extends State<FunctionItems> {
               'A widget for helping the user make a selection by entering some text and choosing from among a list of options.\nAutocomplete({Key? key, required AutocompleteOptionsBuilder<T> optionsBuilder, AutocompleteOptionToString<T> displayStringForOption, AutocompleteFieldViewBuilder fieldViewBuilder, AutocompleteOnSelected<T>? onSelected, AutocompleteOptionsViewBuilder<T>? optionsViewBuilder})',
               'https://api.flutter.dev/flutter/material/Autocomplete-class.html'),
           Accordion(
+              'FutureBuilder',
+              'Widget that builds itself based on the latest snapshot of interaction with a Future.\nFutureBuilder({Key? key, Future<T>? future, T? initialData, required AsyncWidgetBuilder<T> builder})',
+              'https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html'),
+          Accordion(
               'IgnorePointer',
               'A widget that is invisible during hit testing.\nIgnorePointer({Key? key, bool ignoring, bool? ignoringSemantics, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/IgnorePointer-class.html'),
           Accordion(
-              'FutureBuilder',
-              'Widget that builds itself based on the latest snapshot of interaction with a Future.\nFutureBuilder({Key? key, Future<T>? future, T? initialData, required AsyncWidgetBuilder<T> builder})',
-              'https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html'),
+              'PageRouteBuilder',
+              'A utility class for defining one-off page routes in terms of callbacks.\nPageRouteBuilder({RouteSettings? settings, required RoutePageBuilder pageBuilder, RouteTransitionsBuilder transitionsBuilder, Duration transitionDuration, Duration reverseTransitionDuration, bool opaque, bool barrierDismissible, Color? barrierColor, String? barrierLabel, bool maintainState, bool fullscreenDialog = false})',
+              'https://api.flutter.dev/flutter/widgets/PageRouteBuilder-class.html'),
           Accordion(
               'RawKeyboardListener',
               'A widget that calls a callback whenever the user presses or releases a key on a keyboard.\nRawKeyboardListener({Key? key, required FocusNode focusNode, bool autofocus, bool includeSemantics, ValueChanged<RawKeyEvent>? onKey, required Widget child})',
