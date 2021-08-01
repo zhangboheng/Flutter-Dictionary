@@ -641,6 +641,18 @@ class _SecondScreenState extends State<SecondScreen> {
         'FadeInImage',
         'An image that shows a placeholder image while the target image is loading, then fades in the new image when it loads.\nFadeInImage({Key? key, required ImageProvider<Object> placeholder, ImageErrorWidgetBuilder? placeholderErrorBuilder, required ImageProvider<Object> image, ImageErrorWidgetBuilder? imageErrorBuilder, bool excludeFromSemantics, String? imageSemanticLabel, Duration fadeOutDuration, Curve fadeOutCurve, Duration fadeInDuration, Curve fadeInCurve, double? width, double? height, BoxFit? fit, AlignmentGeometry alignment, ImageRepeat repeat, bool matchTextDirection})',
         'https://api.flutter.dev/flutter/widgets/FadeInImage-class.html'),
+    'tootip': Accordion(
+        'Tooltip',
+        'A material design tooltip.\nTooltip({Key? key, required String message, double? height, EdgeInsetsGeometry? padding, EdgeInsetsGeometry? margin, double? verticalOffset, bool? preferBelow, bool? excludeFromSemantics, Decoration? decoration, TextStyle? textStyle, Duration? waitDuration, Duration? showDuration, Widget? child})',
+        'https://api.flutter.dev/flutter/material/Tooltip-class.html'),
+    'cupertinoactivityindicator': Accordion(
+        'CupertinoActivityIndicator',
+        'AAn iOS-style activity indicator that spins clockwise.\nCupertinoActivityIndicator({Key? key, bool animating, double radius})',
+        'https://api.flutter.dev/flutter/cupertino/CupertinoActivityIndicator-class.html'),
+    'edgeinsets': Accordion(
+        'EdgeInsets',
+        'An immutable set of offsets in each of the four cardinal directions.\nEdgeInsets.all(double value)\nEdgeInsets.only({double left, double top, double right, double bottom})\nEdgeInsets.symmetric({double vertical = 0.0, double horizontal = 0.0})\nEdgeInsets.fromLTRB(double left, double top, double right, double bottom)\nEdgeInsets.fromWindowPadding(WindowPadding padding, double devicePixelRatio)',
+        'https://api.flutter.dev/flutter/painting/EdgeInsets-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

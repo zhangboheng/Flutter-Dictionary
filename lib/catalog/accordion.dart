@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Accordion extends StatefulWidget {
   final String title;
@@ -20,7 +21,11 @@ class _AccordionState extends State<Accordion> {
       margin: const EdgeInsets.all(2),
       child: Column(children: [
         ListTile(
-            title: Text(widget.title),
+            title: Text(
+              widget.title,
+              style: GoogleFonts.acme(
+                  textStyle: Theme.of(context).textTheme.headline6),
+            ),
             trailing: IconButton(
               icon: Icon(
                   _showContent ? Icons.arrow_drop_up : Icons.arrow_drop_down),

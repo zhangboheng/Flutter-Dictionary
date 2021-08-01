@@ -35,6 +35,10 @@ class _MyStatefulWidgetState extends State<StyleItems> {
               'A widget that paints a Decoration either before or after its child paints.\nDecoratedBox({Key? key, required Decoration decoration, DecorationPosition position, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/DecoratedBox-class.html'),
           Accordion(
+              'EdgeInsets',
+              'An immutable set of offsets in each of the four cardinal directions.\nEdgeInsets.all(double value)\nEdgeInsets.only({double left, double top, double right, double bottom})\nEdgeInsets.symmetric({double vertical = 0.0, double horizontal = 0.0})\nEdgeInsets.fromLTRB(double left, double top, double right, double bottom)\nEdgeInsets.fromWindowPadding(WindowPadding padding, double devicePixelRatio)',
+              'https://api.flutter.dev/flutter/painting/EdgeInsets-class.html'),
+          Accordion(
               'FractionalTranslation',
               'Applies a translation transformation before painting its child.\nFractionalTranslation({Key? key, required Offset translation, bool transformHitTests, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/FractionalTranslation-class.html'),

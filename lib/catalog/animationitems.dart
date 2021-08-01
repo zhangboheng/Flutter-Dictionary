@@ -63,6 +63,10 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
               'An interpolation between two colors.\nColorTween({Color? begin, Color? end})',
               'https://api.flutter.dev/flutter/animation/ColorTween-class.html'),
           Accordion(
+              'CupertinoActivityIndicator',
+              'AAn iOS-style activity indicator that spins clockwise.\nCupertinoActivityIndicator({Key? key, bool animating, double radius})',
+              'https://api.flutter.dev/flutter/cupertino/CupertinoActivityIndicator-class.html'),
+          Accordion(
               'DecoratedBoxTransition',
               'Animated version of a DecoratedBox that animates the different properties of its Decoration.\nDecoratedBoxTransition({Key? key, required Animation<Decoration> decoration, DecorationPosition position, required Widget child})',
               'https://api.flutter.dev/flutter/widgets/DecoratedBoxTransition-class.html'),
@@ -100,10 +104,6 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
               'https://api.flutter.dev/flutter/widgets/SlideTransition-class.html'),
           Accordion(
               'SizeTransition',
-              'Animates its own size and clips and aligns its child.\nSizeTransition({Key? key, Axis axis, required Animation<double> sizeFactor, double axisAlignment, Widget? child})',
-              'https://api.flutter.dev/flutter/widgets/SizeTransition-class.html'),
-          Accordion(
-              'ScaleTransition',
               'Animates its own size and clips and aligns its child.\nSizeTransition({Key? key, Axis axis, required Animation<double> sizeFactor, double axisAlignment, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/SizeTransition-class.html'),
         ])),

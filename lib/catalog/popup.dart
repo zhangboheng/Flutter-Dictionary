@@ -50,6 +50,10 @@ class _MyStatefulWidgetState extends State<Popup> {
               'showModalBottomSheet',
               'Shows a modal material design bottom sheet.\n{required BuildContext context, required WidgetBuilder builder, Color? backgroundColor, double? elevation, ShapeBorder? shape, Clip? clipBehavior, Color? barrierColor, bool isScrollControlled = false, bool useRootNavigator = false, bool isDismissible = true, bool enableDrag = true, RouteSettings? routeSettings, AnimationController? transitionAnimationController}',
               'https://api.flutter.dev/flutter/material/SnackBar-class.html'),
+          Accordion(
+              'Tooltip',
+              'A material design tooltip.\nTooltip({Key? key, required String message, double? height, EdgeInsetsGeometry? padding, EdgeInsetsGeometry? margin, double? verticalOffset, bool? preferBelow, bool? excludeFromSemantics, Decoration? decoration, TextStyle? textStyle, Duration? waitDuration, Duration? showDuration, Widget? child})',
+              'https://api.flutter.dev/flutter/material/Tooltip-class.html'),
         ])),
       ),
     );

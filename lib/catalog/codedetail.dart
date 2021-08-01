@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import '../packages/introduce.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DetailCard extends StatefulWidget {
   final String title;
@@ -20,7 +21,11 @@ class _DetailCardState extends State<DetailCard> {
       margin: const EdgeInsets.all(2),
       child: Column(children: [
         ListTile(
-            title: Text(widget.title),
+            title: Text(
+              widget.title,
+              style: GoogleFonts.acme(
+                  textStyle: Theme.of(context).textTheme.headline6),
+            ),
             trailing: IconButton(
               icon: Icon(
                   _showContent ? Icons.arrow_drop_up : Icons.arrow_drop_down),
@@ -35,9 +40,11 @@ class _DetailCardState extends State<DetailCard> {
                     {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const LauncherWeb()))
-                    }else if(widget.title == 'flutter_markdown'){
+                    }
+                  else if (widget.title == 'flutter_markdown')
+                    {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const MarkdownWeb()))                      
+                          builder: (context) => const MarkdownWeb()))
                     }
                 }),
         _showContent
