@@ -47,7 +47,13 @@ class _AccordionState extends State<Accordion> {
             ? Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                child: Text(widget.content),
+                child: Text(
+                  widget.content,
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    height: 2.5,
+                  ),
+                ),
               )
             : Container()
       ]),

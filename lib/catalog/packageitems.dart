@@ -16,6 +16,8 @@ class _HomePageState extends State<PackageScreen> {
         'A Flutter plugin for launching a URL. Supports iOS, Android, web, Windows, macOS, and Linux.'),
     'flutter_markdown': DetailCard('flutter_markdown',
         'A markdown renderer for Flutter. It supports the original format, but no inline HTML. Supports iOS, Android, web, Windows, macOS, and Linux.'),
+    'backdrop': DetailCard('backdrop',
+        'Backdrop implementation in flutter. Supports iOS, Android, web, Windows, macOS, and Linux.'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

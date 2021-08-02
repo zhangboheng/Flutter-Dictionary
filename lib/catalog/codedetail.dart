@@ -46,12 +46,23 @@ class _DetailCardState extends State<DetailCard> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const MarkdownWeb()))
                     }
+                  else if (widget.title == 'backdrop')
+                    {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const BackdropWeb()))
+                    }
                 }),
         _showContent
             ? Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                child: Text(widget.content),
+                child: Text(
+                  widget.content,
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    height: 2.5,
+                  ),
+                ),
               )
             : Container()
       ]),
