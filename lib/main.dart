@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -114,6 +115,38 @@ class SecondScreen extends StatefulWidget {
 }
 
 class _SecondScreenState extends State<SecondScreen> {
+  final _data = [
+    {
+      "title": "Image 1",
+      "url":
+          "https://images.pexels.com/photos/1525043/pexels-photo-1525043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "title": "Image 2",
+      "url":
+          "https://images.pexels.com/photos/1525042/pexels-photo-1525042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "title": "Image 3",
+      "url":
+          "https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "title": "Image 4",
+      "url":
+          "https://images.pexels.com/photos/1525044/pexels-photo-1525044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "title": "Image 5",
+      "url":
+          "https://images.pexels.com/photos/1525045/pexels-photo-1525045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "title": "Image 6",
+      "url":
+          "https://images.pexels.com/photos/1525046/pexels-photo-1525046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+  ];
   final _array = {
     'icon': Accordion(
         'Icon',

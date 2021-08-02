@@ -50,7 +50,7 @@ class _AccordionState extends State<Accordion> {
                 child: Text(
                   widget.content,
                   textAlign: TextAlign.justify,
-                  style: TextStyle(
+                  style: const TextStyle(
                     height: 2.5,
                   ),
                 ),
