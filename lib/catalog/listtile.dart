@@ -42,6 +42,10 @@ class _MyStatefulWidgetState extends State<ListTileItems> {
               'SliverList',
               'A sliver that places multiple box children in a linear array along the main axis.\nSliverList({Key? key, required SliverChildDelegate delegate})',
               'https://api.flutter.dev/flutter/widgets/SliverList-class.html'),
+          Accordion(
+              'ValueListenableBuilder',
+              'A widget whose content stays synced with a ValueListenable.\nValueListenableBuilder({Key? key, required ValueListenable<T> valueListenable, required ValueWidgetBuilder<T> builder, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/ValueListenableBuilder-class.html'),
         ])),
       ),
     );

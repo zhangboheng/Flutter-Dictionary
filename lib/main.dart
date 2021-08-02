@@ -653,6 +653,22 @@ class _SecondScreenState extends State<SecondScreen> {
         'EdgeInsets',
         'An immutable set of offsets in each of the four cardinal directions.\nEdgeInsets.all(double value)\nEdgeInsets.only({double left, double top, double right, double bottom})\nEdgeInsets.symmetric({double vertical = 0.0, double horizontal = 0.0})\nEdgeInsets.fromLTRB(double left, double top, double right, double bottom)\nEdgeInsets.fromWindowPadding(WindowPadding padding, double devicePixelRatio)',
         'https://api.flutter.dev/flutter/painting/EdgeInsets-class.html'),
+    'valuelistenablebuilder': Accordion(
+        'ValueListenableBuilder',
+        'A widget whose content stays synced with a ValueListenable.\nValueListenableBuilder({Key? key, required ValueListenable<T> valueListenable, required ValueWidgetBuilder<T> builder, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/ValueListenableBuilder-class.html'),
+    'indexwhere': Accordion(
+        'indexWhere',
+        'Searches the list from index start to the end of the list. The first time an object o is encountered so that test(o) is true, the index of o is returned.\nnotes.indexWhere((note) => note.startsWith(\'k\'))',
+        'https://api.flutter.dev/flutter/dart-core/List/indexWhere.html'),
+    'repaintboundary': Accordion(
+        'RepaintBoundary',
+        'A widget that creates a separate display list for its child.\nRepaintBoundary({Key? key, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/RepaintBoundary-class.html'),
+    'listview.builder': Accordion(
+        'ListView.builder',
+        'Creates a scrollable, linear array of widgets that are created on demand.\nListView.builder({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, required IndexedWidgetBuilder itemBuilder, int? itemCount, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})',
+        'https://api.flutter.dev/flutter/widgets/ListView/ListView.builder.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -733,9 +749,7 @@ class _SecondScreenState extends State<SecondScreen> {
               ),
               hintText: 'Search',
               hintStyle: TextStyle(color: Colors.grey[700]),
-              contentPadding: EdgeInsets.only(
-                bottom: 18, // HERE THE IMPORTANT PART
-              ),
+              contentPadding: EdgeInsets.only(bottom: 13.0),
               focusColor: null,
               border: InputBorder.none,
               focusedBorder: InputBorder.none,
@@ -902,19 +916,6 @@ class _SecondScreenState extends State<SecondScreen> {
             ),
             Divider(color: Colors.grey, indent: 20, endIndent: 20),
             Wrap(children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(left: 5.0),
-              ),
-              ActionChip(
-                  label: Text('Package', style: TextStyle(fontSize: 12)),
-                  avatar: Icon(
-                    Icons.library_add_check_outlined,
-                    size: 18,
-                  ),
-                  onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => PackageScreen()));
-                  }),
               Padding(
                 padding: EdgeInsets.only(left: 5.0),
               ),

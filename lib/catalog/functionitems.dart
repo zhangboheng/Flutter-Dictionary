@@ -54,6 +54,14 @@ class _MyStatefulWidgetState extends State<FunctionItems> {
               'A widget that is invisible during hit testing.\nIgnorePointer({Key? key, bool ignoring, bool? ignoringSemantics, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/IgnorePointer-class.html'),
           Accordion(
+              'indexWhere',
+              'Searches the list from index start to the end of the list. The first time an object o is encountered so that test(o) is true, the index of o is returned.\nnotes.indexWhere((note) => note.startsWith(\'k\'))',
+              'https://api.flutter.dev/flutter/dart-core/List/indexWhere.html'),
+          Accordion(
+              'ListView.builder',
+              'Creates a scrollable, linear array of widgets that are created on demand.\nListView.builder({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, required IndexedWidgetBuilder itemBuilder, int? itemCount, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})',
+              'https://api.flutter.dev/flutter/widgets/ListView/ListView.builder.html'),
+          Accordion(
               'PageRouteBuilder',
               'A utility class for defining one-off page routes in terms of callbacks.\nPageRouteBuilder({RouteSettings? settings, required RoutePageBuilder pageBuilder, RouteTransitionsBuilder transitionsBuilder, Duration transitionDuration, Duration reverseTransitionDuration, bool opaque, bool barrierDismissible, Color? barrierColor, String? barrierLabel, bool maintainState, bool fullscreenDialog = false})',
               'https://api.flutter.dev/flutter/widgets/PageRouteBuilder-class.html'),
@@ -61,6 +69,10 @@ class _MyStatefulWidgetState extends State<FunctionItems> {
               'RawKeyboardListener',
               'A widget that calls a callback whenever the user presses or releases a key on a keyboard.\nRawKeyboardListener({Key? key, required FocusNode focusNode, bool autofocus, bool includeSemantics, ValueChanged<RawKeyEvent>? onKey, required Widget child})',
               'https://api.flutter.dev/flutter/widgets/RawKeyboardListener-class.html'),
+          Accordion(
+              'RepaintBoundary',
+              'A widget that creates a separate display list for its child.\nRepaintBoundary({Key? key, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/RepaintBoundary-class.html'),
           Accordion(
               'StreamBuilder',
               'Widget that builds itself based on the latest snapshot of interaction with a Stream.\nStreamBuilder({Key? key, T? initialData, Stream<T>? stream, required AsyncWidgetBuilder<T> builder})',
