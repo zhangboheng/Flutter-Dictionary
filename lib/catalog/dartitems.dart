@@ -3,15 +3,15 @@
 import 'accordion.dart';
 import 'package:flutter/material.dart';
 
-class PackageScreen extends StatefulWidget {
+class DartScreen extends StatefulWidget {
   final String url;
-  PackageScreen(this.url);
+  DartScreen(this.url);
 
   @override
   _MyImageScreen createState() => _MyImageScreen(url);
 }
 
-class _MyImageScreen extends State<PackageScreen> {
+class _MyImageScreen extends State<DartScreen> {
   final String url;
   final _array = {
     'url_launcher': Accordion(

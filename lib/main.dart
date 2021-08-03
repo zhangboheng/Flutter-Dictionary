@@ -117,35 +117,12 @@ class SecondScreen extends StatefulWidget {
 class _SecondScreenState extends State<SecondScreen> {
   int _current = 0;
   final List data = [
-    {
-      "title": "Image 1",
-      "url":
-          "https://images.pexels.com/photos/1525043/pexels-photo-1525043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    },
-    {
-      "title": "Image 2",
-      "url":
-          "https://images.pexels.com/photos/1525042/pexels-photo-1525042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    },
-    {
-      "title": "Image 3",
-      "url":
-          "https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    },
-    {
-      "title": "Image 4",
-      "url":
-          "https://images.pexels.com/photos/1525044/pexels-photo-1525044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    },
+    {"title": "Dart Learning", "url": "assets/images/dartlearning.jpg"},
+    {"title": "Flutter Packages", "url": "assets/images/packages.jpg"},
     {
       "title": "Image 5",
       "url":
           "https://images.pexels.com/photos/1525045/pexels-photo-1525045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    },
-    {
-      "title": "Image 6",
-      "url":
-          "https://cdn.pixabay.com/photo/2018/02/25/07/15/food-3179853_1280.jpg"
     },
   ];
   final _array = {
@@ -1018,15 +995,25 @@ class _SecondScreenState extends State<SecondScreen> {
                         return MouseRegion(
                             cursor: SystemMouseCursors.click,
                             child: GestureDetector(
-                              child:
-                                  Image.network(item["url"], fit: BoxFit.cover),
+                              child: item["url"].contains('https')
+                                  ? Image.network(item["url"],
+                                      fit: BoxFit.cover)
+                                  : Image.asset(item["url"], fit: BoxFit.cover),
                               onTap: () {
-                                if (_current == 0) {
+                                if (_current == 1) {
                                   Navigator.push<Widget>(
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) =>
                                           PackageScreen(item["url"]),
+                                    ),
+                                  );
+                                } else if (_current == 0) {
+                                  Navigator.push<Widget>(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          DartScreen(item["url"]),
                                     ),
                                   );
                                 }
