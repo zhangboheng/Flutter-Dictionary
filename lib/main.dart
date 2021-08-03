@@ -115,7 +115,8 @@ class SecondScreen extends StatefulWidget {
 }
 
 class _SecondScreenState extends State<SecondScreen> {
-  final _data = [
+  int _current = 0;
+  final List data = [
     {
       "title": "Image 1",
       "url":
@@ -144,7 +145,7 @@ class _SecondScreenState extends State<SecondScreen> {
     {
       "title": "Image 6",
       "url":
-          "https://images.pexels.com/photos/1525046/pexels-photo-1525046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          "https://cdn.pixabay.com/photo/2018/02/25/07/15/food-3179853_1280.jpg"
     },
   ];
   final _array = {
@@ -1000,7 +1001,41 @@ class _SecondScreenState extends State<SecondScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: _foundUsers.isNotEmpty
-                ? _foundUsers
+                ? <Widget>[
+                    CarouselSlider(
+                      options: CarouselOptions(
+                        autoPlay: true,
+                        autoPlayInterval: Duration(seconds: 5),
+                        autoPlayAnimationDuration: Duration(seconds: 1),
+                        height: 300,
+                        onPageChanged: (index, reason) {
+                          setState(() {
+                            _current = index;
+                          });
+                        },
+                      ),
+                      items: data.map((item) {
+                        return MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: GestureDetector(
+                              child:
+                                  Image.network(item["url"], fit: BoxFit.cover),
+                              onTap: () {
+                                if (_current == 0) {
+                                  Navigator.push<Widget>(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          PackageScreen(item["url"]),
+                                    ),
+                                  );
+                                }
+                              },
+                            ));
+                      }).toList(),
+                    ),
+                    ..._foundUsers
+                  ]
                 : <Widget>[
                     Container(
                       padding: const EdgeInsets.all(20.0),
