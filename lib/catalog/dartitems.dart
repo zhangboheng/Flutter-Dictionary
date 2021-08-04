@@ -29,24 +29,6 @@ Map<String, List> _elements = {
         'Built-in types[Numbers, Strings, Booleans, Lists, Sets, Maps, Runes, Symbols, Null]',
         'int num = 3;\ndouble dbs = 0.56;String str = \'Hello!\'\n',
         'https://api.flutter.dev/flutter/material/Icons-class.html'),
-    Accordion(
-        'Icon',
-        'A graphical icon widget drawn with a glyph from a font described in an IconData such as material\'s predefined IconDatas in Icons.\nIcon(IconData? icon, {Key? key, double? size, Color? color, String? semanticLabel, TextDirection? textDirection})',
-        'https://api.flutter.dev/flutter/material/Icons-class.html')
-  ],
-  'Team B': [
-    Accordion(
-        'Icon',
-        'A graphical icon widget drawn with a glyph from a font described in an IconData such as material\'s predefined IconDatas in Icons.\nIcon(IconData? icon, {Key? key, double? size, Color? color, String? semanticLabel, TextDirection? textDirection})',
-        'https://api.flutter.dev/flutter/material/Icons-class.html'),
-    Accordion(
-        'Icon',
-        'A graphical icon widget drawn with a glyph from a font described in an IconData such as material\'s predefined IconDatas in Icons.\nIcon(IconData? icon, {Key? key, double? size, Color? color, String? semanticLabel, TextDirection? textDirection})',
-        'https://api.flutter.dev/flutter/material/Icons-class.html'),
-    Accordion(
-        'Icon',
-        'A graphical icon widget drawn with a glyph from a font described in an IconData such as material\'s predefined IconDatas in Icons.\nIcon(IconData? icon, {Key? key, double? size, Color? color, String? semanticLabel, TextDirection? textDirection})',
-        'https://api.flutter.dev/flutter/material/Icons-class.html')
   ],
 };
 
