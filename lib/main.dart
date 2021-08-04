@@ -119,11 +119,7 @@ class _SecondScreenState extends State<SecondScreen> {
   final List data = [
     {"title": "Dart Learning", "url": "assets/images/dartlearning.jpg"},
     {"title": "Flutter Packages", "url": "assets/images/packages.jpg"},
-    {
-      "title": "Image 5",
-      "url":
-          "https://images.pexels.com/photos/1525045/pexels-photo-1525045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    },
+    {"title": "Developer Tools", "url": "assets/images/developertools.jpg"},
   ];
   final _array = {
     'icon': Accordion(
@@ -680,6 +676,10 @@ class _SecondScreenState extends State<SecondScreen> {
         'ListView.builder',
         'Creates a scrollable, linear array of widgets that are created on demand.\nListView.builder({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, required IndexedWidgetBuilder itemBuilder, int? itemCount, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})',
         'https://api.flutter.dev/flutter/widgets/ListView/ListView.builder.html'),
+    'selectabletext': Accordion(
+        'SelectableText',
+        'A run of selectable text with a single style.\nSelectableText(String data, {Key? key, FocusNode? focusNode, TextStyle? style, StrutStyle? strutStyle, TextAlign? textAlign, TextDirection? textDirection, double? textScaleFactor, bool showCursor, bool autofocus, ToolbarOptions? toolbarOptions, int? minLines, int? maxLines, double cursorWidth, double? cursorHeight, Radius? cursorRadius, Color? cursorColor, DragStartBehavior dragStartBehavior, bool enableInteractiveSelection, TextSelectionControls? selectionControls, GestureTapCallback? onTap, ScrollPhysics? scrollPhysics, TextHeightBehavior? textHeightBehavior, TextWidthBasis? textWidthBasis, SelectionChangedCallback? onSelectionChanged})\nSelectableText.rich(TextSpan textSpan, {Key? key, FocusNode? focusNode, TextStyle? style, StrutStyle? strutStyle, TextAlign? textAlign, TextDirection? textDirection, double? textScaleFactor, bool showCursor, bool autofocus, ToolbarOptions? toolbarOptions, int? minLines, int? maxLines, double cursorWidth, double? cursorHeight, Radius? cursorRadius, Color? cursorColor, DragStartBehavior dragStartBehavior, bool enableInteractiveSelection, TextSelectionControls? selectionControls, GestureTapCallback? onTap, ScrollPhysics? scrollPhysics, TextHeightBehavior? textHeightBehavior, TextWidthBasis? textWidthBasis, SelectionChangedCallback? onSelectionChanged})',
+        'https://api.flutter.dev/flutter/material/SelectableText-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -1014,6 +1014,14 @@ class _SecondScreenState extends State<SecondScreen> {
                                     MaterialPageRoute(
                                       builder: (context) =>
                                           DartScreen(item["url"]),
+                                    ),
+                                  );
+                                } else if (_current == 2) {
+                                  Navigator.push<Widget>(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          ToolsScreen(item["url"]),
                                     ),
                                   );
                                 }

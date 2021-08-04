@@ -47,7 +47,7 @@ class _AccordionState extends State<Accordion> {
             ? Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                child: Text(
+                child: SelectableText(
                   widget.content,
                   textAlign: TextAlign.justify,
                   style: const TextStyle(

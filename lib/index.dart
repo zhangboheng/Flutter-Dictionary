@@ -12,3 +12,4 @@ export 'catalog/packageitems.dart';
 export 'catalog/popup.dart';
 export 'catalog/styleitems.dart';
 export 'catalog/textitems.dart';
+export 'catalog/toolsitems.dart';
