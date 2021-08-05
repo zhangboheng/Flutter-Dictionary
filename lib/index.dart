@@ -4,6 +4,7 @@ export 'catalog/packageitems.dart';
 export 'catalog/buttonitems.dart';
 export 'catalog/coloritems.dart';
 export 'catalog/dartitems.dart';
+export 'catalog/deviceItems.dart';
 export 'catalog/functionitems.dart';
 export 'catalog/iconitems.dart';
 export 'catalog/layout.dart';

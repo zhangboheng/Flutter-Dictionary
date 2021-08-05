@@ -210,6 +210,78 @@ class _MyImageScreen extends State<PackageScreen> {
         'connectivity_plus',
         'This plugin allows Flutter apps to discover network connectivity and configure themselves accordingly. It can distinguish between cellular vs WiFi connection.\nimport \'package:connectivity_plus/connectivity_plus.dart\'',
         'https://pub.dev/packages/connectivity_plus'),
+    'share_plus': Accordion(
+        'share_plus',
+        'A Flutter plugin to share content from your Flutter app via the platform\'s share dialog.\nimport \'package:share_plus/share_plus.dart\'',
+        'https://pub.dev/packages/share_plus'),
+    'sentry': Accordion(
+        'sentry',
+        'A crash reporting library for Dart that sends crash reports to Sentry.io. This library supports Dart VM and Web. For Flutter consider sentry_flutter instead.\nimport \'package:sentry/sentry.dart\'',
+        'https://pub.dev/packages/sentry'),
+    'infinite_scroll_pagination': Accordion(
+        'infinite_scroll_pagination',
+        'Lazily load and display pages of items as the user scrolls down your screen.\nimport \'package:infinite_scroll_pagination/infinite_scroll_pagination.dart\'',
+        'https://pub.dev/packages/infinite_scroll_pagination'),
+    'device_info_plus': Accordion(
+        'device_info_plus',
+        'Get current device information from within the Flutter application.\nimport \'package:device_info_plus/device_info_plus.dart\'',
+        'https://pub.dev/packages/device_info_plus'),
+    'network_info_plus': Accordion(
+        'network_info_plus',
+        'This plugin allows Flutter apps to discover network info and configure themselves accordingly.\nimport \'package:network_info_plus/network_info_plus.dart\'',
+        'https://pub.dev/packages/network_info_plus'),
+    'path_provider': Accordion(
+        'path_provider',
+        'A Flutter plugin for finding commonly used locations on the filesystem. Supports iOS, Android, Linux and MacOS. Not all methods are supported on all platforms.\nimport \'package:path_provider/path_provider.dart\'',
+        'https://pub.dev/packages/path_provider'),
+    'flutter_local_notifications': Accordion(
+        'flutter_local_notifications',
+        'A cross platform plugin for displaying local notifications.\nimport \'package:flutter_local_notifications/flutter_local_notifications.dart\'',
+        'https://pub.dev/packages/flutter_local_notifications'),
+    'battery_plus': Accordion(
+        'battery_plus',
+        'A Flutter plugin to access various information about the battery of the device the app is running on.\nimport \'package:battery_plus/battery_plus.dart\'',
+        'https://pub.dev/packages/battery_plus'),
+    'sign_in_with_apple': Accordion(
+        'sign_in_with_apple',
+        'Supports login via an Apple ID, as well as retrieving credentials saved in the user\'s keychain.\nimport \'package:sign_in_with_apple/sign_in_with_apple.dart\'',
+        'https://pub.dev/packages/sign_in_with_apple'),
+    'bottom_navy_bar': Accordion(
+        'bottom_navy_bar',
+        'A beautiful and animated bottom navigation. The navigation bar use your current theme, but you are free to customize it.\nimport \'package:bottom_navy_bar/bottom_navy_bar.dart\'',
+        'https://pub.dev/packages/bottom_navy_bar'),
+    'googleapis': Accordion(
+        'googleapis',
+        'Auto-generated client libraries for accessing Google APIs described through the API discovery service.\nimport \'package:googleapis/abusiveexperiencereport/v1.dart\'\n...',
+        'https://pub.dev/packages/googleapis'),
+    'chewie': Accordion(
+        'chewie',
+        'A video player for Flutter with Cupertino and Material play controls.\nimport \'package:chewie/chewie.dart\'',
+        'https://pub.dev/packages/chewie'),
+    'audioplayers': Accordion(
+        'audioplayers',
+        'A Flutter plugin to play multiple simultaneously audio files, works for Android, iOS, macOS and web.\nimport \'package:audioplayers/audioplayers.dart\'',
+        'https://pub.dev/packages/audioplayers'),
+    'pdf': Accordion(
+        'pdf',
+        'A pdf producer for Dart. It can create pdf files for both web or flutter.\nimport \'package:pdf/pdf.dart\'',
+        'https://pub.dev/packages/pdf'),
+    'native_pdf_view': Accordion(
+        'native_pdf_view',
+        'Flutter plugin to render PDF files on Web, MacOS, Android and iOS.\nimport \'package:native_pdf_view/native_pdf_view.dart\'',
+        'https://pub.dev/packages/native_pdf_view'),
+    'assets_audio_player': Accordion(
+        'assets_audio_player',
+        'Play music/audio stored in assets files directly from Flutter & Network, Radio, LiveStream, Local files. Compatible with Android, iOS, web and macOS.\nimport \'package:assets_audio_player/assets_audio_player.dart\'',
+        'https://pub.dev/packages/assets_audio_player'),
+    'cupertino_icons': Accordion(
+        'cupertino_icons',
+        'Default icons asset for Cupertino widgets based on Apple styled icons.\nimport \'package:cupertino_icons/cupertino_icons.dart\'',
+        'https://pub.dev/packages/cupertino_icons'),
+    'qr_flutter': Accordion(
+        'qr_flutter',
+        'QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter.\nimport \'package:qr_flutter/qr_flutter.dart\'',
+        'https://pub.dev/packages/qr_flutter'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

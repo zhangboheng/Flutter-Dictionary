@@ -688,6 +688,13 @@ class _SecondScreenState extends State<SecondScreen> {
         'AssetImage',
         'Fetches an image from an AssetBundle, having determined the exact image to use based on the context.\nAssetImage(String assetName, {AssetBundle? bundle, String? package})',
         'https://api.flutter.dev/flutter/painting/AssetImage-class.html'),
+    'mediaquery': Accordion(
+        'MediaQuery',
+        'Establishes a subtree in which media queries resolve to the given data.\nMediaQuery({Key? key, required MediaQueryData data, required Widget child})\n'
+            'MediaQuery.removePadding({Key? key, required BuildContext context, bool removeLeft = false, bool removeTop = false, bool removeRight = false, bool removeBottom = false, required Widget child})\n'
+            'MediaQuery.removeViewInsets({Key? key, required BuildContext context, bool removeLeft = false, bool removeTop = false, bool removeRight = false, bool removeBottom = false, required Widget child})\n'
+            'MediaQuery.removeViewPadding({Key? key, required BuildContext context, bool removeLeft = false, bool removeTop = false, bool removeRight = false, bool removeBottom = false, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/MediaQuery-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
@@ -850,6 +857,18 @@ class _SecondScreenState extends State<SecondScreen> {
               },
             ),
             ListTile(
+              leading: Icon(Icons.device_hub_outlined),
+              title: Text('Device'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DeviceItems(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
               leading: Icon(Icons.change_circle_outlined),
               title: Text('Functions'),
               onTap: () {
@@ -992,7 +1011,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         autoPlay: true,
                         autoPlayInterval: Duration(seconds: 5),
                         autoPlayAnimationDuration: Duration(seconds: 1),
-                        height: 300,
+                        height: MediaQuery.of(context).size.height * 0.35,
                         onPageChanged: (index, reason) {
                           setState(() {
                             _current = index;
@@ -1003,10 +1022,9 @@ class _SecondScreenState extends State<SecondScreen> {
                         return MouseRegion(
                             cursor: SystemMouseCursors.click,
                             child: GestureDetector(
-                              child: item["url"].contains('https')
-                                  ? Image.network(item["url"],
-                                      fit: BoxFit.cover)
-                                  : Image.asset(item["url"], fit: BoxFit.cover),
+                              child: Image.asset(item["url"],
+                                  width: MediaQuery.of(context).size.width,
+                                  fit: BoxFit.fill),
                               onTap: () {
                                 if (_current == 1) {
                                   Navigator.push<Widget>(

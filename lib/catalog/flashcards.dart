@@ -22,19 +22,23 @@ class _flashcardsState extends State<flashcards> {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 30.0),
+            padding:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.05),
           ),
           Text(
             widget.names,
-            style: TextStyle(fontSize: 48, color: Colors.white),
+            style: TextStyle(
+                fontSize: MediaQuery.of(context).size.height * 0.04,
+                color: Colors.white),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 20.0),
+            padding:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.02),
           ),
           ClipOval(
             child: Container(
-              height: 200,
-              width: 200,
+              height: MediaQuery.of(context).size.height * 0.2,
+              width: MediaQuery.of(context).size.height * 0.2,
               color: Colors.grey.shade200,
               child: Image.asset(
                 widget.path,
@@ -43,7 +47,8 @@ class _flashcardsState extends State<flashcards> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 20.0),
+            padding:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.02),
           ),
           RatingBar.builder(
             initialRating: widget.ratings,
@@ -51,6 +56,7 @@ class _flashcardsState extends State<flashcards> {
             direction: Axis.horizontal,
             allowHalfRating: true,
             itemCount: 5,
+            itemSize: MediaQuery.of(context).size.height * 0.04,
             itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
             itemBuilder: (context, _) => Icon(
               Icons.star,
@@ -61,7 +67,8 @@ class _flashcardsState extends State<flashcards> {
             },
           ),
           Padding(
-            padding: EdgeInsets.only(top: 20.0),
+            padding:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.02),
           ),
           SizedBox(
             width: 200,
@@ -72,7 +79,8 @@ class _flashcardsState extends State<flashcards> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 20.0),
+            padding:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.02),
           ),
           IconButton(
             icon: Icon(Icons.travel_explore_outlined),
@@ -91,8 +99,8 @@ class _flashcardsState extends State<flashcards> {
           ),
         ],
       ),
-      height: MediaQuery.of(context).size.height * 0.6,
-      width: MediaQuery.of(context).size.width * 0.7,
+      height: MediaQuery.of(context).size.height * 0.65,
+      width: MediaQuery.of(context).size.width * 0.8,
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(0.5),
         borderRadius: BorderRadius.circular(10),
