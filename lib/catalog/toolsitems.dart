@@ -1,6 +1,7 @@
 // ignore_for_file: no_logic_in_create_state
+import "dart:math";
+import 'flashcards.dart';
 import 'package:flutter/material.dart';
-import 'package:flip_card/flip_card.dart';
 import 'package:tiktoklikescroller/tiktoklikescroller.dart';
 
 class ToolsScreen extends StatefulWidget {
@@ -17,79 +18,84 @@ class _MyImageScreen extends State<ToolsScreen> {
   @override
   Widget build(BuildContext context) {
     final List<Color> colors = <Color>[Colors.red, Colors.blue, Colors.green];
+    final List fore = [
+      flashcards(
+          'DevBook',
+          'assets/images/devbooklogo.jpg',
+          5,
+          'Devbook is a search engine for developers that helps them to find the resources they need and answer their questions faster.',
+          'https://usedevbook.com/'),
+      flashcards(
+          'Stackoverflow',
+          'assets/images/stackoverflowlogo.jpg',
+          5,
+          'Stack Overflow is the largest, most trusted online community for developers to learn, share​ ​their programming ​knowledge, and build their careers.',
+          'https://stackoverflow.com/questions'),
+      flashcards(
+          'W3schools',
+          'assets/images/w3schoolslogo.jpg',
+          4.5,
+          'W3Schools is a freemium educational website for learning coding online. Created in 1998, its name is derived from the World Wide Web.',
+          'https://www.w3schools.com/'),
+    ];
+
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Developer Tools'),
-      ),
       body: TikTokStyleFullPageScroller(
         contentSize: colors.length,
         swipePositionThreshold: 0.2,
         // ^ the fraction of the screen needed to scroll
         swipeVelocityThreshold: 2000,
         // ^ the velocity threshold for smaller scrolls
-        animationDuration: const Duration(milliseconds: 300),
+        animationDuration: const Duration(milliseconds: 200),
         // ^ how long the animation will take
         builder: (BuildContext context, int index) {
-          return Align(
+          return Container(
             alignment: Alignment.center,
-            child: FlipCard(
-              alignment: Alignment.center,
-              direction: FlipDirection.HORIZONTAL, // default
-              front: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      height: MediaQuery.of(context).size.height * 0.6,
-                      width: MediaQuery.of(context).size.width * 0.85,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20.0),
-                          color: colors[index],
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            colorFilter: ColorFilter.mode(
-                                Colors.black.withOpacity(0.2),
-                                BlendMode.dstATop),
-                            image: AssetImage(
-                              url,
-                            ),
-                          ),
-                          boxShadow: [
-                            BoxShadow(
-                                spreadRadius: 2,
-                                blurRadius: 3,
-                                offset: Offset(0, 6),
-                                color: Colors.black38)
-                          ]),
-                    ),
-                  ]),
-              back: Container(
-                height: MediaQuery.of(context).size.height * 0.6,
-                width: MediaQuery.of(context).size.width * 0.85,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.0),
-                    color: colors[index],
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      colorFilter: ColorFilter.mode(
-                          Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                      image: AssetImage(
-                        url,
-                      ),
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                          spreadRadius: 2,
-                          blurRadius: 3,
-                          offset: Offset(0, 6),
-                          color: Colors.black38)
-                    ]),
+            child: Center(
+              child: shuffle(fore)[0],
+            ),
+            decoration: BoxDecoration(
+              color: randomColor(),
+              image: DecorationImage(
+                image: AssetImage(url),
+                fit: BoxFit.fill,
+                colorFilter: ColorFilter.mode(
+                    Colors.black.withOpacity(0.3), BlendMode.dstIn),
               ),
             ),
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+      ),
     );
   }
+}
+
+//Rondom list sort
+List shuffle(List items) {
+  var random = new Random();
+
+  // Go through all elements.
+  for (var i = items.length - 1; i > 0; i--) {
+    // Pick a pseudorandom number according to the list length
+    var n = random.nextInt(i + 1);
+
+    var temp = items[i];
+    items[i] = items[n];
+    items[n] = temp;
+  }
+
+  return items;
+}
+
+Color randomColor() {
+  var _random = Random();
+  final _randomColor = Color.fromARGB(_random.nextInt(256),
+      _random.nextInt(256), _random.nextInt(256), _random.nextInt(256));
+  return _randomColor;
 }

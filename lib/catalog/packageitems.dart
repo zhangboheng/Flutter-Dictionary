@@ -202,6 +202,14 @@ class _MyImageScreen extends State<PackageScreen> {
         'scroll_snap_list',
         'A wrapper for ListView.builder widget that allows "snaping" event to an item at the end of user-scroll.\nimport \'package:scroll_snap_list/scroll_snap_list.dart\'',
         'https://pub.dev/packages/scroll_snap_list'),
+    'flutter_rating_bar': Accordion(
+        'flutter_rating_bar',
+        'A simple yet fully customizable rating bar for flutter which also include a rating bar indicator, supporting any fraction of rating.\nimport \'package:flutter_rating_bar/flutter_rating_bar.dart\'',
+        'https://pub.dev/packages/flutter_rating_bar'),
+    'connectivity_plus': Accordion(
+        'connectivity_plus',
+        'This plugin allows Flutter apps to discover network connectivity and configure themselves accordingly. It can distinguish between cellular vs WiFi connection.\nimport \'package:connectivity_plus/connectivity_plus.dart\'',
+        'https://pub.dev/packages/connectivity_plus'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

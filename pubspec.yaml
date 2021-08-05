@@ -28,9 +28,10 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   carousel_slider: ^4.0.0
-  flip_card: ^0.5.0
+  connectivity_plus: ^1.0.6
   flutter:
     sdk: flutter
+  flutter_rating_bar: ^4.0.0
   google_fonts: ^2.1.0
   group_list_view: ^1.1.1
   share: ^2.0.4

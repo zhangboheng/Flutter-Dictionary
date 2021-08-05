@@ -680,6 +680,14 @@ class _SecondScreenState extends State<SecondScreen> {
         'SelectableText',
         'A run of selectable text with a single style.\nSelectableText(String data, {Key? key, FocusNode? focusNode, TextStyle? style, StrutStyle? strutStyle, TextAlign? textAlign, TextDirection? textDirection, double? textScaleFactor, bool showCursor, bool autofocus, ToolbarOptions? toolbarOptions, int? minLines, int? maxLines, double cursorWidth, double? cursorHeight, Radius? cursorRadius, Color? cursorColor, DragStartBehavior dragStartBehavior, bool enableInteractiveSelection, TextSelectionControls? selectionControls, GestureTapCallback? onTap, ScrollPhysics? scrollPhysics, TextHeightBehavior? textHeightBehavior, TextWidthBasis? textWidthBasis, SelectionChangedCallback? onSelectionChanged})\nSelectableText.rich(TextSpan textSpan, {Key? key, FocusNode? focusNode, TextStyle? style, StrutStyle? strutStyle, TextAlign? textAlign, TextDirection? textDirection, double? textScaleFactor, bool showCursor, bool autofocus, ToolbarOptions? toolbarOptions, int? minLines, int? maxLines, double cursorWidth, double? cursorHeight, Radius? cursorRadius, Color? cursorColor, DragStartBehavior dragStartBehavior, bool enableInteractiveSelection, TextSelectionControls? selectionControls, GestureTapCallback? onTap, ScrollPhysics? scrollPhysics, TextHeightBehavior? textHeightBehavior, TextWidthBasis? textWidthBasis, SelectionChangedCallback? onSelectionChanged})',
         'https://api.flutter.dev/flutter/material/SelectableText-class.html'),
+    'circleavatar': Accordion(
+        'CircleAvatar',
+        'A circle that represents a user.\nCircleAvatar({Key? key, Widget? child, Color? backgroundColor, ImageProvider<Object>? backgroundImage, ImageProvider<Object>? foregroundImage, ImageErrorListener? onBackgroundImageError, ImageErrorListener? onForegroundImageError, Color? foregroundColor, double? radius, double? minRadius, double? maxRadius})',
+        'https://api.flutter.dev/flutter/material/CircleAvatar-class.html'),
+    'assetimage': Accordion(
+        'AssetImage',
+        'Fetches an image from an AssetBundle, having determined the exact image to use based on the context.\nAssetImage(String assetName, {AssetBundle? bundle, String? package})',
+        'https://api.flutter.dev/flutter/painting/AssetImage-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

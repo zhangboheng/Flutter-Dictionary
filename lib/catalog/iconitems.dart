@@ -19,9 +19,17 @@ class _MyStatefulWidgetState extends State<IconItems> {
         child: SingleChildScrollView(
             child: Column(children: const <Widget>[
           Accordion(
+              'AssetImage',
+              'Fetches an image from an AssetBundle, having determined the exact image to use based on the context.\nAssetImage(String assetName, {AssetBundle? bundle, String? package})',
+              'https://api.flutter.dev/flutter/painting/AssetImage-class.html'),
+          Accordion(
               'Canvas',
               'An interface for recording graphical operations.\nCanvas(PictureRecorder recorder, [Rect? cullRect])',
               'https://api.flutter.dev/flutter/dart-ui/Canvas-class.html'),
+          Accordion(
+              'CircleAvatar',
+              'A circle that represents a user.\nCircleAvatar({Key? key, Widget? child, Color? backgroundColor, ImageProvider<Object>? backgroundImage, ImageProvider<Object>? foregroundImage, ImageErrorListener? onBackgroundImageError, ImageErrorListener? onForegroundImageError, Color? foregroundColor, double? radius, double? minRadius, double? maxRadius})',
+              'https://api.flutter.dev/flutter/material/CircleAvatar-class.html'),
           Accordion(
               'ClipOval',
               'A widget that clips its child using an oval.\nClipOval({Key? key, CustomClipper<Rect>? clipper, Clip clipBehavior, Widget? child})',
