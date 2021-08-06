@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, camel_case_types, prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -63,7 +63,7 @@ class _flashcardsState extends State<flashcards> {
               color: Colors.amber,
             ),
             onRatingUpdate: (rating) {
-              print(rating);
+              return;
             },
           ),
           Padding(
@@ -105,7 +105,7 @@ class _flashcardsState extends State<flashcards> {
         color: Colors.black.withOpacity(0.5),
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: Colors.white),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
               spreadRadius: 2,
               blurRadius: 3,

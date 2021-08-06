@@ -13,7 +13,7 @@ class PackageScreen extends StatefulWidget {
 
 class _MyImageScreen extends State<PackageScreen> {
   final String url;
-  final _array = {
+  final Map<String, Accordion> _array = const {
     'url_launcher': Accordion(
         'url_launcher',
         'Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.\nimport \'package:url_launcher/url_launcher.dart\'',
@@ -334,6 +334,86 @@ class _MyImageScreen extends State<PackageScreen> {
         'responsive_builder',
         'A set of widgets that can be used to define a readable responsive UI for widgets.\nimport \'package:responsive_builder/responsive_builder.dart\'',
         'https://pub.dev/packages/responsive_builder'),
+    'curved_navigation_bar': Accordion(
+        'curved_navigation_bar',
+        'Stunning Animating Curved Shape Navigation Bar. Adjustable color, background color, animation curve, animation duration.\nimport \'package:curved_navigation_bar/curved_navigation_bar.dart\'',
+        'https://pub.dev/packages/curved_navigation_bar'),
+    'flutter_speed_dial': Accordion(
+        'flutter_speed_dial',
+        'Flutter plugin to implement a beautiful and dynamic Material Design Speed Dial with labels, animated icons, multi-directional children and much more.\nimport \'package:flutter_speed_dial/flutter_speed_dial.dart\'',
+        'https://pub.dev/packages/flutter_speed_dial'),
+    'numberpicker': Accordion(
+        'numberpicker',
+        'NumberPicker is a widget allowing user to choose numbers by scrolling spinners.\nimport \'package:numberpicker/numberpicker.dart\'',
+        'https://pub.dev/packages/numberpicker'),
+    'flutter_signin_button': Accordion(
+        'flutter_signin_button',
+        'A Flutter plugin for iOS and Android for generating signin buttons for different social media account.\nimport \'package:flutter_signin_button/flutter_signin_button.dart\'',
+        'https://pub.dev/packages/flutter_signin_button'),
+    'persistent_bottom_nav_bar': Accordion(
+        'persistent_bottom_nav_bar',
+        'A do all, highly customizable persistent/static bottom navigation bar for flutter. Includes up-to 20 styles.\nimport \'package:persistent_bottom_nav_bar/animations/animations.dart\'',
+        'https://pub.dev/packages/persistent_bottom_nav_bar'),
+    'fluro': Accordion(
+        'fluro',
+        'Fluro is a null-safe Flutter routing library that adds flexible routing options like wildcards, named parameters and clear route definitions.\nimport \'package:fluro/fluro.dart\'',
+        'https://pub.dev/packages/fluro'),
+    'printing': Accordion(
+        'printing',
+        'A plugin that allows Flutter apps to generate and print documents to android or ios compatible printers.\nimport \'package:printing/printing.dart\'',
+        'https://pub.dev/packages/printing'),
+    'pinput': Accordion(
+        'pinput',
+        'Pin code input (OTP) text field, Supports custom numpad.\nimport \'package:pinput/pin_put/pin_put.dart\'',
+        'https://pub.dev/packages/pinput'),
+    'awesome_dialog': Accordion(
+        'awesome_dialog',
+        'Flutter package to show beautiful dialogs.\nimport \'package:awesome_dialog/awesome_dialog.dart\'',
+        'https://pub.dev/packages/awesome_dialog'),
+    'sliver_tools': Accordion(
+        'sliver_tools',
+        'A set of useful sliver tools that are missing from the flutter framework.\nimport \'package:sliver_tools/sliver_tools.dart\'',
+        'https://pub.dev/packages/sliver_tools'),
+    'liquid_swipe': Accordion(
+        'liquid_swipe',
+        'A Flutter plugin to implement liquid Swipe effect to provided widgets.\nimport \'package:liquid_swipe/liquid_swipe.dart\'',
+        'https://pub.dev/packages/liquid_swipe'),
+    'intl_phone_number_input': Accordion(
+        'intl_phone_number_input',
+        'A simple and customizable flutter package for inputting phone number in intl / international format uses Google\'s libphonenumber.\nimport \'package:responsive_framework/responsive_framework.dart\'',
+        'https://pub.dev/packages/intl_phone_number_input'),
+    'responsive_framework': Accordion(
+        'responsive_framework',
+        'Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.\nimport \'package:intl_phone_number_input/intl_phone_number_input.dart\'',
+        'https://pub.dev/packages/responsive_framework'),
+    'path_drawing': Accordion(
+        'path_drawing',
+        'A flutter library to help with (Canvas) Path creation and manipulation.\nimport \'package:path_drawing/path_drawing.dart\'',
+        'https://pub.dev/packages/path_drawing'),
+    'grouped_list': Accordion(
+        'grouped_list',
+        'A Flutter ListView where the list items can be grouped into sections.\nimport \'package:grouped_list/grouped_list.dart\'',
+        'https://pub.dev/packages/grouped_list'),
+    'material_floating_search_bar': Accordion(
+        'material_floating_search_bar',
+        'A Flutter implementation of an expandable and animated floating search bar, also known as persistent search.\nimport \'package:material_floating_search_bar/material_floating_search_bar.dart\'',
+        'https://pub.dev/packages/material_floating_search_bar'),
+    'flutter_tts': Accordion(
+        'flutter_tts',
+        'A flutter plugin for Text to Speech. This plugin is supported on iOS, Android, Web, & macOS.\nimport \'package:flutter_tts/flutter_tts.dart\'',
+        'https://pub.dev/packages/flutter_tts'),
+    'flutter_sound': Accordion(
+        'flutter_sound',
+        'A complete api for audio playback and recording. Audio player, audio recorder, media player, media recorder, sound player, sound recorder.\nimport \'package:flutter_sound/flutter_sound.dart\'',
+        'https://pub.dev/packages/flutter_sound'),
+    'sizer': Accordion(
+        'sizer',
+        'A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.\nimport \'package:sizer/sizer.dart\'',
+        'https://pub.dev/packages/sizer'),
+    'velocity_x': Accordion(
+        'velocity_x',
+        'A minimalist Flutter framework for rapidly building custom designs.\nimport \'package:velocity_x/velocity_x.dart\'',
+        'https://pub.dev/packages/velocity_x'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

@@ -1,4 +1,4 @@
-// ignore_for_file: no_logic_in_create_state
+// ignore_for_file: no_logic_in_create_state, prefer_const_constructors, use_key_in_widget_constructors
 import "dart:math";
 import '../widgettools/flashcards.dart';
 import 'package:flutter/material.dart';
@@ -6,7 +6,7 @@ import 'package:tiktoklikescroller/tiktoklikescroller.dart';
 
 class ToolsScreen extends StatefulWidget {
   final String url;
-  ToolsScreen(this.url);
+  const ToolsScreen(this.url);
 
   @override
   _MyImageScreen createState() => _MyImageScreen(url);

@@ -1,11 +1,11 @@
-// ignore_for_file: no_logic_in_create_state
+// ignore_for_file: no_logic_in_create_state, use_key_in_widget_constructors
 
 import '../widgettools/viewcode.dart';
 import 'package:flutter/material.dart';
 
 class TipsScreen extends StatefulWidget {
   final String url;
-  TipsScreen(this.url);
+  const TipsScreen(this.url);
 
   @override
   _MyImageScreen createState() => _MyImageScreen(url);
@@ -13,11 +13,19 @@ class TipsScreen extends StatefulWidget {
 
 class _MyImageScreen extends State<TipsScreen> {
   final String url;
-  final _array = {
+  final _array = const {
     'How to Determine Screen Height and Width': Viewcode(
         'How to Determine Screen Height and Width',
         'double width = MediaQuery.of(context).size.width;\ndouble height = MediaQuery.of(context).size.height;\nTo get height just of SafeArea (for iOS 11 and above):\nvar padding = MediaQuery.of(context).padding;\ndouble newheight = height - padding.top - padding.bottom;',
         ''),
+    'How to set and lock screen orientation': Viewcode(
+        'How to set and lock screen orientation',
+        'import \'package:flutter/services.dart\'\nThis will give you access to the SystemChrome class, which "Controls specific aspects of the operating system\'s graphical interface and how it interacts with the application."',
+        'assets/code/lockrotate.dart'),
+    'How to set carousel slider': Viewcode(
+        'How to set carousel slider',
+        'Install carousel_slider, then import \'package:carousel_slider/carousel_slider.dart\'\nThis will make you can set carousel slider effect.',
+        'assets/code/carouselslider.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

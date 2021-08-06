@@ -11,13 +11,13 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp(title: 'flutter dictionary'));
 }
 
 class MyApp extends StatelessWidget {
   static final ValueNotifier<ThemeMode> themeNotifier =
       ValueNotifier(ThemeMode.light);
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key, String? title}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ThemeMode>(

@@ -1,4 +1,6 @@
 // main.dart
+// ignore_for_file: use_key_in_widget_constructors, avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:widget_with_codeview/source_code_view.dart';
 

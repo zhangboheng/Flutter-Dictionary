@@ -37,8 +37,8 @@ class _ViewcodeState extends State<Viewcode> {
             ),
             onTap: () async {
               var path = widget.path;
-              if (path.length == 0) {
-                print('No Link');
+              if (path.isEmpty) {
+                return;
               } else {
                 Navigator.push<Widget>(
                   context,
