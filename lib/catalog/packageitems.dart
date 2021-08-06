@@ -1,6 +1,6 @@
 // ignore_for_file: no_logic_in_create_state
 
-import 'accordion.dart';
+import '../widgettools/accordion.dart';
 import 'package:flutter/material.dart';
 
 class PackageScreen extends StatefulWidget {
@@ -282,12 +282,66 @@ class _MyImageScreen extends State<PackageScreen> {
         'qr_flutter',
         'QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter.\nimport \'package:qr_flutter/qr_flutter.dart\'',
         'https://pub.dev/packages/qr_flutter'),
+    'string_scanner': Accordion(
+        'string_scanner ',
+        'A class for parsing strings using a sequence of patterns.\nimport \'package:string_scanner/string_scanner.dart\'',
+        'https://pub.dev/packages/string_scanner'),
+    'widget_with_codeview': Accordion(
+        'widget_with_codeview',
+        'A widget with side-by-side source code view. Extracted from the flutter-catalog open-source app.\nimport \'package:widget_with_codeview/widget_with_codeview.dart\'',
+        'https://pub.dev/packages/widget_with_codeview'),
+    'date_time_picker': Accordion(
+        'date_time_picker',
+        'A Flutter widget to display a date time form field to show a date or clock dialog.\nimport \'package:date_time_picker/date_time_picker.dart\'',
+        'https://pub.dev/packages/date_time_picker'),
+    'syncfusion_flutter_datepicker': Accordion(
+        'syncfusion_flutter_datepicker',
+        'The Flutter Date Range Picker widget allows users to easily select dates or a range of dates. It has four built-in views that allow quick navigation to the desired date.\nimport \'package:syncfusion_flutter_datepicker/datepicker.dart\'',
+        'https://pub.dev/packages/syncfusion_flutter_datepicker'),
+    'dart_date': Accordion(
+        'dart_date',
+        'Date manipulation library. DateTime extensions. Also includes an Interval object.\nimport \'package:dart_date/dart_date.dart\'',
+        'https://pub.dev/packages/dart_date'),
+    'date_field': Accordion(
+        'date_field',
+        'A widget in the form of a field that lets people choose a date, a time or both.\nimport \'package:dart_date/dart_date.dart\'',
+        'https://pub.dev/packages/dart_date'),
+    'fluttertoast': Accordion(
+        'fluttertoast',
+        'Toast Library for Flutter, Easily create toast messages in single line of code.\nimport \'package:fluttertoast/fluttertoast.dart\'',
+        'https://pub.dev/packages/fluttertoast'),
+    'flutter_layout_grid': Accordion(
+        'flutter_layout_grid',
+        'A powerful grid layout system for Flutter, optimized for complex user interface design.\nimport \'package:flutter_layout_grid/flutter_layout_grid.dart\'',
+        'https://pub.dev/packages/flutter_layout_grid'),
+    'syncfusion_flutter_charts': Accordion(
+        'syncfusion_flutter_charts',
+        'Flutter Charts package is a data visualization library written natively in Dart for creating beautiful, animated and high-performance charts, which are used to craft high-quality mobile app user interfaces using Flutter.\nimport \'package:syncfusion_flutter_charts/charts.dart\'\nimport \'package:syncfusion_flutter_charts/sparkcharts.dart\'',
+        'https://pub.dev/packages/syncfusion_flutter_charts'),
+    'rflutter alert': Accordion(
+        'RFlutter Alert',
+        'RFlutter Alert is super customizable and easy-to-use alert / popup dialogs for Flutter. You may create reusable alert styles or add buttons as much as you want with ease.\nimport \'package:rflutter_alert/rflutter_alert.dart\'',
+        'https://pub.dev/packages/rflutter_alert'),
+    'dotted_border': Accordion(
+        'dotted_border',
+        'A flutter package to let users easily add a dashed border around any widget.\nimport \'package:dotted_border/dotted_border.dart\'',
+        'https://pub.dev/packages/dotted_border'),
+    'dots_indicator': Accordion(
+        'dots_indicator',
+        'Dots indicator to show progression of a PageView for example.\nimport \'package:dots_indicator/dots_indicator.dart\'',
+        'https://pub.dev/packages/dots_indicator'),
+    'responsive_builder': Accordion(
+        'responsive_builder',
+        'A set of widgets that can be used to define a readable responsive UI for widgets.\nimport \'package:responsive_builder/responsive_builder.dart\'',
+        'https://pub.dev/packages/responsive_builder'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
+  int _count = 0;
   @override
   void initState() {
     _getKeys = _array.keys.toList();
+    _count = _getKeys.length;
     _getKeys.sort((a, b) => a.compareTo(b));
     // at the beginning, all users are shown
     _foundUsers = _getKeys.map((item) => _array[item]).toList().cast<Widget>();
@@ -366,7 +420,21 @@ class _MyImageScreen extends State<PackageScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: _foundUsers.isNotEmpty
-                ? [Image.asset(url, width: double.infinity), ..._foundUsers]
+                ? [
+                    Image.asset(url, width: double.infinity),
+                    Container(
+                      padding: EdgeInsets.only(top: 20.0),
+                    ),
+                    Text(
+                      'Collected $_count Packages',
+                      style: TextStyle(
+                          fontSize: 24.0, fontWeight: FontWeight.w700),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(bottom: 20.0),
+                    ),
+                    ..._foundUsers
+                  ]
                 : <Widget>[
                     Container(
                       padding: const EdgeInsets.all(20.0),

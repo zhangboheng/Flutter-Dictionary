@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:dotted_border/dotted_border.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 void main() {
@@ -75,7 +76,13 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             children: <Widget>[
               RotationTransition(
                 turns: oneSecondController,
-                child: FlutterLogo(size: 100),
+                child: DottedBorder(
+                  borderType: BorderType.RRect,
+                  radius: Radius.circular(12),
+                  color: Colors.black,
+                  strokeWidth: 1,
+                  child: FlutterLogo(size: 100),
+                ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 10.0),
@@ -120,6 +127,7 @@ class _SecondScreenState extends State<SecondScreen> {
     {"title": "Dart Learning", "url": "assets/images/dartlearning.jpg"},
     {"title": "Flutter Packages", "url": "assets/images/packages.jpg"},
     {"title": "Developer Tools", "url": "assets/images/developertools.jpg"},
+    {"title": "Userful Tips", "url": "assets/images/usefultips.jpg"},
   ];
   final _array = {
     'icon': Accordion(
@@ -1050,12 +1058,20 @@ class _SecondScreenState extends State<SecondScreen> {
                                           ToolsScreen(item["url"]),
                                     ),
                                   );
+                                } else if (_current == 3) {
+                                  Navigator.push<Widget>(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          TipsScreen(item["url"]),
+                                    ),
+                                  );
                                 }
                               },
                             ));
                       }).toList(),
                     ),
-                    ..._foundUsers
+                    ..._foundUsers,
                   ]
                 : <Widget>[
                     Container(

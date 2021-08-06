@@ -1,4 +1,4 @@
-export 'catalog/accordion.dart';
+export 'widgettools/accordion.dart';
 export 'catalog/animationitems.dart';
 export 'catalog/packageitems.dart';
 export 'catalog/buttonitems.dart';
@@ -11,6 +11,8 @@ export 'catalog/layout.dart';
 export 'catalog/listtile.dart';
 export 'catalog/packageitems.dart';
 export 'catalog/popup.dart';
+export 'widgettools/readfiles.dart';
 export 'catalog/styleitems.dart';
 export 'catalog/textitems.dart';
+export 'catalog/tipsitems.dart';
 export 'catalog/toolsitems.dart';

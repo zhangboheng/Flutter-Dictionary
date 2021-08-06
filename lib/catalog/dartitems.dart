@@ -1,6 +1,6 @@
 // ignore_for_file: no_logic_in_create_state
 import 'dart:math';
-import 'accordion.dart';
+import '../widgettools/accordion.dart';
 import 'package:flutter/material.dart';
 import 'package:group_list_view/group_list_view.dart';
 

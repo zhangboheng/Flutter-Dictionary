@@ -1,6 +1,6 @@
 // ignore_for_file: no_logic_in_create_state
 import "dart:math";
-import 'flashcards.dart';
+import '../widgettools/flashcards.dart';
 import 'package:flutter/material.dart';
 import 'package:tiktoklikescroller/tiktoklikescroller.dart';
 
@@ -17,7 +17,6 @@ class _MyImageScreen extends State<ToolsScreen> {
   _MyImageScreen(this.url);
   @override
   Widget build(BuildContext context) {
-    final List<Color> colors = <Color>[Colors.red, Colors.blue, Colors.green];
     final List fore = [
       flashcards(
           'DevBook',
@@ -37,11 +36,17 @@ class _MyImageScreen extends State<ToolsScreen> {
           4.5,
           'W3Schools is a freemium educational website for learning coding online. Created in 1998, its name is derived from the World Wide Web.',
           'https://www.w3schools.com/'),
+      flashcards(
+          'Github',
+          'assets/images/githublogo.jpg',
+          5,
+          'GitHub is where over 65 million developers shape the future of software, together.',
+          'https://www.github.com/'),
     ];
 
     return Scaffold(
       body: TikTokStyleFullPageScroller(
-        contentSize: colors.length,
+        contentSize: fore.length,
         swipePositionThreshold: 0.2,
         // ^ the fraction of the screen needed to scroll
         swipeVelocityThreshold: 2000,
