@@ -13,6 +13,8 @@ class _DeviceItemsState extends State<DeviceItems> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
+        centerTitle: true,
         title: const Text('Device'),
       ),
       body: Scrollbar(

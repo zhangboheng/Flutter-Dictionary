@@ -13,6 +13,8 @@ class _MyStatefulWidgetState extends State<ButtonItems> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
+        centerTitle: true,
         title: const Text('Button'),
       ),
       body: Scrollbar(

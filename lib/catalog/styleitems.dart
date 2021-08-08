@@ -13,6 +13,8 @@ class _MyStatefulWidgetState extends State<StyleItems> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
+        centerTitle: true,
         title: const Text('Style'),
       ),
       body: Scrollbar(
@@ -42,6 +44,10 @@ class _MyStatefulWidgetState extends State<StyleItems> {
               'FractionalTranslation',
               'Applies a translation transformation before painting its child.\nFractionalTranslation({Key? key, required Offset translation, bool transformHitTests, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/FractionalTranslation-class.html'),
+          Accordion(
+              'InheritedModel',
+              'An InheritedWidget that\'s intended to be used as the base class for models whose dependents may only depend on one part or "aspect" of the overall model.\nInheritedModel({Key? key, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/InheritedModel-class.html'),
           Accordion(
               'Theme',
               'Applies a theme to descendant widgets.\nTheme({Key? key, required ThemeData data, required Widget child})',

@@ -13,6 +13,8 @@ class _MyStatefulWidgetState extends State<IconItems> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
+        centerTitle: true,
         title: const Text('Icon'),
       ),
       body: Scrollbar(

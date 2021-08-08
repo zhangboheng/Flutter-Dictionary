@@ -83,7 +83,7 @@ class _MyImageScreen extends State<ToolsScreen> {
 
 //Rondom list sort
 List shuffle(List items) {
-  var random = new Random();
+  var random = Random();
 
   // Go through all elements.
   for (var i = items.length - 1; i > 0; i--) {

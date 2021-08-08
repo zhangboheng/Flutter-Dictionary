@@ -307,10 +307,10 @@ class _SecondScreenState extends State<SecondScreen> {
         'https://api.flutter.dev/flutter/material/AboutListTile-class.html'),
     'absorbpointer': Accordion(
         'AbsorbPointer',
-        'A widget that absorbs pointers during hit testing.\nAbsorbPointer({Key? key, bool absorbing, Widget? child, bool? ignoringSemantics})',
-        'https://api.flutter.dev/flutter/widgets/AbsorbPointer-class.html'),
+        'A widget that is invisible during hit testing.\nIgnorePointer({Key? key, bool ignoring, bool? ignoringSemantics, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/IgnorePointer-class.html'),
     'ignorepointer': Accordion(
-        'AbsorbPointer',
+        'IgnorePointer',
         'A widget that absorbs pointers during hit testing.\nAbsorbPointer({Key? key, bool absorbing, Widget? child, bool? ignoringSemantics})',
         'https://api.flutter.dev/flutter/widgets/AbsorbPointer-class.html'),
     'cliprrect': Accordion(
@@ -703,13 +703,51 @@ class _SecondScreenState extends State<SecondScreen> {
             'MediaQuery.removeViewInsets({Key? key, required BuildContext context, bool removeLeft = false, bool removeTop = false, bool removeRight = false, bool removeBottom = false, required Widget child})\n'
             'MediaQuery.removeViewPadding({Key? key, required BuildContext context, bool removeLeft = false, bool removeTop = false, bool removeRight = false, bool removeBottom = false, required Widget child})',
         'https://api.flutter.dev/flutter/widgets/MediaQuery-class.html'),
+    'colorfiltered': Accordion(
+        'ColorFiltered',
+        'Applies a ColorFilter to its child.\nColorFiltered({required ColorFilter colorFilter, Widget? child, Key? key})',
+        'https://api.flutter.dev/flutter/widgets/ColorFiltered-class.html'),
+    'pageview': Accordion(
+        'PageView',
+        'A scrollable list that works page by page.\nPageView({Key? key, Axis scrollDirection, bool reverse, PageController? controller, ScrollPhysics? physics, bool pageSnapping, ValueChanged<int>? onPageChanged, List<Widget> children = const <Widget>[], DragStartBehavior dragStartBehavior, bool allowImplicitScrolling, String? restorationId, Clip clipBehavior, ScrollBehavior? scrollBehavior})\nPageView.builder({Key? key, Axis scrollDirection, bool reverse, PageController? controller, ScrollPhysics? physics, bool pageSnapping, ValueChanged<int>? onPageChanged, required IndexedWidgetBuilder itemBuilder, int? itemCount, DragStartBehavior dragStartBehavior, bool allowImplicitScrolling, String? restorationId, Clip clipBehavior, ScrollBehavior? scrollBehavior})\nPageView.custom({Key? key, Axis scrollDirection, bool reverse, PageController? controller, ScrollPhysics? physics, bool pageSnapping, ValueChanged<int>? onPageChanged, required SliverChildDelegate childrenDelegate, DragStartBehavior dragStartBehavior, bool allowImplicitScrolling, String? restorationId, Clip clipBehavior, ScrollBehavior? scrollBehavior})',
+        'https://api.flutter.dev/flutter/widgets/PageView-class.html'),
+    'table': Accordion(
+        'Table',
+        'A widget that uses the table layout algorithm for its children.\nTable({Key? key, List<TableRow> children, Map<int, TableColumnWidth>? columnWidths, TableColumnWidth defaultColumnWidth, TextDirection? textDirection, TableBorder? border, TableCellVerticalAlignment defaultVerticalAlignment, TextBaseline? textBaseline})',
+        'https://api.flutter.dev/flutter/widgets/Table-class.html'),
+    'inheritedmodel': Accordion(
+        'InheritedModel',
+        'An InheritedWidget that\'s intended to be used as the base class for models whose dependents may only depend on one part or "aspect" of the overall model.\nInheritedModel({Key? key, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/InheritedModel-class.html'),
+    'fittedbox': Accordion(
+        'FittedBox',
+        'Scales and positions its child within itself according to fit.\nFittedBox({Key? key, BoxFit fit, AlignmentGeometry alignment, Clip clipBehavior, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/FittedBox-class.html'),
+    'layoutbuilder': Accordion(
+        'LayoutBuilder',
+        'Builds a widget tree that can depend on the parent widget\'s size.\nLayoutBuilder({Key? key, required LayoutWidgetBuilder builder})',
+        'https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html'),
+    'positioned': Accordion(
+        'Positioned',
+        'A widget that controls where a child of a Stack is positioned.\nPositioned({Key? key, double? left, double? top, double? right, double? bottom, double? width, double? height, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/Positioned-class.html'),
+    'flexible': Accordion(
+        'Flexible',
+        'A widget that controls how a child of a Row, Column, or Flex flexes.\nFlexible({Key? key, int flex, FlexFit fit, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/Flexible-class.html'),
+    'spacer': Accordion(
+        'Spacer',
+        'Spacer creates an adjustable, empty spacer that can be used to tune the spacing between widgets in a Flex container, like Row or Column.\nSpacer({Key? key, int flex})',
+        'https://api.flutter.dev/flutter/widgets/Spacer-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
   var _getKeys = [];
+  int _count = 0;
   @override
   void initState() {
     _getKeys = _array.keys.toList();
+    _count = _getKeys.length;
     _getKeys.sort((a, b) => a.compareTo(b));
     // at the beginning, all users are shown
     _foundUsers = _getKeys.map((item) => _array[item]).toList().cast<Widget>();
@@ -757,10 +795,9 @@ class _SecondScreenState extends State<SecondScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
         centerTitle: true,
         title: Container(
-          height: 30,
-          padding: EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(20),
@@ -769,21 +806,20 @@ class _SecondScreenState extends State<SecondScreen> {
                 color: Colors.grey.withOpacity(0.5),
                 spreadRadius: 5,
                 blurRadius: 7,
-                offset: Offset(0, 3), // changes position of shadow
+                offset: const Offset(0, 3), // changes position of shadow
               ),
             ],
           ),
           child: TextFormField(
             maxLines: 1,
-            style: TextStyle(color: Colors.black),
+            style: const TextStyle(color: Colors.black),
             decoration: InputDecoration(
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
                 color: Colors.blue,
               ),
               hintText: 'Search',
               hintStyle: TextStyle(color: Colors.grey[700]),
-              contentPadding: EdgeInsets.only(bottom: 13.0),
               focusColor: null,
               border: InputBorder.none,
               focusedBorder: InputBorder.none,
@@ -825,7 +861,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         .center, //Center Row contents vertically,
                     children: const <Widget>[
                       FlutterLogo(size: 56),
-                      Text('Flutter Dictionary  ',
+                      Text('Flutter Dictionary',
                           style: TextStyle(fontSize: 24, color: Colors.white)),
                     ])),
             ListTile(
@@ -1019,7 +1055,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         autoPlay: true,
                         autoPlayInterval: Duration(seconds: 5),
                         autoPlayAnimationDuration: Duration(seconds: 1),
-                        height: MediaQuery.of(context).size.height * 0.35,
+                        height: MediaQuery.of(context).size.width * 0.35,
                         onPageChanged: (index, reason) {
                           setState(() {
                             _current = index;
@@ -1070,6 +1106,17 @@ class _SecondScreenState extends State<SecondScreen> {
                               },
                             ));
                       }).toList(),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(top: 20.0),
+                    ),
+                    Text(
+                      'Collected $_count items',
+                      style: TextStyle(
+                          fontSize: 16.0, fontWeight: FontWeight.w700),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(bottom: 20.0),
                     ),
                     ..._foundUsers,
                   ]

@@ -1,11 +1,11 @@
-// ignore_for_file: no_logic_in_create_state
+// ignore_for_file: no_logic_in_create_state, prefer_const_constructors, use_key_in_widget_constructors
 import 'dart:math';
 import '../widgettools/accordion.dart';
 import 'package:flutter/material.dart';
 import 'package:group_list_view/group_list_view.dart';
 
 //Set Random Colors Value
-Random random = new Random();
+Random random = Random();
 List _colorbox = [
   Color(0xFFFD9841),
   Color(0xFFF9D562),
@@ -20,9 +20,9 @@ Map<String, List> _elements = {
   'Basic': [
     Accordion(
         'Variable[var, final, const, late]',
-        'Use var if you expect a variable assignment to change during its lifetime:\nvar msg = "Hello world.";\nmsg = "Hello world again.";Use final if you expect a variable assignment to remain the same during its lifetime:\nfinal msg = "Hello world.";' +
-            '\nNote that there is a fine distinction between final and const when it comes to objects. final does not necessarily make the object itself immutable, whereas const does:\nfinal fruit = ["apple", "pear", "orange"];' +
-            '\nfruit.add("grape");\nfinal cars = const ["Honda", "Toyota", "Ford"];\nconst requires a constant assignment, whereas final will accept both:\nconst names = const ["John", "Jane", "Jack"];' +
+        'Use var if you expect a variable assignment to change during its lifetime:\nvar msg = "Hello world.";\nmsg = "Hello world again.";Use final if you expect a variable assignment to remain the same during its lifetime:\nfinal msg = "Hello world.";'
+            '\nNote that there is a fine distinction between final and const when it comes to objects. final does not necessarily make the object itself immutable, whereas const does:\nfinal fruit = ["apple", "pear", "orange"];'
+            '\nfruit.add("grape");\nfinal cars = const ["Honda", "Toyota", "Ford"];\nconst requires a constant assignment, whereas final will accept both:\nconst names = const ["John", "Jane", "Jack"];'
             '\nAt last, Use late means Declaring a non-nullable variable that’s initialized after its declaration or Lazily initializing a variable.',
         'https://stackoverflow.com/questions/12416507/difference-between-var-and-dynamic-type-in-dart'),
     Accordion(
@@ -34,7 +34,7 @@ Map<String, List> _elements = {
 
 class DartScreen extends StatefulWidget {
   final String url;
-  DartScreen(this.url);
+  const DartScreen(this.url);
 
   @override
   _MyImageScreen createState() => _MyImageScreen(url);
@@ -48,6 +48,7 @@ class _MyImageScreen extends State<DartScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
         centerTitle: true,
         title: Text('Dart Learning'),
       ),

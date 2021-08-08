@@ -13,6 +13,8 @@ class _MyStatefulWidgetState extends State<Layouts> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
+        centerTitle: true,
         title: const Text('Layout'),
       ),
       body: Scrollbar(
@@ -83,9 +85,21 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'A widget that expands a child of a Row, Column, or Flex so that the child fills the available space.\nExpanded({Key? key, int flex = 1, required Widget child})',
               'https://api.flutter.dev/flutter/widgets/Expanded-class.html'),
           Accordion(
+              'FittedBox',
+              'Scales and positions its child within itself according to fit.\nFittedBox({Key? key, BoxFit fit, AlignmentGeometry alignment, Clip clipBehavior, Widget? child})',
+              'https://api.flutter.dev/flutter/widgets/FittedBox-class.html'),
+          Accordion(
+              'Flexible',
+              'A widget that controls how a child of a Row, Column, or Flex flexes.\nFlexible({Key? key, int flex, FlexFit fit, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/Flexible-class.html'),
+          Accordion(
               'FlexibleSpaceBar',
               'The part of a material design AppBar that expands, collapses, and stretches.\nFlexibleSpaceBar({Key? key, Widget? title, Widget? background, bool? centerTitle, EdgeInsetsGeometry? titlePadding, CollapseMode collapseMode, List<StretchMode> stretchModes})',
               'https://api.flutter.dev/flutter/material/FlexibleSpaceBar-class.html'),
+          Accordion(
+              'LayoutBuilder',
+              'Builds a widget tree that can depend on the parent widget\'s size.\nLayoutBuilder({Key? key, required LayoutWidgetBuilder builder})',
+              'https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html'),
           Accordion(
               'ListView',
               'A scrollable list of widgets arranged linearly.\nListView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, List<Widget> children = const <Widget>[], int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})',
@@ -111,9 +125,17 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'A widget that insets its child by the given padding.\nPadding({Key? key, required EdgeInsetsGeometry padding, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/Padding-class.html'),
           Accordion(
+              'PageView',
+              'A scrollable list that works page by page.\nPageView({Key? key, Axis scrollDirection, bool reverse, PageController? controller, ScrollPhysics? physics, bool pageSnapping, ValueChanged<int>? onPageChanged, List<Widget> children = const <Widget>[], DragStartBehavior dragStartBehavior, bool allowImplicitScrolling, String? restorationId, Clip clipBehavior, ScrollBehavior? scrollBehavior})\nPageView.builder({Key? key, Axis scrollDirection, bool reverse, PageController? controller, ScrollPhysics? physics, bool pageSnapping, ValueChanged<int>? onPageChanged, required IndexedWidgetBuilder itemBuilder, int? itemCount, DragStartBehavior dragStartBehavior, bool allowImplicitScrolling, String? restorationId, Clip clipBehavior, ScrollBehavior? scrollBehavior})\nPageView.custom({Key? key, Axis scrollDirection, bool reverse, PageController? controller, ScrollPhysics? physics, bool pageSnapping, ValueChanged<int>? onPageChanged, required SliverChildDelegate childrenDelegate, DragStartBehavior dragStartBehavior, bool allowImplicitScrolling, String? restorationId, Clip clipBehavior, ScrollBehavior? scrollBehavior})',
+              'https://api.flutter.dev/flutter/widgets/PageView-class.html'),
+          Accordion(
               'Placeholder',
               'A widget that draws a box that represents where other widgets will one day be added.\nPlaceholder({Key? key, Color color, double strokeWidth, double fallbackWidth, double fallbackHeight})',
               'https://api.flutter.dev/flutter/widgets/Placeholder-class.html'),
+          Accordion(
+              'Positioned',
+              'A widget that controls where a child of a Stack is positioned.\nPositioned({Key? key, double? left, double? top, double? right, double? bottom, double? width, double? height, required Widget child})',
+              'https://api.flutter.dev/flutter/widgets/Positioned-class.html'),
           Accordion(
               'RotatedBox',
               'A widget that rotates its child by a integral number of quarter turns.\nRotatedBox({Key? key, required int quarterTurns, Widget? child})',
@@ -167,6 +189,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
               'TabBarView',
               'A page view that displays the widget which corresponds to the currently selected tab.\nTabBarView({Key? key, required List<Widget> children, TabController? controller, ScrollPhysics? physics, DragStartBehavior dragStartBehavior})',
               'https://api.flutter.dev/flutter/material/TabBarView-class.html'),
+          Accordion(
+              'Table',
+              'A widget that uses the table layout algorithm for its children.\nTable({Key? key, List<TableRow> children, Map<int, TableColumnWidth>? columnWidths, TableColumnWidth defaultColumnWidth, TextDirection? textDirection, TableBorder? border, TableCellVerticalAlignment defaultVerticalAlignment, TextBaseline? textBaseline})',
+              'https://api.flutter.dev/flutter/widgets/Table-class.html'),
           Accordion(
               'TabController',
               'Coordinates tab selection between a TabBar and a TabBarView.\nTabController({int initialIndex = 0, required int length, required TickerProvider vsync})',

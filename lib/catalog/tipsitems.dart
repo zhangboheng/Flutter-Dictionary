@@ -1,4 +1,4 @@
-// ignore_for_file: no_logic_in_create_state, use_key_in_widget_constructors
+// ignore_for_file: no_logic_in_create_state, use_key_in_widget_constructors, prefer_const_constructors
 
 import '../widgettools/viewcode.dart';
 import 'package:flutter/material.dart';
@@ -15,23 +15,48 @@ class _MyImageScreen extends State<TipsScreen> {
   final String url;
   final _array = const {
     'How to Determine Screen Height and Width': Viewcode(
+        0,
         'How to Determine Screen Height and Width',
         'double width = MediaQuery.of(context).size.width;\ndouble height = MediaQuery.of(context).size.height;\nTo get height just of SafeArea (for iOS 11 and above):\nvar padding = MediaQuery.of(context).padding;\ndouble newheight = height - padding.top - padding.bottom;',
         ''),
     'How to set and lock screen orientation': Viewcode(
+        1,
         'How to set and lock screen orientation',
         'import \'package:flutter/services.dart\'\nThis will give you access to the SystemChrome class, which "Controls specific aspects of the operating system\'s graphical interface and how it interacts with the application."',
         'assets/code/lockrotate.dart'),
     'How to set carousel slider': Viewcode(
+        1,
         'How to set carousel slider',
         'Install carousel_slider, then import \'package:carousel_slider/carousel_slider.dart\'\nThis will make you can set carousel slider effect.',
         'assets/code/carouselslider.dart'),
+    'How to detect the host platform from Dart code': Viewcode(
+        1,
+        'How to detect the host platform from Dart code',
+        'How to know your app on what platform is, you can import \'dart:io\'; and import \'package:flutter/foundation.dart\'',
+        'assets/code/detectos.dart'),
+    'How to query search item in List': Viewcode(
+        1,
+        'How to query search item in List',
+        'You can use where function.',
+        'assets/code/searchcontents.dart'),
+    'How to read text from files and display them': Viewcode(
+        1,
+        'How to read text from files and display them',
+        'You can import \'package:flutter/services.dart\'; then use Future to read files',
+        'assets/code/readtext.dart'),
+    'How to play a network video in flutter app': Viewcode(
+        1,
+        'How to play a network video in flutter app',
+        'You can install video_player plugins, then add permision to Android and iOS.',
+        'assets/code/playvideo.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
+  int _count = 0;
   @override
   void initState() {
     _getKeys = _array.keys.toList();
+    _count = _getKeys.length;
     _getKeys.sort((a, b) => a.compareTo(b));
     // at the beginning, all users are shown
     _foundUsers = _getKeys.map((item) => _array[item]).toList().cast<Widget>();
@@ -65,10 +90,9 @@ class _MyImageScreen extends State<TipsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
         centerTitle: true,
         title: Container(
-          height: 30,
-          padding: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(20),
@@ -91,7 +115,6 @@ class _MyImageScreen extends State<TipsScreen> {
               ),
               hintText: 'Search',
               hintStyle: TextStyle(color: Colors.grey[700]),
-              contentPadding: const EdgeInsets.only(bottom: 13.0),
               focusColor: null,
               border: InputBorder.none,
               focusedBorder: InputBorder.none,
@@ -110,7 +133,21 @@ class _MyImageScreen extends State<TipsScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: _foundUsers.isNotEmpty
-                ? [Image.asset(url, width: double.infinity), ..._foundUsers]
+                ? [
+                    Image.asset(url, width: double.infinity),
+                    Container(
+                      padding: EdgeInsets.only(top: 20.0),
+                    ),
+                    Text(
+                      'Collected $_count tips',
+                      style: TextStyle(
+                          fontSize: 16.0, fontWeight: FontWeight.w700),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(bottom: 20.0),
+                    ),
+                    ..._foundUsers
+                  ]
                 : <Widget>[
                     Container(
                       padding: const EdgeInsets.all(20.0),

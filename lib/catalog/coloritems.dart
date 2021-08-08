@@ -13,6 +13,8 @@ class _MyStatefulWidgetState extends State<ColorItems> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
+        centerTitle: true,
         title: const Text('Color'),
       ),
       body: Scrollbar(
@@ -22,6 +24,10 @@ class _MyStatefulWidgetState extends State<ColorItems> {
               'Color',
               'An immutable 32 bit color value in ARGB format.\nColor(0xFF42A5F5);\nColor.fromARGB(0xFF, 0x42, 0xA5, 0xF5);\nColor.fromARGB(255, 66, 165, 245);\nColor.fromRGBO(66, 165, 245, 1.0);',
               'https://api.flutter.dev/flutter/dart-ui/Color-class.html'),
+          Accordion(
+              'ColorFiltered',
+              'Applies a ColorFilter to its child.\nColorFiltered({required ColorFilter colorFilter, Widget? child, Key? key})',
+              'https://api.flutter.dev/flutter/widgets/ColorFiltered-class.html'),
           Accordion(
               'Gradient',
               'This is an interface that allows LinearGradient, RadialGradient, and SweepGradient classes to be used interchangeably in BoxDecorations.\nGradient({required List<Color> colors, List<double>? stops, GradientTransform? transform})',

@@ -1,11 +1,11 @@
-// ignore_for_file: no_logic_in_create_state
+// ignore_for_file: no_logic_in_create_state, use_key_in_widget_constructors, prefer_const_constructors
 
 import '../widgettools/accordion.dart';
 import 'package:flutter/material.dart';
 
 class PackageScreen extends StatefulWidget {
   final String url;
-  PackageScreen(this.url);
+  const PackageScreen(this.url);
 
   @override
   _MyImageScreen createState() => _MyImageScreen(url);
@@ -414,6 +414,114 @@ class _MyImageScreen extends State<PackageScreen> {
         'velocity_x',
         'A minimalist Flutter framework for rapidly building custom designs.\nimport \'package:velocity_x/velocity_x.dart\'',
         'https://pub.dev/packages/velocity_x'),
+    'getwidget': Accordion(
+        'getwidget',
+        'GetWidget is open source library that come with pre-build 1000+ UI components.\nimport \'package:getwidget/getwidget.dart\'',
+        'https://pub.dev/packages/getwidget'),
+    'flutter_sticky_header': Accordion(
+        'flutter_sticky_header',
+        'A Flutter implementation of sticky headers with a sliver as a child.\nimport \'package:flutter_sticky_header/flutter_sticky_header.dart\'',
+        'https://pub.dev/packages/flutter_sticky_header'),
+    'speech_to_text': Accordion(
+        'speech_to_text',
+        'A Flutter plugin that exposes device specific speech to text recognition capability.\nimport \'package:speech_to_text/speech_to_text.dart\'',
+        'https://pub.dev/packages/speech_to_text'),
+    'like_button': Accordion(
+        'like_button',
+        'Like Button is a flutter library that allows you to create a button with animation effects similar to Twitter\'s heart when you like something and animation effects to increase like count.\nimport \'package:like_button/like_button.dart\'',
+        'https://pub.dev/packages/like_button'),
+    'marquee': Accordion(
+        'marquee',
+        'A Flutter widget that scrolls text infinitely.\nimport \'package:marquee/marquee.dart\'',
+        'https://pub.dev/packages/marquee'),
+    'syncfusion_flutter_pdf': Accordion(
+        'syncfusion_flutter_pdf',
+        'The Flutter PDF is a library written natively in Dart for creating, reading, editing, and securing PDF files in Android, iOS, and web platforms.\nimport \'package:syncfusion_flutter_pdf/pdf.dart\'',
+        'https://pub.dev/packages/syncfusion_flutter_pdf'),
+    'implicitly_animated_reorderable_list': Accordion(
+        'implicitly_animated_reorderable_list',
+        'A Flutter ListView that implicitly animates between the changes of two lists with the support to reorder its items.\nimport \'package:implicitly_animated_reorderable_list/implicitly_animated_reorderable_list.dart\'',
+        'https://pub.dev/packages/implicitly_animated_reorderable_list'),
+    'syncfusion_flutter_gauges': Accordion(
+        'syncfusion_flutter_gauges',
+        'The Flutter Gauges library includes the data visualization widgets Linear Gauge and Radial Gauge (a.k.a. circular gauge) to create modern, interactive, animated gauges.\nimport \'package:syncfusion_flutter_gauges/gauges.dart\'',
+        'https://pub.dev/packages/syncfusion_flutter_gauges'),
+    'flutter_custom_clippers': Accordion(
+        'flutter_custom_clippers',
+        'Flutter package that provides you custom clippers to help you achieve various custom shapes.\nimport \'package:flutter_custom_clippers/flutter_custom_clippers.dart\'',
+        'https://pub.dev/packages/flutter_custom_clippers'),
+    'signature': Accordion(
+        'signature',
+        'A Flutter plugin providing performance optimized signature canvas with ability to set custom style, boundaries and initial state.\nimport \'package:signature/signature.dart\'',
+        'https://pub.dev/packages/signature'),
+    'step_progress_indicator': Accordion(
+        'step_progress_indicator',
+        'Open source Flutter package, bar indicator made of a series of selected and unselected steps.\nimport \'package:step_progress_indicator/step_progress_indicator.dart\'',
+        'https://pub.dev/packages/step_progress_indicator'),
+    'adaptive_dialog': Accordion(
+        'adaptive_dialog',
+        'Show alert dialog or modal action sheet adaptively according to platform.\nimport \'package:adaptive_dialog/adaptive_dialog.dart\'',
+        'https://pub.dev/packages/adaptive_dialog'),
+    'maps_launcher': Accordion(
+        'maps_launcher',
+        'Simple Flutter plugin to open the maps application (or browser) on all platforms.\nimport \'package:maps_launcher/maps_launcher.dart\'',
+        'https://pub.dev/packages/maps_launcher'),
+    'url_strategy': Accordion(
+        'url_strategy',
+        'Package for Flutter apps that allows setting the web URL strategy with a single line of code.\nimport \'package:url_strategy/url_strategy.dart\'',
+        'https://pub.dev/packages/url_strategy'),
+    'animated_bottom_navigation_bar': Accordion(
+        'animated_bottom_navigation_bar',
+        'AnimatedBottomNavigationBar is a customizable widget inspired by dribble shot.\nimport \'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart\'',
+        'https://pub.dev/packages/animated_bottom_navigation_bar'),
+    'syncfusion_flutter_sliders': Accordion(
+        'syncfusion_flutter_sliders',
+        'package:syncfusion_flutter_sliders/sliders.dart\nimport \'package:syncfusion_flutter_sliders/sliders.dart\'',
+        'https://pub.dev/packages/syncfusion_flutter_sliders'),
+    'readmore': Accordion(
+        'readmore',
+        'A Flutter Sliders library for creating highly customizable and UI-rich slider, range slider, and range selector widgets for filtering purposes.\nimport \'package:readmore/readmore.dart\'',
+        'https://pub.dev/packages/readmore'),
+    'bubble_tab_indicator': Accordion(
+        'bubble_tab_indicator',
+        'A Flutter library to add bubble-like effect to tab indicator to TabBar.\nimport \'package:bubble_tab_indicator/bubble_tab_indicator.dart\'',
+        'https://pub.dev/packages/bubble_tab_indicator'),
+    'flutter_multi_formatter': Accordion(
+        'flutter_multi_formatter',
+        'A package of formatters for international phone numbers, credit / debit cards and a masked formatter.\nimport \'package:flutter_multi_formatter/flutter_multi_formatter.dart\'',
+        'https://pub.dev/packages/flutter_multi_formatter'),
+    'intro_views_flutter': Accordion(
+        'intro_views_flutter',
+        'A Flutter package for simple material design app intro screens with some cool animations.\nimport \'package:intro_views_flutter/intro_views_flutter.dart\'',
+        'https://pub.dev/packages/intro_views_flutter'),
+    'cupertino_listview': Accordion(
+        'cupertino_listview',
+        'This library tends to be the equivalent of iOS UITableView with plain sections.\nimport \'package:cupertino_listview/cupertino_listview.dart\'',
+        'https://pub.dev/packages/cupertino_listview'),
+    'circular_countdown_timer': Accordion(
+        'circular_countdown_timer',
+        'Make an animated circular countdown using Circular Countdown Timer.\nimport \'package:circular_countdown_timer/circular_countdown_timer.dart\'',
+        'https://pub.dev/packages/circular_countdown_timer'),
+    'youtube_player_iframe': Accordion(
+        'youtube_player_iframe',
+        'Flutter port of the official YouTube iFrame player API. Supports web & mobile platforms.\nimport \'package:youtube_player_iframe/youtube_player_iframe.dart\'',
+        'https://pub.dev/packages/youtube_player_iframe'),
+    'syncfusion_flutter_datagrid': Accordion(
+        'syncfusion_flutter_datagrid',
+        'The Syncfusion Flutter DataGrid is used to display and manipulate data in a tabular view.\nimport \'package:syncfusion_flutter_datagrid/datagrid.dart\'',
+        'https://pub.dev/packages/syncfusion_flutter_datagrid'),
+    'extended_image_library': Accordion(
+        'extended_image_library',
+        'package library for extended_image, extended_text and extended_text_field, provide common base class.\nimport \'package:extended_image_library/extended_image_library.dart\'',
+        'https://pub.dev/packages/extended_image_library'),
+    'english_words': Accordion(
+        'english_words',
+        'Utilities for working with English words. Counts syllables, generates well-sounding word combinations, and provides access to the top 5000 English words by usage.\nimport \'package:english_words/english_words.dart\'',
+        'https://pub.dev/packages/english_words'),
+    'open_file': Accordion(
+        'open_file',
+        'A plug-in that can call native APP to open files with string result in flutter, support iOS(UTI) / android(intent) / PC(ffi) / web(dart:html)\nimport \'package:open_file/open_file.dart\'',
+        'https://pub.dev/packages/open_file'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
@@ -455,10 +563,9 @@ class _MyImageScreen extends State<PackageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 70,
         centerTitle: true,
         title: Container(
-          height: 30,
-          padding: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(20),
@@ -481,7 +588,6 @@ class _MyImageScreen extends State<PackageScreen> {
               ),
               hintText: 'Search',
               hintStyle: TextStyle(color: Colors.grey[700]),
-              contentPadding: const EdgeInsets.only(bottom: 13.0),
               focusColor: null,
               border: InputBorder.none,
               focusedBorder: InputBorder.none,
@@ -508,7 +614,7 @@ class _MyImageScreen extends State<PackageScreen> {
                     Text(
                       'Collected $_count Packages',
                       style: TextStyle(
-                          fontSize: 24.0, fontWeight: FontWeight.w700),
+                          fontSize: 16.0, fontWeight: FontWeight.w700),
                     ),
                     Container(
                       padding: EdgeInsets.only(bottom: 20.0),

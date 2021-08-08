@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 import 'readfiles.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,7 +7,8 @@ class Viewcode extends StatefulWidget {
   final String title;
   final String content;
   final String path;
-  const Viewcode(this.title, this.content, this.path);
+  final int index;
+  const Viewcode(this.index, this.title, this.content, this.path);
 
   @override
   _ViewcodeState createState() => _ViewcodeState();
@@ -21,6 +22,9 @@ class _ViewcodeState extends State<Viewcode> {
       margin: const EdgeInsets.all(2),
       child: Column(children: [
         ListTile(
+            leading: widget.index == 0
+                ? Icon(Icons.code_off_outlined)
+                : Icon(Icons.code),
             title: Text(
               widget.title,
               style: GoogleFonts.acme(
