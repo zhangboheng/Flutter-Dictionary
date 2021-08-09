@@ -65,6 +65,17 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to parse json to map in flutter',
         'First, import \'package:http/http.dart\' as http;\nimport \'dart:convert\';\nfinal response = await http.get(someEndPoint);\nfinal Map<String, dynamic> data = json.decode(response.body);',
         'assets/code/parsesimplejson.dart'),
+    'how to parse nested json array and put it in a model class': Viewcode(
+        1,
+        'How to parse nested json array and put it in a model class',
+        'First, import \'package:http/http.dart\' as http;\nimport \'dart:convert\';\nfinal response = await http.get(someEndPoint);\nfinal data = json.decode(response.body) as List;\n'
+            'jsonList.map((map) => User.fromJson(map)).toList();',
+        'assets/code/parsenestjson.dart'),
+    'listTile with multiple trailing icon buttons': Viewcode(
+        1,
+        'ListTile with multiple trailing icon buttons',
+        'You can use Row layout and set mainAxisSize: MainAxisSize.min',
+        'assets/code/multipleiconbtns.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

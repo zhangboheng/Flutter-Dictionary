@@ -743,6 +743,14 @@ class _SecondScreenState extends State<SecondScreen> {
         'RefreshIndicator',
         'A widget that supports the Material "swipe to refresh" idiom.\n RefreshIndicator({Key? key, required Widget child, double displacement, double edgeOffset, required RefreshCallback onRefresh, Color? color, Color? backgroundColor, ScrollNotificationPredicate notificationPredicate, String? semanticsLabel, String? semanticsValue, double strokeWidth, RefreshIndicatorTriggerMode triggerMode})',
         'https://api.flutter.dev/flutter/material/RefreshIndicator-class.html'),
+    'factory': Accordion(
+        'Factory',
+        'A factory interface that also reports the type of the created objects.\nFactory(ValueGetter<T> constructor)',
+        'https://api.flutter.dev/flutter/foundation/Factory-class.html'),
+    'willpopscope': Accordion(
+        'WillPopScope',
+        'Registers a callback to veto attempts by the user to dismiss the enclosing ModalRoute.\nWillPopScope({Key? key, required Widget child, required WillPopCallback? onWillPop})',
+        'https://api.flutter.dev/flutter/widgets/WillPopScope-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

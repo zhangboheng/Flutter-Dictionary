@@ -252,7 +252,7 @@ class _MyImageScreen extends State<PackageScreen> {
         'https://pub.dev/packages/bottom_navy_bar'),
     'googleapis': Accordion(
         'googleapis',
-        'Auto-generated client libraries for accessing Google APIs described through the API discovery service.\nimport \'package:googleapis/abusiveexperiencereport/v1.dart\'\n...',
+        'Auto-generated client libraries for accessing Google APIs described through the API discovery service.\nimport \'package:googleapis/abusiveexperiencereport/v1.dart\'\nMore...',
         'https://pub.dev/packages/googleapis'),
     'chewie': Accordion(
         'chewie',
@@ -522,6 +522,10 @@ class _MyImageScreen extends State<PackageScreen> {
         'open_file',
         'A plug-in that can call native APP to open files with string result in flutter, support iOS(UTI) / android(intent) / PC(ffi) / web(dart:html)\nimport \'package:open_file/open_file.dart\'',
         'https://pub.dev/packages/open_file'),
+    'universal_html': Accordion(
+        'universal_html',
+        'A \'dart:html\' that works in all platforms, including Flutter and server-side. Eases cross-platform development and HTML / XML processing.\nimport \'package:universal_html/html.dart\'\nMore...',
+        'https://pub.dev/packages/universal_html'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

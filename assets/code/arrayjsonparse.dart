@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'dart:convert';
 // import the http package
@@ -8,6 +10,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +24,8 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -30,7 +36,7 @@ class _HomePageState extends State<HomePage> {
 
   // Call this when the user pull down the screen
   Future<void> _loadData() async {
-    final url = 'https://jsonplaceholder.typicode.com/todos';
+    const url = 'https://jsonplaceholder.typicode.com/todos';
     try {
       final http.Response response = await http.get(Uri.parse(url));
       final _loadedTodos = json.decode(response.body);
@@ -38,7 +44,7 @@ class _HomePageState extends State<HomePage> {
         _todos = _loadedTodos;
       });
     } catch (err) {
-      throw err;
+      rethrow;
     }
   }
 

@@ -48,6 +48,10 @@ class _MyStatefulWidgetState extends State<FunctionItems> {
                   'This feature was deprecated after v2.1.0-10.0.pre.\') DragAnchor dragAnchor, DragAnchorStrategy? dragAnchorStrategy, Axis? affinity, int? maxSimultaneousDrags, VoidCallback? onDragStarted, DragUpdateCallback? onDragUpdate, DraggableCanceledCallback? onDraggableCanceled, DragEndCallback? onDragEnd, VoidCallback? onDragCompleted, bool ignoringFeedbackSemantics, bool rootOverlay, HitTestBehavior hitTestBehavior})',
               'https://api.flutter.dev/flutter/widgets/Draggable-class.html'),
           Accordion(
+              'Factory',
+              'A factory interface that also reports the type of the created objects.\nFactory(ValueGetter<T> constructor)',
+              'https://api.flutter.dev/flutter/foundation/Factory-class.html'),
+          Accordion(
               'FutureBuilder',
               'Widget that builds itself based on the latest snapshot of interaction with a Future.\nFutureBuilder({Key? key, Future<T>? future, T? initialData, required AsyncWidgetBuilder<T> builder})',
               'https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html'),
@@ -79,6 +83,10 @@ class _MyStatefulWidgetState extends State<FunctionItems> {
               'StreamBuilder',
               'Widget that builds itself based on the latest snapshot of interaction with a Stream.\nStreamBuilder({Key? key, T? initialData, Stream<T>? stream, required AsyncWidgetBuilder<T> builder})',
               'https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html'),
+          Accordion(
+              'WillPopScope',
+              'Registers a callback to veto attempts by the user to dismiss the enclosing ModalRoute.\nWillPopScope({Key? key, required Widget child, required WillPopCallback? onWillPop})',
+              'https://api.flutter.dev/flutter/widgets/WillPopScope-class.html'),
         ])),
       ),
     );
