@@ -97,6 +97,10 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
               'Animated version of Positioned which takes a specific Animation<RelativeRect> to transition the child\'s position from a start position to an end position over the lifetime of the animation.\nPositionedTransition({Key? key, required Animation<RelativeRect> rect, required Widget child})',
               'https://api.flutter.dev/flutter/widgets/PositionedTransition-class.html'),
           Accordion(
+              'RefreshIndicator',
+              'A widget that supports the Material "swipe to refresh" idiom.\n RefreshIndicator({Key? key, required Widget child, double displacement, double edgeOffset, required RefreshCallback onRefresh, Color? color, Color? backgroundColor, ScrollNotificationPredicate notificationPredicate, String? semanticsLabel, String? semanticsValue, double strokeWidth, RefreshIndicatorTriggerMode triggerMode})',
+              'https://api.flutter.dev/flutter/material/RefreshIndicator-class.html'),
+          Accordion(
               'RotationTransition',
               'Animates the rotation of a widget.\nRotationTransition({Key? key, required Animation<double> turns, Alignment alignment, Widget? child})',
               'https://api.flutter.dev/flutter/widgets/RotationTransition-class.html'),

@@ -739,6 +739,10 @@ class _SecondScreenState extends State<SecondScreen> {
         'Spacer',
         'Spacer creates an adjustable, empty spacer that can be used to tune the spacing between widgets in a Flex container, like Row or Column.\nSpacer({Key? key, int flex})',
         'https://api.flutter.dev/flutter/widgets/Spacer-class.html'),
+    'refreshindicator': Accordion(
+        'RefreshIndicator',
+        'A widget that supports the Material "swipe to refresh" idiom.\n RefreshIndicator({Key? key, required Widget child, double displacement, double edgeOffset, required RefreshCallback onRefresh, Color? color, Color? backgroundColor, ScrollNotificationPredicate notificationPredicate, String? semanticsLabel, String? semanticsValue, double strokeWidth, RefreshIndicatorTriggerMode triggerMode})',
+        'https://api.flutter.dev/flutter/material/RefreshIndicator-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

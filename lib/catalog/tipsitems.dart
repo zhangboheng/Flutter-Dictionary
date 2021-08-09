@@ -14,41 +14,57 @@ class TipsScreen extends StatefulWidget {
 class _MyImageScreen extends State<TipsScreen> {
   final String url;
   final _array = const {
-    'How to Determine Screen Height and Width': Viewcode(
+    'how to determine screen height and width': Viewcode(
         0,
-        'How to Determine Screen Height and Width',
+        'How to determine screen height and width',
         'double width = MediaQuery.of(context).size.width;\ndouble height = MediaQuery.of(context).size.height;\nTo get height just of SafeArea (for iOS 11 and above):\nvar padding = MediaQuery.of(context).padding;\ndouble newheight = height - padding.top - padding.bottom;',
         ''),
-    'How to set and lock screen orientation': Viewcode(
+    'how to set and lock screen orientation': Viewcode(
         1,
         'How to set and lock screen orientation',
         'import \'package:flutter/services.dart\'\nThis will give you access to the SystemChrome class, which "Controls specific aspects of the operating system\'s graphical interface and how it interacts with the application."',
         'assets/code/lockrotate.dart'),
-    'How to set carousel slider': Viewcode(
+    'how to set carousel slider': Viewcode(
         1,
         'How to set carousel slider',
         'Install carousel_slider, then import \'package:carousel_slider/carousel_slider.dart\'\nThis will make you can set carousel slider effect.',
         'assets/code/carouselslider.dart'),
-    'How to detect the host platform from Dart code': Viewcode(
+    'how to detect the host platform from Dart code': Viewcode(
         1,
         'How to detect the host platform from Dart code',
         'How to know your app on what platform is, you can import \'dart:io\'; and import \'package:flutter/foundation.dart\'',
         'assets/code/detectos.dart'),
-    'How to query search item in List': Viewcode(
+    'how to query search item in List': Viewcode(
         1,
         'How to query search item in List',
         'You can use where function.',
         'assets/code/searchcontents.dart'),
-    'How to read text from files and display them': Viewcode(
+    'how to read text from files and display them': Viewcode(
         1,
         'How to read text from files and display them',
         'You can import \'package:flutter/services.dart\'; then use Future to read files',
         'assets/code/readtext.dart'),
-    'How to play a network video in flutter app': Viewcode(
+    'how to play a network video in flutter app': Viewcode(
         1,
         'How to play a network video in flutter app',
         'You can install video_player plugins, then add permision to Android and iOS.',
         'assets/code/playvideo.dart'),
+    'how to go on about receiving JSON array in flutter and parsing it':
+        Viewcode(
+            1,
+            'How to go on about receiving JSON array in flutter and parsing it',
+            'When you consider parsing a array json, you can parse it as list.',
+            'assets/code/arrayjsonparse.dart'),
+    'how to read local json file': Viewcode(
+        1,
+        'How to read local json file',
+        'First, you need to declare this file as an asset in your pubspec.yaml, and then import \'package:flutter/services.dart\' show rootBundle; then use Future to read json',
+        'assets/code/readjson.dart'),
+    'how to parse json to map in flutter': Viewcode(
+        1,
+        'How to parse json to map in flutter',
+        'First, import \'package:http/http.dart\' as http;\nimport \'dart:convert\';\nfinal response = await http.get(someEndPoint);\nfinal Map<String, dynamic> data = json.decode(response.body);',
+        'assets/code/parsesimplejson.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
