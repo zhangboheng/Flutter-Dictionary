@@ -526,6 +526,46 @@ class _MyImageScreen extends State<PackageScreen> {
         'universal_html',
         'A \'dart:html\' that works in all platforms, including Flutter and server-side. Eases cross-platform development and HTML / XML processing.\nimport \'package:universal_html/html.dart\'\nMore...',
         'https://pub.dev/packages/universal_html'),
+    'wakelock': Accordion(
+        'wakelock',
+        'Plugin that allows you to keep the device screen awake, i.e. prevent the screen from sleeping on Android, iOS, macOS, Windows, and web.\nimport \'package:wakelock/wakelock.dart\'',
+        'https://pub.dev/packages/wakelock'),
+    'palette_generator': Accordion(
+        'palette_generator',
+        'Flutter package for generating palette colors from a source image.\nimport \'package:palette_generator/palette_generator.dart\'',
+        'https://pub.dev/packages/palette_generator'),
+    'map': Accordion(
+        'map',
+        'Map widget for Flutter written in 100% Dart. Supports Android, iOS, Web and Desktop.\nimport \'package:map/map.dart\'',
+        'https://pub.dev/packages/map'),
+    'move_to_background': Accordion(
+        'move_to_background',
+        'Flutter plugin for sending mobile applications to background. Supports iOS and Android.\nimport \'package:move_to_background/move_to_background.dart\'',
+        'https://pub.dev/packages/move_to_background'),
+    'dotted_decoration': Accordion(
+        'dotted_decoration',
+        'Dotted line decoration is handly package to draw dotted divider, dotted border for rectangle, circle or rounded rectangle.\nimport \'package:dotted_decoration/dotted_decoration.dart\'',
+        'https://pub.dev/packages/dotted_decoration'),
+    'overflow_view': Accordion(
+        'overflow_view',
+        'A widget displaying children in a line with an overflow indicator at the end if there is not enough space.\nimport \'package:overflow_view/overflow_view.dart\'',
+        'https://pub.dev/packages/overflow_view'),
+    'chart_sparkline': Accordion(
+        'chart_sparkline',
+        'Beautiful sparkline charts for Flutter.Average line, highest and lowest value.\nimport \'package:chart_sparkline/chart_sparkline.dart\'',
+        'https://pub.dev/packages/chart_sparkline'),
+    'draw_graph': Accordion(
+        'draw_graph',
+        'A dart package to draw line graphs in your flutter app.\nimport \'package:draw_graph/draw_graph.dart\'',
+        'https://pub.dev/packages/draw_graph'),
+    'flutter_tesseract_ocr': Accordion(
+        'flutter_tesseract_ocr',
+        'A Tesseract 4 adds a new neural net (LSTM) based OCR engine which is focused on line recognition.\nimport \'package:flutter_tesseract_ocr/flutter_tesseract_ocr.dart\'',
+        'https://pub.dev/packages/flutter_tesseract_ocr'),
+    'bubble_box': Accordion(
+        'bubble_box',
+        'A powerful bubble box, which implements basic bubble, border, dotted line, gradient color, angle, adaptive width and height, bubble direction, offset, etc.\nimport \'package:bubble_box/bubble_box.dart\'',
+        'https://pub.dev/packages/bubble_box'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
@@ -565,48 +605,70 @@ class _MyImageScreen extends State<PackageScreen> {
   _MyImageScreen(this.url);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 70,
-        centerTitle: true,
-        title: Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
-                spreadRadius: 5,
-                blurRadius: 7,
-                offset: const Offset(0, 3), // changes position of shadow
-              ),
-            ],
-          ),
-          child: TextFormField(
-            maxLines: 1,
-            style: const TextStyle(color: Colors.black),
-            decoration: InputDecoration(
-              icon: const Icon(
-                Icons.search,
-                color: Colors.blue,
-              ),
-              hintText: 'Search',
-              hintStyle: TextStyle(color: Colors.grey[700]),
-              focusColor: null,
-              border: InputBorder.none,
-              focusedBorder: InputBorder.none,
-              enabledBorder: InputBorder.none,
-              errorBorder: InputBorder.none,
-              disabledBorder: InputBorder.none,
+    return WillPopScope(
+      onWillPop: () async {
+        bool willLeave = false;
+        // show the confirm dialog
+        await showDialog(
+            context: context,
+            builder: (_) => AlertDialog(
+                  title: Text('Are you sure want to leave?'),
+                  actions: [
+                    ElevatedButton(
+                        onPressed: () {
+                          willLeave = true;
+                          Navigator.of(context).pop();
+                        },
+                        child: Text('Yes')),
+                    TextButton(
+                        onPressed: () => Navigator.of(context).pop(),
+                        child: Text('No'))
+                  ],
+                ));
+        return willLeave;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          toolbarHeight: 70,
+          centerTitle: true,
+          title: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: const Offset(0, 3), // changes position of shadow
+                ),
+              ],
             ),
-            onChanged: (valueKeys) {
-              _searchItems(valueKeys);
-            },
+            child: TextFormField(
+              maxLines: 1,
+              style: const TextStyle(color: Colors.black),
+              decoration: InputDecoration(
+                icon: const Icon(
+                  Icons.search,
+                  color: Colors.blue,
+                ),
+                hintText: 'Search',
+                hintStyle: TextStyle(color: Colors.grey[700]),
+                focusColor: null,
+                border: InputBorder.none,
+                focusedBorder: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                errorBorder: InputBorder.none,
+                disabledBorder: InputBorder.none,
+              ),
+              onChanged: (valueKeys) {
+                _searchItems(valueKeys);
+              },
+            ),
           ),
         ),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
+        body: SingleChildScrollView(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: _foundUsers.isNotEmpty
@@ -630,11 +692,14 @@ class _MyImageScreen extends State<PackageScreen> {
                       padding: const EdgeInsets.all(20.0),
                     ),
                     const Center(
-                        child: Text(
-                      'No results found',
-                      style: TextStyle(fontSize: 16),
-                    )),
-                  ]),
+                      child: Text(
+                        'No results found',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
+                  ],
+          ),
+        ),
       ),
     );
   }

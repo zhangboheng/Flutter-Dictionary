@@ -46,32 +46,55 @@ class _MyImageScreen extends State<DartScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 70,
-        centerTitle: true,
-        title: Text('Dart Learning'),
-      ),
-      body: GroupListView(
-        sectionsCount: _elements.keys.toList().length,
-        countOfItemInSection: (int section) {
-          return _elements.values.toList()[section].length;
-        },
-        itemBuilder: _itemBuilder,
-        groupHeaderBuilder: (BuildContext context, int section) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
-            child: Text(
-              _elements.keys.toList()[section],
-              style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                  color: _colorbox[random.nextInt(_colorbox.length)]),
-            ),
-          );
-        },
-        separatorBuilder: (context, index) => SizedBox(height: 10),
-        sectionSeparatorBuilder: (context, section) => SizedBox(height: 10),
+    return WillPopScope(
+      onWillPop: () async {
+        bool willLeave = false;
+        // show the confirm dialog
+        await showDialog(
+            context: context,
+            builder: (_) => AlertDialog(
+                  title: Text('Are you sure want to leave?'),
+                  actions: [
+                    ElevatedButton(
+                        onPressed: () {
+                          willLeave = true;
+                          Navigator.of(context).pop();
+                        },
+                        child: Text('Yes')),
+                    TextButton(
+                        onPressed: () => Navigator.of(context).pop(),
+                        child: Text('No'))
+                  ],
+                ));
+        return willLeave;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          toolbarHeight: 70,
+          centerTitle: true,
+          title: Text('Dart Learning'),
+        ),
+        body: GroupListView(
+          sectionsCount: _elements.keys.toList().length,
+          countOfItemInSection: (int section) {
+            return _elements.values.toList()[section].length;
+          },
+          itemBuilder: _itemBuilder,
+          groupHeaderBuilder: (BuildContext context, int section) {
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+              child: Text(
+                _elements.keys.toList()[section],
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                    color: _colorbox[random.nextInt(_colorbox.length)]),
+              ),
+            );
+          },
+          separatorBuilder: (context, index) => SizedBox(height: 10),
+          sectionSeparatorBuilder: (context, section) => SizedBox(height: 10),
+        ),
       ),
     );
   }

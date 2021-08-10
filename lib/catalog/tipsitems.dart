@@ -115,76 +115,99 @@ class _MyImageScreen extends State<TipsScreen> {
   _MyImageScreen(this.url);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 70,
-        centerTitle: true,
-        title: Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
-                spreadRadius: 5,
-                blurRadius: 7,
-                offset: const Offset(0, 3), // changes position of shadow
-              ),
-            ],
-          ),
-          child: TextFormField(
-            maxLines: 1,
-            style: const TextStyle(color: Colors.black),
-            decoration: InputDecoration(
-              icon: const Icon(
-                Icons.search,
-                color: Colors.blue,
-              ),
-              hintText: 'Search',
-              hintStyle: TextStyle(color: Colors.grey[700]),
-              focusColor: null,
-              border: InputBorder.none,
-              focusedBorder: InputBorder.none,
-              enabledBorder: InputBorder.none,
-              errorBorder: InputBorder.none,
-              disabledBorder: InputBorder.none,
+    return WillPopScope(
+      onWillPop: () async {
+        bool willLeave = false;
+        // show the confirm dialog
+        await showDialog(
+            context: context,
+            builder: (_) => AlertDialog(
+                  title: Text('Are you sure want to leave?'),
+                  actions: [
+                    ElevatedButton(
+                        onPressed: () {
+                          willLeave = true;
+                          Navigator.of(context).pop();
+                        },
+                        child: Text('Yes')),
+                    TextButton(
+                        onPressed: () => Navigator.of(context).pop(),
+                        child: Text('No'))
+                  ],
+                ));
+        return willLeave;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          toolbarHeight: 70,
+          centerTitle: true,
+          title: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: const Offset(0, 3), // changes position of shadow
+                ),
+              ],
             ),
-            onChanged: (valueKeys) {
-              _searchItems(valueKeys);
-            },
+            child: TextFormField(
+              maxLines: 1,
+              style: const TextStyle(color: Colors.black),
+              decoration: InputDecoration(
+                icon: const Icon(
+                  Icons.search,
+                  color: Colors.blue,
+                ),
+                hintText: 'Search',
+                hintStyle: TextStyle(color: Colors.grey[700]),
+                focusColor: null,
+                border: InputBorder.none,
+                focusedBorder: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                errorBorder: InputBorder.none,
+                disabledBorder: InputBorder.none,
+              ),
+              onChanged: (valueKeys) {
+                _searchItems(valueKeys);
+              },
+            ),
           ),
         ),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: _foundUsers.isNotEmpty
-                ? [
-                    Image.asset(url, width: double.infinity),
-                    Container(
-                      padding: EdgeInsets.only(top: 20.0),
-                    ),
-                    Text(
-                      'Collected $_count tips',
-                      style: TextStyle(
-                          fontSize: 16.0, fontWeight: FontWeight.w700),
-                    ),
-                    Container(
-                      padding: EdgeInsets.only(bottom: 20.0),
-                    ),
-                    ..._foundUsers
-                  ]
-                : <Widget>[
-                    Container(
-                      padding: const EdgeInsets.all(20.0),
-                    ),
-                    const Center(
-                        child: Text(
-                      'No results found',
-                      style: TextStyle(fontSize: 16),
-                    )),
-                  ]),
+        body: SingleChildScrollView(
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: _foundUsers.isNotEmpty
+                  ? [
+                      Image.asset(url, width: double.infinity),
+                      Container(
+                        padding: EdgeInsets.only(top: 20.0),
+                      ),
+                      Text(
+                        'Collected $_count tips',
+                        style: TextStyle(
+                            fontSize: 16.0, fontWeight: FontWeight.w700),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(bottom: 20.0),
+                      ),
+                      ..._foundUsers
+                    ]
+                  : <Widget>[
+                      Container(
+                        padding: const EdgeInsets.all(20.0),
+                      ),
+                      const Center(
+                          child: Text(
+                        'No results found',
+                        style: TextStyle(fontSize: 16),
+                      )),
+                    ]),
+        ),
       ),
     );
   }
