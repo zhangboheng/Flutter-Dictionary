@@ -83,6 +83,26 @@ class _MyImageScreen extends State<TipsScreen> {
             'flutter create --platforms=windows,macos,linux .\n'
             'To add only specific desktop platforms, change the platforms list to include only the platform(s) you want to add.',
         ''),
+    'how to remove debug banner on emulators': Viewcode(
+        0,
+        'How to remove debug banner on emulators',
+        'set the debugShowCheckedModeBanner property of the MaterialApp class to false.\ndebugShowCheckedModeBanner: false',
+        ''),
+    'how to disable landscape mode in flutter': Viewcode(
+        1,
+        'How to disable landscape mode in flutter',
+        'First, import \'package:flutter/services.dart\'; Next, WidgetsFlutterBinding.ensureInitialized();\nSystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);',
+        'assets/code/disablerotate.dart'),
+    'live email validation in Flutter': Viewcode(
+        1,
+        'Live email validation in Flutter',
+        'Install email_validator; Next……;',
+        'assets/code/emailvalid.dart'),
+    'how to embed youtube in flutter app': Viewcode(
+        1,
+        'How to embed youtube in flutter app',
+        'Install youtube_player_flutter……',
+        'assets/code/emailvalid.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
