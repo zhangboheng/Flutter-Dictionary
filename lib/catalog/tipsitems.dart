@@ -76,6 +76,13 @@ class _MyImageScreen extends State<TipsScreen> {
         'ListTile with multiple trailing icon buttons',
         'You can use Row layout and set mainAxisSize: MainAxisSize.min',
         'assets/code/multipleiconbtns.dart'),
+    'add desktop support to an existing flutter app': Viewcode(
+        0,
+        'Add desktop support to an existing flutter app',
+        'To add desktop support to an existing Flutter project, run the following command in a terminal from the root project directory:\n'
+            'flutter create --platforms=windows,macos,linux .\n'
+            'To add only specific desktop platforms, change the platforms list to include only the platform(s) you want to add.',
+        ''),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

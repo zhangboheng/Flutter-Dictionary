@@ -566,6 +566,71 @@ class _MyImageScreen extends State<PackageScreen> {
         'bubble_box',
         'A powerful bubble box, which implements basic bubble, border, dotted line, gradient color, angle, adaptive width and height, bubble direction, offset, etc.\nimport \'package:bubble_box/bubble_box.dart\'',
         'https://pub.dev/packages/bubble_box'),
+    'horizontal_data_table': Accordion(
+        'horizontal_data_table',
+        'A horizontal data table with a fixed column on left handside.\nimport \'package:horizontal_data_table/horizontal_data_table.dart\'',
+        'https://pub.dev/packages/horizontal_data_table'),
+    'snapping_sheet': Accordion(
+        'snapping_sheet',
+        'A package that provides a highly customizable sheet widget that snaps to different vertical & horizontal positions.\nimport \'package:snapping_sheet/snapping_sheet.dart\'',
+        'https://pub.dev/packages/snapping_sheet'),
+    'data_table_2': Accordion(
+        'data_table_2',
+        'In-place replacement for Flutter\'s DataTable and PaginatedDataTable with fixed/sticky header and few extra features.\nimport \'package:data_table_2/data_table_2.dart\'',
+        'https://pub.dev/packages/data_table_2'),
+    'google_place': Accordion(
+        'google_place',
+        'A Flutter plugin for iOS and Android and Web that provides a Google Place API.\nimport \'package:google_place/google_place.dart\'',
+        'https://pub.dev/packages/google_place'),
+    'salomon_bottom_bar': Accordion(
+        'salomon_bottom_bar',
+        'Yet another bottom navigation bar, but with a few key promises.\nimport \'package:salomon_bottom_bar/salomon_bottom_bar.dart\'',
+        'https://pub.dev/packages/salomon_bottom_bar'),
+    'styled_text': Accordion(
+        'styled_text',
+        'Text widget with formatted text using tags. Makes it easier to use formatted text in multilingual applications.\nimport \'package:styled_text/styled_text.dart\'',
+        'https://pub.dev/packages/styled_text'),
+    'focus_detector': Accordion(
+        'focus_detector',
+        'Detects when your widget appears or disappears from the screen.\nimport \'package:focus_detector/focus_detector.dart\'',
+        'https://pub.dev/packages/focus_detector'),
+    'Flutter Zoom Drawer': Accordion(
+        'Flutter Zoom Drawer',
+        'A Flutter package with custom implementation of the Side Menu (Drawer).\nimport \'package:flutter_zoom_drawer/flutter_zoom_drawer.dart\'',
+        'https://pub.dev/packages/flutter_zoom_drawer'),
+    'platform_device_id': Accordion(
+        'platform_device_id',
+        'You can get device id from platform - linux/mac/windows/android/ios/web.\nimport \'package:platform_device_id/platform_device_id.dart\'',
+        'https://pub.dev/packages/platform_device_id'),
+    'shimmer_animation': Accordion(
+        'shimmer_animation',
+        'This shimmer animation widget can help you bring simple yet beautiful skeleton loaders to your project with ease.\nimport \'package:shimmer_animation/shimmer_animation.dart\'',
+        'https://pub.dev/packages/shimmer_animation'),
+    'location': Accordion(
+        'location',
+        'This plugin for Flutter handles getting a location on Android and iOS. It also provides callbacks when the location is changed.\nimport \'package:location/location.dart\'',
+        'https://pub.dev/packages/location'),
+    'bordered_text': Accordion(
+        'bordered_text',
+        'Flutter plugin for applying subtle stroke to a Text widget. Supports Android, iOS, and Web.\nimport \'package:bordered_text/bordered_text.dart\'',
+        'https://pub.dev/packages/bordered_text'),
+    'flutter_treeview': Accordion(
+        'flutter_treeview',
+        'A tree widget for Flutter that can be used to display nested, hierarchical data.'
+            'It includes a number of features like styling labels, icons, and import and export utilities.\nimport \'package:flutter_treeview/flutter_treeview.dart\'',
+        'https://pub.dev/packages/flutter_treeview'),
+    'weather': Accordion(
+        'weather',
+        'A weather plugin for fetching current weather and forecasting via the OpenWeatherMap API. Works for both Android and iOS.\nimport \'package:weather/weather.dart\'',
+        'https://pub.dev/packages/weather'),
+    'weather_icons': Accordion(
+        'weather_icons',
+        'Flutter library for using erikflowers/weather-icons. An icon pack with over 200 weather themed icons.\nimport \'package:weather/weather.dart\'',
+        'https://pub.dev/packages/weather_icons'),
+    'flutter_unity_widget': Accordion(
+        'flutter_unity_widget',
+        'Flutter Unity 3D widget for embedding Unity game scenes in flutter. This library now supports Unity as a Library.\nimport \'package:flutter_unity_widget/flutter_unity_widget.dart\'',
+        'https://pub.dev/packages/flutter_unity_widget'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
