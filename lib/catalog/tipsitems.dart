@@ -103,6 +103,11 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to embed youtube in flutter app',
         'Install youtube_player_flutter……',
         'assets/code/emailvalid.dart'),
+    'how to select images from gallery': Viewcode(
+        1,
+        'How to select images from gallery',
+        'First, you should make iOS and Android permissions;\nNext, Install the package image_picker;\nThen……',
+        'assets/code/pickimage.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
@@ -206,34 +211,36 @@ class _MyImageScreen extends State<TipsScreen> {
         ),
         body: SingleChildScrollView(
           child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: _foundUsers.isNotEmpty
-                  ? [
-                      Image.asset(url, width: double.infinity),
-                      Container(
-                        padding: EdgeInsets.only(top: 20.0),
-                      ),
-                      Text(
-                        'Collected $_count tips',
-                        style: TextStyle(
-                            fontSize: 16.0, fontWeight: FontWeight.w700),
-                      ),
-                      Container(
-                        padding: EdgeInsets.only(bottom: 20.0),
-                      ),
-                      ..._foundUsers
-                    ]
-                  : <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(20.0),
-                      ),
-                      const Center(
-                          child: Text(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: _foundUsers.isNotEmpty
+                ? [
+                    Image.asset(url, width: double.infinity),
+                    Container(
+                      padding: EdgeInsets.only(top: 20.0),
+                    ),
+                    Text(
+                      'Collected $_count tips',
+                      style: TextStyle(
+                          fontSize: 16.0, fontWeight: FontWeight.w700),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(bottom: 20.0),
+                    ),
+                    ..._foundUsers
+                  ]
+                : <Widget>[
+                    Container(
+                      padding: const EdgeInsets.all(20.0),
+                    ),
+                    const Center(
+                      child: Text(
                         'No results found',
                         style: TextStyle(fontSize: 16),
-                      )),
-                    ]),
+                      ),
+                    ),
+                  ],
+          ),
         ),
       ),
     );

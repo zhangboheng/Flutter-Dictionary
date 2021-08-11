@@ -4,8 +4,14 @@
 	<dict>
 		<key>io.flutter.embedded_views_preview</key>
 		<true/>
+		<!--picker image start-->
 		<key>NSPhotoLibraryUsageDescription</key>
 		<string>Allow this app to access your photos</string>
+		<key>NSCameraUsageDescription</key>
+		<string>Allow access to camera to capture photos</string>
+		<key>NSMicrophoneUsageDescription</key>
+		<string>Allow access to microphone</string>
+		<!--picker image end-->
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleExecutable</key>

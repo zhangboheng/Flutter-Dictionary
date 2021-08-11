@@ -35,6 +35,7 @@ dependencies:
   flutter_rating_bar: ^4.0.0
   google_fonts: ^2.1.0
   group_list_view: ^1.1.1
+  image_picker: ^0.8.3+2
   tiktoklikescroller: ^0.1.6
   url_launcher: ^6.0.9
   video_player: ^2.1.12

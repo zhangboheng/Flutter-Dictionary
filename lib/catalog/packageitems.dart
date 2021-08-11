@@ -594,7 +594,7 @@ class _MyImageScreen extends State<PackageScreen> {
         'focus_detector',
         'Detects when your widget appears or disappears from the screen.\nimport \'package:focus_detector/focus_detector.dart\'',
         'https://pub.dev/packages/focus_detector'),
-    'Flutter Zoom Drawer': Accordion(
+    'flutter zoom drawer': Accordion(
         'Flutter Zoom Drawer',
         'A Flutter package with custom implementation of the Side Menu (Drawer).\nimport \'package:flutter_zoom_drawer/flutter_zoom_drawer.dart\'',
         'https://pub.dev/packages/flutter_zoom_drawer'),
@@ -631,6 +631,54 @@ class _MyImageScreen extends State<PackageScreen> {
         'flutter_unity_widget',
         'Flutter Unity 3D widget for embedding Unity game scenes in flutter. This library now supports Unity as a Library.\nimport \'package:flutter_unity_widget/flutter_unity_widget.dart\'',
         'https://pub.dev/packages/flutter_unity_widget'),
+    'flutter_screenutil': Accordion(
+        'flutter_screenutil',
+        'A flutter plugin for adapting screen and font size.Guaranteed to look good on different models.\nimport \'package:flutter_screenutil/flutter_screenutil.dart\'',
+        'https://pub.dev/packages/flutter_screenutil'),
+    'audio_service': Accordion(
+        'audio_service',
+        'Flutter plugin to play audio in the background while the screen is off.\nimport \'package:audio_service/audio_service.dart\'',
+        'https://pub.dev/packages/audio_service'),
+    'inview_notifier_list': Accordion(
+        'inview_notifier_list',
+        'A Flutter package that builds a listview and notifies when the widgets are on screen.\nimport \'package:inview_notifier_list/inview_notifier_list.dart\'',
+        'https://pub.dev/packages/inview_notifier_list'),
+    'flutter_emoji': Accordion(
+        'flutter_emoji',
+        'A light-weight Emoji package for Flutter with all up-to-date emojis.\nimport \'package:package:flutter_emoji/flutter_emoji.dart\'',
+        'https://pub.dev/packages/flutter_emoji'),
+    'loader_overlay': Accordion(
+        'loader_overlay',
+        'A simple package to simplify screen management. When loading any async task, this package prevent the user from interacting with the screen until the async task finishes.\nimport \'package:loader_overlay/loader_overlay.dart\'',
+        'https://pub.dev/packages/loader_overlay'),
+    'google_mobile_ads': Accordion(
+        'google_mobile_ads',
+        'Flutter plugin for Google Mobile Ads, supporting banner, interstitial (full-screen), rewarded and native ads.\nimport \'flutter pub add google_mobile_ads\'',
+        'https://pub.dev/packages/google_mobile_ads'),
+    'lazy_loading_list': Accordion(
+        'lazy_loading_list',
+        'Lazy loading Widget to load more items by the index of the item to increment you a list like infinite scroll.\nimport \'package:lazy_loading_list/lazy_loading_list.dart\'',
+        'https://pub.dev/packages/lazy_loading_list'),
+    'dart_ipify': Accordion(
+        'dart_ipify',
+        'This package uses the remote ipify web services in order to get your public IP address or geographical details from any given IP.\nimport \'package:dart_ipify/dart_ipify.dart\'',
+        'https://pub.dev/packages/dart_ipify'),
+    'cached_network_image': Accordion(
+        'cached_network_image',
+        'A flutter library to show images from the internet and keep them in the cache directory.\nimport \'package:cached_network_image/cached_network_image.dart\'',
+        'https://pub.dev/packages/cached_network_image'),
+    'octo_image': Accordion(
+        'octo_image',
+        'An image library for showing placeholders, error widgets and transform your image.\nimport \'package:octo_image/octo_image.dart\'',
+        'https://pub.dev/packages/octo_image'),
+    'flutter_staggered_grid_view': Accordion(
+        'flutter_staggered_grid_view',
+        'A Flutter staggered grid view (masonry tiles) which supports multiple columns with rows of varying sizes.\nimport \'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart\'',
+        'https://pub.dev/packages/flutter_staggered_grid_view'),
+    'analog_clock': Accordion(
+        'analog_clock',
+        'Flutter Analog Clock plugin.\nimport \'package:analog_clock/analog_clock.dart\'',
+        'https://pub.dev/packages/analog_clock'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
