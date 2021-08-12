@@ -108,6 +108,16 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to select images from gallery',
         'First, you should make iOS and Android permissions;\nNext, Install the package image_picker;\nThen……',
         'assets/code/pickimage.dart'),
+    'how to select videos from gallery': Viewcode(
+        1,
+        'How to select videos from gallery',
+        'First, you should make iOS and Android permissions;\nNext, Install the package image_picker and video_player;\nThen……',
+        'assets/code/pickvideo.dart'),
+    'how to get the filename of a file': Viewcode(
+        0,
+        'How to get the filename of a file',
+        'First, import \'package:path/path.dart\';File file = new File("/dir1/dir2/file.ext");\nString basename = basename(file.path);',
+        ''),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

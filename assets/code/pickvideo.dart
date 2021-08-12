@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'dart:async';
 import 'dart:io';
@@ -17,101 +17,242 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: GalleryAccess(),
-      debugShowCheckedModeBanner: false,
+      title: 'Video Picker Demo',
+      home: MyHomePage(title: 'Video Picker Example'),
     );
   }
 }
 
-class GalleryAccess extends StatefulWidget {
-  const GalleryAccess({Key? key}) : super(key: key);
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key, this.title}) : super(key: key);
+
+  final String? title;
 
   @override
-  State<StatefulWidget> createState() {
-    return GalleryAccessState();
-  }
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
-class GalleryAccessState extends State<GalleryAccess> {
-  var _getPath;
-  late VideoPlayerController _controller;
-  late Future<void> _initializeVideoPlayerFuture;
-  //display image selected from gallery
-  final picker = ImagePicker();
-  // Implementing the image picker
-  Future<void> _openImagePicker() async {
-    final pickedVideo = await picker.pickVideo(
-      source: ImageSource.gallery,
-    );
-    if (pickedVideo != null) {
-      setState(() {
-        if (kIsWeb) {
-          _getPath = pickedVideo.path.toString();
-        } else {
-          _getPath = File(pickedVideo.path);
-        }
-      });
+class _MyHomePageState extends State<MyHomePage> {
+  VideoPlayerController? _controller;
+  VideoPlayerController? _toBeDisposed;
+  String? _retrieveDataError;
+
+  final ImagePicker _picker = ImagePicker();
+
+  Future<void> _playVideo(XFile? file) async {
+    if (file != null && mounted) {
+      await _disposeVideoController();
+      late VideoPlayerController controller;
+      if (kIsWeb) {
+        controller = VideoPlayerController.network(file.path);
+      } else {
+        controller = VideoPlayerController.file(File(file.path));
+      }
+      _controller = controller;
+
+      final double volume = kIsWeb ? 0.0 : 1.0;
+      await controller.setVolume(volume);
+      await controller.initialize();
+      await controller.setLooping(true);
+      await controller.play();
+      setState(() {});
     }
   }
 
-  playVideo(path) {
-    _controller = VideoPlayerController.network(path,
-        videoPlayerOptions: VideoPlayerOptions(mixWithOthers: true));
-    _initializeVideoPlayerFuture = _controller.initialize().then((_) {
-      setState(() {
-        _controller.seekTo(Duration(seconds: 3));
-        _controller.play();
-      });
-    });
+  void _onImageButtonPressed(
+    ImageSource source,
+  ) async {
+    if (_controller != null) {
+      await _controller!.setVolume(0.0);
+    }
+    final XFile? file = await _picker.pickVideo(
+        source: source, maxDuration: const Duration(seconds: 10));
+    await _playVideo(file);
   }
 
   @override
-  void initState() {
-    // Initialize the controller and store the Future for later use.
-    super.initState();
+  void deactivate() {
+    if (_controller != null) {
+      _controller!.setVolume(0.0);
+      _controller!.pause();
+    }
+    super.deactivate();
   }
 
   @override
   void dispose() {
-    // // Use the controller to loop the video.
-    // _controller.setLooping(true);
-    // Ensure disposing of the VideoPlayerController to free up resources.
-    _controller.dispose();
-
+    _disposeVideoController();
     super.dispose();
+  }
+
+  Future<void> _disposeVideoController() async {
+    if (_toBeDisposed != null) {
+      await _toBeDisposed!.dispose();
+    }
+    _toBeDisposed = _controller;
+    _controller = null;
+  }
+
+  Widget _previewVideo() {
+    final Text? retrieveError = _getRetrieveErrorWidget();
+    if (retrieveError != null) {
+      return retrieveError;
+    }
+    if (_controller == null) {
+      return const Text(
+        'You have not yet picked a video',
+        textAlign: TextAlign.center,
+      );
+    }
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: AspectRatioVideo(_controller),
+    );
+  }
+
+  Widget _handlePreview() {
+    return _previewVideo();
+  }
+
+  Future<void> retrieveLostData() async {
+    final LostDataResponse response = await _picker.retrieveLostData();
+    if (response.isEmpty) {
+      return;
+    }
+    if (response.file != null) {
+      if (response.type == RetrieveType.video) {
+        await _playVideo(response.file);
+      }
+    } else {
+      _retrieveDataError = response.exception!.code;
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Gallery Access'),
-        backgroundColor: Colors.green,
+        title: Text(widget.title!),
       ),
-      body: Builder(
-        builder: (BuildContext context) {
-          return Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                ElevatedButton(
-                  child: Text('Select Image from Gallery'),
-                  onPressed: _openImagePicker,
-                ),
-                SizedBox(
-                  height: 200.0,
-                  width: 300.0,
-                  child: Center(
-                    child: kIsWeb
-                        ? VideoPlayer(playVideo(_getPath))
-                        : VideoPlayer(_controller),
-                  ),
-                ),
-              ],
+      body: Center(
+        child: !kIsWeb
+            ? FutureBuilder<void>(
+                future: retrieveLostData(),
+                builder: (BuildContext context, AsyncSnapshot<void> snapshot) {
+                  switch (snapshot.connectionState) {
+                    case ConnectionState.none:
+                    case ConnectionState.waiting:
+                      return const Text(
+                        'You have not yet picked an image.',
+                        textAlign: TextAlign.center,
+                      );
+                    case ConnectionState.done:
+                      return _handlePreview();
+                    default:
+                      if (snapshot.hasError) {
+                        return Text(
+                          'Pick image/video error: ${snapshot.error}}',
+                          textAlign: TextAlign.center,
+                        );
+                      } else {
+                        return const Text(
+                          'You have not yet picked an image.',
+                          textAlign: TextAlign.center,
+                        );
+                      }
+                  }
+                },
+              )
+            : _handlePreview(),
+      ),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(top: 16.0),
+            child: FloatingActionButton(
+              backgroundColor: Colors.red,
+              onPressed: () {
+                _onImageButtonPressed(ImageSource.gallery);
+              },
+              heroTag: 'video0',
+              tooltip: 'Pick Video from gallery',
+              child: const Icon(Icons.video_library),
             ),
-          );
-        },
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 16.0),
+            child: FloatingActionButton(
+              backgroundColor: Colors.red,
+              onPressed: () {
+                _onImageButtonPressed(ImageSource.camera);
+              },
+              heroTag: 'video1',
+              tooltip: 'Take a Video',
+              child: const Icon(Icons.videocam),
+            ),
+          ),
+        ],
       ),
     );
+  }
+
+  Text? _getRetrieveErrorWidget() {
+    if (_retrieveDataError != null) {
+      final Text result = Text(_retrieveDataError!);
+      _retrieveDataError = null;
+      return result;
+    }
+    return null;
+  }
+}
+
+class AspectRatioVideo extends StatefulWidget {
+  const AspectRatioVideo(this.controller);
+
+  final VideoPlayerController? controller;
+
+  @override
+  AspectRatioVideoState createState() => AspectRatioVideoState();
+}
+
+class AspectRatioVideoState extends State<AspectRatioVideo> {
+  VideoPlayerController? get controller => widget.controller;
+  bool initialized = false;
+
+  void _onVideoControllerUpdate() {
+    if (!mounted) {
+      return;
+    }
+    if (initialized != controller!.value.isInitialized) {
+      initialized = controller!.value.isInitialized;
+      setState(() {});
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    controller!.addListener(_onVideoControllerUpdate);
+  }
+
+  @override
+  void dispose() {
+    controller!.removeListener(_onVideoControllerUpdate);
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (initialized) {
+      return Center(
+        child: AspectRatio(
+          aspectRatio: controller!.value.aspectRatio,
+          child: VideoPlayer(controller!),
+        ),
+      );
+    } else {
+      return Container();
+    }
   }
 }
