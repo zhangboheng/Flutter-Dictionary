@@ -123,6 +123,16 @@ class _MyImageScreen extends State<TipsScreen> {
         'What is statefulwidget lifecycle',
         'You can click the tip to read more.',
         'assets/code/statefulwidgetlifecycle.dart'),
+    'how to add fingerprint authentication to your android app': Viewcode(
+        1,
+        'How to add fingerprint authentication to your Android App',
+        'You can install the local_auth plugin.',
+        'assets/code/localauth.dart'),
+    'how to add touchid and faceid to your ios app': Viewcode(
+        1,
+        'How to add Touch ID and Face ID to your App',
+        'You can install the local_auth plugin.',
+        'assets/code/localauth.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

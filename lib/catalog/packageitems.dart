@@ -707,6 +707,10 @@ class _MyImageScreen extends State<PackageScreen> {
         'flutter_animator',
         'Enables you to create stunning flutter animations, faster, efficient and with less code.\nimport \'package:flutter_animator/flutter_animator.dart\'',
         'https://pub.dev/packages/flutter_animator'),
+    'local_auth': Accordion(
+        'local_auth',
+        'This Flutter plugin provides means to perform local, on-device authentication of the user.\nimport \'package:local_auth/local_auth.dartt\'',
+        'https://pub.dev/packages/local_auth'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
