@@ -118,6 +118,11 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to get the filename of a file',
         'First, import \'package:path/path.dart\';File file = new File("/dir1/dir2/file.ext");\nString basename = basename(file.path);',
         ''),
+    'what is statefulwidget lifecycle': Viewcode(
+        1,
+        'What is statefulwidget lifecycle',
+        'You can click the tip to read more.',
+        'assets/code/statefulwidgetlifecycle.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

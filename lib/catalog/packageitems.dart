@@ -679,6 +679,34 @@ class _MyImageScreen extends State<PackageScreen> {
         'analog_clock',
         'Flutter Analog Clock plugin.\nimport \'package:analog_clock/analog_clock.dart\'',
         'https://pub.dev/packages/analog_clock'),
+    'barcode_widget': Accordion(
+        'barcode_widget',
+        'Barcode generation widget for Flutter with support for standard barcodes.\nimport \'package:barcode_widget/barcode_widget.dart\'',
+        'https://pub.dev/packages/barcode_widget'),
+    'ndialog': Accordion(
+        'ndialog',
+        'Custom native dialog style with blur background, popup animation and ProgressDialog.\nimport \'package:ndialog/ndialog.dart\'',
+        'https://pub.dev/packages/ndialog'),
+    'flick_video_player': Accordion(
+        'flick_video_player',
+        'Flick Video Player is a video player for flutter. The video_player plugin gives low level access for the video playback.\nimport \'package:flick_video_player/flick_video_player.dart\'',
+        'https://pub.dev/packages/flick_video_player'),
+    'audio_video_progress_bar': Accordion(
+        'audio_video_progress_bar',
+        'A progress bar widget to show or change the position of an audio or video stream.\nimport \'package:audio_video_progress_bar/audio_video_progress_bar.dart\'',
+        'https://pub.dev/packages/audio_video_progress_bar'),
+    'better_player': Accordion(
+        'better_player',
+        'Advanced video player based on video_player and Chewie. It\'s solves many typical use cases and it\'s easy to run.\nimport \'package:better_player/better_player.dart\'',
+        'https://pub.dev/packages/better_player'),
+    'video_thumbnail': Accordion(
+        'video_thumbnail',
+        'A flutter plugin for creating a thumbnail from a local video file or from a video URL.\nimport \'package:video_thumbnail/video_thumbnail.dart\'',
+        'https://pub.dev/packages/video_thumbnail'),
+    'flutter_animator': Accordion(
+        'flutter_animator',
+        'Enables you to create stunning flutter animations, faster, efficient and with less code.\nimport \'package:flutter_animator/flutter_animator.dart\'',
+        'https://pub.dev/packages/flutter_animator'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
