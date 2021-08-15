@@ -711,6 +711,14 @@ class _MyImageScreen extends State<PackageScreen> {
         'local_auth',
         'This Flutter plugin provides means to perform local, on-device authentication of the user.\nimport \'package:local_auth/local_auth.dartt\'',
         'https://pub.dev/packages/local_auth'),
+    'flutter_bloc': Accordion(
+        'flutter_bloc',
+        'Widgets that make it easy to integrate blocs and cubits into Flutter. Built to work with package:bloc.Learn more at bloclibrary.dev!.\nimport \'package:flutter_bloc/flutter_bloc.dart\'',
+        'https://pub.dev/packages/flutter_bloc'),
+    'geolocator': Accordion(
+        'geolocator',
+        'Geolocation plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API for generic location (GPS etc.) functions.\nimport \'package:geolocator/geolocator.dart\'',
+        'https://pub.dev/packages/geolocator'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

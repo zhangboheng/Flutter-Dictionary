@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
       }
       _controller = controller;
 
-      final double volume = kIsWeb ? 0.0 : 1.0;
+      const double volume = kIsWeb ? 0.0 : 1.0;
       await controller.setVolume(volume);
       await controller.initialize();
       await controller.setLooping(true);

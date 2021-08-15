@@ -1,6 +1,6 @@
 // ignore_for_file: no_logic_in_create_state, prefer_const_constructors, use_key_in_widget_constructors
 import 'dart:math';
-import '../widgettools/accordion.dart';
+import '../widgettools/viewcode.dart';
 import 'package:flutter/material.dart';
 import 'package:group_list_view/group_list_view.dart';
 
@@ -18,18 +18,27 @@ List _colorbox = [
 //Set Dart Catalogue
 Map<String, List> _elements = {
   'Basic': [
-    Accordion(
-        'Variable[var, final, const, late]',
-        'Use var if you expect a variable assignment to change during its lifetime:\nvar msg = "Hello world.";\nmsg = "Hello world again.";Use final if you expect a variable assignment to remain the same during its lifetime:\nfinal msg = "Hello world.";'
-            '\nNote that there is a fine distinction between final and const when it comes to objects. final does not necessarily make the object itself immutable, whereas const does:\nfinal fruit = ["apple", "pear", "orange"];'
-            '\nfruit.add("grape");\nfinal cars = const ["Honda", "Toyota", "Ford"];\nconst requires a constant assignment, whereas final will accept both:\nconst names = const ["John", "Jane", "Jack"];'
-            '\nAt last, Use late means Declaring a non-nullable variable that’s initialized after its declaration or Lazily initializing a variable.',
-        'https://stackoverflow.com/questions/12416507/difference-between-var-and-dynamic-type-in-dart'),
-    Accordion(
-        'Built-in types[Numbers, Strings, Booleans, Lists, Sets, Maps, Runes, Symbols, Null]',
-        'int num = 3;\ndouble dbs = 0.56;String str = \'Hello!\'\n',
-        'https://api.flutter.dev/flutter/material/Icons-class.html'),
+    Viewcode(1, 'Overview', 'What is Dart language?',
+        'assets/dart/dartoverview.dart'),
+    Viewcode(1, 'Hello World', 'Write your first Dart code.',
+        'assets/dart/firstdart.dart'),
+    Viewcode(
+        1,
+        'Variable',
+        'A variable is “a named space in the memory” that stores values.',
+        'assets/dart/vardart.dart'),
   ],
+  'Advanced': [
+    Viewcode(
+        1,
+        'Operaters',
+        'An expression is a special kind of statement that evaluates to a value.',
+        'assets/dart/operatorsdart.dart'),
+    Viewcode(1, 'Loops', 'Loops are an ideal way to repeat execution',
+        'assets/dart/loopsdart.dart'),
+    Viewcode(1, 'Conditions', 'A conditional/decision-making construct evaluates a condition before the instructions are executed.',
+        'assets/dart/loopsdart.dart'),
+  ]
 };
 
 class DartScreen extends StatefulWidget {

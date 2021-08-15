@@ -42,11 +42,19 @@ class _MyImageScreen extends State<ToolsScreen> {
           5,
           'GitHub is where over 65 million developers shape the future of software, together.',
           'https://www.github.com/'),
+      flashcards('Flutter', 'assets/images/flutterdev.png', 5,
+          'Flutter Official Website.', 'https://www.flutter.dev/'),
+      flashcards(
+          'Pub',
+          'assets/images/pubdev.png',
+          5,
+          'The official package repository for Dart and Flutter apps.',
+          'https://www.pub.dev/'),
     ];
 
     return Scaffold(
       body: TikTokStyleFullPageScroller(
-        contentSize: fore.length,
+        contentSize: fore.length + 1,
         swipePositionThreshold: 0.2,
         // ^ the fraction of the screen needed to scroll
         swipeVelocityThreshold: 2000,

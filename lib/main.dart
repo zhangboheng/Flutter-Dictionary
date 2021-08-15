@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, unused_import
+// ignore_for_file: prefer_const_constructors, unused_import, use_key_in_widget_constructors
 import 'index.dart';
 import 'dart:math';
 import 'dart:async';
@@ -803,8 +803,21 @@ class _SecondScreenState extends State<SecondScreen> {
     });
   }
 
+  void handleClick(String value) {
+    if (value == 'Settings') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =>
+              Settings(MyApp.themeNotifier.value == ThemeMode.dark),
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final _icons = {'Settings': Icons.settings_outlined};
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 70,
@@ -844,17 +857,32 @@ class _SecondScreenState extends State<SecondScreen> {
             },
           ),
         ),
-        actions: [
-          IconButton(
-              icon: Icon(MyApp.themeNotifier.value == ThemeMode.light
-                  ? Icons.dark_mode
-                  : Icons.light_mode),
-              onPressed: () {
-                MyApp.themeNotifier.value =
-                    MyApp.themeNotifier.value == ThemeMode.light
-                        ? ThemeMode.dark
-                        : ThemeMode.light;
-              })
+        actions: <Widget>[
+          PopupMenuButton(
+            onSelected: handleClick,
+            itemBuilder: (BuildContext context) {
+              return {'Settings'}.map((String choice) {
+                return PopupMenuItem<String>(
+                  value: choice,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Icon(_icons[choice],
+                          color: MyApp.themeNotifier.value == ThemeMode.dark
+                              ? Colors.white
+                              : Colors.black),
+                      Padding(padding: EdgeInsets.only(left: 10.0)),
+                      SizedBox(
+                        width: 100.0,
+                        child: Text(choice),
+                      )
+                    ],
+                  ),
+                );
+              }).toList();
+            },
+          ),
         ],
       ),
       drawer: Drawer(
@@ -1142,6 +1170,88 @@ class _SecondScreenState extends State<SecondScreen> {
                       style: TextStyle(fontSize: 16),
                     )),
                   ]),
+      ),
+    );
+  }
+}
+
+class Settings extends StatefulWidget {
+  final bool themed;
+  const Settings(this.themed);
+  @override
+  _SettingsState createState() => _SettingsState();
+}
+
+class _SettingsState extends State<Settings> {
+  bool isSwitched = false;
+  @override
+  Widget build(BuildContext context) {
+    return WillPopScope(
+      onWillPop: () async {
+        bool willLeave = false;
+        // show the confirm dialog
+        await showDialog(
+            context: context,
+            builder: (_) => AlertDialog(
+                  title: Text('Are you sure want to leave?'),
+                  actions: [
+                    ElevatedButton(
+                        onPressed: () {
+                          willLeave = true;
+                          Navigator.of(context).pop();
+                        },
+                        child: Text('Yes')),
+                    TextButton(
+                        onPressed: () => Navigator.of(context).pop(),
+                        child: Text('No'))
+                  ],
+                ));
+        return willLeave;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          toolbarHeight: 70,
+          centerTitle: true,
+          title: const Text('Settings'),
+        ),
+        body: Scrollbar(
+          child: SingleChildScrollView(
+              child: Column(children: <Widget>[
+            Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: const <Widget>[
+                      Padding(padding: EdgeInsets.only(left: 15.00)),
+                      Icon(Icons.dark_mode_outlined),
+                      Padding(padding: EdgeInsets.only(left: 5.00)),
+                      SizedBox(
+                        width: 100.0,
+                        child: Text('Dark Mode'),
+                      )
+                    ],
+                  ),
+                  Switch(
+                    value: widget.themed,
+                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    onChanged: (value) {
+                      setState(() {
+                        isSwitched = value;
+                        if (isSwitched == true) {
+                          MyApp.themeNotifier.value = ThemeMode.dark;
+                        } else {
+                          MyApp.themeNotifier.value = ThemeMode.light;
+                        }
+                      });
+                    },
+                    activeTrackColor: Colors.lightBlue[200],
+                    activeColor: Colors.blue,
+                  ),
+                ]),
+          ])),
+        ),
       ),
     );
   }
