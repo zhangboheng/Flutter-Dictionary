@@ -73,6 +73,11 @@ Map<String, List> _elements = {
         'assets/dart/enumerationdart.dart'),
     Viewcode(1, 'Functions', 'How to define a function and more...',
         'assets/dart/funcsdart.dart'),
+    Viewcode(
+        1,
+        'Interfaces',
+        'An interface defines the syntax that any entity must adhere to.',
+        'assets/dart/interfacesdart.dart'),
   ]
 };
 
