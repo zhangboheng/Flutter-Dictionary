@@ -88,5 +88,11 @@ void main() {
   print(move.indexOf('G'));
 
   //lastIndexOf: The starting position of the last match pattern in this string.
-  print(move.indexOf('o'));
+  print(move.lastIndexOf('o'));
+
+  //runes: This property returns an iterable of Unicode code-points of this string.
+  //Runes extends iterable.
+  for (var rune in "A string".runes) {
+    print(rune);
+  }
 }

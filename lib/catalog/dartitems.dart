@@ -61,6 +61,18 @@ Map<String, List> _elements = {
         'Lists',
         'A very commonly used collection in programming is an array and more.',
         'assets/dart/listsdart.dart'),
+    Viewcode(
+        1,
+        'Maps',
+        'A Map is a dynamic collection. In other words, Maps can grow and shrink at runtime.',
+        'assets/dart/mapsdart.dart'),
+    Viewcode(
+        1,
+        'Enumeration',
+        'An enumeration is used for defining named constant values. An enumerated type is declared using the enum keyword.',
+        'assets/dart/enumerationdart.dart'),
+    Viewcode(1, 'Functions', 'How to define a function and more...',
+        'assets/dart/funcsdart.dart'),
   ]
 };
 
