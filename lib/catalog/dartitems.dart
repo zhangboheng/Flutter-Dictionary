@@ -36,8 +36,31 @@ Map<String, List> _elements = {
         'assets/dart/operatorsdart.dart'),
     Viewcode(1, 'Loops', 'Loops are an ideal way to repeat execution',
         'assets/dart/loopsdart.dart'),
-    Viewcode(1, 'Conditions', 'A conditional/decision-making construct evaluates a condition before the instructions are executed.',
+    Viewcode(
+        1,
+        'Conditions',
+        'A conditional/decision-making construct evaluates a condition before the instructions are executed.',
         'assets/dart/loopsdart.dart'),
+    Viewcode(
+        1,
+        'Numbers',
+        'The num type is inherited by the int and double types.',
+        'assets/dart/numbersdart.dart'),
+    Viewcode(
+        1,
+        'String',
+        'The String data type represents a sequence of characters. A Dart string is a sequence of UTF 16 code units.',
+        'assets/dart/stringdart.dart'),
+    Viewcode(
+        1,
+        'Boolean',
+        'The syntax for declaring a Boolean variable in DART and more',
+        'assets/dart/booleandart.dart'),
+    Viewcode(
+        1,
+        'Lists',
+        'A very commonly used collection in programming is an array and more.',
+        'assets/dart/listsdart.dart'),
   ]
 };
 
