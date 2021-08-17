@@ -103,6 +103,20 @@ Map<String, List> _elements = {
         'Errors',
         'When you build-in Dart application meet errors, how to deal with them.',
         'assets/dart/errorsdart.dart'),
+    Viewcode(
+        1,
+        'Typedef',
+        'A typedef, or a function-type alias, helps to define pointers to executable code within memory.',
+        'assets/dart/typedefdart.dart'),
+    Viewcode(
+        1,
+        'Library',
+        'A library in a programming language represents a collection of routines.',
+        'assets/dart/libraraydart.dart'),
+    Viewcode(1, 'Async', 'One seconde do more things.',
+        'assets/dart/asyncdart.dart'),
+    Viewcode(1, 'Concurrency', 'One seconde do more things.',
+        'assets/dart/concurrencydart.dart'),
   ]
 };
 
