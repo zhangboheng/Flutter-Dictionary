@@ -78,6 +78,31 @@ Map<String, List> _elements = {
         'Interfaces',
         'An interface defines the syntax that any entity must adhere to.',
         'assets/dart/interfacesdart.dart'),
+    Viewcode(
+        1,
+        'Class',
+        'Class supports object-oriented programming features like classes, interfaces, etc.',
+        'assets/dart/classdart.dart'),
+    Viewcode(
+        1,
+        'Object',
+        'Object-Oriented Programming defines an object as "any entity that has a defined boundary."',
+        'assets/dart/objectdart.dart'),
+    Viewcode(
+        1,
+        'Collection',
+        'Dart, unlike other programming languages, doesn’t support arrays.',
+        'assets/dart/collectiondart.dart'),
+    Viewcode(
+        1,
+        'Packages',
+        'A package is a mechanism to encapsulate a group of programming units.',
+        'assets/dart/packagesdart.dart'),
+    Viewcode(
+        1,
+        'Errors',
+        'When you build-in Dart application meet errors, how to deal with them.',
+        'assets/dart/errorsdart.dart'),
   ]
 };
 

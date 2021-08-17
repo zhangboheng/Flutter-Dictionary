@@ -14,7 +14,7 @@ every function in the interface it wishes to implement.
 */
 
 void main() {
-  ConsolePrinter cp = new ConsolePrinter();
+  ConsolePrinter cp = ConsolePrinter();
   cp.printData();
 }
 
