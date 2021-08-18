@@ -1,5 +1,5 @@
 # Flutter-Dictionary
-![Flutter-Dictionary](https://img.shields.io/github/issues/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/forks/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/stars/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/license/zhangboheng/Flutter-Dictionary)  ![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)
+![Flutter-Dictionary](https://img.shields.io/github/issues/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/forks/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/stars/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/license/zhangboheng/Flutter-Dictionary)  ![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)  
 A simple dictionary about Flutter
 
 # Screenshot
