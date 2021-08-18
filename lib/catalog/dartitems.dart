@@ -117,7 +117,14 @@ Map<String, List> _elements = {
         'assets/dart/asyncdart.dart'),
     Viewcode(1, 'Concurrency', 'One seconde do more things.',
         'assets/dart/concurrencydart.dart'),
-  ]
+  ],
+  'Packages': [
+    Viewcode(
+        1,
+        'dart:math',
+        'Mathematical constants and functions, plus a random number generator.',
+        'assets/dart/importmath.dart'),
+  ],
 };
 
 class DartScreen extends StatefulWidget {
