@@ -124,6 +124,11 @@ Map<String, List> _elements = {
         'dart:math',
         'Mathematical constants and functions, plus a random number generator.',
         'assets/dart/importmath.dart'),
+    Viewcode(
+        1,
+        'dart:collection',
+        'Classes and utilities that supplement the collection support in dart:core.',
+        'assets/dart/importcollection.dart'),
   ],
 };
 

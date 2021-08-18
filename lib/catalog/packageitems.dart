@@ -719,6 +719,10 @@ class _MyImageScreen extends State<PackageScreen> {
         'geolocator',
         'Geolocation plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API for generic location (GPS etc.) functions.\nimport \'package:geolocator/geolocator.dart\'',
         'https://pub.dev/packages/geolocator'),
+    'xml': Accordion(
+        'xml',
+        'A lightweight library for parsing, traversing, querying, transforming and building XML documents.\nimport \'package:xml/xml.dart\'',
+        'https://pub.dev/packages/xml'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
