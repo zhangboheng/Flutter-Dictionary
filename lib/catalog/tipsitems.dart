@@ -133,6 +133,21 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to add Touch ID and Face ID to your App',
         'You can install the local_auth plugin.',
         'assets/code/localauth.dart'),
+    'how to animate a page route transition': Viewcode(
+        1,
+        'How to animate a page route transition',
+        'Turn to next page.',
+        'assets/code/routetransition.dart'),
+    'how to fade a widget in and out': Viewcode(
+        1,
+        'How to fade a widget in and out',
+        'The AnimatedOpacity widget makes it easy to perform opacity animations.',
+        'assets/code/fadeinout.dart'),
+    'how to animate the properties of a container': Viewcode(
+        1,
+        'How to animate the properties of a container',
+        'The Container class provides a convenient way to create a widget with specific properties: width, height, background color, padding, borders, and more.',
+        'assets/code/animatecontainer.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

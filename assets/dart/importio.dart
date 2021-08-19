@@ -68,6 +68,16 @@ Future<void> main() async {
   //path: Get the path of the file.
   print(text.path);
 
-    //uri: A Uri representing the file system entity's location.
+  //uri: A Uri representing the file system entity's location.
   print(text.uri);
+
+  //Methods
+  //copy: Copies this file.
+  myFile.copy('assets/test/mycopy.txt');
+
+  //create: Creates the file.
+  myFile.create(recursive: true);
+
+  //delete: Deletes this FileSystemEntity.
+  myFile.delete();
 }

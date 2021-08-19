@@ -129,6 +129,11 @@ Map<String, List> _elements = {
         'dart:collection',
         'Classes and utilities that supplement the collection support in dart:core.',
         'assets/dart/importcollection.dart'),
+    Viewcode(
+        1,
+        'dart:io',
+        'File, socket, HTTP, and other I/O support for non-web applications.',
+        'assets/dart/importio.dart'),
   ],
 };
 
