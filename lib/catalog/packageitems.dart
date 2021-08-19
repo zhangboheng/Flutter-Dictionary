@@ -723,6 +723,98 @@ class _MyImageScreen extends State<PackageScreen> {
         'xml',
         'A lightweight library for parsing, traversing, querying, transforming and building XML documents.\nimport \'package:xml/xml.dart\'',
         'https://pub.dev/packages/xml'),
+    'flutter_youtube_downloader': Accordion(
+        'flutter_youtube_downloader',
+        'A flutter plugin for extracting and downloading youtube video url.\nimport \'package:flutter_youtube_downloader/flutter_youtube_downloader.dart\'',
+        'https://pub.dev/packages/flutter_youtube_downloader'),
+    'ext_video_player': Accordion(
+        'ext_video_player',
+        'Clone of video_player plugin with support for Youtube & RTMP.\nimport \'package:ext_video_player/ext_video_player.dart\'',
+        'https://pub.dev/packages/ext_video_player'),
+    'category_picker': Accordion(
+        'category_picker',
+        'An input widget to handle selection of category like choices.\nimport \'package:category_picker/category_picker.dart\'',
+        'https://pub.dev/packages/category_picker'),
+    'youtube_parser': Accordion(
+        'youtube_parser',
+        'A minimalist library that extracts IDs from all kinds of YouTube urls.\nimport \'package:youtube_parser/youtube_parser.dart\'',
+        'https://pub.dev/packages/youtube_parser'),
+    'easy_pip': Accordion(
+        'easy_pip',
+        'A widget for creating a YouTube like Picture-In-Picture interface in Flutter.\nimport \'package:easy_pip/easy_pip.dart\'',
+        'https://pub.dev/packages/easy_pip'),
+    'youtube_player_flutter': Accordion(
+        'youtube_player_flutter',
+        'Flutter plugin for playing or streaming YouTube videos inline using the official iFrame Player API.\nimport \'package:youtube_player_flutter/youtube_player_flutter.dart\'',
+        'https://pub.dev/packages/youtube_player_flutter'),
+    'youtube_explode_dart': Accordion(
+        'youtube_explode_dart',
+        'A port in dart of the youtube explode library. Supports several API functions without the need of Youtube API Key.\nimport \'package:youtube_explode_dart/youtube_explode_dart.dart\'',
+        'https://pub.dev/packages/youtube_explode_dart'),
+    'animated_category': Accordion(
+        'animated_category',
+        'Flutter library for picking category.\nimport \'package:animated_category/animated_category.dart\'',
+        'https://pub.dev/packages/animated_category'),
+    'launch_review': Accordion(
+        'launch_review',
+        'A Flutter plugin to assist in leaving user reviews/ratings in Google Play Store and Apple App Store.\nimport \'package:launch_review/launch_review.dart\'',
+        'https://pub.dev/packages/launch_review'),
+    'store_redirect': Accordion(
+        'store_redirect',
+        'A Flutter plugin to redirect users to an app page in Google Play Store and Apple App Store.\nimport \'package:store_redirect/store_redirect.dart\'',
+        'https://pub.dev/packages/store_redirect'),
+    'rate_my_app': Accordion(
+        'rate_my_app',
+        'This plugin allows to kindly ask users to rate your app if custom conditions are met (eg. install time, number of launches, etc...). You can even add your own conditions.\nimport \'package:rate_my_app/rate_my_app.dart\'',
+        'https://pub.dev/packages/rate_my_app'),
+    'camera': Accordion(
+        'camera',
+        'A Flutter plugin for iOS and Android allowing access to the device cameras.\nimport \'package:camera/camera.dart\'',
+        'https://pub.dev/packages/camera'),
+    'math_expressions': Accordion(
+        'math_expressions',
+        'A library for parsing and evaluating mathematical expressions.\nimport \'package:math_expressions/math_expressions.dart\'',
+        'https://pub.dev/packages/math_expressions'),
+    'day_night_time_picker': Accordion(
+        'day_night_time_picker',
+        'A day night time picker for Flutter with Zero Dependencies.\nimport \'package:day_night_time_picker/day_night_time_picker.dart\'',
+        'https://pub.dev/packages/day_night_time_picker'),
+    'flutter_picker': Accordion(
+        'flutter_picker',
+        'Flutter plugin picker. Include NumberPicker, DateTimePicker, ArrayPicker, and default linkage Picker.\nimport \'package:flutter_picker/flutter_picker.dart\'',
+        'https://pub.dev/packages/flutter_picker'),
+    'o_color_picker': Accordion(
+        'o_color_picker',
+        'Simple and fast 2-step color picker, which supports shades and colors customization.\nimport \'package:o_color_picker/o_color_picker.dart\'',
+        'https://pub.dev/packages/o_color_picker'),
+    'horizontal_picker': Accordion(
+        'horizontal_picker',
+        'You can select your value on Horizontal Picker while scrolling on items.\nimport \'package:horizontal_picker/horizontal_picker.dart\'',
+        'https://pub.dev/packages/horizontal_picker'),
+    'ola_like_country_picker': Accordion(
+        'ola_like_country_picker',
+        'A new Flutter package for country picker.\nimport \'package:ola_like_country_picker/ola_like_country_picker.dart\'',
+        'https://pub.dev/packages/ola_like_country_picker'),
+    'flutter_parsed_text': Accordion(
+        'flutter_parsed_text',
+        'A Flutter package to parse text and make them into multiple Flutter Text widget.\nimport \'package:flutter_parsed_text/flutter_parsed_text.dart\'',
+        'https://pub.dev/packages/flutter_parsed_text'),
+    'money2': Accordion(
+        'money2',
+        'This is a Dart implementation of Money and Currency classes.\nimport \'package:money2/money2.dart\'',
+        'https://pub.dev/packages/money2'),
+    'm3u_nullsafe': Accordion(
+        'm3u_nullsafe',
+        'Simple Dart tool to parse M3U and M3U_Plus files from a string or document string.\nimport \'package:m3u_nullsafe/m3u_nullsafe.dart\'',
+        'https://pub.dev/packages/m3u_nullsafe'),
+    'dio': Accordion(
+        'dio',
+        'A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.\nimport \'package:dio/dio.dart\'',
+        'https://pub.dev/packages/dio'),
+    'uuid': Accordion(
+        'uuid',
+        'RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter).\nimport \'package:uuid/uuid.dart\'',
+        'https://pub.dev/packages/uuid'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
