@@ -11,7 +11,7 @@ A simple dictionary about Flutter
   - **Packages Collected Items**: 200
   - **Tips Collected Items**: 40
   - **Dart Tutorial Items**: 26
-  - **Develop tools Collected**: 6
+  - **Develop tools Collected Items**: 6
 
 # Features
   - Search and learn Flutter widget and more

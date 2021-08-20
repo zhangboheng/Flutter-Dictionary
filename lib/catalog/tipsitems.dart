@@ -213,11 +213,48 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to implement swipe to dismiss',
         'Flutter makes this task easy by providing the Dismissible widget. Learn how to implement swipe to dismiss with the example.',
         'assets/code/dismisslists.dart'),
-    'how to display images': Viewcode(
+    'how to display images': Viewcode(1, 'How to display images.',
+        'Easy to display image in flutter.', 'assets/code/displayimage.dart'),
+    'how to fade in images with a placeholder': Viewcode(
         1,
-        'How to display images',
-        'Easy to display image in flutter.',
-        'assets/code/displayimage.dart'),
+        'How to fade in images with a placeholder',
+        'When displaying images using the default Image widget, you might notice they simply pop onto the screen as they’re loaded.',
+        'assets/code/fadeimage.dart'),
+    'how to create a grid list': Viewcode(
+        1,
+        'How to create a grid list',
+        'In some cases, you might want to display your items as a grid rather than a normal list of items that come one after the next.',
+        'assets/code/creategrid.dart'),
+    'how to create a horizontal list': Viewcode(
+        1,
+        'How to create a horizontal list',
+        'You might want to create a list that scrolls horizontally rather than vertically.',
+        'assets/code/horizontallist.dart'),
+    'how to place a floating app bar above a list': Viewcode(
+        1,
+        'How to place a floating app bar above a list',
+        'To make it easier for users to view a list of items, you might want to hide the app bar as the user scrolls down the list...',
+        'assets/code/floatingappbar.dart'),
+    'how to navigate with named routes': Viewcode(
+        1,
+        'How to navigate with named routes',
+        'To work with named routes, use the Navigator.pushNamed() function.',
+        'assets/code/routescreen.dart'),
+    'how to pass arguments to a named route': Viewcode(
+        1,
+        'How to pass arguments to a named route',
+        'The Navigator provides the ability to navigate to a named route from any part of an app using a common identifier.',
+        'assets/code/passarguments.dart'),
+    'how to return data from a screen': Viewcode(
+        1,
+        'How to return data from a screen',
+        'When the user taps an option, you want to inform the first screen of the user’s selection so that it can act on that information.',
+        'assets/code/returndatafrom.dart'),
+    'how to send data to a new screen': Viewcode(
+        1,
+        'How to send data to a new screen',
+        'Often, you not only want to navigate to a new screen, but also pass data to the screen as well.',
+        'assets/code/senddatanewscreen.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
