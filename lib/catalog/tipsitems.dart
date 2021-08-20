@@ -255,6 +255,16 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to send data to a new screen',
         'Often, you not only want to navigate to a new screen, but also pass data to the screen as well.',
         'assets/code/senddatanewscreen.dart'),
+    'how to delete data on the internet': Viewcode(
+        1,
+        'How to delete data on the internet',
+        'This recipe covers how to delete data over the internet using the http package.',
+        'deletedatajson.dart'),
+    'how to make authenticated requests': Viewcode(
+        1,
+        'How to make authenticated requests',
+        'To fetch data from most web services, you need to provide authorization. There are many ways to do this, but perhaps the most common uses the Authorization HTTP header.',
+        'authenticatedjson.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
