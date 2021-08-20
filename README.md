@@ -5,8 +5,7 @@ A simple dictionary about Flutter
 # Screenshot
 ![Flutter Dictionary](screenshot/thumbnail.png)
 
-# Version
-![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)  
+# Version ![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)  
 2021.8.20
   - **Flutter Collected Items**: 154
   - **Packages Collected Items**: 200
@@ -22,8 +21,7 @@ A simple dictionary about Flutter
   - Show a list of Flutter questions and preview the code
   - more...
 
-# License
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+# License ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
 
