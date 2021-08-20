@@ -6,7 +6,12 @@ A simple dictionary about Flutter
 ![Flutter Dictionary](screenshot/thumbnail.png)
 
 # Version
-![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)
+![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)  
+  - **Flutter Collected Items**: 154
+  - **Packages Collected Items**: 200
+  - **Tips Collected Items**: 40
+  - **Dart Tutorial Items**: 26
+  - **Develop tools Collected**: 6
 
 # Features
   - Search and learn Flutter widget and more

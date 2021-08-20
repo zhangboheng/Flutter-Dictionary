@@ -751,6 +751,10 @@ class _SecondScreenState extends State<SecondScreen> {
         'WillPopScope',
         'Registers a callback to veto attempts by the user to dismiss the enclosing ModalRoute.\nWillPopScope({Key? key, required Widget child, required WillPopCallback? onWillPop})',
         'https://api.flutter.dev/flutter/widgets/WillPopScope-class.html'),
+    'orientationBuilder': Accordion(
+        'OrientationBuilder',
+        'Builds a widget tree that can depend on the parent widget\'s orientation (distinct from the device orientation).\nOrientationBuilder({Key? key, required OrientationWidgetBuilder builder})',
+        'https://api.flutter.dev/flutter/widgets/OrientationBuilder-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

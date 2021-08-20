@@ -143,6 +143,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
                 'A material widget that is meant to be displayed at the left or right of an app to navigate between a small number of views, typically between three and five.\nNavigationRail({Key? key, Color? backgroundColor, bool extended, Widget? leading, Widget? trailing, required List<NavigationRailDestination> destinations, required int selectedIndex, ValueChanged<int>? onDestinationSelected, double? elevation, double? groupAlignment, NavigationRailLabelType? labelType, TextStyle? unselectedLabelTextStyle, TextStyle? selectedLabelTextStyle, IconThemeData? unselectedIconTheme, IconThemeData? selectedIconTheme, double? minWidth, double? minExtendedWidth}))',
                 'https://api.flutter.dev/flutter/material/NavigationRail-class.html'),
             Accordion(
+                'OrientationBuilder',
+                'Builds a widget tree that can depend on the parent widget\'s orientation (distinct from the device orientation).\nOrientationBuilder({Key? key, required OrientationWidgetBuilder builder})',
+                'https://api.flutter.dev/flutter/widgets/OrientationBuilder-class.html'),
+            Accordion(
                 'Padding',
                 'A widget that insets its child by the given padding.\nPadding({Key? key, required EdgeInsetsGeometry padding, Widget? child})',
                 'https://api.flutter.dev/flutter/widgets/Padding-class.html'),

@@ -148,6 +148,76 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to animate the properties of a container',
         'The Container class provides a convenient way to create a widget with specific properties: width, height, background color, padding, borders, and more.',
         'assets/code/animatecontainer.dart'),
+    'how to add a drawer to a screen': Viewcode(
+        1,
+        'How to add a drawer to a screen',
+        'In apps that use Material Design, there are two primary options for navigation: tabs and drawers. When there is insufficient space to support tabs, drawers provide a handy alternative.',
+        'assets/code/adddrawer.dart'),
+    'how to display a snackbar': Viewcode(
+        1,
+        'How to display a snackbar',
+        'It can be useful to briefly inform your users when certain actions take place.',
+        'assets/code/displaysnack.dart'),
+    'how to update the UI based on orientation': Viewcode(
+        1,
+        'How to update the UI based on orientation',
+        'In some situations, you want to update the display of an app when the user rotates the screen from portrait mode to landscape mode.',
+        'assets/code/orientationbuilt.dart'),
+    'how to use themes to share colors and font styles': Viewcode(
+        1,
+        'How to use themes to share colors and font styles',
+        'To share colors and font styles throughout an app, use themes.',
+        'assets/code/themeshare.dart'),
+    'how to work with taps': Viewcode(
+        1,
+        'How to work with taps',
+        'Working with tabs is a common pattern in apps that follow the Material Design guidelines.',
+        'assets/code/tapschange.dart'),
+    'how to build a form with validation': Viewcode(
+        1,
+        'How to build a form with validation',
+        'Apps often require users to enter information into a text field...',
+        'assets/code/formvalidation.dart'),
+    'how to create and style a text field': Viewcode(
+        1,
+        'How to create and style a text field',
+        'Text fields allow users to type text into an app.',
+        'assets/code/textfieldstyle.dart'),
+    'how to focus and text fields': Viewcode(
+        1,
+        'How to focus and text fields',
+        'When a text field is selected and accepting input, it is said to have focused.',
+        'assets/code/focusfields.dart'),
+    'how to handle changes to a text field': Viewcode(
+        1,
+        'How to handle changes to a text field',
+        'it’s useful to run a callback function every time the text in a text field changes.',
+        'assets/code/handletextfield.dart'),
+    'how to retrieve the value of a text filed': Viewcode(
+        1,
+        'How to retrieve the value of a text filed',
+        'In this recipe, learn how to retrieve the text a user has entered into a text field.',
+        'assets/code/handletextfield.dart'),
+    'how to add Material touch ripples': Viewcode(
+        1,
+        'How to add Material touch ripples',
+        'Widgets that follow the Material Design guidelines display a ripple animation when tapped.',
+        'assets/code/touchripples.dart'),
+    'how to handle taps': Viewcode(
+        1,
+        'How to handle taps',
+        'You not only want to display information to users, you want users to interact with your app.',
+        'assets/code/handletaps.dart'),
+    'how to implement swipe to dismiss': Viewcode(
+        1,
+        'How to implement swipe to dismiss',
+        'Flutter makes this task easy by providing the Dismissible widget. Learn how to implement swipe to dismiss with the example.',
+        'assets/code/dismisslists.dart'),
+    'how to display images': Viewcode(
+        1,
+        'How to display images',
+        'Easy to display image in flutter.',
+        'assets/code/displayimage.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
