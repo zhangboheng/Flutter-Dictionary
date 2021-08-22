@@ -815,6 +815,10 @@ class _MyImageScreen extends State<PackageScreen> {
         'uuid',
         'RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter).\nimport \'package:uuid/uuid.dart\'',
         'https://pub.dev/packages/uuid'),
+    'flutter_launcher_icons': Accordion(
+        'flutter_launcher_icons',
+        'A package which simplifies the task of updating your Flutter app\'s launcher icon.\nimport \'package:flutter_launcher_icons/main.dart\'\nmore...',
+        'https://pub.dev/packages/flutter_launcher_icons'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
