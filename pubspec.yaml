@@ -28,7 +28,8 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   carousel_slider: ^4.0.0
-  dotted_border: ^2.0.0
+  connectivity_plus: ^1.1.0
+  dotted_border: ^2.0.0+1
   email_validator: ^2.0.1
   flutter:
     sdk: flutter
@@ -37,26 +38,19 @@ dependencies:
   group_list_view: ^1.1.1
   image_picker: ^0.8.3+2
   local_auth: ^1.1.6
-  tiktoklikescroller: ^0.1.6
+  tiktoklikescroller: ^0.1.8
   transparent_image: ^2.0.0
   url_launcher: ^6.0.9
-  video_player: ^2.1.12
+  video_player: ^2.1.14
   widget_with_codeview: ^2.0.0-nullsafe
   youtube_player_flutter: ^8.0.0
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
 
 dev_dependencies:
   flutter_launcher_icons: ^0.9.1
+  flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^1.0.0
+  msix: ^2.1.3
 flutter_icons:
   android: true
   ios: true
@@ -64,7 +58,6 @@ flutter_icons:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter.
 flutter:
   # The following line ensures that the Material Icons font is
@@ -74,18 +67,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-      - assets/images/
-      - assets/code/
-      - assets/dart/
-      - assets/test/
+    - assets/images/
+    - assets/code/
+    - assets/dart/
+    - assets/test/
   #   - images/a_dot_ham.jpeg
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
-
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
@@ -105,3 +95,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+msix_config:
+  display_name: Flutter Dicitionary
+  publisher_display_name: Zhang Boheng
+  identity_name: Com.Luckydesinger.Flutterdictionary
+  msix_version: 0.0.1
+  publisher: CN=My Company, O=My Company, L=Berlin, S=Berlin, C=DE
+  logo_path: C:\Users\Administrator\Documents\GitHub\Flutter-Dictionary\assets\icon\ame.png
+  start_menu_icon_path: C:\Users\Administrator\Documents\GitHub\Flutter-Dictionary\assets\icon\ame.png
+  tile_icon_path: C:\Users\Administrator\Documents\GitHub\Flutter-Dictionary\assets\icon\ame.png
+  vs_generated_images_folder_path: C:\<PathToFolder>\icons
+  architecture: x64
+  capabilities: 'internetClient,location,microphone,webcam'

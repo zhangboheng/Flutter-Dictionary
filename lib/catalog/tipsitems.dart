@@ -259,12 +259,32 @@ class _MyImageScreen extends State<TipsScreen> {
         1,
         'How to delete data on the internet',
         'This recipe covers how to delete data over the internet using the http package.',
-        'deletedatajson.dart'),
+        'assets/code/deletedatajson.dart'),
     'how to make authenticated requests': Viewcode(
         1,
         'How to make authenticated requests',
         'To fetch data from most web services, you need to provide authorization. There are many ways to do this, but perhaps the most common uses the Authorization HTTP header.',
-        'authenticatedjson.dart'),
+        'assets/code/authenticatedjson.dart'),
+    'how to check Internet connection': Viewcode(
+        1,
+        'How to check Internet connection',
+        'You may want to check the internet connection of the device that runs your application. If the application is developed using Flutter, you can read the examples in this tutorial.',
+        'assets/code/checkinternet.dart'),
+    'how to get widget size and position': Viewcode(
+        1,
+        'How to get widget size and position',
+        'You can create a globle key to do it.',
+        'assets/code/getwidgetproperties.dart'),
+    'how to create draggable floating action button': Viewcode(
+        1,
+        'How to create draggable floating action button',
+        'This tutorial has an example that explains what you need to do in order to create a floating action button that can be dragged anywhere around the screen.',
+        'assets/code/dragfloatingbtn.dart'),
+    'how to using repaintboundary': Viewcode(
+        1,
+        'How to using repaintboundary',
+        'If you are looking for a way to prevent unnecessary repaints, you can consider using RepaintBoundary.',
+        'assets/code/usingpaintboundary.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

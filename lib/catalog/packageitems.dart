@@ -819,6 +819,14 @@ class _MyImageScreen extends State<PackageScreen> {
         'flutter_launcher_icons',
         'A package which simplifies the task of updating your Flutter app\'s launcher icon.\nimport \'package:flutter_launcher_icons/main.dart\'\nmore...',
         'https://pub.dev/packages/flutter_launcher_icons'),
+    'rename': Accordion(
+        'rename',
+        'Helps you to change or rename your flutter project BundleId and AppName for Ios, Android, MacOS and Linux platforms.\nimport \'package:rename/rename.dart\'',
+        'https://pub.dev/packages/rename'),
+    'universal_platform': Accordion(
+        'universal_platform',
+        'Replacement for dart.io.Platform class which works on Web as well as Desktop and Mobile. Allows platform checks in your view/model layer easily.\nimport \'package:universal_platform/universal_platform.dart\'',
+        'https://pub.dev/packages/universal_platform'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
