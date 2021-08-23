@@ -1,14 +1,15 @@
+![Flutter Dictionary](screenshot/appbanner.jpg)
 # Flutter-Dictionary
 ![Flutter-Dictionary](https://img.shields.io/github/issues/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/forks/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/stars/zhangboheng/Flutter-Dictionary) ![Flutter-Dictionary](https://img.shields.io/github/license/zhangboheng/Flutter-Dictionary)  ![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)  
 A simple dictionary about Flutter
 
 # Screenshot
-![Flutter Dictionary](screenshot/thumbnail.png)
+![Flutter Dictionary](screenshot/bannerscreen.png)
 
 # Version ![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)  
 2021.8.20
   - **Flutter Collected Items**: 154
-  - **Packages Collected Items**: 202
+  - **Packages Collected Items**: 203
   - **Tips Collected Items**: 54
   - **Dart Tutorial Items**: 26
   - **Develop tools Collected Items**: 6
