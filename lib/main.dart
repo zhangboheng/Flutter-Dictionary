@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, unused_import, use_key_in_widget_constructors
+// ignore_for_file: prefer_const_constructors, unused_import, use_key_in_widget_constructors, avoid_print
 import 'index.dart';
 import 'dart:math';
 import 'dart:async';
@@ -9,6 +9,8 @@ import 'package:flutter/rendering.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'ad-helper.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() {
   runApp(const MyApp(title: 'flutter dictionary'));
@@ -123,6 +125,9 @@ class SecondScreen extends StatefulWidget {
 
 class _SecondScreenState extends State<SecondScreen> {
   int _current = 0;
+
+  late BannerAd _ad;
+
   final List data = [
     {"title": "Dart Learning", "url": "assets/images/dartlearning.jpg"},
     {"title": "Flutter Packages", "url": "assets/images/packages.jpg"},
@@ -767,6 +772,23 @@ class _SecondScreenState extends State<SecondScreen> {
     _getKeys.sort((a, b) => a.compareTo(b));
     // at the beginning, all users are shown
     _foundUsers = _getKeys.map((item) => _array[item]).toList().cast<Widget>();
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {});
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+    _ad.load();
     initMyLibrary();
     super.initState();
   }
@@ -817,6 +839,13 @@ class _SecondScreenState extends State<SecondScreen> {
         ),
       );
     }
+  }
+
+  @override
+  void dispose() {
+    _ad.dispose();
+
+    super.dispose();
   }
 
   @override
@@ -1160,13 +1189,25 @@ class _SecondScreenState extends State<SecondScreen> {
                           fontSize: 16.0, fontWeight: FontWeight.w700),
                     ),
                     Container(
-                      padding: EdgeInsets.only(bottom: 20.0),
+                      padding: EdgeInsets.only(bottom: 2.0),
+                    ),
+                    Container(
+                      child: AdWidget(ad: _ad),
+                      width: MediaQuery.of(context).size.width,
+                      height: 72.0,
+                      alignment: Alignment.center,
                     ),
                     ..._foundUsers,
                   ]
                 : <Widget>[
                     Container(
-                      padding: const EdgeInsets.all(20.0),
+                      child: AdWidget(ad: _ad),
+                      width: MediaQuery.of(context).size.width,
+                      height: 72.0,
+                      alignment: Alignment.center,
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(bottom: 2.0),
                     ),
                     Center(
                         child: Text(

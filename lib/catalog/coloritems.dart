@@ -1,6 +1,8 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, avoid_print
 import '../widgettools/accordion.dart';
 import 'package:flutter/material.dart';
+import '../ad-helper.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class ColorItems extends StatefulWidget {
   const ColorItems({Key? key}) : super(key: key);
@@ -9,6 +11,36 @@ class ColorItems extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<ColorItems> {
+  late BannerAd _ad;
+  @override
+  void initState() {
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {});
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+    _ad.load();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _ad.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -41,7 +73,13 @@ class _MyStatefulWidgetState extends State<ColorItems> {
         ),
         body: Scrollbar(
           child: SingleChildScrollView(
-              child: Column(children: const <Widget>[
+              child: Column(children: <Widget>[
+            Container(
+              child: AdWidget(ad: _ad),
+              width: MediaQuery.of(context).size.width,
+              height: 72.0,
+              alignment: Alignment.center,
+            ),
             Accordion(
                 'Color',
                 'An immutable 32 bit color value in ARGB format.\nColor(0xFF42A5F5);\nColor.fromARGB(0xFF, 0x42, 0xA5, 0xF5);\nColor.fromARGB(255, 66, 165, 245);\nColor.fromRGBO(66, 165, 245, 1.0);',

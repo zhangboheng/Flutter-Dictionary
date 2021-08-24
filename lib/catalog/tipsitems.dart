@@ -1,7 +1,9 @@
-// ignore_for_file: no_logic_in_create_state, use_key_in_widget_constructors, prefer_const_constructors
+// ignore_for_file: no_logic_in_create_state, use_key_in_widget_constructors, prefer_const_constructors, avoid_print
 
 import '../widgettools/viewcode.dart';
 import 'package:flutter/material.dart';
+import '../ad-helper.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class TipsScreen extends StatefulWidget {
   final String url;
@@ -13,6 +15,8 @@ class TipsScreen extends StatefulWidget {
 
 class _MyImageScreen extends State<TipsScreen> {
   final String url;
+  late BannerAd _ad;
+
   final _array = const {
     'how to determine screen height and width': Viewcode(
         0,
@@ -308,7 +312,31 @@ class _MyImageScreen extends State<TipsScreen> {
     _getKeys.sort((a, b) => a.compareTo(b));
     // at the beginning, all users are shown
     _foundUsers = _getKeys.map((item) => _array[item]).toList().cast<Widget>();
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {});
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+    _ad.load();
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    _ad.dispose();
+
+    super.dispose();
   }
 
   void _searchItems(String valueKeys) {
@@ -414,15 +442,24 @@ class _MyImageScreen extends State<TipsScreen> {
                           fontSize: 16.0, fontWeight: FontWeight.w700),
                     ),
                     Container(
-                      padding: EdgeInsets.only(bottom: 20.0),
+                      child: AdWidget(ad: _ad),
+                      width: MediaQuery.of(context).size.width,
+                      height: 72.0,
+                      alignment: Alignment.center,
                     ),
                     ..._foundUsers
                   ]
                 : <Widget>[
                     Container(
-                      padding: const EdgeInsets.all(20.0),
+                      child: AdWidget(ad: _ad),
+                      width: MediaQuery.of(context).size.width,
+                      height: 72.0,
+                      alignment: Alignment.center,
                     ),
-                    const Center(
+                    Container(
+                      padding: EdgeInsets.only(bottom: 2.0),
+                    ),
+                    Center(
                       child: Text(
                         'No results found',
                         style: TextStyle(fontSize: 16),

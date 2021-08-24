@@ -1,7 +1,9 @@
-// ignore_for_file: no_logic_in_create_state, use_key_in_widget_constructors, prefer_const_constructors
+// ignore_for_file: no_logic_in_create_state, use_key_in_widget_constructors, prefer_const_constructors, avoid_print
 
 import '../widgettools/accordion.dart';
 import 'package:flutter/material.dart';
+import '../ad-helper.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class PackageScreen extends StatefulWidget {
   final String url;
@@ -13,6 +15,8 @@ class PackageScreen extends StatefulWidget {
 
 class _MyImageScreen extends State<PackageScreen> {
   final String url;
+  late BannerAd _ad;
+
   final Map<String, Accordion> _array = const {
     'url_launcher': Accordion(
         'url_launcher',
@@ -842,6 +846,23 @@ class _MyImageScreen extends State<PackageScreen> {
     _getKeys.sort((a, b) => a.compareTo(b));
     // at the beginning, all users are shown
     _foundUsers = _getKeys.map((item) => _array[item]).toList().cast<Widget>();
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {});
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+    _ad.load();
     super.initState();
   }
 
@@ -865,6 +886,13 @@ class _MyImageScreen extends State<PackageScreen> {
     setState(() {
       _foundUsers = results;
     });
+  }
+
+  @override
+  void dispose() {
+    _ad.dispose();
+
+    super.dispose();
   }
 
   _MyImageScreen(this.url);
@@ -948,13 +976,25 @@ class _MyImageScreen extends State<PackageScreen> {
                           fontSize: 16.0, fontWeight: FontWeight.w700),
                     ),
                     Container(
-                      padding: EdgeInsets.only(bottom: 20.0),
+                      padding: EdgeInsets.only(bottom: 2.0),
+                    ),
+                    Container(
+                      child: AdWidget(ad: _ad),
+                      width: MediaQuery.of(context).size.width,
+                      height: 72.0,
+                      alignment: Alignment.center,
                     ),
                     ..._foundUsers
                   ]
                 : <Widget>[
                     Container(
-                      padding: const EdgeInsets.all(20.0),
+                      child: AdWidget(ad: _ad),
+                      width: MediaQuery.of(context).size.width,
+                      height: 72.0,
+                      alignment: Alignment.center,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(2.0),
                     ),
                     const Center(
                       child: Text(

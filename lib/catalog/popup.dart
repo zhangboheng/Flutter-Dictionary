@@ -1,6 +1,8 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, avoid_print
 import '../widgettools/accordion.dart';
 import 'package:flutter/material.dart';
+import '../ad-helper.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class Popup extends StatefulWidget {
   const Popup({Key? key}) : super(key: key);
@@ -9,6 +11,36 @@ class Popup extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<Popup> {
+  late BannerAd _ad;
+  @override
+  void initState() {
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {});
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+    _ad.load();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _ad.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -41,7 +73,13 @@ class _MyStatefulWidgetState extends State<Popup> {
         ),
         body: Scrollbar(
           child: SingleChildScrollView(
-              child: Column(children: const <Widget>[
+              child: Column(children: <Widget>[
+            Container(
+              child: AdWidget(ad: _ad),
+              width: MediaQuery.of(context).size.width,
+              height: 72.0,
+              alignment: Alignment.center,
+            ),
             Accordion(
                 'AboutDialog',
                 'An about box. This is a dialog box with the application\'s icon, name, version number, and copyright, plus a button to show licenses for software used by the application.\nAboutDialog({Key? key, String? applicationName, String? applicationVersion, Widget? applicationIcon, String? applicationLegalese, List<Widget>? children})',

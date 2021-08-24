@@ -1,6 +1,8 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, avoid_print
 import '../widgettools/accordion.dart';
 import 'package:flutter/material.dart';
+import '../ad-helper.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class ButtonItems extends StatefulWidget {
   const ButtonItems({Key? key}) : super(key: key);
@@ -9,6 +11,36 @@ class ButtonItems extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<ButtonItems> {
+  late BannerAd _ad;
+  @override
+  void initState() {
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {});
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+    _ad.load();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _ad.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +73,13 @@ class _MyStatefulWidgetState extends State<ButtonItems> {
         },
         child: Scrollbar(
           child: SingleChildScrollView(
-              child: Column(children: const <Widget>[
+              child: Column(children: <Widget>[
+            Container(
+              child: AdWidget(ad: _ad),
+              width: MediaQuery.of(context).size.width,
+              height: 72.0,
+              alignment: Alignment.center,
+            ),
             Accordion(
                 'ActionChip',
                 'A material design action chip.\nActionChip({Key? key, Widget? avatar, required Widget label, TextStyle? labelStyle, EdgeInsetsGeometry? labelPadding, required VoidCallback onPressed, double? pressElevation, String? tooltip, BorderSide? side, OutlinedBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Color? backgroundColor, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, MaterialTapTargetSize? materialTapTargetSize, double? elevation, Color? shadowColor})',
