@@ -31,10 +31,13 @@ dependencies:
   connectivity_plus: ^1.1.0
   dotted_border: ^2.0.0+1
   email_validator: ^2.0.1
+  english_words: ^4.0.0
   flutter:
     sdk: flutter
   flutter_rating_bar: ^4.0.0
+  fluttertoast: ^8.0.8
   google_fonts: ^2.1.0
+  google_mobile_ads: ^0.13.3
   group_list_view: ^1.1.1
   image_picker: ^0.8.3+2
   local_auth: ^1.1.6

@@ -827,6 +827,10 @@ class _MyImageScreen extends State<PackageScreen> {
         'universal_platform',
         'Replacement for dart.io.Platform class which works on Web as well as Desktop and Mobile. Allows platform checks in your view/model layer easily.\nimport \'package:universal_platform/universal_platform.dart\'',
         'https://pub.dev/packages/universal_platform'),
+    'google_geocoding': Accordion(
+        'google_geocoding',
+        'A new Flutter package for handle google geocoding api that geocoding and reverse geocoding requests are available.\nimport \'package:google_geocoding/google_geocoding.dart\'',
+        'https://pub.dev/packages/google_geocoding'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

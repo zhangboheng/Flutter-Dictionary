@@ -285,6 +285,18 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to using repaintboundary',
         'If you are looking for a way to prevent unnecessary repaints, you can consider using RepaintBoundary.',
         'assets/code/usingpaintboundary.dart'),
+    'an animatedlist example': Viewcode(
+        1,
+        'An animatedlist example',
+        'An easy example to learn animatedlist.',
+        'assets/code/animatedlist.dart'),
+    'a scaletransition example': Viewcode(
+        1,
+        'A scaletransition example',
+        'An easy example to learn animatedlist.',
+        'assets/code/scaletransition.dart'),
+    'a fluttertoast example': Viewcode(1, 'A fluttertoast example',
+        'An easy example to fluttertoast.', 'assets/code/toastmessage.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
