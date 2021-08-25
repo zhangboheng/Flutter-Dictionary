@@ -1,7 +1,9 @@
-// ignore_for_file: no_logic_in_create_state, prefer_const_constructors, use_key_in_widget_constructors
+// ignore_for_file: no_logic_in_create_state, prefer_const_constructors, use_key_in_widget_constructors, avoid_print
 import "dart:math";
 import '../widgettools/flashcards.dart';
 import 'package:flutter/material.dart';
+import '../ad-helper.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:tiktoklikescroller/tiktoklikescroller.dart';
 
 class ToolsScreen extends StatefulWidget {
@@ -14,7 +16,46 @@ class ToolsScreen extends StatefulWidget {
 
 class _MyImageScreen extends State<ToolsScreen> {
   final String url;
+  InterstitialAd? _interstitialAd;
+  bool _isInterstitialAdReady = false;
   _MyImageScreen(this.url);
+
+  void _loadInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (ad) {
+          _interstitialAd = ad;
+
+          ad.fullScreenContentCallback = FullScreenContentCallback(
+            onAdDismissedFullScreenContent: (ad) {
+              Navigator.of(context).pop();
+            },
+          );
+
+          _isInterstitialAdReady = true;
+        },
+        onAdFailedToLoad: (err) {
+          print('Failed to load an interstitial ad: ${err.message}');
+          _isInterstitialAdReady = false;
+        },
+      ),
+    );
+  }
+
+  @override
+  void initState() {
+    _loadInterstitialAd();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _interstitialAd?.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final List fore = [
@@ -81,7 +122,7 @@ class _MyImageScreen extends State<ToolsScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.pop(context);
+          _interstitialAd?.show();
         },
         child: Icon(Icons.arrow_back),
       ),

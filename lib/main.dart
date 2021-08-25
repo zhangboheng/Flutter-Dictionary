@@ -13,7 +13,11 @@ import 'ad-helper.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() {
-  runApp(const MyApp(title: 'flutter dictionary'));
+  
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
+
+  runApp(const MyApp(title: 'Flutter Dictionary'));
 }
 
 class MyApp extends StatelessWidget {
