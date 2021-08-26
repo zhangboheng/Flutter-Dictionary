@@ -301,6 +301,16 @@ class _MyImageScreen extends State<TipsScreen> {
         'assets/code/scaletransition.dart'),
     'a fluttertoast example': Viewcode(1, 'A fluttertoast example',
         'An easy example to fluttertoast.', 'assets/code/toastmessage.dart'),
+    'a circularprogressindicator example': Viewcode(
+        1,
+        'A circularprogressindicator example',
+        'An easy example to circularprogressindicator.',
+        'assets/code/circularprogress.dart'),
+    'how to set statue bar colors, brightness and transparency': Viewcode(
+        1,
+        'How to set statue bar colors, brightness and transparency',
+        'Using Flutter, setting the style of the status bar can be done easily by using AppBar, SystemChrome, or AnnotatedRegion.',
+        'assets/code/changestatuebar.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

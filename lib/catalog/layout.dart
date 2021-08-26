@@ -157,6 +157,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
                 'The part of a material design AppBar that expands, collapses, and stretches.\nFlexibleSpaceBar({Key? key, Widget? title, Widget? background, bool? centerTitle, EdgeInsetsGeometry? titlePadding, CollapseMode collapseMode, List<StretchMode> stretchModes})',
                 'https://api.flutter.dev/flutter/material/FlexibleSpaceBar-class.html'),
             Accordion(
+                'IndexedStack',
+                'A Stack that shows a single child from a list of children.\nStack({Key? key, AlignmentGeometry alignment, TextDirection? textDirection, StackFit fit, overflow, Clip clipBehavior, List<Widget> children = const <Widget>[]})',
+                'https://api.flutter.dev/flutter/widgets/IndexedStack-class.html'),
+            Accordion(
                 'LayoutBuilder',
                 'Builds a widget tree that can depend on the parent widget\'s size.\nLayoutBuilder({Key? key, required LayoutWidgetBuilder builder})',
                 'https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html'),

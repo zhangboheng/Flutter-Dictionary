@@ -87,6 +87,10 @@ class _DeviceItemsState extends State<DeviceItems> {
                     'MediaQuery.removeViewInsets({Key? key, required BuildContext context, bool removeLeft = false, bool removeTop = false, bool removeRight = false, bool removeBottom = false, required Widget child})\n'
                     'MediaQuery.removeViewPadding({Key? key, required BuildContext context, bool removeLeft = false, bool removeTop = false, bool removeRight = false, bool removeBottom = false, required Widget child})',
                 'https://api.flutter.dev/flutter/widgets/MediaQuery-class.html'),
+            Accordion(
+                'AnnotatedRegion',
+                'Annotates a region of the layer tree with a value.\nAnnotatedRegion({Key? key, required Widget child, required T value, bool sized})',
+                'https://api.flutter.dev/flutter/widgets/AnnotatedRegion-class.html'),
           ])),
         ),
       ),

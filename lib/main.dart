@@ -13,7 +13,6 @@ import 'ad-helper.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() {
-  
   WidgetsFlutterBinding.ensureInitialized();
   MobileAds.instance.initialize();
 
@@ -764,6 +763,31 @@ class _SecondScreenState extends State<SecondScreen> {
         'OrientationBuilder',
         'Builds a widget tree that can depend on the parent widget\'s orientation (distinct from the device orientation).\nOrientationBuilder({Key? key, required OrientationWidgetBuilder builder})',
         'https://api.flutter.dev/flutter/widgets/OrientationBuilder-class.html'),
+    'indexedstack': Accordion(
+        'IndexedStack',
+        'A Stack that shows a single child from a list of children.\nStack({Key? key, AlignmentGeometry alignment, TextDirection? textDirection, StackFit fit, overflow, Clip clipBehavior, List<Widget> children = const <Widget>[]})',
+        'https://api.flutter.dev/flutter/widgets/IndexedStack-class.html'),
+    'streambuilder': Accordion(
+        'StreamBuilder',
+        'Widget that builds itself based on the latest snapshot of interaction with a Stream.\nStreamBuilder({Key? key, T? initialData, Stream<T>? stream, required AsyncWidgetBuilder<T> builder})',
+        'https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html'),
+    'annotatedRegion': Accordion(
+        'AnnotatedRegion',
+        'Annotates a region of the layer tree with a value.\nAnnotatedRegion({Key? key, required Widget child, required T value, bool sized})',
+        'https://api.flutter.dev/flutter/widgets/AnnotatedRegion-class.html'),
+    'semantics': Accordion(
+        'Semantics',
+        'A widget that annotates the widget tree with a description of the meaning of the widgets.\nSemantics({Key? key, Widget? child, bool container = false, bool explicitChildNodes = false, bool excludeSemantics = false, bool? enabled, bool? checked, bool? selected, bool? toggled, bool? button, bool? slider, bool? keyboardKey, bool? link, bool? header, bool? textField, bool? readOnly, bool? focusable, bool? focused, bool? inMutuallyExclusiveGroup, bool? obscured, bool? multiline, bool? scopesRoute, bool? namesRoute, bool? hidden, bool? image, bool? liveRegion, int? maxValueLength, int? currentValueLength, String? label, String? value, String? increasedValue, String? decreasedValue, String? hint, String? onTapHint, String? onLongPressHint, TextDirection? textDirection, SemanticsSortKey? sortKey, SemanticsTag? tagForChildren, VoidCallback? onTap, VoidCallback? onLongPress, VoidCallback? onScrollLeft, VoidCallback? onScrollRight, VoidCallback? onScrollUp, VoidCallback? onScrollDown, VoidCallback? onIncrease, VoidCallback? onDecrease, VoidCallback? onCopy, VoidCallback? onCut, VoidCallback? onPaste, VoidCallback? onDismiss, MoveCursorHandler? onMoveCursorForwardByCharacter, MoveCursorHandler? onMoveCursorBackwardByCharacter, SetSelectionHandler? onSetSelection, SetTextHandler? onSetText, VoidCallback? onDidGainAccessibilityFocus, VoidCallback? onDidLoseAccessibilityFocus, Map<CustomSemanticsAction, VoidCallback>? customSemanticsActions})\n'
+            'Semantics.fromProperties({Key? key, Widget? child, bool container, bool explicitChildNodes, bool excludeSemantics, required SemanticsProperties properties})',
+        'https://api.flutter.dev/flutter/material/Theme-class.html'),
+    'BlockSemantics': Accordion(
+        'BlockSemantics',
+        'A widget that drops the semantics of all widget that were painted before it in the same semantic container.\nBlockSemantics({Key? key, bool blocking, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/BlockSemantics-class.html'),
+    'ExcludeSemantics': Accordion(
+        'ExcludeSemantics',
+        'A widget that drops all the semantics of its descendants.\nExcludeSemantics({Key? key, bool excluding, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/ExcludeSemantics-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

@@ -859,6 +859,74 @@ class _MyImageScreen extends State<PackageScreen> {
         'common_ui_toolkit',
         'common UI toolkit to clean your code and use it easily and reusable code.\nimport \'package:common_ui_toolkit/common_ui_toolkit.dart\'',
         'https://pub.dev/packages/common_ui_toolkit'),
+    'flutter_feed_reaction': Accordion(
+        'flutter_feed_reaction',
+        'A Flutter package providing you with highly customizable reactions list for posts/comments in a Social Media kind of an app.\nimport \'package:flutter_feed_reaction/flutter_feed_reaction.dart\'',
+        'https://pub.dev/packages/flutter_feed_reaction'),
+    'tch_common_widgets': Accordion(
+        'tch_common_widgets',
+        'Flutter common widgets & theming package used by Tomas Chyly. Contains custom widgets that are used on multiple projects. As well as global theming capability.\nimport \'package:tch_common_widgets/tch_common_widgets.dart\'',
+        'https://pub.dev/packages/tch_common_widgets'),
+    'catcher': Accordion(
+        'catcher',
+        'Catcher is Flutter plugin which automatically catches error/exceptions and handle them. \nimport \'package:catcher/catcher.dart\'',
+        'https://pub.dev/packages/catcher'),
+    'tch_appliable_core': Accordion(
+        'tch_appliable_core',
+        'Flutter core package used by Tomas Chyly & appliable.eu. Contains common functionality to get started faster & consistently.\nimport \'package:tch_appliable_core/tch_appliable_core.dart\'',
+        'https://pub.dev/packages/tch_appliable_core'),
+    'universal_translator': Accordion(
+        'universal_translator',
+        'A flutter plugin for adapting screen and font size.Let your UI display a reasonable layout on different screen sizes.\nimport \'package:universal_translator/universal_translator.dart\'',
+        'https://pub.dev/packages/universal_translator'),
+    'flutter_slider_indicator': Accordion(
+        'flutter_slider_indicator',
+        'Slider Indicator Widget built in for flutter.\nimport \'package:flutter_slider_indicator/flutter_slider_indicator.dart\'',
+        'https://pub.dev/packages/flutter_slider_indicator'),
+    'mobx': Accordion(
+        'mobx',
+        'MobX is a library for reactively managing the state of your applications. Use the power of observables, actions, and reactions to supercharge your Dart and Flutter apps.\nimport \'package:mobx/mobx.dart\'',
+        'https://pub.dev/packages/mobx'),
+    'flutter_mobx': Accordion(
+        'flutter_mobx',
+        'Flutter integration for MobX. It provides a set of Observer widgets that automatically rebuild when the tracked observables change.\nimport \'package:flutter_mobx/flutter_mobx.dart\'',
+        'https://pub.dev/packages/flutter_mobx'),
+    'mobx_codegen': Accordion(
+        'mobx_codegen',
+        'Adds support for annotating your MobX code with @observable, @computed, @action, making it super simple to use MobX.\nimport \'package:mobx_codegen/mobx_codegen.dart\'',
+        'https://pub.dev/packages/mobx_codegen'),
+    'flutter_calendar_week': Accordion(
+        'flutter_calendar_week',
+        'Flutter calendar week UI package.\nimport \'package:flutter_calendar_week/flutter_calendar_week.dart\'',
+        'https://pub.dev/packages/flutter_calendar_week'),
+    'auto_route': Accordion(
+        'auto_route',
+        'It’s a Flutter navigation package, it allows for strongly-typed arguments passing, effortless deep-linking and it uses code generation to simplify routes setup, with that being said it requires a minimal amount of code to generate everything needed for navigation inside of your App.\nimport \'package:auto_route/auto_route.dart\'',
+        'https://pub.dev/packages/auto_route'),
+    'tfann': Accordion(
+        'tfann',
+        'Tiny Fast Artificial Neural Network Library.\nimport \'package:tfann/tfann.dart\'',
+        'https://pub.dev/packages/auto_route'),
+    'roundcheckbox': Accordion(
+        'roundcheckbox',
+        'Package to make easier the proccess of creating a round circle box.\nimport \'package:roundcheckbox/roundcheckbox.dart\'',
+        'https://pub.dev/packages/roundcheckbox'),
+    'flutter_credit_card_detector': Accordion(
+        'flutter_credit_card_detector',
+        'A Flutter package that allows you to easily implement credit card user interface with card detection.\nimport \'package:flutter_credit_card_detector/flutter_credit_card_detector.dart\'',
+        'https://pub.dev/packages/flutter_credit_card_detector'),
+    'photo_card_swiper': Accordion(
+        'photo_card_swiper',
+        'A simple flutter package for creating a swiping card layout for list of photos.\nimport \'package:photo_card_swiper/photo_card_swiper.dart\'',
+        'https://pub.dev/packages/photo_card_swiper'),
+    'get_time_ago': Accordion(
+        'get_time_ago',
+        'A Flutter plugin to convert and format DateTime object into get_time_ago format to get String like 10 seconds ago, a minute ago, 7 hours ago, etc.\nimport \'package:get_time_ago/get_time_ago.dart\'',
+        'https://pub.dev/packages/get_time_ago'),
+    'google_maps_cluster_manager': Accordion(
+        'google_maps_cluster_manager',
+        'A Flutter package to cluster items on a Google Maps widget based on Geohash. Highly inspired by clustering_google_maps.\nimport \'package:google_maps_cluster_manager/google_maps_cluster_manager.dart\'',
+        'https://pub.dev/packages/google_maps_cluster_manager'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
