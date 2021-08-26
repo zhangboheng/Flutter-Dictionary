@@ -835,6 +835,30 @@ class _MyImageScreen extends State<PackageScreen> {
         'google_geocoding',
         'A new Flutter package for handle google geocoding api that geocoding and reverse geocoding requests are available.\nimport \'package:google_geocoding/google_geocoding.dart\'',
         'https://pub.dev/packages/google_geocoding'),
+    'flutter_wall_layout': Accordion(
+        'flutter_wall_layout',
+        'A Layout widget displaying a set of bricks (widgets with different shapes) as a vertical or horizontal list, like a wall...\nimport \'package:flutter_wall_layout/flutter_wall_layout.dart\'',
+        'https://pub.dev/packages/flutter_wall_layout'),
+    'alice': Accordion(
+        'alice',
+        'Alice is an HTTP Inspector tool for Flutter which helps debugging http requests. It catches and stores http requests and responses, which can be viewed via simple UI. It is inspired from Chuck and Chucker.\nimport \'package:alice/alice.dart\'',
+        'https://pub.dev/packages/alice'),
+    'flutter_to_airplay': Accordion(
+        'flutter_to_airplay',
+        'Flutter plugin that offers two widgets, one to play a video for given url or file path using native AVPlayer and second with an option to airplay it on available Apple devices.\nimport \'package:flutter_to_airplay/flutter_to_airplay.dart\'',
+        'https://pub.dev/packages/flutter_to_airplay'),
+    'text_parser': Accordion(
+        'text_parser',
+        'A Dart package for parsing text flexibly according to preset or custom regular expression patterns.\nimport \'package:text_parser/text_parser.dart\'',
+        'https://pub.dev/packages/text_parser'),
+    'simple_json_persistence': Accordion(
+        'simple_json_persistence',
+        'Flutter data storage based on simple json files.\nimport \'package:simple_json_persistence/simple_json_persistence.dart\'',
+        'https://pub.dev/packages/simple_json_persistence'),
+    'common_ui_toolkit': Accordion(
+        'common_ui_toolkit',
+        'common UI toolkit to clean your code and use it easily and reusable code.\nimport \'package:common_ui_toolkit/common_ui_toolkit.dart\'',
+        'https://pub.dev/packages/common_ui_toolkit'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

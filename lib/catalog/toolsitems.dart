@@ -1,4 +1,4 @@
-// ignore_for_file: no_logic_in_create_state, prefer_const_constructors, use_key_in_widget_constructors, avoid_print
+// ignore_for_file: no_logic_in_create_state, prefer_const_constructors, use_key_in_widget_constructors, avoid_print, unused_field
 import "dart:math";
 import '../widgettools/flashcards.dart';
 import 'package:flutter/material.dart';
