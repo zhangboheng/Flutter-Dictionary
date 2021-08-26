@@ -927,6 +927,26 @@ class _MyImageScreen extends State<PackageScreen> {
         'google_maps_cluster_manager',
         'A Flutter package to cluster items on a Google Maps widget based on Geohash. Highly inspired by clustering_google_maps.\nimport \'package:google_maps_cluster_manager/google_maps_cluster_manager.dart\'',
         'https://pub.dev/packages/google_maps_cluster_manager'),
+    'html': Accordion(
+        'html',
+        'APIs for parsing and manipulating HTML content outside the browser.\nimport \'package:html/dom.dart\'\nmore...',
+        'https://pub.dev/packages/html'),
+    'simple_tooltip': Accordion(
+        'simple_tooltip',
+        'A plugin for creating tooltips with shape of a balloon.\nimport \'package:simple_tooltip/simple_tooltip.dart\'',
+        'https://pub.dev/packages/simple_tooltip'),
+    'youtube_api': Accordion(
+        'youtube_api',
+        'A Flutter plugin for fetching interacting with YouTube Server to fetch data using API. Supports iOS and Android.\nimport \'package:youtube_api/youtube_api.dart\'',
+        'https://pub.dev/packages/youtube_api'),
+    'tabbed_view': Accordion(
+        'tabbed_view',
+        'Flutter widget inspired by the classic Desktop-style tab component. Supports customizable themes.\nimport \'package:tabbed_view/tabbed_view.dart\'',
+        'https://pub.dev/packages/tabbed_view'),
+    'simple_connection_checker': Accordion(
+        'simple_connection_checker',
+        'A simple package to check when the device is connected (connectivity) to internet. Also provide a method to listen for connection status changes.\nimport \'package:simple_connection_checker/simple_connection_checker.dart\'',
+        'https://pub.dev/packages/simple_connection_checker'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
