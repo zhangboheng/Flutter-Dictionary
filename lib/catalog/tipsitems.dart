@@ -311,6 +311,16 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to set statue bar colors, brightness and transparency',
         'Using Flutter, setting the style of the status bar can be done easily by using AppBar, SystemChrome, or AnnotatedRegion.',
         'assets/code/changestatuebar.dart'),
+    'how to set and get system clipboard data': Viewcode(
+        1,
+        'How to set and get system clipboard data',
+        'Flutter provides a utility named Clipboard that allows us to interact with the system clipboard.',
+        'assets/code/clipborddata.dart'),
+    'how to use hapticfeedback examples': Viewcode(
+        1,
+        'How to use hapticfeedback examples',
+        'The example show you how to trigger haptic feedback in Flutter which works on Android and iOS.',
+        'assets/code/clipborddata.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

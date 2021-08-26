@@ -113,6 +113,10 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
                 'Animated widget that automatically transitions its size over a given duration whenever the given child\'s size changes.\nAnimatedSize({Key? key, Widget? child, AlignmentGeometry alignment, Curve curve, required Duration duration, Duration? reverseDuration, required TickerProvider vsync, Clip clipBehavior})',
                 'https://api.flutter.dev/flutter/widgets/AnimatedSize-class.html'),
             Accordion(
+                'AnimatedSwitcher',
+                'A widget that by default does a cross-fade between a new widget and the widget previously set on the AnimatedSwitcher as a child.\nAnimatedSwitcher({Key? key, Widget? child, required Duration duration, Duration? reverseDuration, Curve switchInCurve, Curve switchOutCurve, AnimatedSwitcherTransitionBuilder transitionBuilder, AnimatedSwitcherLayoutBuilder layoutBuilder})',
+                'https://api.flutter.dev/flutter/widgets/AnimatedSwitcher-class.html'),
+            Accordion(
                 'AnimatedWidget',
                 'A widget that rebuilds when the given Listenable changes value.\nAnimatedWidget({Key? key, required Listenable listenable})',
                 'https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html'),
@@ -149,9 +153,17 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
                 'A widget that marks its child as being a candidate for hero animations.\nHero({Key? key, required Object tag, CreateRectTween? createRectTween, HeroFlightShuttleBuilder? flightShuttleBuilder, HeroPlaceholderBuilder? placeholderBuilder, bool transitionOnUserGestures, required Widget child})',
                 'https://api.flutter.dev/flutter/widgets/Hero-class.html'),
             Accordion(
+                'InteractiveViewer',
+                'A widget that enables pan and zoom interactions with its child.\nInteractiveViewer({Key? key, Clip clipBehavior, bool alignPanAxis, EdgeInsets boundaryMargin, bool constrained, double maxScale, double minScale, GestureScaleEndCallback? onInteractionEnd, GestureScaleStartCallback? onInteractionStart, GestureScaleUpdateCallback? onInteractionUpdate, bool panEnabled, bool scaleEnabled, TransformationController? transformationController, required Widget child})',
+                'https://api.flutter.dev/flutter/widgets/InteractiveViewer-class.html'),
+            Accordion(
                 'LinearProgressIndicator',
                 'A material design linear progress indicator, also known as a progress bar.\nLinearProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double? minHeight, String? semanticsLabel, String? semanticsValue})',
                 'https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html'),
+            Accordion(
+                'LongPressDraggable',
+                'Makes its child draggable starting from long press.\nLongPressDraggable({Key? key, required Widget child, required Widget feedback, T? data, Axis? axis, Widget? childWhenDragging, Offset feedbackOffset = Offset.zero',
+                'https://api.flutter.dev/flutter/widgets/LongPressDraggable-class.html'),
             Accordion(
                 'PositionedTransition',
                 'Animated version of Positioned which takes a specific Animation<RelativeRect> to transition the child\'s position from a start position to an end position over the lifetime of the animation.\nPositionedTransition({Key? key, required Animation<RelativeRect> rect, required Widget child})',

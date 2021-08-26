@@ -125,6 +125,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
                 'A ScrollView that creates custom scroll effects using slivers.\nCustomScrollView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, ScrollBehavior? scrollBehavior, bool shrinkWrap = false, Key? center, double anchor = 0.0, double? cacheExtent, List<Widget> slivers, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})',
                 'https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html'),
             Accordion(
+                'CustomSingleChildLayout',
+                'A widget that defers the layout of its single child to a delegate.\nCustomSingleChildLayout({Key? key, required SingleChildLayoutDelegate delegate, Widget? child})',
+                'https://api.flutter.dev/flutter/widgets/CustomSingleChildLayout-class.html'),
+            Accordion(
                 'DataTable',
                 'A material design data table.\nDataTable({Key? key, required List<DataColumn> columns, int? sortColumnIndex, bool sortAscending, ValueSetter<bool?>? onSelectAll, Decoration? decoration, MaterialStateProperty<Color?>? dataRowColor, double? dataRowHeight, TextStyle? dataTextStyle, MaterialStateProperty<Color?>? headingRowColor, double? headingRowHeight, TextStyle? headingTextStyle, double? horizontalMargin, double? columnSpacing, bool showCheckboxColumn, bool showBottomBorder, double? dividerThickness, required List<DataRow> rows, double? checkboxHorizontalMargin})',
                 'https://api.flutter.dev/flutter/material/DataTable-class.html'),
@@ -157,9 +161,25 @@ class _MyStatefulWidgetState extends State<Layouts> {
                 'The part of a material design AppBar that expands, collapses, and stretches.\nFlexibleSpaceBar({Key? key, Widget? title, Widget? background, bool? centerTitle, EdgeInsetsGeometry? titlePadding, CollapseMode collapseMode, List<StretchMode> stretchModes})',
                 'https://api.flutter.dev/flutter/material/FlexibleSpaceBar-class.html'),
             Accordion(
+                'Flow',
+                'A widget that sizes and positions children efficiently, according to the logic in a FlowDelegate.\nFlow({Key? key, required FlowDelegate delegate, List<Widget> children = const <Widget>[], Clip clipBehavior})',
+                'https://api.flutter.dev/flutter/widgets/Flow-class.html'),
+            Accordion(
                 'IndexedStack',
                 'A Stack that shows a single child from a list of children.\nStack({Key? key, AlignmentGeometry alignment, TextDirection? textDirection, StackFit fit, overflow, Clip clipBehavior, List<Widget> children = const <Widget>[]})',
                 'https://api.flutter.dev/flutter/widgets/IndexedStack-class.html'),
+            Accordion(
+                'InstrinsicHeight',
+                'A widget that sizes its child to the child\'s intrinsic height.\nIntrinsicHeight({Key? key, Widget? child})',
+                'https://api.flutter.dev/flutter/widgets/IntrinsicHeight-class.html'),
+            Accordion(
+                'IntrinsicWidth',
+                'A widget that sizes its child to the child\'s maximum intrinsic width.\nIntrinsicWidth({Key? key, double? stepWidth, double? stepHeight, Widget? child})',
+                'https://api.flutter.dev/flutter/widgets/IntrinsicWidth-class.html'),
+            Accordion(
+                'LimitedBox',
+                'A box that limits its size only when it\'s unconstrained.\nLimitedBox({Key? key, double maxWidth, double maxHeight, Widget? child})',
+                'https://api.flutter.dev/flutter/widgets/LimitedBox-class.html'),
             Accordion(
                 'LayoutBuilder',
                 'Builds a widget tree that can depend on the parent widget\'s size.\nLayoutBuilder({Key? key, required LayoutWidgetBuilder builder})',
@@ -224,6 +244,10 @@ class _MyStatefulWidgetState extends State<Layouts> {
                 'SizedBox',
                 'A box with a specified size.\nSizedBox({Key? key, double? width, double? height, Widget? child})',
                 'https://api.flutter.dev/flutter/widgets/SizedBox-class.html'),
+            Accordion(
+                'SizedOverflowBox',
+                'A widget that is a specific size but passes its original constraints through to its child, which may then overflow.\nSizedOverflowBox({Key? key, required Size size, AlignmentGeometry alignment, Widget? child})',
+                'https://api.flutter.dev/flutter/widgets/SizedOverflowBox-class.html'),
             Accordion(
                 'SliverAppBar',
                 'A material design app bar that integrates with a CustomScrollView.\nSliverAppBar({Key? key, Widget? leading, bool automaticallyImplyLeading, Widget? title, List<Widget>? actions, Widget? flexibleSpace, PreferredSizeWidget? bottom, double? elevation, Color? shadowColor, bool forceElevated, Color? backgroundColor, Color? foregroundColor, Brightness? brightness, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, TextTheme? textTheme, bool primary, bool? centerTitle, bool excludeHeaderSemantics, double? titleSpacing, double? collapsedHeight, double? expandedHeight, bool floating, bool pinned, bool snap, bool stretch, double stretchTriggerOffset, AsyncCallback? onStretchTrigger, ShapeBorder? shape, double toolbarHeight, double? leadingWidth, bool? backwardsCompatibility, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle})',

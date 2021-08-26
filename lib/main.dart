@@ -194,7 +194,7 @@ class _SecondScreenState extends State<SecondScreen> {
         'Align',
         'A widget that aligns its child within itself and optionally sizes itself based on the child\'s size.\nAlign({Key? key, AlignmentGeometry alignment, double? widthFactor, double? heightFactor, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/Align-class.html'),
-    'aspectRatio': Accordion(
+    'aspectratio': Accordion(
         'AspectRatio',
         'A widget that attempts to size the child to a specific aspect ratio.\nAspectRatio({Key? key, required double aspectRatio, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/AspectRatio-class.html'),
@@ -210,7 +210,7 @@ class _SecondScreenState extends State<SecondScreen> {
         'Column',
         'A widget that displays its children in a vertical array.\nColumn({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, MainAxisSize mainAxisSize = MainAxisSize.max, CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, TextBaseline? textBaseline, List<Widget> children = const <Widget>[]})',
         'https://api.flutter.dev/flutter/widgets/Column-class.html'),
-    'constrainedBox': Accordion(
+    'constrainedbox': Accordion(
         'ConstrainedBox',
         'A widget that imposes additional constraints on its child.\nConstrainedBox({Key? key, required BoxConstraints constraints, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/ConstrainedBox-class.html'),
@@ -234,7 +234,7 @@ class _SecondScreenState extends State<SecondScreen> {
         'SizedBox',
         'A box with a specified size.\nSizedBox({Key? key, double? width, double? height, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/SizedBox-class.html'),
-    'floatingActionButton': Accordion(
+    'floatingactionbutton': Accordion(
         'FloatingActionButton',
         'A material design floating action button.\nFloatingActionButton({Key? key, Widget? child, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag, double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback? onPressed, MouseCursor? mouseCursor, bool mini, ShapeBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, MaterialTapTargetSize? materialTapTargetSize, bool isExtended})\nFloatingActionButton.extended({Key? key, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Object? heroTag, double? elevation, double? focusElevation, double? hoverElevation, Color? splashColor, double? highlightElevation, double? disabledElevation, required VoidCallback? onPressed, MouseCursor? mouseCursor, ShapeBorder? shape, bool isExtended, MaterialTapTargetSize? materialTapTargetSize, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Widget? icon, required Widget label})',
         'https://api.flutter.dev/flutter/material/FloatingActionButton-class.html'),
@@ -264,7 +264,7 @@ class _SecondScreenState extends State<SecondScreen> {
         'Color',
         'An immutable 32 bit color value in ARGB format.\nColor(0xFF42A5F5);\nColor.fromARGB(0xFF, 0x42, 0xA5, 0xF5);\nColor.fromARGB(255, 66, 165, 245);\nColor.fromRGBO(66, 165, 245, 1.0);',
         'https://api.flutter.dev/flutter/dart-ui/Color-class.html'),
-    'popupMenuButton': Accordion(
+    'popupmenubutton': Accordion(
         'PopupMenuButton',
         'Displays a menu when pressed and calls onSelected when the menu is dismissed because an item was selected. The value passed to onSelected is the value of the selected menu item.\nPopupMenuButton({Key? key, required PopupMenuItemBuilder<T> itemBuilder, T? initialValue, PopupMenuItemSelected<T>? onSelected, PopupMenuCanceled? onCanceled, String? tooltip, double? elevation, EdgeInsetsGeometry padding, Widget? child, Widget? icon, double? iconSize, Offset offset, bool enabled, ShapeBorder? shape, Color? color, bool? enableFeedback})',
         'https://api.flutter.dev/flutter/material/PopupMenuButton-class.html'),
@@ -276,7 +276,7 @@ class _SecondScreenState extends State<SecondScreen> {
         'Slider',
         'A Material Design slider.\nSlider({Key? key, required double value, required ValueChanged<double>? onChanged, ValueChanged<double>? onChangeStart, ValueChanged<double>? onChangeEnd, double min, double max, int? divisions, String? label, Color? activeColor, Color? inactiveColor, MouseCursor? mouseCursor, SemanticFormatterCallback? semanticFormatterCallback, FocusNode? focusNode, bool autofocus})',
         'https://api.flutter.dev/flutter/material/Slider-class.html'),
-    'switchListTile': Accordion(
+    'switchListtile': Accordion(
         'SwitchListTile',
         'A ListTile with a Switch. In other words, a switch with a label.\nSwitchListTile({Key? key, required bool value, required ValueChanged<bool>? onChanged, Color? tileColor, Color? activeColor, Color? activeTrackColor, Color? inactiveThumbColor, Color? inactiveTrackColor, ImageProvider<Object>? activeThumbImage, ImageProvider<Object>? inactiveThumbImage, Widget? title, Widget? subtitle, bool isThreeLine, bool? dense, EdgeInsetsGeometry? contentPadding, Widget? secondary, bool selected, bool autofocus, ListTileControlAffinity controlAffinity, ShapeBorder? shape, Color? selectedTileColor})',
         'https://api.flutter.dev/flutter/material/SwitchListTile-class.html'),
@@ -293,7 +293,7 @@ class _SecondScreenState extends State<SecondScreen> {
         'A widget that positions its children relative to the edges of its box.\nStack({Key? key, AlignmentGeometry alignment, TextDirection? textDirection, StackFit fit, @Deprecated(\'Use clipBehavior instead. See the migration guide in flutter.dev/go/clip-behavior. '
             'This feature was deprecated after v1.22.0-12.0.pre.\') Overflow overflow, Clip clipBehavior, List<Widget> children = const <Widget>[]})',
         'https://api.flutter.dev/flutter/widgets/Stack-class.html'),
-    'showmodalbottomSheet': Accordion(
+    'showmodalbottomsheet': Accordion(
         'showModalBottomSheet',
         'Shows a modal material design bottom sheet.\n{required BuildContext context, required WidgetBuilder builder, Color? backgroundColor, double? elevation, ShapeBorder? shape, Clip? clipBehavior, Color? barrierColor, bool isScrollControlled = false, bool useRootNavigator = false, bool isDismissible = true, bool enableDrag = true, RouteSettings? routeSettings, AnimationController? transitionAnimationController}',
         'https://api.flutter.dev/flutter/material/SnackBar-class.html'),
@@ -357,11 +357,11 @@ class _SecondScreenState extends State<SecondScreen> {
         'ClipOval',
         'A widget that clips its child using an oval.\nClipOval({Key? key, CustomClipper<Rect>? clipper, Clip clipBehavior, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/ClipOval-class.html'),
-    'circularProgressIndicator': Accordion(
+    'circularprogressindicator': Accordion(
         'CircularProgressIndicator',
         'A material design circular progress indicator, which spins to indicate that the application is busy.\nCircularProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double strokeWidth, String? semanticsLabel, String? semanticsValue})',
         'https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html'),
-    'linearProgressIndicator': Accordion(
+    'linearprogressindicator': Accordion(
         'LinearProgressIndicator',
         'A material design linear progress indicator, also known as a progress bar.\nLinearProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double? minHeight, String? semanticsLabel, String? semanticsValue})',
         'https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html'),
@@ -759,7 +759,7 @@ class _SecondScreenState extends State<SecondScreen> {
         'WillPopScope',
         'Registers a callback to veto attempts by the user to dismiss the enclosing ModalRoute.\nWillPopScope({Key? key, required Widget child, required WillPopCallback? onWillPop})',
         'https://api.flutter.dev/flutter/widgets/WillPopScope-class.html'),
-    'orientationBuilder': Accordion(
+    'orientationbuilder': Accordion(
         'OrientationBuilder',
         'Builds a widget tree that can depend on the parent widget\'s orientation (distinct from the device orientation).\nOrientationBuilder({Key? key, required OrientationWidgetBuilder builder})',
         'https://api.flutter.dev/flutter/widgets/OrientationBuilder-class.html'),
@@ -771,7 +771,7 @@ class _SecondScreenState extends State<SecondScreen> {
         'StreamBuilder',
         'Widget that builds itself based on the latest snapshot of interaction with a Stream.\nStreamBuilder({Key? key, T? initialData, Stream<T>? stream, required AsyncWidgetBuilder<T> builder})',
         'https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html'),
-    'annotatedRegion': Accordion(
+    'annotatedregion': Accordion(
         'AnnotatedRegion',
         'Annotates a region of the layer tree with a value.\nAnnotatedRegion({Key? key, required Widget child, required T value, bool sized})',
         'https://api.flutter.dev/flutter/widgets/AnnotatedRegion-class.html'),
@@ -780,14 +780,63 @@ class _SecondScreenState extends State<SecondScreen> {
         'A widget that annotates the widget tree with a description of the meaning of the widgets.\nSemantics({Key? key, Widget? child, bool container = false, bool explicitChildNodes = false, bool excludeSemantics = false, bool? enabled, bool? checked, bool? selected, bool? toggled, bool? button, bool? slider, bool? keyboardKey, bool? link, bool? header, bool? textField, bool? readOnly, bool? focusable, bool? focused, bool? inMutuallyExclusiveGroup, bool? obscured, bool? multiline, bool? scopesRoute, bool? namesRoute, bool? hidden, bool? image, bool? liveRegion, int? maxValueLength, int? currentValueLength, String? label, String? value, String? increasedValue, String? decreasedValue, String? hint, String? onTapHint, String? onLongPressHint, TextDirection? textDirection, SemanticsSortKey? sortKey, SemanticsTag? tagForChildren, VoidCallback? onTap, VoidCallback? onLongPress, VoidCallback? onScrollLeft, VoidCallback? onScrollRight, VoidCallback? onScrollUp, VoidCallback? onScrollDown, VoidCallback? onIncrease, VoidCallback? onDecrease, VoidCallback? onCopy, VoidCallback? onCut, VoidCallback? onPaste, VoidCallback? onDismiss, MoveCursorHandler? onMoveCursorForwardByCharacter, MoveCursorHandler? onMoveCursorBackwardByCharacter, SetSelectionHandler? onSetSelection, SetTextHandler? onSetText, VoidCallback? onDidGainAccessibilityFocus, VoidCallback? onDidLoseAccessibilityFocus, Map<CustomSemanticsAction, VoidCallback>? customSemanticsActions})\n'
             'Semantics.fromProperties({Key? key, Widget? child, bool container, bool explicitChildNodes, bool excludeSemantics, required SemanticsProperties properties})',
         'https://api.flutter.dev/flutter/material/Theme-class.html'),
-    'BlockSemantics': Accordion(
+    'blocksemantics': Accordion(
         'BlockSemantics',
         'A widget that drops the semantics of all widget that were painted before it in the same semantic container.\nBlockSemantics({Key? key, bool blocking, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/BlockSemantics-class.html'),
-    'ExcludeSemantics': Accordion(
+    'excludesemantics': Accordion(
         'ExcludeSemantics',
         'A widget that drops all the semantics of its descendants.\nExcludeSemantics({Key? key, bool excluding, Widget? child})',
         'https://api.flutter.dev/flutter/widgets/ExcludeSemantics-class.html'),
+    'flow': Accordion(
+        'Flow',
+        'A widget that sizes and positions children efficiently, according to the logic in a FlowDelegate.\nFlow({Key? key, required FlowDelegate delegate, List<Widget> children = const <Widget>[], Clip clipBehavior})\n'
+            'Flow.unwrapped({Key? key, required FlowDelegate delegate, List<Widget> children = const <Widget>[], Clip clipBehavior})',
+        'https://api.flutter.dev/flutter/widgets/Flow-class.html'),
+    'animatedswitcher': Accordion(
+        'AnimatedSwitcher',
+        'A widget that by default does a cross-fade between a new widget and the widget previously set on the AnimatedSwitcher as a child.\nAnimatedSwitcher({Key? key, Widget? child, required Duration duration, Duration? reverseDuration, Curve switchInCurve, Curve switchOutCurve, AnimatedSwitcherTransitionBuilder transitionBuilder, AnimatedSwitcherLayoutBuilder layoutBuilder})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedSwitcher-class.html'),
+    'sizedoverflowbox': Accordion(
+        'SizedOverflowBox',
+        'A widget that is a specific size but passes its original constraints through to its child, which may then overflow.\nSizedOverflowBox({Key? key, required Size size, AlignmentGeometry alignment, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/SizedOverflowBox-class.html'),
+    'longpressdraggable': Accordion(
+        'LongPressDraggable',
+        'Makes its child draggable starting from long press.\nLongPressDraggable({Key? key, required Widget child, required Widget feedback, T? data, Axis? axis, Widget? childWhenDragging, Offset feedbackOffset = Offset.zero',
+        'https://api.flutter.dev/flutter/widgets/LongPressDraggable-class.html'),
+    'intrinsicwidth': Accordion(
+        'IntrinsicWidth',
+        'A widget that sizes its child to the child\'s maximum intrinsic width.\nIntrinsicWidth({Key? key, double? stepWidth, double? stepHeight, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/IntrinsicWidth-class.html'),
+    'customsinglechildlayout': Accordion(
+        'CustomSingleChildLayout',
+        'A widget that defers the layout of its single child to a delegate.\nCustomSingleChildLayout({Key? key, required SingleChildLayoutDelegate delegate, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/CustomSingleChildLayout-class.html'),
+    'interactiveviewer': Accordion(
+        'InteractiveViewer',
+        'A widget that enables pan and zoom interactions with its child.\nInteractiveViewer({Key? key, Clip clipBehavior, bool alignPanAxis, EdgeInsets boundaryMargin, bool constrained, double maxScale, double minScale, GestureScaleEndCallback? onInteractionEnd, GestureScaleStartCallback? onInteractionStart, GestureScaleUpdateCallback? onInteractionUpdate, bool panEnabled, bool scaleEnabled, TransformationController? transformationController, required Widget child})',
+        'https://api.flutter.dev/flutter/widgets/InteractiveViewer-class.html'),
+    'limitedbox': Accordion(
+        'LimitedBox',
+        'A box that limits its size only when it\'s unconstrained.\nLimitedBox({Key? key, double maxWidth, double maxHeight, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/LimitedBox-class.html'),
+    'strutstyle': Accordion(
+        'StrutStyle',
+        'StrutStyle, the class in the painting library.\nStrutStyle({String? fontFamily, List<String>? fontFamilyFallback, double? fontSize, double? height, TextLeadingDistribution? leadingDistribution, double? leading, FontWeight? fontWeight, FontStyle? fontStyle, bool? forceStrutHeight})',
+        'https://api.flutter.dev/flutter/dart-ui/StrutStyle-class.html'),
+    'togglebuttons': Accordion(
+        'ToggleButtons',
+        'A widget that applies a mask generated by a Shader to its child.\nToggleButtons({Key? key, required List<Widget> children, required List<bool> isSelected, void onPressed(int index)?, MouseCursor? mouseCursor, TextStyle? textStyle, BoxConstraints? constraints, Color? color, Color? selectedColor, Color? disabledColor, Color? fillColor, Color? focusColor, Color? highlightColor, Color? hoverColor, Color? splashColor, List<FocusNode>? focusNodes, bool renderBorder, Color? borderColor, Color? selectedBorderColor, Color? disabledBorderColor, BorderRadius? borderRadius, double? borderWidth, Axis direction, VerticalDirection verticalDirection})',
+        'https://api.flutter.dev/flutter/material/ToggleButtons-class.html'),
+    'shadermask': Accordion(
+        'ShaderMask',
+        'A widget that applies a mask generated by a Shader to its child.\nShaderMask({Key? key, required ShaderCallback shaderCallback, BlendMode blendMode, Widget? child})',
+        'https://api.flutter.dev/flutter/widgets/ShaderMask-class.html'),
+    'colorfilter': Accordion(
+        'ColorFilter',
+        'A description of a color filter to apply when drawing a shape or compositing a layer with a particular Paint.',
+        'https://api.flutter.dev/flutter/dart-ui/ColorFilter-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];
