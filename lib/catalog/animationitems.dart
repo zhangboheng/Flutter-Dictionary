@@ -101,6 +101,10 @@ class _MyStatefulWidgetState extends State<AnimationItems> {
                 'Animated version of Opacity which automatically transitions the child\'s opacity over a given duration whenever the given opacity changes.\nAnimatedOpacity({Key? key, Widget? child, required double opacity, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd, bool alwaysIncludeSemantics})',
                 'https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html'),
             Accordion(
+                'AnimatedPadding',
+                'Animated version of Padding which automatically transitions the indentation over a given duration whenever the given inset changes.\nAnimatedPadding({Key? key, required EdgeInsetsGeometry padding, Widget? child, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+                'https://api.flutter.dev/flutter/widgets/AnimatedPadding-class.html'),
+            Accordion(
                 'AnimatedPhysicalModel',
                 'Animated version of PhysicalModel.\nAnimatedPhysicalModel({Key? key, required Widget child, required BoxShape shape, Clip clipBehavior, BorderRadius borderRadius, required double elevation, required Color color, bool animateColor, required Color shadowColor, bool animateShadowColor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
                 'https://api.flutter.dev/flutter/widgets/AnimatedPhysicalModel-class.html'),

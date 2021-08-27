@@ -529,6 +529,10 @@ class _SecondScreenState extends State<SecondScreen> {
         'AnimatedOpacity',
         'Animated version of Opacity which automatically transitions the child\'s opacity over a given duration whenever the given opacity changes.\nAnimatedOpacity({Key? key, Widget? child, required double opacity, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd, bool alwaysIncludeSemantics})',
         'https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html'),
+    'animatedpadding': Accordion(
+        'AnimatedPadding',
+        'Animated version of Padding which automatically transitions the indentation over a given duration whenever the given inset changes.\nAnimatedPadding({Key? key, required EdgeInsetsGeometry padding, Widget? child, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
+        'https://api.flutter.dev/flutter/widgets/AnimatedPadding-class.html'),
     'animatedphysicalmodel': Accordion(
         'AnimatedPhysicalModel',
         'Animated version of PhysicalModel.\nAnimatedPhysicalModel({Key? key, required Widget child, required BoxShape shape, Clip clipBehavior, BorderRadius borderRadius, required double elevation, required Color color, bool animateColor, required Color shadowColor, bool animateShadowColor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})',
@@ -837,6 +841,42 @@ class _SecondScreenState extends State<SecondScreen> {
         'ColorFilter',
         'A description of a color filter to apply when drawing a shape or compositing a layer with a particular Paint.',
         'https://api.flutter.dev/flutter/dart-ui/ColorFilter-class.html'),
+    'unconstrainedbox': Accordion(
+        'UnconstrainedBox',
+        'A widget that imposes no constraints on its child, allowing it to render at its "natural" size.\nUnconstrainedBox({Key? key, Widget? child, TextDirection? textDirection, AlignmentGeometry alignment, Axis? constrainedAxis, Clip clipBehavior})',
+        'https://api.flutter.dev/flutter/widgets/UnconstrainedBox-class.html'),
+    'draggablescrollablesheet': Accordion(
+        'DraggableScrollableSheet',
+        'A container for a Scrollable that responds to drag gestures by resizing the scrollable until a limit is reached, and then scrolling.\nDraggableScrollableSheet({Key? key, double initialChildSize, double minChildSize, double maxChildSize, bool expand, required ScrollableWidgetBuilder builder})',
+        'https://api.flutter.dev/flutter/widgets/DraggableScrollableSheet-class.html'),
+    'divider': Accordion(
+        'Divider',
+        'A thin horizontal line, with padding on either side.\nDivider({Key? key, double? height, double? thickness, double? indent, double? endIndent, Color? color})',
+        'https://api.flutter.dev/flutter/material/Divider-class.html'),
+    'verticaldivider': Accordion(
+        'VerticalDivider',
+        'A thin vertical line, with padding on either side.\nVerticalDivider({Key? key, double? width, double? thickness, double? indent, double? endIndent, Color? color})',
+        'https://api.flutter.dev/flutter/material/VerticalDivider-class.html'),
+    'choicechip': Accordion(
+        'ChoiceChip',
+        'A material design choice chip.\nChoiceChip({Key? key, Widget? avatar, required Widget label, TextStyle? labelStyle, EdgeInsetsGeometry? labelPadding, ValueChanged<bool>? onSelected, double? pressElevation, required bool selected, Color? selectedColor, Color? disabledColor, String? tooltip, BorderSide? side, OutlinedBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Color? backgroundColor, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, MaterialTapTargetSize? materialTapTargetSize, double? elevation, Color? shadowColor, Color? selectedShadowColor, ShapeBorder avatarBorder})',
+        'https://api.flutter.dev/flutter/material/ChoiceChip-class.html'),
+    'filterchip': Accordion(
+        'FilterChip',
+        'A material design filter chip.\nFilterChip({Key? key, Widget? avatar, required Widget label, TextStyle? labelStyle, EdgeInsetsGeometry? labelPadding, bool selected, required ValueChanged<bool>? onSelected, double? pressElevation, Color? disabledColor, Color? selectedColor, String? tooltip, BorderSide? side, OutlinedBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Color? backgroundColor, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, MaterialTapTargetSize? materialTapTargetSize, double? elevation, Color? shadowColor, Color? selectedShadowColor, bool? showCheckmark, Color? checkmarkColor, ShapeBorder avatarBorder})',
+        'https://api.flutter.dev/flutter/material/FilterChip-class.html'),
+    'inputchip': Accordion(
+        'InputChip',
+        'A material design input chip.\nInputChip({Key? key, Widget? avatar, required Widget label, TextStyle? labelStyle, EdgeInsetsGeometry? labelPadding, bool selected, bool isEnabled, ValueChanged<bool>? onSelected, Widget? deleteIcon, VoidCallback? onDeleted, Color? deleteIconColor, bool useDeleteButtonTooltip, String? deleteButtonTooltipMessage, VoidCallback? onPressed, double? pressElevation, Color? disabledColor, Color? selectedColor, String? tooltip, BorderSide? side, OutlinedBorder? shape, Clip clipBehavior, FocusNode? focusNode, bool autofocus, Color? backgroundColor, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, MaterialTapTargetSize? materialTapTargetSize, double? elevation, Color? shadowColor, Color? selectedShadowColor, bool? showCheckmark, Color? checkmarkColor, ShapeBorder avatarBorder})',
+        'https://api.flutter.dev/flutter/material/InputChip-class.html'),
+    'listwheelscrollview': Accordion(
+        'ListWheelScrollView',
+        'A box in which children on a wheel can be scrolled.\nListWheelScrollView({Key? key, ScrollController? controller, ScrollPhysics? physics, double diameterRatio, double perspective, double offAxisFraction, bool useMagnifier, double magnification, double overAndUnderCenterOpacity, required double itemExtent, double squeeze, ValueChanged<int>? onSelectedItemChanged, bool renderChildrenOutsideViewport, Clip clipBehavior, String? restorationId, ScrollBehavior? scrollBehavior, required List<Widget> children})',
+        'https://api.flutter.dev/flutter/widgets/ListWheelScrollView-class.html'),
+    'borderside': Accordion(
+        'BorderSide',
+        'A side of a border of a box.\nBorderSide({Color color, double width, BorderStyle style})',
+        'https://api.flutter.dev/flutter/painting/BorderSide-class.html'),
   };
   // This list holds the data for the list view
   var _foundUsers = <Widget>[];

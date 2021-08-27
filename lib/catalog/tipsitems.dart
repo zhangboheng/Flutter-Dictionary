@@ -321,6 +321,16 @@ class _MyImageScreen extends State<TipsScreen> {
         'How to use hapticfeedback examples',
         'The example show you how to trigger haptic feedback in Flutter which works on Android and iOS.',
         'assets/code/clipborddata.dart'),
+    'a switch input example': Viewcode(
+        1,
+        'A switch input example',
+        'Switch has two required attributes: value and onSwitchChange. The value passed on value attribute will determine whether it\'s active or inactive.',
+        'assets/code/switchinput.dart'),
+    'a slider input example': Viewcode(
+        1,
+        'a slider input example',
+        'A Slider is an input widget where user can set a value by dragging to or pressing on desired position.',
+        'assets/code/sliderinput.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

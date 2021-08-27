@@ -36,7 +36,7 @@ class MyAppScreenState extends State<MyAppScreen> {
 
   Future<List<String>> _loadQuestions() async {
     List<String> questions = [];
-    await rootBundle.loadString('assets/text/test.txt').then((q) {
+    await rootBundle.loadString('assets/test/file.txt').then((q) {
       for (String i in LineSplitter().convert(q)) {
         questions.add(i);
       }

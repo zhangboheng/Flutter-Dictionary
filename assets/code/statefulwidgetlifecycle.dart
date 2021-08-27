@@ -180,7 +180,8 @@ reinserted before the current frame change is finished.
 This method exists basically because State objects can be moved from one point 
 in a tree to another.
 
-9. dispose()
+9. 
+()
 
 'dispose()' is called when the State object is removed, which is permanent.
 

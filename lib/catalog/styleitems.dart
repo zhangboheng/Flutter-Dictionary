@@ -93,6 +93,10 @@ class _MyStatefulWidgetState extends State<StyleItems> {
                 'A widget that drops the semantics of all widget that were painted before it in the same semantic container.\nBlockSemantics({Key? key, bool blocking, Widget? child})',
                 'https://api.flutter.dev/flutter/widgets/BlockSemantics-class.html'),
             Accordion(
+                'BorderSide',
+                'A side of a border of a box.\nBorderSide({Color color, double width, BorderStyle style})',
+                'https://api.flutter.dev/flutter/painting/BorderSide-class.html'),
+            Accordion(
                 'ColorFilter',
                 'A description of a color filter to apply when drawing a shape or compositing a layer with a particular Paint.',
                 'https://api.flutter.dev/flutter/dart-ui/ColorFilter-class.html'),
