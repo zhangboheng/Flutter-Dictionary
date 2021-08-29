@@ -1219,6 +1219,42 @@ class _MyImageScreen extends State<PackageScreen> {
         'fl_camera',
         'Support Android / IOS, Android uses camerx.\npackage:fl_camera/fl_camera.dart\'',
         'https://pub.dev/packages/fl_camera'),
+    'flutter_svg_provider': Accordion(
+        'flutter_svg_provider',
+        'Generate image provider from svg path, use flutter_svg as a dependency.\npackage:flutter_svg_provider/flutter_svg_provider.dart\'',
+        'https://pub.dev/packages/flutter_svg_provider'),
+    'hidden_drawer_menu': Accordion(
+        'hidden_drawer_menu',
+        'Hidden Drawer Menu is a library for adding a beautiful drawer mode menu feature with perspective animation.\npackage:hidden_drawer_menu/hidden_drawer_menu.dart\'',
+        'https://pub.dev/packages/hidden_drawer_menu'),
+    'responsive_navbar': Accordion(
+        'responsive_navbar',
+        'A responsive Navigation Bar for each field of use.\npackage:responsive_navbar/responsive_navbar.dart\'',
+        'https://pub.dev/packages/responsive_navbar'),
+    'postgres': Accordion(
+        'postgres',
+        'A library for connecting to and querying PostgreSQL databases.\npackage:postgres/postgres.dart\'',
+        'https://pub.dev/packages/postgres'),
+    'simple_audio_player': Accordion(
+        'simple_audio_player',
+        'A simple audio player for Flutter.\npackage:simple_audio_player/simple_audio_player.dart\'',
+        'https://pub.dev/packages/simple_audio_player'),
+    'DevilF Engine': Accordion(
+        'DevilF Engine',
+        'A Flutter 2D RPG Game Engine On Web & Android & IOS.\npackage:devilf_engine/devilf_engine.dart\'',
+        'https://pub.dev/packages/devilf_engine'),
+    'flutter_hidden_drawer': Accordion(
+        'flutter_hidden_drawer',
+        'Tooltip function built in for flutter.\npackage:flutter_hidden_drawer/flutter_hidden_drawer.dart\'',
+        'https://pub.dev/packages/flutter_hidden_drawer'),
+    'glass': Accordion(
+        'glass',
+        'Easily convert any Widget into a glass / frosted glass version of itself, following the glassmorphism / glassmorphic design trend.\npackage:glass/glass.dart\'',
+        'https://pub.dev/packages/glass'),
+    'flutter_tencentad': Accordion(
+        'flutter_tencentad',
+        'flutter_tencentad是一款集成了腾讯优量汇广告Android和iOSSDK的Flutter插件,方便直接调用优量汇广告SDK方法快速开发.\npackage:flutter_tencentad/flutter_tencentad.dart\'',
+        'https://pub.dev/packages/flutter_tencentad'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
