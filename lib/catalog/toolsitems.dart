@@ -27,7 +27,6 @@ class _MyImageScreen extends State<ToolsScreen> {
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) {
           _interstitialAd = ad;
-
           ad.fullScreenContentCallback = FullScreenContentCallback(
             onAdDismissedFullScreenContent: (ad) {
               Navigator.of(context).pop();

@@ -27,6 +27,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  babstrap_settings_screen: ^0.1.0
   carousel_slider: ^4.0.0
   connectivity_plus: ^1.1.0
   dotted_border: ^2.0.0+1
@@ -37,7 +38,7 @@ dependencies:
   flutter_rating_bar: ^4.0.0
   fluttertoast: ^8.0.8
   google_fonts: ^2.1.0
-  google_mobile_ads: ^0.13.3
+  google_mobile_ads: ^0.13.4
   group_list_view: ^1.1.1
   image_picker: ^0.8.3+2
   local_auth: ^1.1.6

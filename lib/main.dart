@@ -2,6 +2,7 @@
 import 'index.dart';
 import 'dart:math';
 import 'dart:async';
+import 'ad-helper.dart';
 import 'dart:collection';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -9,8 +10,8 @@ import 'package:flutter/rendering.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'ad-helper.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -1377,43 +1378,41 @@ class _SettingsState extends State<Settings> {
           title: const Text('Settings'),
         ),
         body: Scrollbar(
-          child: SingleChildScrollView(
-              child: Column(children: <Widget>[
-            Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: const <Widget>[
-                      Padding(padding: EdgeInsets.only(left: 15.00)),
-                      Icon(Icons.dark_mode_outlined),
-                      Padding(padding: EdgeInsets.only(left: 5.00)),
-                      SizedBox(
-                        width: 100.0,
-                        child: Text('Dark Mode'),
-                      )
-                    ],
-                  ),
-                  Switch(
-                    value: widget.themed,
-                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                    onChanged: (value) {
-                      setState(() {
-                        isSwitched = value;
-                        if (isSwitched == true) {
-                          MyApp.themeNotifier.value = ThemeMode.dark;
-                        } else {
-                          MyApp.themeNotifier.value = ThemeMode.light;
-                        }
-                      });
-                    },
-                    activeTrackColor: Colors.lightBlue[200],
-                    activeColor: Colors.blue,
-                  ),
-                ]),
-          ])),
-        ),
+            child: ListView(children: [
+          Padding(padding: EdgeInsets.only(top: 20)),
+          SettingsGroup(
+            settingsGroupTitle: 'System Mode',
+            settingsGroupTitleStyle: TextStyle(fontSize: 20),
+            iconItemSize: 30,
+            items: [
+              SettingsItem(
+                onTap: () {},
+                icons: MyApp.themeNotifier.value == ThemeMode.dark
+                    ? Icons.dark_mode_rounded
+                    : Icons.light_mode_rounded,
+                iconStyle: IconStyle(
+                  iconsColor: Colors.white,
+                  withBackground: true,
+                  backgroundColor: Colors.red,
+                ),
+                title: 'Dark mode',
+                titleStyle: TextStyle(color: Colors.black),
+                subtitle: "Automatic",
+                trailing: Switch.adaptive(
+                  value: widget.themed,
+                  onChanged: (value) {
+                    isSwitched = value;
+                    if (isSwitched == true) {
+                      MyApp.themeNotifier.value = ThemeMode.dark;
+                    } else {
+                      MyApp.themeNotifier.value = ThemeMode.light;
+                    }
+                  },
+                ),
+              ),
+            ],
+          ),
+        ])),
       ),
     );
   }

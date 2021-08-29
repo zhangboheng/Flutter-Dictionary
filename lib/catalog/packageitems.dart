@@ -947,6 +947,278 @@ class _MyImageScreen extends State<PackageScreen> {
         'simple_connection_checker',
         'A simple package to check when the device is connected (connectivity) to internet. Also provide a method to listen for connection status changes.\nimport \'package:simple_connection_checker/simple_connection_checker.dart\'',
         'https://pub.dev/packages/simple_connection_checker'),
+    'custom_page_transitions': Accordion(
+        'custom_page_transitions',
+        'This package helps to handle the animations of the screen transitions in an elegant and simple way.\nimport \'package:custom_page_transitions/custom_page_transitions.dart\'',
+        'https://pub.dev/packages/custom_page_transitions'),
+    'flutter_flame_architecture': Accordion(
+        'flutter_flame_architecture',
+        'Use flutter(like) widgets inside Flame. Zoom, Scroll, Wrap, Grid, SafeArea, ... You can use them all in combination with flame thanks to this intuitive package.\nimport \'package:flutter_flame_architecture/flutter_flame_architecture.dart\'',
+        'https://pub.dev/packages/flutter_flame_architecture'),
+    'contextmenu': Accordion(
+        'contextmenu',
+        'Display a beautifully animated, material context menu using pure Flutter.\nimport \'package:contextmenu/contextmenu.dart\'',
+        'https://pub.dev/packages/contextmenu'),
+    'textfield_tags': Accordion(
+        'textfield_tags',
+        'This is a widget that allows your users to create tags by entering the tag\'s name inside of textfield and make the tags appear in the textfield.\nimport \'package:textfield_tags/textfield_tags.dart\'',
+        'https://pub.dev/packages/textfield_tags'),
+    'supabase': Accordion(
+        'supabase',
+        'A Dart client for Supabase.\nimport \'package:supabase/supabase.dart\'',
+        'https://pub.dev/packages/supabase'),
+    'universal_scroll_view': Accordion(
+        'universal_scroll_view',
+        'Universal Scroll View is a cross platform package which base on Flutter framework.\nimport \'package:universal_scroll_view/universal_single_child_scroll_view.dart\'',
+        'https://pub.dev/packages/universal_scroll_view'),
+    'fl_location': Accordion(
+        'fl_location',
+        'A plugin that can access the location services of each platform and collect device location data.\nimport \'package:fl_location/fl_location.dart\'',
+        'https://pub.dev/packages/fl_location'),
+    'fl_location_platform_interface': Accordion(
+        'fl_location_platform_interface',
+        'A common platform interface for the fl_location plugin.\nimport \'package:fl_location_platform_interface/fl_location_platform_interface.dart\'',
+        'https://pub.dev/packages/fl_location_platform_interface'),
+    'flutter_echarts': Accordion(
+        'lutter_echarts',
+        'A Flutter widget to use Apache ECharts in a reactive way.\nimport \'package:flutter_echarts/flutter_echarts.dart\'',
+        'https://pub.dev/packages/flutter_echarts'),
+    'geofence_service': Accordion(
+        'geofence_service',
+        'This plugin is a geofence service with activity recognition API.\nimport \'package:geofence_service/geofence_service.dart\'',
+        'https://pub.dev/packages/geofence_service'),
+    'poly_geofence_service': Accordion(
+        'poly_geofence_service',
+        'This plugin is a service that can perform geo-fencing by creating a polygon geofence. \nimport \'package:poly_geofence_service/poly_geofence_service.dart\'',
+        'https://pub.dev/packages/poly_geofence_service'),
+    'fl_mlkit_scanning': Accordion(
+        'fl_mlkit_scanning',
+        'Realize fast and stable code scanning function based on Google ML Kit, and support Android, iOS.\nimport \'package:fl_mlkit_scanning/fl_mlkit_scanning.dart\'',
+        'https://pub.dev/packages/fl_mlkit_scanning'),
+    'fl_amap': Accordion(
+        'fl_amap',
+        '高德地图定位flutter组件.\nimport \'package:fl_amap/fl_amap.dart\'',
+        'https://pub.dev/packages/fl_amap'),
+    'visa': Accordion(
+        'visa',
+        'This is an OAuth 2.0 package that makes it super easy to add third party authentication to flutter apps.\nimport \'package:visa/auth-data.dart\'\nmore...',
+        'https://pub.dev/packages/visa'),
+    'bonfire': Accordion(
+        'bonfire',
+        'Build RPG games and similar with the power of FlameEngine!\nimport \'package:bonfire/bonfire.dart\'',
+        'https://pub.dev/packages/bonfire'),
+    'mop': Accordion(
+        'mop',
+        '本插件提供在 Flutter 运行环境中运行小程序能力.\nimport \'package:mop/mop.dart\'',
+        'https://pub.dev/packages/mop'),
+    'banai_tabbar': Accordion(
+        'banai_tabbar',
+        'This plug-in is designed to solve the problem of jitter in enlarging and reducing the tabbar font of flutter.\nimport \'package:banai_tabbar/banai_tabbar.dart\'',
+        'https://pub.dev/packages/banai_tabbar'),
+    'keybord_library': Accordion(
+        'keybord_library',
+        'a flutter keyboard library.\nimport \'package:keybord_library/keybord_library.dart\'',
+        'https://pub.dev/packages/keybord_library'),
+    'r_get_ip': Accordion(
+        'r_get_ip',
+        'A new Flutter project about get ip address.\nimport \'package:r_get_ip/r_get_ip.dart\'',
+        'https://pub.dev/packages/r_get_ip'),
+    'stylish_dialog': Accordion(
+        'stylish_dialog',
+        'A collection of stylish animated dialogs like Normal, Progress, Success, Info, Warning, and Error for flutter.\nimport \'package:stylish_dialog/stylish_dialog.dart\'',
+        'https://pub.dev/packages/stylish_dialog'),
+    'flutter_animation_progress_bar': Accordion(
+        'flutter_animation_progress_bar',
+        'This colorful Flutter widget package aims to show an animation progress bar in reactive style.\nimport \'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart\'',
+        'https://pub.dev/packages/flutter_animation_progress_bar'),
+    'flutter_scale_ruler': Accordion(
+        'flutter_scale_ruler',
+        'A simple scale ruler for adding length in feet and inches and cms.\nimport \'package:flutter_scale_ruler/flutter_scale_ruler.dart\'',
+        'https://pub.dev/packages/flutter_scale_ruler'),
+    'easy_firebase_auth': Accordion(
+        'easy_firebase_auth',
+        'Add Firebase authentication to your Flutter app with a few lines of code.\nimport \'package:easy_firebase_auth/easy_firebase_auth.dart\'',
+        'https://pub.dev/packages/easy_firebase_auth'),
+    'get': Accordion(
+        'get',
+        'Open screens/snackbars/dialogs without context, manage states and inject dependencies easily with GetX.\nimport \'package:get/get.dart\'',
+        'https://pub.dev/packages/get'),
+    'image_cropping': Accordion(
+        'image_cropping',
+        'This package helps you to crop image with ratio and free scale.\nimport \'package:image_cropping/image_cropping.dart\'',
+        'https://pub.dev/packages/image_cropping'),
+    'hydrated': Accordion(
+        'hydrated',
+        'Hydrated provides a Subject that automatically persists to Flutter\'s local storage and hydrates on creation!\nimport \'package:hydrated/hydrated.dart\'',
+        'https://pub.dev/packages/hydrated'),
+    'open_weather_map_client': Accordion(
+        'open_weather_map_client',
+        'Package that communicates with Open Weather Map to obtain climate data in a model.\nimport \'package:open_weather_map_client/open_weather_map_client.dart\'',
+        'https://pub.dev/packages/open_weather_map_client'),
+    'progress_loading_button': Accordion(
+        'progress_loading_button',
+        'A Material Flutter Button that supports variety of button styles.\nimport \'package:progress_loading_button/progress_loading_button.dart\'',
+        'https://pub.dev/packages/progress_loading_button'),
+    'babstrap_settings_screen': Accordion(
+        'babstrap_settings_screen',
+        'This package helps you to display a nice settings screen with Flutter in a very simple and fast way.\nimport \'package:babstrap_settings_screen/babstrap_settings_screen.dart\'',
+        'https://pub.dev/packages/babstrap_settings_screen'),
+    'appodeal_flutter': Accordion(
+        'appodeal_flutter',
+        'A Flutter plugin to display ads from Appodeal. It currently supports Banner, Interstitial, Reward and Non-Skippable ads.\nimport \'package:appodeal_flutter/appodeal_flutter.dart\'',
+        'https://pub.dev/packages/appodeal_flutter'),
+    'flutter_siri_suggestions': Accordion(
+        'flutter_siri_suggestions',
+        'Flutter plugin for exposure on Siri Suggestions.\nimport \'package:flutter_siri_suggestions/flutter_siri_suggestions.dart\'',
+        'https://pub.dev/packages/flutter_siri_suggestions'),
+    'video_editor': Accordion(
+        'video_editor',
+        'Video Editor allows trim, crop, rotate and scale video with a super flexible UI Design.\nimport \'package:video_editor/video_editor.dart\'',
+        'https://pub.dev/packages/video_editor'),
+    'flutter_lid': Accordion(
+        'flutter_lid',
+        'A Flutter library built to expose widgets that integrate with state notifier. Built to work with the state_notifier state management packages.\nimport \'package:flutter_lid/flutter_lid.dart\'',
+        'https://pub.dev/packages/flutter_lid'),
+    'floating_pullup_card': Accordion(
+        'floating_pullup_card',
+        'A beautiful and custom floating pull up style Card for flutter.\nimport \'package:floating_pullup_card/floating_pullup_card.dart\'',
+        'https://pub.dev/packages/floating_pullup_card'),
+    'responsive_grid_list': Accordion(
+        'responsive_grid_list',
+        'A Flutter plugin to create responsive grid lists using ListView.builder() or SliverList with a SliverChildBuilderDelegate.\nimport \'package:responsive_grid_list/responsive_grid_list.dart\'',
+        'https://pub.dev/packages/responsive_grid_list'),
+    'flutter_placeholder_textlines': Accordion(
+        'flutter_placeholder_textlines',
+        'A simple plugin to generate placeholder lines that emulates text in a UI, useful for displaying placeholder content while loading or empty items.\nimport \'package:flutter_placeholder_textlines/flutter_placeholder_textlines.dart\'',
+        'https://pub.dev/packages/flutter_placeholder_textlines'),
+    'tutorial_coach_mark': Accordion(
+        'tutorial_coach_mark',
+        'Guide that helps you to present your app and its features in a beautiful, simple and customizable way.\nimport \'package:tutorial_coach_mark/tutorial_coach_mark.dart\'',
+        'https://pub.dev/packages/tutorial_coach_mark'),
+    'easy_widgets': Accordion(
+        'easy_widgets',
+        'Simplified and quick access to most used widget with easy access to extenstions and functions/helpers which are responsive in nature.\nimport \'package:easy_widget/easy_widget.dart\'',
+        'https://pub.dev/packages/easy_widgets'),
+    'responsive_units': Accordion(
+        'responsive_units',
+        'A Flutter package that provides responsive units that scale with the device\'s screen size.\nimport \'package:responsive_units/responsive_units.dart\'',
+        'https://pub.dev/packages/responsive_units'),
+    'add_2_calendar': Accordion(
+        'add_2_calendar',
+        'A really simple Flutter plugin to add events to each platform\'s default calendar.\nimport \'package:add_2_calendar/add_2_calendar.dart\'',
+        'https://pub.dev/packages/add_2_calendar'),
+    'quickpass_yidun_flutter': Accordion(
+        'quickpass_yidun_flutter',
+        '直连三大运营商，一步校验手机号与当前 SIM 卡号一致性。优化注册/登录/支付等场景验证流程.\nimport \'package:quickpass_yidun_flutter/quickpass_flutter_plugin.dart\'',
+        'https://pub.dev/packages/quickpass_yidun_flutter'),
+    'flutter_custom_tab_bar': Accordion(
+        'flutter_custom_tab_bar',
+        'A custom tab bar to choose.\nimport \'package:flutter_custom_tab_bar/custom_tab_bar.dart\'\nmore...',
+        'https://pub.dev/packages/flutter_custom_tab_bar'),
+    'story_time': Accordion(
+        'story_time',
+        'Instagram stories like UI with rich animations and customizability.\nimport \'package:story_time/story_page_view/story_page_view.dart\'',
+        'https://pub.dev/packages/story_time'),
+    'custom_pop_up_menu': Accordion(
+        'custom_pop_up_menu',
+        'Wrap a widget with CustomPopupMenu, Tap or Long Press this widget, a popup menu would display in a suitable position.\nimport \'package:custom_pop_up_menu/custom_pop_up_menu.dart\'',
+        'https://pub.dev/packages/custom_pop_up_menu'),
+    'aqua': Accordion(
+        'aqua',
+        'Utility classes/functions to help with UI development using the Flutter framework.\nimport \'package:aqua/aqua.dart\'',
+        'https://pub.dev/packages/aqua'),
+    'stacked_chart': Accordion(
+        'stacked_chart',
+        'A flutter package for creating a stack barchart with easy customization.\nimport \'package:stacked_chart/stacked_chart.dart\'',
+        'https://pub.dev/packages/stacked_chart'),
+    'keyboard_languages': Accordion(
+        'keyboard_languages',
+        'Flutter plugin that lists available keyboard languages in Android/iOS device.\nimport \'package:keyboard_languages/keyboard_languages.dart\'',
+        'https://pub.dev/packages/keyboard_languages'),
+    'better_wifi_manager': Accordion(
+        'better_wifi_manager',
+        'A simple Wifi manager for Flutter.\nimport \'package:better_wifi_manager/better_wifi_manager.dart\'',
+        'https://pub.dev/packages/better_wifi_manager'),
+    'swipeable_page_route': Accordion(
+        'swipeable_page_route',
+        'Swipe to navigate back and admire beautifully morphing widgets.\nimport \'package:swipeable_page_route/swipeable_page_route.dart\'',
+        'https://pub.dev/packages/swipeable_page_route'),
+    'slide_countdown': Accordion(
+        'slide_countdown',
+        'Animation countdown timer for Flutter.\nimport \'package:slide_countdown/slide_countdown.dart\'',
+        'https://pub.dev/packages/slide_countdown'),
+    'flutter_secure_keyboard': Accordion(
+        'flutter_secure_keyboard',
+        'Mobile secure keyboard to prevent KeyLogger attack and screen capture.\nimport \'package:flutter_secure_keyboard/flutter_secure_keyboard.dart\'',
+        'https://pub.dev/packages/flutter_secure_keyboard'),
+    'localize_and_translate': Accordion(
+        'localize_and_translate',
+        'Flutter localization in easy steps.\nimport \'package:localize_and_translate/localize_and_translate.dart\'',
+        'https://pub.dev/packages/localize_and_translate'),
+    'sheep_animation': Accordion(
+        'sheep_animation',
+        'Package that makes creating Flutter animation easier.\nimport \'package:sheep_animation/sheep_animation.dart\'',
+        'https://pub.dev/packages/sheep_animation'),
+    'simple_3d': Accordion(
+        'simple_3d',
+        'This package was created for the convenience of 3D non-experts, including scientists.\nimport \'package:simple_3d/simple_3d.dart\'',
+        'https://pub.dev/packages/simple_3d'),
+    'api_event': Accordion(
+        'api_event',
+        'Used to get a response from a service call and control server events.\nimport \'package:api_event/api_event.dart\'',
+        'https://pub.dev/packages/api_event'),
+    'fl_paging': Accordion(
+        'fl_paging',
+        'A new Flutter package support paginating for Listview, Gridview and NestedScrollView.\nimport \'package:fl_paging/fl_paging.dart\'',
+        'https://pub.dev/packages/fl_paging'),
+    'snapping_page_scroll': Accordion(
+        'snapping_page_scroll',
+        'A plugin that acts similar to a PageView but either snaps to the closest page or scrolls multiple pages and then snaps, based on how fast the user scrolls.\nimport \'package:snapping_page_scroll/snapping_page_scroll.dart\'',
+        'https://pub.dev/packages/snapping_page_scroll'),
+    'table_calendar': Accordion(
+        'table_calendar',
+        'Highly customizable, feature-packed calendar widget for Flutter.\nimport \'package:table_calendar/table_calendar.dart\'',
+        'https://pub.dev/packages/table_calendar'),
+    'datatools': Accordion(
+        'datatools',
+        'Unified Fetch API for HTTP and files.\nimport \'package:datatools/fetch_http.dart\'',
+        'https://pub.dev/packages/datatools'),
+    'file_picker': Accordion(
+        'file_picker',
+        'A package that allows you to use the native file explorer to pick single or multiple files, with extensions filtering support.\nimport \'package:file_picker/file_picker.dart\'',
+        'https://pub.dev/packages/file_picker'),
+    'star_menu': Accordion(
+        'star_menu',
+        'Contextual popup menu with different shapes and multiple ways to fine-tune animation and position.\nimport \'package:star_menu/star_menu.dart\'',
+        'https://pub.dev/packages/star_menu'),
+    'flutter_collapsing_toolbar': Accordion(
+        'flutter_collapsing_toolbar',
+        'A Flutter package to create a Romantic Collapsing Toolbar.\nimport \'package:flutter_collapsing_toolbar/flutter_collapsing_toolbar.dart\'',
+        'https://pub.dev/packages/flutter_collapsing_toolbar'),
+    'gallery_saver': Accordion(
+        'gallery_saver',
+        'Saves images and videos from network or temporary file to external storage.\nimport \'package:gallery_saver/gallery_saver.dart\'',
+        'https://pub.dev/packages/gallery_saver'),
+    'google_map_iframe': Accordion(
+        'google_map_iframe',
+        'A minimal way to embed google maps in flutter project.\nimport \'package:google_map_iframe/google_map_iframe.dart\'',
+        'https://pub.dev/packages/google_map_iframe'),
+    'well_formed': Accordion(
+        'well_formed',
+        'A form field package designed to relieve developers of much of the form-related coding.\npackage:well_formed/well_formed.dart\'',
+        'https://pub.dev/packages/well_formed'),
+    'api_request': Accordion(
+        'api_request',
+        'api request for handle call api. every request is an action has execute method.\npackage:api_request/api_request.dart\'',
+        'https://pub.dev/packages/api_request'),
+    'sawo': Accordion(
+        'sawo',
+        'It helps you to authenticate user via their email or phone number.\npackage:sawo/sawo.dart\'',
+        'https://pub.dev/packages/sawo'),
+    'fl_camera': Accordion(
+        'fl_camera',
+        'Support Android / IOS, Android uses camerx.\npackage:fl_camera/fl_camera.dart\'',
+        'https://pub.dev/packages/fl_camera'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

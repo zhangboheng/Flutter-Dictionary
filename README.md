@@ -8,9 +8,9 @@ A simple dictionary about Flutter
 
 # Version ![Flutter Dictionary](https://img.shields.io/badge/version-0.01-orange)  
 2021.8.26
-  - **Flutter Collected Items**: 172
-  - **Packages Collected Items**: 232
-  - **Tips Collected Items**: 61
+  - **Flutter Collected Items**: 182
+  - **Packages Collected Items**: 297
+  - **Tips Collected Items**: 63
   - **Dart Tutorial Items**: 26
   - **Develop tools Collected Items**: 6
 
