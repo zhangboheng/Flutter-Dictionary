@@ -1205,56 +1205,108 @@ class _MyImageScreen extends State<PackageScreen> {
         'https://pub.dev/packages/google_map_iframe'),
     'well_formed': Accordion(
         'well_formed',
-        'A form field package designed to relieve developers of much of the form-related coding.\npackage:well_formed/well_formed.dart\'',
+        'A form field package designed to relieve developers of much of the form-related coding.\nimport \'package:well_formed/well_formed.dart\'',
         'https://pub.dev/packages/well_formed'),
     'api_request': Accordion(
         'api_request',
-        'api request for handle call api. every request is an action has execute method.\npackage:api_request/api_request.dart\'',
+        'api request for handle call api. every request is an action has execute method.\nimport \'package:api_request/api_request.dart\'',
         'https://pub.dev/packages/api_request'),
     'sawo': Accordion(
         'sawo',
-        'It helps you to authenticate user via their email or phone number.\npackage:sawo/sawo.dart\'',
+        'It helps you to authenticate user via their email or phone number.\nimport \'package:sawo/sawo.dart\'',
         'https://pub.dev/packages/sawo'),
     'fl_camera': Accordion(
         'fl_camera',
-        'Support Android / IOS, Android uses camerx.\npackage:fl_camera/fl_camera.dart\'',
+        'Support Android / IOS, Android uses camerx.\nimport \'package:fl_camera/fl_camera.dart\'',
         'https://pub.dev/packages/fl_camera'),
     'flutter_svg_provider': Accordion(
         'flutter_svg_provider',
-        'Generate image provider from svg path, use flutter_svg as a dependency.\npackage:flutter_svg_provider/flutter_svg_provider.dart\'',
+        'Generate image provider from svg path, use flutter_svg as a dependency.\nimport \'package:flutter_svg_provider/flutter_svg_provider.dart\'',
         'https://pub.dev/packages/flutter_svg_provider'),
     'hidden_drawer_menu': Accordion(
         'hidden_drawer_menu',
-        'Hidden Drawer Menu is a library for adding a beautiful drawer mode menu feature with perspective animation.\npackage:hidden_drawer_menu/hidden_drawer_menu.dart\'',
+        'Hidden Drawer Menu is a library for adding a beautiful drawer mode menu feature with perspective animation.\nimport \'package:hidden_drawer_menu/hidden_drawer_menu.dart\'',
         'https://pub.dev/packages/hidden_drawer_menu'),
     'responsive_navbar': Accordion(
         'responsive_navbar',
-        'A responsive Navigation Bar for each field of use.\npackage:responsive_navbar/responsive_navbar.dart\'',
+        'A responsive Navigation Bar for each field of use.\nimport \'package:responsive_navbar/responsive_navbar.dart\'',
         'https://pub.dev/packages/responsive_navbar'),
     'postgres': Accordion(
         'postgres',
-        'A library for connecting to and querying PostgreSQL databases.\npackage:postgres/postgres.dart\'',
+        'A library for connecting to and querying PostgreSQL databases.\nimport \'package:postgres/postgres.dart\'',
         'https://pub.dev/packages/postgres'),
     'simple_audio_player': Accordion(
         'simple_audio_player',
-        'A simple audio player for Flutter.\npackage:simple_audio_player/simple_audio_player.dart\'',
+        'A simple audio player for Flutter.\nimport \'package:simple_audio_player/simple_audio_player.dart\'',
         'https://pub.dev/packages/simple_audio_player'),
-    'DevilF Engine': Accordion(
+    'devilF engine': Accordion(
         'DevilF Engine',
-        'A Flutter 2D RPG Game Engine On Web & Android & IOS.\npackage:devilf_engine/devilf_engine.dart\'',
+        'A Flutter 2D RPG Game Engine On Web & Android & IOS.\nimport \'package:devilf_engine/devilf_engine.dart\'',
         'https://pub.dev/packages/devilf_engine'),
     'flutter_hidden_drawer': Accordion(
         'flutter_hidden_drawer',
-        'Tooltip function built in for flutter.\npackage:flutter_hidden_drawer/flutter_hidden_drawer.dart\'',
+        'Tooltip function built in for flutter.\nimport \'package:flutter_hidden_drawer/flutter_hidden_drawer.dart\'',
         'https://pub.dev/packages/flutter_hidden_drawer'),
     'glass': Accordion(
         'glass',
-        'Easily convert any Widget into a glass / frosted glass version of itself, following the glassmorphism / glassmorphic design trend.\npackage:glass/glass.dart\'',
+        'Easily convert any Widget into a glass / frosted glass version of itself, following the glassmorphism / glassmorphic design trend.\nimport \'package:glass/glass.dart\'',
         'https://pub.dev/packages/glass'),
     'flutter_tencentad': Accordion(
         'flutter_tencentad',
-        'flutter_tencentad是一款集成了腾讯优量汇广告Android和iOSSDK的Flutter插件,方便直接调用优量汇广告SDK方法快速开发.\npackage:flutter_tencentad/flutter_tencentad.dart\'',
+        'flutter_tencentad是一款集成了腾讯优量汇广告Android和iOSSDK的Flutter插件,方便直接调用优量汇广告SDK方法快速开发.\nimport \'package:flutter_tencentad/flutter_tencentad.dart\'',
         'https://pub.dev/packages/flutter_tencentad'),
+    'xui': Accordion(
+        'xui',
+        '主要包含项目中常用的html元素，项目布局和js方法.\nimport \'package:xui/xui.dart\'',
+        'https://pub.dev/packages/xui'),
+    'tab_indicator_styler': Accordion(
+        'tab_indicator_styler',
+        'Add beautiful and trending tab indicators directly to your default Flutter TabBar.\nimport \'package:tab_indicator_styler/tab_indicator_styler.dart\'',
+        'https://pub.dev/packages/tab_indicator_styler'),
+    'draggable_widget': Accordion(
+        'draggable_widget',
+        'A flutter package which will help you to create a draggable widget that can be dragged around the screen.\nimport \'package:draggable_widget/draggable_widget.dart\'',
+        'https://pub.dev/packages/draggable_widget'),
+    'rapidfire': Accordion(
+        'rapidfire',
+        'A comprehensive ORM system for mobile application development.\nimport \'package:rapidfire/RapidFire.dart\'',
+        'https://pub.dev/packages/rapidfire'),
+    'flutter_quill': Accordion(
+        'flutter_quill',
+        'FlutterQuill is a rich text editor and a Quill component for Flutter.\nimport \'package:flutter_quill/flutter_quill.dart\'',
+        'https://pub.dev/packages/flutter_quill'),
+    'date_count_down': Accordion(
+        'date_count_down',
+        'A new Flutter package that provide already made Count down functionality.\nimport \'package:date_count_down/date_count_down.dart\'',
+        'https://pub.dev/packages/date_count_down'),
+    'geocoder_offline': Accordion(
+        'geocoder_offline',
+        'Dart library for super-fast offline reverse geocoding.\nimport \'package:geocoder_offline/geocoder_offline.dart\'',
+        'https://pub.dev/packages/geocoder_offline'),
+    'flutter_font_picker': Accordion(
+        'flutter_font_picker',
+        'A custom Flutter widget that lets the user select a Google Font from a custom dropdown.\nimport \'package:flutter_font_picker/flutter_font_picker.dart\'',
+        'https://pub.dev/packages/flutter_font_picker'),
+    'select_any': Accordion(
+        'select_any',
+        'A complete and flexible library for viewing data in tables or lists.\nimport \'package:select_any/select_any.dart\'',
+        'https://pub.dev/packages/select_any'),
+    'data_table_plus': Accordion(
+        'data_table_plus',
+        'Table based on DataTable stock and DataTable2, with some improvements.\nimport \'package:data_table_plus/data_table_plus.dart\'',
+        'https://pub.dev/packages/data_table_plus'),
+    'facio_design_system': Accordion(
+        'facio_design_system',
+        'The facio_components for Flutter allows you to easily use customized components from Facio Design System in your Flutter app.\nimport \'package:facio_components/components.dart\'',
+        'https://pub.dev/packages/facio_design_system'),
+    'flutter_audio_capture': Accordion(
+        'flutter_audio_capture',
+        'Capture the audio stream buffer through microphone for iOS/Android.\nimport \'package:flutter_audio_capture/flutter_audio_capture.dart\'',
+        'https://pub.dev/packages/flutter_audio_capture'),
+    'event_bloc': Accordion(
+        'event_bloc',
+        'Event Bloc is an event-based implementation of the BLoC pattern, the recommended State Management Pattern for Flutter by Google!\nimport \'package:event_bloc/event_bloc.dart\'',
+        'https://pub.dev/packages/event_bloc'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
