@@ -1371,6 +1371,58 @@ class _MyImageScreen extends State<PackageScreen> {
         'flutter_timer_countdown',
         'A simple customizable timer for counting down a given time.\nimport \'package:flutter_timer_countdown/flutter_timer_countdown.dart\'',
         'https://pub.dev/packages/flutter_timer_countdown'),
+    'flutter_material_color_picker': Accordion(
+        'flutter_material_color_picker',
+        'Material Color picker is a Flutter widget, that can be customizable.\nimport \'package:flutter_material_color_picker/flutter_material_color_picker.dart\'',
+        'https://pub.dev/packages/flutter_material_color_picker'),
+    'async_button_builder': Accordion(
+        'async_button_builder',
+        'A builder that adds loading, disabled, errored and completed states (with fluid animation between each) on top of buttons that perform asynchronous tasks.\nimport \'package:async_button_builder/async_button_builder.dart\'',
+        'https://pub.dev/packages/async_button_builder'),
+    'flutter_onboarding_slider': Accordion(
+        'flutter_onboarding_slider',
+        'A page slider with parallex design that allows (Text) widgets or body to slide at a different speed with background.\nimport \'package:flutter_onboarding_slider/flutter_onboarding_slider.dart\'',
+        'https://pub.dev/packages/flutter_onboarding_slider'),
+    'snippets': Accordion(
+        'snippets',
+        'The Flutter API documentation contains code blocks that help provide context or a good starting point when learning to use any of Flutter\'s APIs.\nimport \'package:snippets/snippets.dart\'',
+        'https://pub.dev/packages/snippets'),
+    'uri_to_file': Accordion(
+        'uri_to_file',
+        'A Flutter plugin for converting supported uri to file. Supports Android & iOS.\nimport \'package:uri_to_file/uri_to_file.dart\'',
+        'https://pub.dev/packages/uri_to_file'),
+    'twilio_programmable_video': Accordion(
+        'twilio_programmable_video',
+        'Flutter plugin for Twilio Programmable Video, which enables you to build real-time videocall applications (WebRTC).\nimport \'package:twilio_programmable_video/twilio_programmable_video.dart\'',
+        'https://pub.dev/packages/twilio_programmable_video'),
+    'qr_code_dart_scan': Accordion(
+        'qr_code_dart_scan',
+        'A QR code scanner that works on both iOS and Android using dart decoder.\nimport \'package:qr_code_dart_scan/qr_code_dart_scan.dart\'',
+        'https://pub.dev/packages/qr_code_dart_scan'),
+    'supabase_flutter': Accordion(
+        'supabase_flutter',
+        'Supabase is an open source Firebase alternative.\nimport \'package:supabase_flutter/supabase_flutter.dart\'',
+        'https://pub.dev/packages/supabase_flutter'),
+    'scale_size': Accordion(
+        'scale_size',
+        'A Flutter package helps applications design differently from GUI guides, even on devices with different resolutions.\nimport \'package:scale_size/scale_size.dart\'',
+        'https://pub.dev/packages/scale_size'),
+    'flutter_share_me': Accordion(
+        'flutter_share_me',
+        'Flutter Plugin for sharing contents to social media.\nimport \'package:flutter_share_me/flutter_share_me.dart\'',
+        'https://pub.dev/packages/flutter_share_me'),
+    'super_ui': Accordion(
+        'super_ui',
+        'A flutter package containing a range of different widgets.\nimport \'package:auth_buttons/super_ui.dart\'',
+        'https://pub.dev/packages/super_ui'),
+    'fpdart': Accordion(
+        'fpdart',
+        'Functional programming in Dart and Flutter.\nimport \'package:fpdart/fpdart.dart\'',
+        'https://pub.dev/packages/fpdart'),
+    'thepeer_flutter': Accordion(
+        'thepeer_flutter',
+        'This package makes it easy to use the Thepeer in a flutter project.\nimport \'package:thepeer_flutter/thepeer_flutter.dart\'',
+        'https://pub.dev/packages/thepeer_flutter'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];

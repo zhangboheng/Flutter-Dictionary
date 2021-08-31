@@ -331,6 +331,23 @@ class _MyImageScreen extends State<TipsScreen> {
         'a slider input example',
         'A Slider is an input widget where user can set a value by dragging to or pressing on desired position.',
         'assets/code/sliderinput.dart'),
+    'how to capitalize the TextField value first letter of the first word for each sentence?':
+        Viewcode(
+            0,
+            'How to capitalize the TextField value first letter of the first word for each sentence?',
+            'You can use textCapitalization property of a TextField widget.TextField(textCapitalization: TextCapitalization.characters,)\n'
+                'or var string = "text".toUpperCase()',
+            ''),
+    'using tabbar & tabbarview examples': Viewcode(
+        1,
+        'Using TabBar & TabBarView Examples',
+        'TabBar is used to create the tabs, while TabBarView is used to define the content of each tab.',
+        'assets/code/tabview.dart'),
+    'set background image': Viewcode(
+        1,
+        'Set Background Image',
+        'TabBar is used to create the tabs, while TabBarView is used to define the content of each tab.',
+        'assets/code/setbackroundimage.dart'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
