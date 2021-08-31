@@ -1307,6 +1307,70 @@ class _MyImageScreen extends State<PackageScreen> {
         'event_bloc',
         'Event Bloc is an event-based implementation of the BLoC pattern, the recommended State Management Pattern for Flutter by Google!\nimport \'package:event_bloc/event_bloc.dart\'',
         'https://pub.dev/packages/event_bloc'),
+    'flutter_icons_nullsafty': Accordion(
+        'flutter_icons_nullsafty',
+        'Customizable Icons for Flutter.\nimport \'package:flutter_icons_nullsafty/flutter_icons_nullsafty.dart\'',
+        'https://pub.dev/packages/flutter_icons_nullsafty'),
+    'flutter_widget_from_html': Accordion(
+        'flutter_widget_from_html',
+        'A Flutter package for building Flutter widget tree from HTML with support for IFRAME, VIDEO and 70+ other tags.\nimport \'package:flutter_widget_from_html/flutter_widget_from_html.dart\'',
+        'https://pub.dev/packages/flutter_widget_from_html'),
+    'chat_image': Accordion(
+        'chat_image',
+        'A Package for loading an image from the web, saving it locally in the gallery and showing the locally saved image.\nimport \'package:chat_image/chat_image.dart\'',
+        'https://pub.dev/packages/chat_image'),
+    'squares': Accordion(
+        'squares',
+        'A flexible chessboard widget for Flutter.\nimport \'package:squares/squares.dart\'',
+        'https://pub.dev/packages/squares'),
+    'bishop': Accordion(
+        'bishop',
+        'Bishop is a chess logic package with flexible variant support.\nimport \'package:bishop/bishop.dart\'',
+        'https://pub.dev/packages/bishop'),
+    'flutter_gesture_password': Accordion(
+        'flutter_gesture_password',
+        'A flutter gesture password widget.\nimport \'package:flutter_gesture_view/gesture_view.dart\'',
+        'https://pub.dev/packages/flutter_gesture_password'),
+    'bubble_head': Accordion(
+        'bubble_head',
+        'A flutter plugin to enable you launch a bubble while putting your application to background and upon clicking the bubble brings your application back to foreground.\nimport \'package:bubble_head/bubble.dart\'',
+        'https://pub.dev/packages/bubble_head'),
+    'native_webview': Accordion(
+        'native_webview',
+        'A Flutter plugin that allows you to add an inline WebView.\nimport \'package:native_webview/native_webview.dart\'',
+        'https://pub.dev/packages/native_webview'),
+    'light_html_editor': Accordion(
+        'light_html_editor',
+        'Flutter HTML Editor is a simple HTML-based Richtext editor, which is able to edit and parse a selected set of HTML tags into a Flutter widget.\nimport \'package:html_editor/editor.dart\'',
+        'https://pub.dev/packages/light_html_editor'),
+    'emoji_keyboard_flutter': Accordion(
+        'emoji_keyboard_flutter',
+        'A Flutter package that provides keyboard where you can only type with emojis!\nimport \'package:emoji_keyboard_flutter/emoji_keyboard_flutter.dart\'',
+        'https://pub.dev/packages/emoji_keyboard_flutter'),
+    'markd': Accordion(
+        'markd',
+        'A fork of dart-markdown for easy customization of Markdown syntaxes.\nimport \'package:markd/markdown.dart\'',
+        'https://pub.dev/packages/markd'),
+    'riverpod_extension': Accordion(
+        'riverpod_extension',
+        'Helpers for riverpod.\nimport \'package:riverpod_extension/riverpod_extension.dart\'',
+        'https://pub.dev/packages/riverpod_extension'),
+    'xinstall_flutter_plugin': Accordion(
+        'xinstall_flutter_plugin',
+        'Xinstall是集智能传参、快速安装、一键拉起、多维数据统计等功能，帮您提高拉新转化率、安装率和多元化精确统计渠道效果的产品.\nimport \'package:xinstall_flutter_plugin/xinstall_flutter_plugin.dart\'',
+        'https://pub.dev/packages/xinstall_flutter_plugin'),
+    'facebook_app_events': Accordion(
+        'facebook_app_events',
+        'Flutter plugin for Facebook App Events and analytics.\nimport \'package:facebook_app_events/facebook_app_events.dart\'',
+        'https://pub.dev/packages/facebook_app_events'),
+    'macos_ui': Accordion(
+        'macos_ui',
+        'Flutter widgets and themes implementing the current macOS design language.\nimport \'package:macos_ui/macos_ui.dart\'',
+        'https://pub.dev/packages/macos_ui'),
+    'flutter_timer_countdown': Accordion(
+        'flutter_timer_countdown',
+        'A simple customizable timer for counting down a given time.\nimport \'package:flutter_timer_countdown/flutter_timer_countdown.dart\'',
+        'https://pub.dev/packages/flutter_timer_countdown'),
   };
   var _foundUsers = <Widget>[];
   var _getKeys = [];
