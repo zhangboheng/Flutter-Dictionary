@@ -14,6 +14,10 @@ A simple dictionary about Flutter
   - **Dart Tutorial Items**: 26
   - **Develop tools Collected Items**: 6
 
+# Downloads
+Now, can download flutter dictionary app in Google play.
+[![Flutter Dictionary](screenshot/android.png)](https://play.google.com/store/apps/details?id=com.luckydesigner.flutterdictionary)
+
 # Features
   - Search and learn Flutter widget and more
   - Show a list of Flutter packages, you can learn the details
