@@ -1216,7 +1216,7 @@ class _SecondScreenState extends State<SecondScreen> {
                       context: context,
                       applicationIcon: FlutterLogo(),
                       applicationName: 'Flutter Dictionary',
-                      applicationVersion: '0.0.1',
+                      applicationVersion: '1.0.1',
                       applicationLegalese: '©2021 luckydesigner.space',
                       children: <Widget>[
                         Padding(
